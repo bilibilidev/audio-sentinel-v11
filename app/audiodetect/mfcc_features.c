@@ -247,4 +247,3 @@ int mfcc_extract_stats(const int16_t *pcm, int num_samples,
     }
     return 0;
 }
-
