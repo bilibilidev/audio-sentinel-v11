@@ -1,13 +1,15 @@
-/* audiodetect_main.c — 音频事件检测主程序（Linux C 与 OpenVela 通用）
+/* audiodetect_main.c — A/B/C/E/F 全功能主程序（Linux C 与 OpenVela 通用）
  *   A 类别扩展：5 类检测（默认）
  *   B 鲁棒性  ：robust <wav>，clean/20/10/5 dB 噪声下检测对比
  *   C 模型优化：--int8 走 INT8 量化推理
  *   E 告警上报：--report 通过 HTTP/MQTT 上报
+ *   F 关键词  ：keyword <wav>，MFCC+DTW 识别 救命/帮助/报警
  */
 #include "feature_extractor.h"
 #include "model_infer.h"
 #include "wav_reader.h"
 #include "alarm_report.h"
+#include "keyword_detect.h"
 #ifdef CONFIG_AE_AUDIODETECT_UI
 #include "audiodetect_ui.h"
 #endif
@@ -41,6 +43,7 @@ static void usage(const char *prog)
     printf("usage:\n");
     printf("  %s input.wav [--debug|--report|--int8]   classify an audio file\n", prog);
     printf("  %s robust input.wav                      compare several SNR levels\n", prog);
+    printf("  %s keyword input.wav                     detect emergency keywords\n", prog);
 #ifdef CONFIG_AE_AUDIODETECT_UI
     printf("  %s ui                                    open the touch interface\n", prog);
 #endif
@@ -109,6 +112,25 @@ static int robust_demo_main(int argc, char *argv[])
     return 0;
 }
 
+/* F：关键词识别 */
+static int keyword_demo_main(int argc, char *argv[])
+{
+    static int16_t pcm[AUDIO_NUM_SAMPLES];
+    float confidence;
+
+    if (argc != 2) { usage(argv[-1]); return 1; }
+    printf("Keyword Detection Demo\n");
+    printf("Input: %s\n", argv[1]);
+    if (read_wav_16k_mono(argv[1], pcm, AUDIO_NUM_SAMPLES) < 0) return 1;
+
+    int kw = keyword_detect(pcm, AUDIO_NUM_SAMPLES, &confidence);
+    if (kw >= 0)
+        printf("Keyword: %s (%.1f%%)\n", keyword_name(kw), confidence * 100.0f);
+    else
+        printf("Keyword: none\n");
+    return 0;
+}
+
 int audiodetect_main(int argc, char *argv[])
 {
     static int16_t pcm[AUDIO_NUM_SAMPLES];
@@ -124,6 +146,8 @@ int audiodetect_main(int argc, char *argv[])
         return audiodetect_ui_main(argc - 1, argv + 1);
 #endif
 
+    if (argc >= 2 && strcmp(argv[1], "keyword") == 0)
+        return keyword_demo_main(argc - 1, argv + 1);
     if (argc >= 2 && strcmp(argv[1], "robust") == 0)
         return robust_demo_main(argc - 1, argv + 1);
 

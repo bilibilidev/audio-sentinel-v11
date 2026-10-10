@@ -10,8 +10,9 @@ audio-sentinel-v11.xml
 app/audiodetect/audiodetect_main.c
 app/audiodetect/audiodetect_ui.c
 app/audiodetect/audio_classifier.c
-app/audiodetect/mfcc_features.c
-app/audiodetect/mfcc_features.h
+app/audiodetect/keyword_detect.c
+app/audiodetect/keyword_detect.h
+app/audiodetect/keyword_templates.h
 app/audiodetect/model_weights.h
 app/audiodetect/model_weights_int8.h
 simulator/model_infer_int8.c
@@ -19,7 +20,7 @@ simulator/generated/model_weights_int8.h
 training/export_to_c.py
 training/train_edge_mfcc.py
 training/extract_features_mfcc.py
-training/mfcc_features.py
+training/keyword_detect.py
 model/tiny_mlp_mfcc92_robust_simulator.npz
 board/r528s3-gemini-s1/configs/nsh/defconfig
 board/r528s3-gemini-s1/src/etc/init.d/rcS.nsh

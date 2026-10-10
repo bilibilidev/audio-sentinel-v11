@@ -11,7 +11,7 @@
 - 三秒麦克风采集，每段分析三个一秒窗口。
 - 静音门限 `2.0e-5`、事件门限 `0.80`。
 - LVGL触摸界面、自动启动偏好、事件计数和最近三条事件。
-- WAV命令行推理、噪声演示和可选HTTP/MQTT上报代码。
+- WAV命令行推理、噪声演示、合成模板关键词识别和可选HTTP/MQTT上报代码。
 
 ## 主要文件
 
@@ -25,7 +25,8 @@
 | `model_infer_int8.c` | INT8权重存储、运行时反量化推理 |
 | `model_weights*.h` | 当前冻结模型生成的C权重 |
 | `wav_reader.c` | 16 kHz、16-bit、单声道PCM WAV读取 |
-| `mfcc_features.c` | 五类事件检测所需的MFCC及Delta统计特征 |
+| `keyword_detect.c` | MFCC+DTW关键词路径及五类事件检测共享的MFCC统计 |
+| `keyword_templates.h` | 合成语音生成的关键词模板，不是真实录音训练数据 |
 | `alarm_report.c` | 可选HTTP/MQTT告警代码 |
 | `Kconfig`、`Makefile`、`CMakeLists.txt` | OpenVela构建集成 |
 
@@ -46,6 +47,9 @@ CONFIG_GRAPHICS_LVGL=y
 nsh> audiodetect ui
 nsh> audiodetect /data/test.wav --int8 --debug
 nsh> audiodetect robust /data/test.wav
+nsh> audiodetect keyword /data/keyword.wav
 ```
 
 实时UI使用 `arecord -D default -r16000 -f16 -c1 -d3 /data/aed_live.wav`。它不是无间隙流式PCM管线；边界和未验证项请见仓库根目录README。
+
+关键词识别仅为命令行原型，模板来自合成语音，未接入实时UI、未进行真实录音独立准确率验证。

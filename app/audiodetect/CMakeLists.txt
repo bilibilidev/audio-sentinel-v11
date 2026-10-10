@@ -1,5 +1,5 @@
 # CMakeLists.txt for audiodetect app (OpenVela / NuttX CMake build)
-# Lightweight offline audio event detection demo (5 classes + alarm + int8)
+# Lightweight offline audio event detection demo (5 classes + alarm + keyword + int8)
 
 if(CONFIG_AE_AUDIODETECT)
   set(AUDIODETECT_SRCS
@@ -9,7 +9,7 @@ if(CONFIG_AE_AUDIODETECT)
       model_infer.c
       model_infer_int8.c
       alarm_report.c
-      mfcc_features.c)
+      keyword_detect.c)
 
   if(CONFIG_AE_AUDIODETECT_UI)
     list(APPEND AUDIODETECT_SRCS audiodetect_ui.c audio_classifier.c)

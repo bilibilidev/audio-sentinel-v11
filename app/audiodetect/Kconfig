@@ -1,12 +1,12 @@
 config AE_AUDIODETECT
-	tristate "Offline audio event detection demo (5 classes + alarm + int8)"
+	tristate "Offline audio event detection demo (5 classes + alarm + keyword + int8)"
 	default n
 	---help---
 		Enable the lightweight offline audio event detection demo.
 		Detects background, cough, glass_break, baby_cry and dog_bark
 		using 92-dimensional time/MFCC/delta statistics and a TinyMLP
 		(92->64->5). Includes local alarm, optional remote HTTP/MQTT
-		alarm reporting and multi-SNR robustness checks.
+		alarm reporting, multi-SNR robustness checks and keyword recognition.
 
 if AE_AUDIODETECT
 
