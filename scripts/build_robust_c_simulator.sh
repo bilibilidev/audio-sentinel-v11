@@ -18,7 +18,7 @@ cc -std=c11 -O2 -Wall -Wextra \
   "$app_dir/audio_classifier.c" \
   "$app_dir/wav_reader.c" \
   "$app_dir/feature_extractor.c" \
-  "$app_dir/keyword_detect.c" \
+  "$app_dir/mfcc_features.c" \
   "$repo_dir/simulator/model_infer_int8.c" \
   -lm -o "$out_dir/audiodetect_robust_sim"
 

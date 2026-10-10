@@ -9,7 +9,7 @@ import numpy as np
 
 from audio_utils import read_wav_mono
 from extract_features import extract_features_from_pcm
-from keyword_detect import extract_mfcc
+from mfcc_features import extract_mfcc
 
 
 def extract_features_mfcc_from_pcm(pcm: np.ndarray, include_delta: bool = False) -> np.ndarray:

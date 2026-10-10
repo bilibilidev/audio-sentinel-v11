@@ -1,5 +1,5 @@
 #include "feature_extractor.h"
-#include "keyword_detect.h"
+#include "mfcc_features.h"
 
 #include <math.h>
 #include <stdlib.h>
@@ -148,6 +148,6 @@ void extract_audio_features(const int16_t *pcm, int num_samples, float features[
 
     /* Reuse the app's existing pure-C MFCC front-end. The appended layout
      * matches extract_features_mfcc.py exactly. */
-    (void)keyword_extract_mfcc_stats(pcm, num_samples,
-                                     &features[AUDIO_TIME_FEATURE_DIM]);
+    (void)mfcc_extract_stats(pcm, num_samples,
+                            &features[AUDIO_TIME_FEATURE_DIM]);
 }
