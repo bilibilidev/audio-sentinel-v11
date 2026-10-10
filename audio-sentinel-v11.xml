@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="openvela.xml"/>
+  <remote name="personal" fetch="https://github.com/bilibilidev/"/>
+  <project path="audio-sentinel-v11" name="audio-sentinel-v11"
+           remote="personal" revision="main">
+    <linkfile src="app/audiodetect" dest="apps/audiodetect"/>
+  </project>
+</manifest>

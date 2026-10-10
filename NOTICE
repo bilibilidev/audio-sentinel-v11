@@ -1,0 +1,20 @@
+Audio Sentinel v11
+
+This is a standalone public snapshot of the application source, model,
+configuration and evaluation results originally published at:
+https://github.com/open-vela/contest2026_456_wuheihei
+Source snapshot: bc01a35c8f9fef636ebaff0e77a5ea75ca21a564
+
+Original Git history, private logs, old contest documents, videos, downloaded
+datasets, SDK binaries and firmware images are not included. The source LICENSE
+is preserved. Existing third-party copyright and license notices remain
+applicable to their respective contents.
+
+Public release edits: documentation, third-party disclosure, manifest remotes
+and project path, overlay path discovery and checker manifest filename.
+Model, feature extraction, inference, training algorithms and board
+configuration are unchanged.
+
+See THIRD_PARTY_NOTICES.md for sources, obligations, data/model boundaries and
+verification limitations. The source license does not replace third-party
+data licenses, vendor binary terms or permissions.
