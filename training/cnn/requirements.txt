@@ -1,0 +1,4 @@
+# CPU PyTorch build used for this candidate; install via the CPU wheel index.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.14.1+cpu
+numpy==2.3.5

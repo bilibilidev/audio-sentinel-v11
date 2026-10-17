@@ -1,0 +1,5110 @@
+{
+  "labels": [
+    "background",
+    "cough",
+    "glass_break",
+    "baby_cry",
+    "dog_bark"
+  ],
+  "scope": "Linux host C only. Whole-recording accuracy, not time-annotated live event accuracy. Seen external cohort is development validation, not untouched final benchmark.",
+  "training_external_audio_used": false,
+  "pending_baby_audio_count": 20,
+  "distinct_test_recordings": 45,
+  "records": [
+    {
+      "id": "cough-01",
+      "reference_label": "cough",
+      "source_dataset": "FSD50K",
+      "source_id": "110582",
+      "source_title": "cough.wav",
+      "source_url": "https://freesound.org/s/110582/",
+      "license": "http://creativecommons.org/licenses/sampling+/1.0/",
+      "audio_path": "audio/metadata_consistent/cough/cough-01__cough.wav",
+      "sha256": "153bdd1c66fb50d324ffa36c7c29592fe56f937cd34c87be4d315cd11372266b"
+    },
+    {
+      "id": "cough-04",
+      "reference_label": "cough",
+      "source_dataset": "FSD50K",
+      "source_id": "169217",
+      "source_title": "04. Coughing.wav",
+      "source_url": "https://freesound.org/s/169217/",
+      "license": "http://creativecommons.org/licenses/by-nc/3.0/",
+      "audio_path": "audio/metadata_consistent/cough/cough-04__04. Coughing.wav",
+      "sha256": "f74b1b193060b744fc7eebf8009350c6c96ef9928fed8aa54d3cba398393c7be"
+    },
+    {
+      "id": "cough-06",
+      "reference_label": "cough",
+      "source_dataset": "FSD50K",
+      "source_id": "234858",
+      "source_title": "Coughing_sleeping.wav",
+      "source_url": "https://freesound.org/s/234858/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "audio_path": "audio/metadata_consistent/cough/cough-06__Coughing_sleeping.wav",
+      "sha256": "f569e0e070249f0e0ca0dcf9b0ebb1aa23e1ee5f5cdc4b22a3d6cab1c6344d56"
+    },
+    {
+      "id": "cough-09",
+      "reference_label": "cough",
+      "source_dataset": "FSD50K",
+      "source_id": "258256",
+      "source_title": "cough.wav",
+      "source_url": "https://freesound.org/s/258256/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "audio_path": "audio/metadata_consistent/cough/cough-09__cough.wav",
+      "sha256": "62f3bdb4b0f4d2b11edb1d133334ff2fe65e83fe758f0f00ec057f8643deea89"
+    },
+    {
+      "id": "cough-10",
+      "reference_label": "cough",
+      "source_dataset": "FSD50K",
+      "source_id": "26296",
+      "source_title": "Cough_male_01.wav",
+      "source_url": "https://freesound.org/s/26296/",
+      "license": "http://creativecommons.org/licenses/sampling+/1.0/",
+      "audio_path": "audio/metadata_consistent/cough/cough-10__Cough_male_01.wav",
+      "sha256": "48a7e3bb69faf188092ba42b52139aeacf3edf066fa5d03f572633d5e908b1e4"
+    },
+    {
+      "id": "cough-11",
+      "reference_label": "cough",
+      "source_dataset": "FSD50K",
+      "source_id": "325656",
+      "source_title": "Harsh Cough ",
+      "source_url": "https://freesound.org/s/325656/",
+      "license": "http://creativecommons.org/licenses/by-nc/3.0/",
+      "audio_path": "audio/metadata_consistent/cough/cough-11__Harsh Cough.wav",
+      "sha256": "df7d54864ec95dd2fc7ba42deb6e9f2929fde8eadae074c48ff3ee136363a423"
+    },
+    {
+      "id": "cough-12",
+      "reference_label": "cough",
+      "source_dataset": "FSD50K",
+      "source_id": "342587",
+      "source_title": "Coughing SFX.wav",
+      "source_url": "https://freesound.org/s/342587/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "audio_path": "audio/metadata_consistent/cough/cough-12__Coughing SFX.wav",
+      "sha256": "d88a44cb549b30908e743df8323eab7982b0da4e63a4ac37b840b53b08c5eafc"
+    },
+    {
+      "id": "cough-13",
+      "reference_label": "cough",
+      "source_dataset": "FSD50K",
+      "source_id": "348134",
+      "source_title": "Cough.wav",
+      "source_url": "https://freesound.org/s/348134/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "audio_path": "audio/metadata_consistent/cough/cough-13__Cough.wav",
+      "sha256": "36dcfedad0eface68ab6518c564a96850f087912536567435b36f70dfe20356a"
+    },
+    {
+      "id": "cough-14",
+      "reference_label": "cough",
+      "source_dataset": "FSD50K",
+      "source_id": "366229",
+      "source_title": "Coughing.wav",
+      "source_url": "https://freesound.org/s/366229/",
+      "license": "http://creativecommons.org/licenses/by-nc/3.0/",
+      "audio_path": "audio/metadata_consistent/cough/cough-14__Coughing.wav",
+      "sha256": "25a1a69315f3bc4b4b18cb4b565c52b8308728e6f9f8b523d4d9fa5e6977437c"
+    },
+    {
+      "id": "cough-15",
+      "reference_label": "cough",
+      "source_dataset": "FSD50K",
+      "source_id": "383781",
+      "source_title": "Man Coughing Sick Cough",
+      "source_url": "https://freesound.org/s/383781/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "audio_path": "audio/metadata_consistent/cough/cough-15__Man Coughing Sick Cough.wav",
+      "sha256": "61b1e529189ddb350156e3c16093c18589e56607abae6dab31de0abfd9609324"
+    },
+    {
+      "id": "cough-17",
+      "reference_label": "cough",
+      "source_dataset": "FSD50K",
+      "source_id": "408888",
+      "source_title": "Coughing.wav",
+      "source_url": "https://freesound.org/s/408888/",
+      "license": "http://creativecommons.org/licenses/by-nc/3.0/",
+      "audio_path": "audio/metadata_consistent/cough/cough-17__Coughing.wav",
+      "sha256": "77ed0727cece28b63af252af77d2892ec9af2a87944e4406e089e37b0642a4e5"
+    },
+    {
+      "id": "cough-19",
+      "reference_label": "cough",
+      "source_dataset": "FSD50K",
+      "source_id": "425777",
+      "source_title": "Girl Cough.wav",
+      "source_url": "https://freesound.org/s/425777/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "audio_path": "audio/metadata_consistent/cough/cough-19__Girl Cough.wav",
+      "sha256": "9fba3ffa4d0711241345627035ff6ba71db852352a24689c50a6f5f2d476ca57"
+    },
+    {
+      "id": "glass_break-06",
+      "reference_label": "glass_break",
+      "source_dataset": "FSD50K",
+      "source_id": "33629",
+      "source_title": "bulb_smash.mp3",
+      "source_url": "https://freesound.org/s/33629/",
+      "license": "http://creativecommons.org/licenses/by/3.0/",
+      "audio_path": "audio/metadata_consistent/glass_break/glass_break-06__bulb_smash.wav",
+      "sha256": "ace9d482d77558dddc9b0e4db1afa27751db070c4f82b07b53260da13eb33d05"
+    },
+    {
+      "id": "glass_break-07",
+      "reference_label": "glass_break",
+      "source_dataset": "FSD50K",
+      "source_id": "343756",
+      "source_title": "Glass_Smash.wav",
+      "source_url": "https://freesound.org/s/343756/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "audio_path": "audio/metadata_consistent/glass_break/glass_break-07__Glass_Smash.wav",
+      "sha256": "9ff3fa9d1bbcb8f90fe196e70c5baa68ebfb589ec6109476f0339e6c56a52ce0"
+    },
+    {
+      "id": "glass_break-08",
+      "reference_label": "glass_break",
+      "source_dataset": "FSD50K",
+      "source_id": "366595",
+      "source_title": "Glass Breaking.wav",
+      "source_url": "https://freesound.org/s/366595/",
+      "license": "http://creativecommons.org/licenses/by-nc/3.0/",
+      "audio_path": "audio/metadata_consistent/glass_break/glass_break-08__Glass Breaking.wav",
+      "sha256": "54cd2343847fb58aa7a1cf7e6d87e16b460c2fd1ed323b7c853065c374698e31"
+    },
+    {
+      "id": "glass_break-09",
+      "reference_label": "glass_break",
+      "source_dataset": "FSD50K",
+      "source_id": "366738",
+      "source_title": "glass shattering.wav",
+      "source_url": "https://freesound.org/s/366738/",
+      "license": "http://creativecommons.org/licenses/by-nc/3.0/",
+      "audio_path": "audio/metadata_consistent/glass_break/glass_break-09__glass shattering.wav",
+      "sha256": "b7eb14df85ed4be61e9b6ed2e74a82c18f1ec5e2381c6165140f26bee32a1ff6"
+    },
+    {
+      "id": "glass_break-11",
+      "reference_label": "glass_break",
+      "source_dataset": "FSD50K",
+      "source_id": "376462",
+      "source_title": "breaking_glass.wav",
+      "source_url": "https://freesound.org/s/376462/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "audio_path": "audio/metadata_consistent/glass_break/glass_break-11__breaking_glass.wav",
+      "sha256": "5240d5ec48f9e81e8871668f8456ae6a3799ceffde34e1bc923af843c79fa72c"
+    },
+    {
+      "id": "glass_break-17",
+      "reference_label": "glass_break",
+      "source_dataset": "FSD50K",
+      "source_id": "407431",
+      "source_title": "bottle break.wav",
+      "source_url": "https://freesound.org/s/407431/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "audio_path": "audio/metadata_consistent/glass_break/glass_break-17__bottle break.wav",
+      "sha256": "42d32a3dc3e3d35acf270b5b5f3a6f9deb11d6763e8e31bd903072973d376bed"
+    },
+    {
+      "id": "glass_break-18",
+      "reference_label": "glass_break",
+      "source_dataset": "FSD50K",
+      "source_id": "407589",
+      "source_title": "Breaking Glass.wav",
+      "source_url": "https://freesound.org/s/407589/",
+      "license": "http://creativecommons.org/licenses/by-nc/3.0/",
+      "audio_path": "audio/metadata_consistent/glass_break/glass_break-18__Breaking Glass.wav",
+      "sha256": "250c82c7db86b6cde9777b832d9861dd4f07c66673fa6aa86b8bd0803b7da59a"
+    },
+    {
+      "id": "glass_break-19",
+      "reference_label": "glass_break",
+      "source_dataset": "FSD50K",
+      "source_id": "981",
+      "source_title": "RBH Glass_Break 05.wav",
+      "source_url": "https://freesound.org/s/981/",
+      "license": "http://creativecommons.org/licenses/by/3.0/",
+      "audio_path": "audio/metadata_consistent/glass_break/glass_break-19__RBH Glass_Break 05.wav",
+      "sha256": "e06d4bb1b79d26791fe054481368e5f00da95a7de398d0e189a278f54f24f8b7"
+    },
+    {
+      "id": "glass_break-20",
+      "reference_label": "glass_break",
+      "source_dataset": "FSD50K",
+      "source_id": "98378",
+      "source_title": "beer bottle break.wav",
+      "source_url": "https://freesound.org/s/98378/",
+      "license": "http://creativecommons.org/licenses/by/3.0/",
+      "audio_path": "audio/metadata_consistent/glass_break/glass_break-20__beer bottle break.wav",
+      "sha256": "f31da300b2a1aa7d87d677b92fe314187f249a914e6cefdb676f66d559ba045f"
+    },
+    {
+      "id": "dog_bark-01",
+      "reference_label": "dog_bark",
+      "source_dataset": "FSD50K",
+      "source_id": "102547",
+      "source_title": "dog barking 3 (Rottweiler).aif",
+      "source_url": "https://freesound.org/s/102547/",
+      "license": "http://creativecommons.org/licenses/by/3.0/",
+      "audio_path": "audio/metadata_consistent/dog_bark/dog_bark-01__dog barking 3 (Rottweiler).wav",
+      "sha256": "c476f99f33d092458b50637dc6274a5c38600e769d9ba7bd0785747e608e5d88"
+    },
+    {
+      "id": "dog_bark-04",
+      "reference_label": "dog_bark",
+      "source_dataset": "FSD50K",
+      "source_id": "166489",
+      "source_title": "Some dogs barking close to a road in Anatolia (Turkey)",
+      "source_url": "https://freesound.org/s/166489/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "audio_path": "audio/metadata_consistent/dog_bark/dog_bark-04__Some dogs barking close to a road in Anatolia (Turkey).wav",
+      "sha256": "e83b1a5e52db34752286466587b090204a77a9878b7623cd3233cce33bbd2288"
+    },
+    {
+      "id": "dog_bark-06",
+      "reference_label": "dog_bark",
+      "source_dataset": "FSD50K",
+      "source_id": "178497",
+      "source_title": "ParsonRusselBarking.wav",
+      "source_url": "https://freesound.org/s/178497/",
+      "license": "http://creativecommons.org/licenses/by/3.0/",
+      "audio_path": "audio/metadata_consistent/dog_bark/dog_bark-06__ParsonRusselBarking.wav",
+      "sha256": "65fad23d4e857b6a21fd9472107eec3b6324e0ff0c04603a36426d589266a1f8"
+    },
+    {
+      "id": "dog_bark-07",
+      "reference_label": "dog_bark",
+      "source_dataset": "FSD50K",
+      "source_id": "207962",
+      "source_title": "Eros Bordant.wav",
+      "source_url": "https://freesound.org/s/207962/",
+      "license": "http://creativecommons.org/licenses/by/3.0/",
+      "audio_path": "audio/metadata_consistent/dog_bark/dog_bark-07__Eros Bordant.wav",
+      "sha256": "dfe5ee7bedd14b14348b700ec1f8706551fa70b5c2275c7246bb059db76b42e0"
+    },
+    {
+      "id": "dog_bark-08",
+      "reference_label": "dog_bark",
+      "source_dataset": "FSD50K",
+      "source_id": "219532",
+      "source_title": "JBarnett_Hard_Effect.wav",
+      "source_url": "https://freesound.org/s/219532/",
+      "license": "http://creativecommons.org/licenses/by-nc/3.0/",
+      "audio_path": "audio/metadata_consistent/dog_bark/dog_bark-08__JBarnett_Hard_Effect.wav",
+      "sha256": "bcaa4595f5110b2f2ec68e8d0672f79ad251e7843e2debe8e8c7b1a7f018bdb8"
+    },
+    {
+      "id": "dog_bark-10",
+      "reference_label": "dog_bark",
+      "source_dataset": "FSD50K",
+      "source_id": "327666",
+      "source_title": "Dog Bark.wav",
+      "source_url": "https://freesound.org/s/327666/",
+      "license": "http://creativecommons.org/licenses/by-nc/3.0/",
+      "audio_path": "audio/metadata_consistent/dog_bark/dog_bark-10__Dog Bark.wav",
+      "sha256": "f3796ed1a8193c644b24835e06f710083945b901bb82a1f09f27ec3268303f30"
+    },
+    {
+      "id": "dog_bark-11",
+      "reference_label": "dog_bark",
+      "source_dataset": "FSD50K",
+      "source_id": "338322",
+      "source_title": "German Shepherd Dog (Interior).wav",
+      "source_url": "https://freesound.org/s/338322/",
+      "license": "http://creativecommons.org/licenses/by/3.0/",
+      "audio_path": "audio/metadata_consistent/dog_bark/dog_bark-11__German Shepherd Dog (Interior).wav",
+      "sha256": "75af9bdcd179354c5573f4b7f078d4ef892d3ffaf24c931fff965a1dbcfc5588"
+    },
+    {
+      "id": "dog_bark-12",
+      "reference_label": "dog_bark",
+      "source_dataset": "FSD50K",
+      "source_id": "361544",
+      "source_title": "Small Dog Barking",
+      "source_url": "https://freesound.org/s/361544/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "audio_path": "audio/metadata_consistent/dog_bark/dog_bark-12__Small Dog Barking.wav",
+      "sha256": "7bc6b4b93efa755b0fd6c05dd3f71d2098eaae46620a2cd3030e82de30c62f85"
+    },
+    {
+      "id": "dog_bark-13",
+      "reference_label": "dog_bark",
+      "source_dataset": "FSD50K",
+      "source_id": "396220",
+      "source_title": "Dog_Barking",
+      "source_url": "https://freesound.org/s/396220/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "audio_path": "audio/metadata_consistent/dog_bark/dog_bark-13__Dog_Barking.wav",
+      "sha256": "10dc899bccf0288b8556e280e3cd261d830805ff82fac0c1e6e9f4c922041b1f"
+    },
+    {
+      "id": "dog_bark-18",
+      "reference_label": "dog_bark",
+      "source_dataset": "FSD50K",
+      "source_id": "424593",
+      "source_title": "Dog Barking.m4a",
+      "source_url": "https://freesound.org/s/424593/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "audio_path": "audio/metadata_consistent/dog_bark/dog_bark-18__Dog Barking.wav",
+      "sha256": "0907879885a54d12e2f6c93a8516a8257f374c3d801db46e1653bc15e3aa04e4"
+    },
+    {
+      "id": "dog_bark-20",
+      "reference_label": "dog_bark",
+      "source_dataset": "FSD50K",
+      "source_id": "58382",
+      "source_title": "barking.wav",
+      "source_url": "https://freesound.org/s/58382/",
+      "license": "http://creativecommons.org/licenses/by/3.0/",
+      "audio_path": "audio/metadata_consistent/dog_bark/dog_bark-20__barking.wav",
+      "sha256": "4f93fe100b25c4cf602edaf9a688af0b6aadd6480853f2ce9fd491fe1ca33926"
+    },
+    {
+      "id": "background-01",
+      "reference_label": "background",
+      "source_dataset": "FSD50K",
+      "source_id": "101246",
+      "source_title": "metal glass makes long 'PING!' sound.aif",
+      "source_url": "https://freesound.org/s/101246/",
+      "license": "http://creativecommons.org/licenses/by/3.0/",
+      "audio_path": "audio/metadata_consistent/background/background-01__metal glass makes long 'PING!' sound.wav",
+      "sha256": "0550b7d9e3e72ca637bb6e3e83f5564f9af6d5a91a47f5558b8e98071655e382"
+    },
+    {
+      "id": "background-02",
+      "reference_label": "background",
+      "source_dataset": "FSD50K",
+      "source_id": "105385",
+      "source_title": "Hitting Pan Top Small",
+      "source_url": "https://freesound.org/s/105385/",
+      "license": "http://creativecommons.org/licenses/by/3.0/",
+      "audio_path": "audio/metadata_consistent/background/background-02__Hitting Pan Top Small.wav",
+      "sha256": "b56c5615a253816c7a05f3d592f001986e32561a16f104edcc427b2e6dd5402b"
+    },
+    {
+      "id": "background-04",
+      "reference_label": "background",
+      "source_dataset": "FSD50K",
+      "source_id": "134854",
+      "source_title": "Part 1-water.mp3",
+      "source_url": "https://freesound.org/s/134854/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "audio_path": "audio/metadata_consistent/background/background-04__Part 1-water.wav",
+      "sha256": "04304e204331cfea3dc418250ada35e4810ddddb30d7bbea9f7e60a0851d03ed"
+    },
+    {
+      "id": "background-05",
+      "reference_label": "background",
+      "source_dataset": "FSD50K",
+      "source_id": "146432",
+      "source_title": "Attention Class.wav",
+      "source_url": "https://freesound.org/s/146432/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "audio_path": "audio/metadata_consistent/background/background-05__Attention Class.wav",
+      "sha256": "32373a41d4ac270aa65274b227d9eb73215172894b7e0239a9859948d890b73b"
+    },
+    {
+      "id": "background-06",
+      "reference_label": "background",
+      "source_dataset": "FSD50K",
+      "source_id": "245935",
+      "source_title": "Wind spinning.wav",
+      "source_url": "https://freesound.org/s/245935/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "audio_path": "audio/metadata_consistent/background/background-06__Wind spinning.wav",
+      "sha256": "c25a48fc05a9d511671e5497833de6e4b070c157b1330dc3432d208b97dc3487"
+    },
+    {
+      "id": "background-08",
+      "reference_label": "background",
+      "source_dataset": "FSD50K",
+      "source_id": "271667",
+      "source_title": "Leaky faucet;distant.wav",
+      "source_url": "https://freesound.org/s/271667/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "audio_path": "audio/metadata_consistent/background/background-08__Leaky faucet;distant.wav",
+      "sha256": "f232f1af7a6a70e31f31b9b0cbcae0c39bd7a05472c0da2630424b6759b1f243"
+    },
+    {
+      "id": "background-09",
+      "reference_label": "background",
+      "source_dataset": "FSD50K",
+      "source_id": "27221",
+      "source_title": "Rain.wav",
+      "source_url": "https://freesound.org/s/27221/",
+      "license": "http://creativecommons.org/licenses/by/3.0/",
+      "audio_path": "audio/metadata_consistent/background/background-09__Rain.wav",
+      "sha256": "2359589d03d33d7b5d63408cc5535d1e0864d3eabc5df3e127550d3c7a9f27b0"
+    },
+    {
+      "id": "background-13",
+      "reference_label": "background",
+      "source_dataset": "FSD50K",
+      "source_id": "383761",
+      "source_title": "Knocking Knock on a Door",
+      "source_url": "https://freesound.org/s/383761/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "audio_path": "audio/metadata_consistent/background/background-13__Knocking Knock on a Door.wav",
+      "sha256": "e5fab8f91fe0bf0b471c98bf06c92690ffdb2daad40849250b16efddd2f9b029"
+    },
+    {
+      "id": "background-14",
+      "reference_label": "background",
+      "source_dataset": "FSD50K",
+      "source_id": "406594",
+      "source_title": "Door Close 2_Harsh_Near_Mono",
+      "source_url": "https://freesound.org/s/406594/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "audio_path": "audio/metadata_consistent/background/background-14__Door Close 2_Harsh_Near_Mono.wav",
+      "sha256": "ac464798c188e3d646870ba998c91b2685b89e12c4b926f712ccbfdfb64ed154"
+    },
+    {
+      "id": "background-17",
+      "reference_label": "background",
+      "source_dataset": "FSD50K",
+      "source_id": "59627",
+      "source_title": "japaneseslidingdoors.mp3",
+      "source_url": "https://freesound.org/s/59627/",
+      "license": "http://creativecommons.org/licenses/by/3.0/",
+      "audio_path": "audio/metadata_consistent/background/background-17__japaneseslidingdoors.wav",
+      "sha256": "08ceb99d9cc78d0ffa82978ae3e8dd842ccef41e676480d31ba976b52da59a72"
+    },
+    {
+      "id": "background-18",
+      "reference_label": "background",
+      "source_dataset": "FSD50K",
+      "source_id": "62458",
+      "source_title": "keyboard.wav",
+      "source_url": "https://freesound.org/s/62458/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "audio_path": "audio/metadata_consistent/background/background-18__keyboard.wav",
+      "sha256": "89c9162010f90f7e0efb0b8b795b90baea232d52ce6f95c4a6fcd7ebb763eab7"
+    },
+    {
+      "id": "background-19",
+      "reference_label": "background",
+      "source_dataset": "FSD50K",
+      "source_id": "76732",
+      "source_title": "0211_165742 microwave doors.WAV",
+      "source_url": "https://freesound.org/s/76732/",
+      "license": "http://creativecommons.org/licenses/by-nc/3.0/",
+      "audio_path": "audio/metadata_consistent/background/background-19__0211_165742 microwave doors.wav",
+      "sha256": "e9be999d3aa654cb174be1add8cda5147d7b0d3c8511cb5be8544d49ec2fc24d"
+    },
+    {
+      "id": "background-20",
+      "reference_label": "background",
+      "source_dataset": "FSD50K",
+      "source_id": "7968",
+      "source_title": "computer_keyboard_hacking.aif",
+      "source_url": "https://freesound.org/s/7968/",
+      "license": "http://creativecommons.org/licenses/by/3.0/",
+      "audio_path": "audio/metadata_consistent/background/background-20__computer_keyboard_hacking.wav",
+      "sha256": "c57e7d5a30fc7efeb3594fe2d6374c5b6e948c192ebb07e661b35b0ad2bc7442"
+    }
+  ],
+  "compiler": "cc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "models": [
+    {
+      "model": "fold_1",
+      "correct": 35,
+      "total": 45,
+      "accuracy": 0.7777777777777778,
+      "confusion_matrix": [
+        [
+          9,
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          11,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          10
+        ]
+      ],
+      "max_probability_delta_python_c": 1.1323178711331039e-06,
+      "wall_seconds": 0.8254740369999354,
+      "audio_seconds": 400.5396875,
+      "real_time_factor_including_io": 0.0020609044815313973,
+      "model_sha256": "368abeed846c98d0a2ba9ad96e32655641b48b398e2c4dc3968136dceba52c3f",
+      "binary_sha256": "e993f1c8649ea23a1628c3569ffc308fa417f3ab9b8403cf674207ba9b7225c4",
+      "records": [
+        {
+          "id": "cough-01",
+          "reference_label": "cough",
+          "prediction": "background",
+          "correct": false,
+          "confidence": 0.863247216,
+          "probabilities": [
+            0.863247216,
+            0.024371976,
+            0.0756685659,
+            0.0236352198,
+            0.0130770011
+          ],
+          "frames": 1133
+        },
+        {
+          "id": "cough-04",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.782759428,
+          "probabilities": [
+            0.00746730808,
+            0.782759428,
+            0.00647922326,
+            0.00266017881,
+            0.200633928
+          ],
+          "frames": 2049
+        },
+        {
+          "id": "cough-06",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.624561787,
+          "probabilities": [
+            0.165246934,
+            0.624561787,
+            0.0578128099,
+            0.0108108874,
+            0.141567573
+          ],
+          "frames": 1321
+        },
+        {
+          "id": "cough-09",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.822648108,
+          "probabilities": [
+            0.0189374425,
+            0.822648108,
+            0.0312695354,
+            0.00484825252,
+            0.122296579
+          ],
+          "frames": 187
+        },
+        {
+          "id": "cough-10",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.937597692,
+          "probabilities": [
+            0.0125921499,
+            0.937597692,
+            0.00164605933,
+            0.0010420772,
+            0.0471220762
+          ],
+          "frames": 154
+        },
+        {
+          "id": "cough-11",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.670404673,
+          "probabilities": [
+            0.012911085,
+            0.670404673,
+            0.0407666825,
+            0.0147531508,
+            0.261164457
+          ],
+          "frames": 95
+        },
+        {
+          "id": "cough-12",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.76181078,
+          "probabilities": [
+            0.000649349473,
+            0.76181078,
+            0.0012408254,
+            0.000159954521,
+            0.236139193
+          ],
+          "frames": 447
+        },
+        {
+          "id": "cough-13",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.808396518,
+          "probabilities": [
+            0.00346192974,
+            0.808396518,
+            0.0429860577,
+            0.00793579873,
+            0.137219638
+          ],
+          "frames": 300
+        },
+        {
+          "id": "cough-14",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.586478412,
+          "probabilities": [
+            0.00172702351,
+            0.586478412,
+            0.209790289,
+            8.69828436e-05,
+            0.201917365
+          ],
+          "frames": 1301
+        },
+        {
+          "id": "cough-15",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.636032641,
+          "probabilities": [
+            0.149116933,
+            0.636032641,
+            0.0317147076,
+            0.0188770946,
+            0.164258599
+          ],
+          "frames": 502
+        },
+        {
+          "id": "cough-17",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.870453715,
+          "probabilities": [
+            0.0178431794,
+            0.870453715,
+            0.018445136,
+            0.00125991786,
+            0.0919979438
+          ],
+          "frames": 1666
+        },
+        {
+          "id": "cough-19",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.56194371,
+          "probabilities": [
+            0.0459843911,
+            0.56194371,
+            0.0539246798,
+            0.0120619098,
+            0.326085299
+          ],
+          "frames": 1457
+        },
+        {
+          "id": "glass_break-06",
+          "reference_label": "glass_break",
+          "prediction": "background",
+          "correct": false,
+          "confidence": 0.886803925,
+          "probabilities": [
+            0.886803925,
+            0.0222196262,
+            0.0213064533,
+            0.0509793572,
+            0.0186906047
+          ],
+          "frames": 204
+        },
+        {
+          "id": "glass_break-07",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.943676531,
+          "probabilities": [
+            0.00836616568,
+            0.0212938916,
+            0.943676531,
+            0.00324272527,
+            0.023420522
+          ],
+          "frames": 1745
+        },
+        {
+          "id": "glass_break-08",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.957683802,
+          "probabilities": [
+            0.0176243726,
+            0.00627932232,
+            0.957683802,
+            0.00876142085,
+            0.0096510388
+          ],
+          "frames": 259
+        },
+        {
+          "id": "glass_break-09",
+          "reference_label": "glass_break",
+          "prediction": "cough",
+          "correct": false,
+          "confidence": 0.343210697,
+          "probabilities": [
+            0.299229711,
+            0.343210697,
+            0.275933832,
+            0.0145675326,
+            0.0670581833
+          ],
+          "frames": 1116
+        },
+        {
+          "id": "glass_break-11",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.535152853,
+          "probabilities": [
+            0.430064976,
+            0.0185068864,
+            0.535152853,
+            0.00636596419,
+            0.00990929734
+          ],
+          "frames": 661
+        },
+        {
+          "id": "glass_break-17",
+          "reference_label": "glass_break",
+          "prediction": "cough",
+          "correct": false,
+          "confidence": 0.970435023,
+          "probabilities": [
+            7.13931513e-05,
+            0.970435023,
+            0.0176782776,
+            0.000124097074,
+            0.011691221
+          ],
+          "frames": 54
+        },
+        {
+          "id": "glass_break-18",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.957453609,
+          "probabilities": [
+            0.0172608178,
+            0.00535022561,
+            0.957453609,
+            0.0121818706,
+            0.00775341783
+          ],
+          "frames": 248
+        },
+        {
+          "id": "glass_break-19",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.997160435,
+          "probabilities": [
+            0.00088100147,
+            0.000157941147,
+            0.997160435,
+            0.00118202809,
+            0.000618552207
+          ],
+          "frames": 175
+        },
+        {
+          "id": "glass_break-20",
+          "reference_label": "glass_break",
+          "prediction": "background",
+          "correct": false,
+          "confidence": 0.697553456,
+          "probabilities": [
+            0.697553456,
+            0.0121188639,
+            0.177276418,
+            0.0976179093,
+            0.0154334111
+          ],
+          "frames": 250
+        },
+        {
+          "id": "dog_bark-01",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.57256192,
+          "probabilities": [
+            0.0155361583,
+            0.379284114,
+            0.0288931318,
+            0.00372466724,
+            0.57256192
+          ],
+          "frames": 2098
+        },
+        {
+          "id": "dog_bark-04",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.995486796,
+          "probabilities": [
+            0.000175881243,
+            0.00401636912,
+            0.000179301278,
+            0.000141692974,
+            0.995486796
+          ],
+          "frames": 1720
+        },
+        {
+          "id": "dog_bark-06",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.471580446,
+          "probabilities": [
+            0.0755434185,
+            0.388756037,
+            0.0526219979,
+            0.0114980526,
+            0.471580446
+          ],
+          "frames": 1947
+        },
+        {
+          "id": "dog_bark-07",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.727022946,
+          "probabilities": [
+            0.0107658412,
+            0.161194205,
+            0.091632016,
+            0.00938498229,
+            0.727022946
+          ],
+          "frames": 766
+        },
+        {
+          "id": "dog_bark-08",
+          "reference_label": "dog_bark",
+          "prediction": "cough",
+          "correct": false,
+          "confidence": 0.626521409,
+          "probabilities": [
+            0.0148632033,
+            0.626521409,
+            0.00980486907,
+            0.00121893419,
+            0.347591549
+          ],
+          "frames": 1562
+        },
+        {
+          "id": "dog_bark-10",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.961346567,
+          "probabilities": [
+            0.00944558531,
+            0.0108664539,
+            0.000433238019,
+            0.0179081261,
+            0.961346567
+          ],
+          "frames": 645
+        },
+        {
+          "id": "dog_bark-11",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.748506248,
+          "probabilities": [
+            0.00629175734,
+            0.144700408,
+            0.0929790959,
+            0.00752249919,
+            0.748506248
+          ],
+          "frames": 1764
+        },
+        {
+          "id": "dog_bark-12",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.786714673,
+          "probabilities": [
+            0.000368274283,
+            0.19283396,
+            0.0197773296,
+            0.000305814261,
+            0.786714673
+          ],
+          "frames": 587
+        },
+        {
+          "id": "dog_bark-13",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.605339766,
+          "probabilities": [
+            0.133520976,
+            0.213351235,
+            0.0173343047,
+            0.030453695,
+            0.605339766
+          ],
+          "frames": 965
+        },
+        {
+          "id": "dog_bark-18",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.680182099,
+          "probabilities": [
+            0.151016086,
+            0.0964494273,
+            0.00826627389,
+            0.0640861019,
+            0.680182099
+          ],
+          "frames": 1075
+        },
+        {
+          "id": "dog_bark-20",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.758964241,
+          "probabilities": [
+            0.0453268066,
+            0.170024306,
+            0.0048809112,
+            0.0208036974,
+            0.758964241
+          ],
+          "frames": 605
+        },
+        {
+          "id": "background-01",
+          "reference_label": "background",
+          "prediction": "glass_break",
+          "correct": false,
+          "confidence": 0.579816937,
+          "probabilities": [
+            0.409282535,
+            0.00740728388,
+            0.579816937,
+            0.00122454285,
+            0.00226877723
+          ],
+          "frames": 924
+        },
+        {
+          "id": "background-02",
+          "reference_label": "background",
+          "prediction": "glass_break",
+          "correct": false,
+          "confidence": 0.448582053,
+          "probabilities": [
+            0.234381646,
+            0.151057124,
+            0.448582053,
+            0.0499846116,
+            0.115994595
+          ],
+          "frames": 406
+        },
+        {
+          "id": "background-04",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.757677972,
+          "probabilities": [
+            0.757677972,
+            0.0020198992,
+            0.235196978,
+            0.00385730527,
+            0.00124789285
+          ],
+          "frames": 1611
+        },
+        {
+          "id": "background-05",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.734512746,
+          "probabilities": [
+            0.734512746,
+            0.00440575276,
+            0.0121159935,
+            0.243913591,
+            0.00505191134
+          ],
+          "frames": 734
+        },
+        {
+          "id": "background-06",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.720206976,
+          "probabilities": [
+            0.720206976,
+            0.0501364134,
+            0.023375893,
+            0.096478641,
+            0.10980197
+          ],
+          "frames": 447
+        },
+        {
+          "id": "background-08",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.738653719,
+          "probabilities": [
+            0.738653719,
+            0.203658059,
+            0.0095416382,
+            0.0119371423,
+            0.0362093896
+          ],
+          "frames": 176
+        },
+        {
+          "id": "background-09",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.896004558,
+          "probabilities": [
+            0.896004558,
+            0.0199954938,
+            0.0100020794,
+            0.0457896739,
+            0.0282081254
+          ],
+          "frames": 2496
+        },
+        {
+          "id": "background-13",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.651741028,
+          "probabilities": [
+            0.651741028,
+            0.296780318,
+            0.0061578732,
+            0.0057795262,
+            0.0395412855
+          ],
+          "frames": 1127
+        },
+        {
+          "id": "background-14",
+          "reference_label": "background",
+          "prediction": "cough",
+          "correct": false,
+          "confidence": 0.563559771,
+          "probabilities": [
+            0.259798259,
+            0.563559771,
+            0.0326351896,
+            0.0347259194,
+            0.109280899
+          ],
+          "frames": 178
+        },
+        {
+          "id": "background-17",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.920795679,
+          "probabilities": [
+            0.920795679,
+            0.0101059042,
+            0.00811376981,
+            0.0425011441,
+            0.0184834432
+          ],
+          "frames": 1605
+        },
+        {
+          "id": "background-18",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.944614887,
+          "probabilities": [
+            0.944614887,
+            0.0155265359,
+            0.00303248176,
+            0.0184853859,
+            0.0183406733
+          ],
+          "frames": 464
+        },
+        {
+          "id": "background-19",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.793909311,
+          "probabilities": [
+            0.793909311,
+            0.128745571,
+            0.00253628893,
+            0.0165464673,
+            0.0582623966
+          ],
+          "frames": 409
+        },
+        {
+          "id": "background-20",
+          "reference_label": "background",
+          "prediction": "baby_cry",
+          "correct": false,
+          "confidence": 0.787945747,
+          "probabilities": [
+            0.0466651209,
+            0.0137285441,
+            0.125986964,
+            0.787945747,
+            0.0256736018
+          ],
+          "frames": 330
+        }
+      ]
+    },
+    {
+      "model": "fold_2",
+      "correct": 33,
+      "total": 45,
+      "accuracy": 0.7333333333333333,
+      "confusion_matrix": [
+        [
+          10,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          9,
+          0,
+          1,
+          1
+        ],
+        [
+          2,
+          1,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          0,
+          0,
+          8
+        ]
+      ],
+      "max_probability_delta_python_c": 6.558850402793581e-07,
+      "wall_seconds": 0.8256121279999888,
+      "audio_seconds": 400.5396875,
+      "real_time_factor_including_io": 0.002061249243871717,
+      "model_sha256": "28d1aa083f00a1162fabd5707585adbf5bca8f7d579224ff181aee77e9170ac4",
+      "binary_sha256": "c645791f7f7b2c7b80f29e9819f13c228662fd406b470b3bf6d6bad757c5f605",
+      "records": [
+        {
+          "id": "cough-01",
+          "reference_label": "cough",
+          "prediction": "background",
+          "correct": false,
+          "confidence": 0.57667768,
+          "probabilities": [
+            0.57667768,
+            0.0371864773,
+            0.352985203,
+            0.0167329423,
+            0.0164177194
+          ],
+          "frames": 1133
+        },
+        {
+          "id": "cough-04",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.761275828,
+          "probabilities": [
+            0.00776458345,
+            0.761275828,
+            7.52474079e-05,
+            0.00898551755,
+            0.221898794
+          ],
+          "frames": 2049
+        },
+        {
+          "id": "cough-06",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.662534297,
+          "probabilities": [
+            0.197031006,
+            0.662534297,
+            0.00840593688,
+            0.0310984645,
+            0.100930288
+          ],
+          "frames": 1321
+        },
+        {
+          "id": "cough-09",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.507220209,
+          "probabilities": [
+            0.229000017,
+            0.507220209,
+            0.0686352327,
+            0.0895796269,
+            0.105564885
+          ],
+          "frames": 187
+        },
+        {
+          "id": "cough-10",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.589675426,
+          "probabilities": [
+            0.249480844,
+            0.589675426,
+            0.00722293137,
+            0.0150901619,
+            0.138530672
+          ],
+          "frames": 154
+        },
+        {
+          "id": "cough-11",
+          "reference_label": "cough",
+          "prediction": "dog_bark",
+          "correct": false,
+          "confidence": 0.451190561,
+          "probabilities": [
+            0.154442236,
+            0.279190361,
+            0.0545855723,
+            0.0605912805,
+            0.451190561
+          ],
+          "frames": 95
+        },
+        {
+          "id": "cough-12",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.713988662,
+          "probabilities": [
+            0.000248338649,
+            0.713988662,
+            1.29171633e-06,
+            0.00235191965,
+            0.283409715
+          ],
+          "frames": 447
+        },
+        {
+          "id": "cough-13",
+          "reference_label": "cough",
+          "prediction": "baby_cry",
+          "correct": false,
+          "confidence": 0.315056592,
+          "probabilities": [
+            0.16852963,
+            0.213587403,
+            0.151149035,
+            0.315056592,
+            0.15167737
+          ],
+          "frames": 300
+        },
+        {
+          "id": "cough-14",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.95847851,
+          "probabilities": [
+            0.00383314048,
+            0.95847851,
+            0.00154539151,
+            0.00127842836,
+            0.0348644517
+          ],
+          "frames": 1301
+        },
+        {
+          "id": "cough-15",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.651710272,
+          "probabilities": [
+            0.160348877,
+            0.651710272,
+            0.0379109047,
+            0.0454690866,
+            0.104560852
+          ],
+          "frames": 502
+        },
+        {
+          "id": "cough-17",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.856076777,
+          "probabilities": [
+            0.0523075722,
+            0.856076777,
+            0.0109831998,
+            0.0172706544,
+            0.0633619055
+          ],
+          "frames": 1666
+        },
+        {
+          "id": "cough-19",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.642255366,
+          "probabilities": [
+            0.15967308,
+            0.642255366,
+            0.0128139323,
+            0.0810451284,
+            0.104212448
+          ],
+          "frames": 1457
+        },
+        {
+          "id": "glass_break-06",
+          "reference_label": "glass_break",
+          "prediction": "background",
+          "correct": false,
+          "confidence": 0.411781162,
+          "probabilities": [
+            0.411781162,
+            0.103614129,
+            0.370882869,
+            0.0821892992,
+            0.031532634
+          ],
+          "frames": 204
+        },
+        {
+          "id": "glass_break-07",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.937741697,
+          "probabilities": [
+            0.0267864987,
+            0.0225593504,
+            0.937741697,
+            0.00848334283,
+            0.00442911964
+          ],
+          "frames": 1745
+        },
+        {
+          "id": "glass_break-08",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.927508414,
+          "probabilities": [
+            0.0578845628,
+            0.00631377567,
+            0.927508414,
+            0.00725620054,
+            0.00103700173
+          ],
+          "frames": 259
+        },
+        {
+          "id": "glass_break-09",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.585253298,
+          "probabilities": [
+            0.230383292,
+            0.120558232,
+            0.585253298,
+            0.00467131939,
+            0.0591339134
+          ],
+          "frames": 1116
+        },
+        {
+          "id": "glass_break-11",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.914110541,
+          "probabilities": [
+            0.0736930892,
+            0.00653081294,
+            0.914110541,
+            0.00268121832,
+            0.00298432517
+          ],
+          "frames": 661
+        },
+        {
+          "id": "glass_break-17",
+          "reference_label": "glass_break",
+          "prediction": "cough",
+          "correct": false,
+          "confidence": 0.299982518,
+          "probabilities": [
+            0.1821125,
+            0.299982518,
+            0.285998195,
+            0.102679484,
+            0.129227251
+          ],
+          "frames": 54
+        },
+        {
+          "id": "glass_break-18",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.948538303,
+          "probabilities": [
+            0.0420139506,
+            0.0042359787,
+            0.948538303,
+            0.00424023671,
+            0.0009716801
+          ],
+          "frames": 248
+        },
+        {
+          "id": "glass_break-19",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.995922565,
+          "probabilities": [
+            0.00295233517,
+            0.000325743575,
+            0.995922565,
+            0.000739803305,
+            5.95801685e-05
+          ],
+          "frames": 175
+        },
+        {
+          "id": "glass_break-20",
+          "reference_label": "glass_break",
+          "prediction": "background",
+          "correct": false,
+          "confidence": 0.930828333,
+          "probabilities": [
+            0.930828333,
+            0.0144901425,
+            0.00570204388,
+            0.0396479592,
+            0.00933144521
+          ],
+          "frames": 250
+        },
+        {
+          "id": "dog_bark-01",
+          "reference_label": "dog_bark",
+          "prediction": "cough",
+          "correct": false,
+          "confidence": 0.566604912,
+          "probabilities": [
+            0.0435639359,
+            0.566604912,
+            0.000431698805,
+            0.00880052987,
+            0.380598933
+          ],
+          "frames": 2098
+        },
+        {
+          "id": "dog_bark-04",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.996036112,
+          "probabilities": [
+            0.00255272794,
+            0.000295228034,
+            2.41019211e-06,
+            0.00111355865,
+            0.996036112
+          ],
+          "frames": 1720
+        },
+        {
+          "id": "dog_bark-06",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.893814564,
+          "probabilities": [
+            0.0219296273,
+            0.0753351673,
+            0.000160219948,
+            0.00876043923,
+            0.893814564
+          ],
+          "frames": 1947
+        },
+        {
+          "id": "dog_bark-07",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.828216374,
+          "probabilities": [
+            0.00975095015,
+            0.151642516,
+            0.000166179554,
+            0.010223927,
+            0.828216374
+          ],
+          "frames": 766
+        },
+        {
+          "id": "dog_bark-08",
+          "reference_label": "dog_bark",
+          "prediction": "cough",
+          "correct": false,
+          "confidence": 0.748720527,
+          "probabilities": [
+            0.0207369644,
+            0.748720527,
+            5.75683371e-05,
+            0.00773685472,
+            0.222748101
+          ],
+          "frames": 1562
+        },
+        {
+          "id": "dog_bark-10",
+          "reference_label": "dog_bark",
+          "prediction": "background",
+          "correct": false,
+          "confidence": 0.539348423,
+          "probabilities": [
+            0.539348423,
+            0.00282098702,
+            0.00178965193,
+            0.119633205,
+            0.33640781
+          ],
+          "frames": 645
+        },
+        {
+          "id": "dog_bark-11",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.720686257,
+          "probabilities": [
+            0.0145572312,
+            0.22638467,
+            0.00100529916,
+            0.0373665728,
+            0.720686257
+          ],
+          "frames": 1764
+        },
+        {
+          "id": "dog_bark-12",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.909590185,
+          "probabilities": [
+            8.84016117e-05,
+            0.0890972838,
+            1.97896938e-07,
+            0.00122398196,
+            0.909590185
+          ],
+          "frames": 587
+        },
+        {
+          "id": "dog_bark-13",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.780468047,
+          "probabilities": [
+            0.118613698,
+            0.069739446,
+            0.000770819315,
+            0.0304080378,
+            0.780468047
+          ],
+          "frames": 965
+        },
+        {
+          "id": "dog_bark-18",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.901043355,
+          "probabilities": [
+            0.0848916247,
+            0.00135193032,
+            0.000671838876,
+            0.0120413071,
+            0.901043355
+          ],
+          "frames": 1075
+        },
+        {
+          "id": "dog_bark-20",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.872680128,
+          "probabilities": [
+            0.012994254,
+            0.0940879136,
+            2.07527901e-05,
+            0.0202170014,
+            0.872680128
+          ],
+          "frames": 605
+        },
+        {
+          "id": "background-01",
+          "reference_label": "background",
+          "prediction": "glass_break",
+          "correct": false,
+          "confidence": 0.834106803,
+          "probabilities": [
+            0.146714374,
+            0.0125648053,
+            0.834106803,
+            0.00203225645,
+            0.00458175223
+          ],
+          "frames": 924
+        },
+        {
+          "id": "background-02",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.542310238,
+          "probabilities": [
+            0.542310238,
+            0.104456939,
+            0.242591605,
+            0.084220469,
+            0.026420733
+          ],
+          "frames": 406
+        },
+        {
+          "id": "background-04",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.874345839,
+          "probabilities": [
+            0.874345839,
+            0.00381504861,
+            0.116463408,
+            0.004535635,
+            0.000839969318
+          ],
+          "frames": 1611
+        },
+        {
+          "id": "background-05",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.787356496,
+          "probabilities": [
+            0.787356496,
+            0.0281466451,
+            0.0447192602,
+            0.124292634,
+            0.0154850176
+          ],
+          "frames": 734
+        },
+        {
+          "id": "background-06",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.658265591,
+          "probabilities": [
+            0.658265591,
+            0.0559292063,
+            0.00796330068,
+            0.0269022603,
+            0.250939697
+          ],
+          "frames": 447
+        },
+        {
+          "id": "background-08",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.918272138,
+          "probabilities": [
+            0.918272138,
+            0.0326690152,
+            0.00892187655,
+            0.0219903588,
+            0.018146649
+          ],
+          "frames": 176
+        },
+        {
+          "id": "background-09",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.882120967,
+          "probabilities": [
+            0.882120967,
+            0.0360413231,
+            0.0220699292,
+            0.0301367715,
+            0.0296310317
+          ],
+          "frames": 2496
+        },
+        {
+          "id": "background-13",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.731713057,
+          "probabilities": [
+            0.731713057,
+            0.170795217,
+            0.0453810245,
+            0.0155659961,
+            0.0365445912
+          ],
+          "frames": 1127
+        },
+        {
+          "id": "background-14",
+          "reference_label": "background",
+          "prediction": "cough",
+          "correct": false,
+          "confidence": 0.832420349,
+          "probabilities": [
+            0.096799545,
+            0.832420349,
+            0.00286640204,
+            0.0129785715,
+            0.0549350195
+          ],
+          "frames": 178
+        },
+        {
+          "id": "background-17",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.931366444,
+          "probabilities": [
+            0.931366444,
+            0.0171796046,
+            0.0155333923,
+            0.0188189447,
+            0.0171015561
+          ],
+          "frames": 1605
+        },
+        {
+          "id": "background-18",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.906523943,
+          "probabilities": [
+            0.906523943,
+            0.0215926711,
+            0.0149683114,
+            0.0219778176,
+            0.0349371806
+          ],
+          "frames": 464
+        },
+        {
+          "id": "background-19",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.775421858,
+          "probabilities": [
+            0.775421858,
+            0.0881403834,
+            0.00857266504,
+            0.0156665798,
+            0.112198599
+          ],
+          "frames": 409
+        },
+        {
+          "id": "background-20",
+          "reference_label": "background",
+          "prediction": "baby_cry",
+          "correct": false,
+          "confidence": 0.914910913,
+          "probabilities": [
+            0.0211956874,
+            0.0259694383,
+            0.00383940316,
+            0.914910913,
+            0.0340844505
+          ],
+          "frames": 330
+        }
+      ]
+    },
+    {
+      "model": "fold_3",
+      "correct": 39,
+      "total": 45,
+      "accuracy": 0.8666666666666667,
+      "confusion_matrix": [
+        [
+          9,
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          11,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          8,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          11
+        ]
+      ],
+      "max_probability_delta_python_c": 6.853199615575178e-07,
+      "wall_seconds": 0.8133609169999545,
+      "audio_seconds": 400.5396875,
+      "real_time_factor_including_io": 0.0020306624846007414,
+      "model_sha256": "6025c0de5e86eca839e66a61226723a81bba27bde8262d1d475d79add2409629",
+      "binary_sha256": "eb746b2df8a083913acc199b9ace9835ac0734b23d191d2e3238352452c4f4bd",
+      "records": [
+        {
+          "id": "cough-01",
+          "reference_label": "cough",
+          "prediction": "background",
+          "correct": false,
+          "confidence": 0.689333975,
+          "probabilities": [
+            0.689333975,
+            0.0583834574,
+            0.144818038,
+            0.0747237727,
+            0.0327407308
+          ],
+          "frames": 1133
+        },
+        {
+          "id": "cough-04",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.785077214,
+          "probabilities": [
+            0.00275086728,
+            0.785077214,
+            0.00153458642,
+            0.00167183485,
+            0.20896554
+          ],
+          "frames": 2049
+        },
+        {
+          "id": "cough-06",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.698586881,
+          "probabilities": [
+            0.118372917,
+            0.698586881,
+            0.0773544684,
+            0.0144717563,
+            0.0912140384
+          ],
+          "frames": 1321
+        },
+        {
+          "id": "cough-09",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.811996162,
+          "probabilities": [
+            0.0194600523,
+            0.811996162,
+            0.160465375,
+            0.00223532226,
+            0.00584304705
+          ],
+          "frames": 187
+        },
+        {
+          "id": "cough-10",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.989181936,
+          "probabilities": [
+            0.000825798197,
+            0.989181936,
+            0.00472119777,
+            6.19733619e-05,
+            0.00520905945
+          ],
+          "frames": 154
+        },
+        {
+          "id": "cough-11",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.846546769,
+          "probabilities": [
+            0.00521920947,
+            0.846546769,
+            0.0640262067,
+            0.000951146998,
+            0.0832566842
+          ],
+          "frames": 95
+        },
+        {
+          "id": "cough-12",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.917519689,
+          "probabilities": [
+            0.000122413723,
+            0.917519689,
+            0.000233397848,
+            5.49541037e-05,
+            0.0820696205
+          ],
+          "frames": 447
+        },
+        {
+          "id": "cough-13",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.767036378,
+          "probabilities": [
+            0.00230653258,
+            0.767036378,
+            0.228808314,
+            0.00110715826,
+            0.000741674798
+          ],
+          "frames": 300
+        },
+        {
+          "id": "cough-14",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.912580431,
+          "probabilities": [
+            0.00144167035,
+            0.912580431,
+            0.00147567783,
+            0.000180795701,
+            0.0843214095
+          ],
+          "frames": 1301
+        },
+        {
+          "id": "cough-15",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.53260088,
+          "probabilities": [
+            0.161709845,
+            0.53260088,
+            0.0936701596,
+            0.0419756733,
+            0.170043409
+          ],
+          "frames": 502
+        },
+        {
+          "id": "cough-17",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.941031277,
+          "probabilities": [
+            0.00632529939,
+            0.941031277,
+            0.0457739271,
+            0.000471757055,
+            0.00639787689
+          ],
+          "frames": 1666
+        },
+        {
+          "id": "cough-19",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.72382009,
+          "probabilities": [
+            0.0439987816,
+            0.72382009,
+            0.0667913482,
+            0.0213042423,
+            0.144085526
+          ],
+          "frames": 1457
+        },
+        {
+          "id": "glass_break-06",
+          "reference_label": "glass_break",
+          "prediction": "background",
+          "correct": false,
+          "confidence": 0.589918017,
+          "probabilities": [
+            0.589918017,
+            0.0957282558,
+            0.230969742,
+            0.0709935054,
+            0.0123904524
+          ],
+          "frames": 204
+        },
+        {
+          "id": "glass_break-07",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.926743925,
+          "probabilities": [
+            0.0139166443,
+            0.0563103259,
+            0.926743925,
+            0.00190464023,
+            0.00112442218
+          ],
+          "frames": 1745
+        },
+        {
+          "id": "glass_break-08",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.965767264,
+          "probabilities": [
+            0.0157807749,
+            0.0159959719,
+            0.965767264,
+            0.00225911848,
+            0.000196895708
+          ],
+          "frames": 259
+        },
+        {
+          "id": "glass_break-09",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.370976239,
+          "probabilities": [
+            0.310640395,
+            0.187922299,
+            0.370976239,
+            0.00807574857,
+            0.122385375
+          ],
+          "frames": 1116
+        },
+        {
+          "id": "glass_break-11",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.514577389,
+          "probabilities": [
+            0.396481037,
+            0.0656061247,
+            0.514577389,
+            0.0112201637,
+            0.0121152233
+          ],
+          "frames": 661
+        },
+        {
+          "id": "glass_break-17",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.574996889,
+          "probabilities": [
+            1.89163109e-06,
+            0.424973577,
+            0.574996889,
+            7.11387571e-08,
+            2.75570437e-05
+          ],
+          "frames": 54
+        },
+        {
+          "id": "glass_break-18",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.972599208,
+          "probabilities": [
+            0.00786009058,
+            0.0178864468,
+            0.972599208,
+            0.00135028805,
+            0.000304003479
+          ],
+          "frames": 248
+        },
+        {
+          "id": "glass_break-19",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.985625446,
+          "probabilities": [
+            0.00186013419,
+            0.0122057963,
+            0.985625446,
+            0.000262897607,
+            4.56627567e-05
+          ],
+          "frames": 175
+        },
+        {
+          "id": "glass_break-20",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.453398764,
+          "probabilities": [
+            0.349548072,
+            0.0665946528,
+            0.453398764,
+            0.111282021,
+            0.019176472
+          ],
+          "frames": 250
+        },
+        {
+          "id": "dog_bark-01",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.787113965,
+          "probabilities": [
+            0.0134127941,
+            0.191870809,
+            0.00121137453,
+            0.00639102748,
+            0.787113965
+          ],
+          "frames": 2098
+        },
+        {
+          "id": "dog_bark-04",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.996927321,
+          "probabilities": [
+            0.000284283742,
+            0.00164823863,
+            3.53522779e-07,
+            0.00113977981,
+            0.996927321
+          ],
+          "frames": 1720
+        },
+        {
+          "id": "dog_bark-06",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.796578825,
+          "probabilities": [
+            0.059611056,
+            0.112917095,
+            0.00490583619,
+            0.0259872265,
+            0.796578825
+          ],
+          "frames": 1947
+        },
+        {
+          "id": "dog_bark-07",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.829966307,
+          "probabilities": [
+            0.0238331296,
+            0.120412141,
+            0.00314467051,
+            0.022643799,
+            0.829966307
+          ],
+          "frames": 766
+        },
+        {
+          "id": "dog_bark-08",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.774615705,
+          "probabilities": [
+            0.0100486027,
+            0.210498035,
+            0.000648214715,
+            0.0041893702,
+            0.774615705
+          ],
+          "frames": 1562
+        },
+        {
+          "id": "dog_bark-10",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.864351213,
+          "probabilities": [
+            0.0405791476,
+            0.00408625975,
+            8.72728015e-06,
+            0.0909745991,
+            0.864351213
+          ],
+          "frames": 645
+        },
+        {
+          "id": "dog_bark-11",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.922886491,
+          "probabilities": [
+            0.00973621011,
+            0.0596582294,
+            0.000600540487,
+            0.00711852824,
+            0.922886491
+          ],
+          "frames": 1764
+        },
+        {
+          "id": "dog_bark-12",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.573180437,
+          "probabilities": [
+            0.000443473138,
+            0.425225437,
+            0.000472479413,
+            0.000678134442,
+            0.573180437
+          ],
+          "frames": 587
+        },
+        {
+          "id": "dog_bark-13",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.678233862,
+          "probabilities": [
+            0.150778621,
+            0.0462472811,
+            0.00315179932,
+            0.121588476,
+            0.678233862
+          ],
+          "frames": 965
+        },
+        {
+          "id": "dog_bark-18",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.860967517,
+          "probabilities": [
+            0.0635764003,
+            0.0173159651,
+            0.000189905084,
+            0.0579502285,
+            0.860967517
+          ],
+          "frames": 1075
+        },
+        {
+          "id": "dog_bark-20",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.917839527,
+          "probabilities": [
+            0.0238718241,
+            0.0211485624,
+            7.44518402e-05,
+            0.0370656289,
+            0.917839527
+          ],
+          "frames": 605
+        },
+        {
+          "id": "background-01",
+          "reference_label": "background",
+          "prediction": "glass_break",
+          "correct": false,
+          "confidence": 0.524153531,
+          "probabilities": [
+            0.428828448,
+            0.0378707834,
+            0.524153531,
+            0.00422020722,
+            0.00492697256
+          ],
+          "frames": 924
+        },
+        {
+          "id": "background-02",
+          "reference_label": "background",
+          "prediction": "glass_break",
+          "correct": false,
+          "confidence": 0.746843815,
+          "probabilities": [
+            0.0719005838,
+            0.147477582,
+            0.746843815,
+            0.0212925728,
+            0.0124854762
+          ],
+          "frames": 406
+        },
+        {
+          "id": "background-04",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.587315023,
+          "probabilities": [
+            0.587315023,
+            0.008824802,
+            0.393945038,
+            0.00893433671,
+            0.000980882789
+          ],
+          "frames": 1611
+        },
+        {
+          "id": "background-05",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.825740695,
+          "probabilities": [
+            0.825740695,
+            0.0123910364,
+            0.0262809657,
+            0.13140747,
+            0.00417989166
+          ],
+          "frames": 734
+        },
+        {
+          "id": "background-06",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.792093754,
+          "probabilities": [
+            0.792093754,
+            0.0419724844,
+            0.00753252581,
+            0.0567243882,
+            0.101676852
+          ],
+          "frames": 447
+        },
+        {
+          "id": "background-08",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.699248433,
+          "probabilities": [
+            0.699248433,
+            0.114880793,
+            0.0936871991,
+            0.0411886722,
+            0.0509949028
+          ],
+          "frames": 176
+        },
+        {
+          "id": "background-09",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.804262221,
+          "probabilities": [
+            0.804262221,
+            0.0312068462,
+            0.0285070315,
+            0.10529843,
+            0.0307253748
+          ],
+          "frames": 2496
+        },
+        {
+          "id": "background-13",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.720132232,
+          "probabilities": [
+            0.720132232,
+            0.135012463,
+            0.0533997007,
+            0.0188400969,
+            0.0726155192
+          ],
+          "frames": 1127
+        },
+        {
+          "id": "background-14",
+          "reference_label": "background",
+          "prediction": "cough",
+          "correct": false,
+          "confidence": 0.784114122,
+          "probabilities": [
+            0.0724442527,
+            0.784114122,
+            0.0860861018,
+            0.00928559341,
+            0.0480699278
+          ],
+          "frames": 178
+        },
+        {
+          "id": "background-17",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.924944222,
+          "probabilities": [
+            0.924944222,
+            0.0092040645,
+            0.0048098322,
+            0.0484149419,
+            0.012626891
+          ],
+          "frames": 1605
+        },
+        {
+          "id": "background-18",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.85111326,
+          "probabilities": [
+            0.85111326,
+            0.0290337484,
+            0.00874729455,
+            0.0610295869,
+            0.0500760749
+          ],
+          "frames": 464
+        },
+        {
+          "id": "background-19",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.609319627,
+          "probabilities": [
+            0.609319627,
+            0.236880988,
+            0.00630823849,
+            0.0172979701,
+            0.130193189
+          ],
+          "frames": 409
+        },
+        {
+          "id": "background-20",
+          "reference_label": "background",
+          "prediction": "baby_cry",
+          "correct": false,
+          "confidence": 0.706448615,
+          "probabilities": [
+            0.187024325,
+            0.0430009551,
+            0.0393620282,
+            0.706448615,
+            0.0241640694
+          ],
+          "frames": 330
+        }
+      ]
+    },
+    {
+      "model": "fold_4",
+      "correct": 33,
+      "total": 45,
+      "accuracy": 0.7333333333333333,
+      "confusion_matrix": [
+        [
+          8,
+          1,
+          3,
+          1,
+          0
+        ],
+        [
+          1,
+          9,
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          6,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          10
+        ]
+      ],
+      "max_probability_delta_python_c": 5.659760436982353e-07,
+      "wall_seconds": 0.8055651109999644,
+      "audio_seconds": 400.5396875,
+      "real_time_factor_including_io": 0.002011199229789094,
+      "model_sha256": "28058c38aed513e8802a5246388cff43664d35944839b52ba07ed57aab011b5e",
+      "binary_sha256": "6ee4503d6136f1d0d454ff4958e36692bdc9d651d858798851f32ef95e52fb9b",
+      "records": [
+        {
+          "id": "cough-01",
+          "reference_label": "cough",
+          "prediction": "background",
+          "correct": false,
+          "confidence": 0.711245298,
+          "probabilities": [
+            0.711245298,
+            0.0716440901,
+            0.104067646,
+            0.0604654029,
+            0.0525775626
+          ],
+          "frames": 1133
+        },
+        {
+          "id": "cough-04",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.543417931,
+          "probabilities": [
+            0.0117454864,
+            0.543417931,
+            0.012935739,
+            0.00139907678,
+            0.430501759
+          ],
+          "frames": 2049
+        },
+        {
+          "id": "cough-06",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.519372165,
+          "probabilities": [
+            0.204578564,
+            0.519372165,
+            0.101356819,
+            0.0142467245,
+            0.16044575
+          ],
+          "frames": 1321
+        },
+        {
+          "id": "cough-09",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.983925819,
+          "probabilities": [
+            0.00126646296,
+            0.983925819,
+            0.014033596,
+            5.04777154e-06,
+            0.000769045088
+          ],
+          "frames": 187
+        },
+        {
+          "id": "cough-10",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.94063127,
+          "probabilities": [
+            0.0143637331,
+            0.94063127,
+            0.035155762,
+            0.00058977236,
+            0.00925940834
+          ],
+          "frames": 154
+        },
+        {
+          "id": "cough-11",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.965349495,
+          "probabilities": [
+            0.000927165907,
+            0.965349495,
+            0.0291905534,
+            5.4011648e-06,
+            0.00452746917
+          ],
+          "frames": 95
+        },
+        {
+          "id": "cough-12",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.79046756,
+          "probabilities": [
+            0.000392548449,
+            0.79046756,
+            0.00306962337,
+            1.0640144e-05,
+            0.20605962
+          ],
+          "frames": 447
+        },
+        {
+          "id": "cough-13",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.816904068,
+          "probabilities": [
+            0.0866699144,
+            0.816904068,
+            0.0281449724,
+            0.0136092314,
+            0.0546718314
+          ],
+          "frames": 300
+        },
+        {
+          "id": "cough-14",
+          "reference_label": "cough",
+          "prediction": "dog_bark",
+          "correct": false,
+          "confidence": 0.637302458,
+          "probabilities": [
+            0.00308152847,
+            0.336474329,
+            0.0230638515,
+            7.78409376e-05,
+            0.637302458
+          ],
+          "frames": 1301
+        },
+        {
+          "id": "cough-15",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.473688543,
+          "probabilities": [
+            0.248110831,
+            0.473688543,
+            0.132342994,
+            0.022411067,
+            0.123446591
+          ],
+          "frames": 502
+        },
+        {
+          "id": "cough-17",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.850257456,
+          "probabilities": [
+            0.0182427689,
+            0.850257456,
+            0.0402962565,
+            0.000476190384,
+            0.0907273442
+          ],
+          "frames": 1666
+        },
+        {
+          "id": "cough-19",
+          "reference_label": "cough",
+          "prediction": "dog_bark",
+          "correct": false,
+          "confidence": 0.433602959,
+          "probabilities": [
+            0.141112059,
+            0.343672335,
+            0.0557342395,
+            0.0258784201,
+            0.433602959
+          ],
+          "frames": 1457
+        },
+        {
+          "id": "glass_break-06",
+          "reference_label": "glass_break",
+          "prediction": "baby_cry",
+          "correct": false,
+          "confidence": 0.510792613,
+          "probabilities": [
+            0.261006325,
+            0.0593083277,
+            0.166784957,
+            0.510792613,
+            0.00210773922
+          ],
+          "frames": 204
+        },
+        {
+          "id": "glass_break-07",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.946148455,
+          "probabilities": [
+            0.0042135641,
+            0.0467536636,
+            0.946148455,
+            0.000379231409,
+            0.00250520348
+          ],
+          "frames": 1745
+        },
+        {
+          "id": "glass_break-08",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.994812727,
+          "probabilities": [
+            0.00183479476,
+            0.00254878169,
+            0.994812727,
+            0.000686873216,
+            0.000116807911
+          ],
+          "frames": 259
+        },
+        {
+          "id": "glass_break-09",
+          "reference_label": "glass_break",
+          "prediction": "background",
+          "correct": false,
+          "confidence": 0.382343918,
+          "probabilities": [
+            0.382343918,
+            0.16850163,
+            0.261643022,
+            0.00585164689,
+            0.181659833
+          ],
+          "frames": 1116
+        },
+        {
+          "id": "glass_break-11",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.814037144,
+          "probabilities": [
+            0.128135964,
+            0.0299315341,
+            0.814037144,
+            0.00800195895,
+            0.0198933948
+          ],
+          "frames": 661
+        },
+        {
+          "id": "glass_break-17",
+          "reference_label": "glass_break",
+          "prediction": "cough",
+          "correct": false,
+          "confidence": 0.991738141,
+          "probabilities": [
+            7.35296668e-09,
+            0.991738141,
+            0.0082619153,
+            5.22717203e-15,
+            5.6462838e-08
+          ],
+          "frames": 54
+        },
+        {
+          "id": "glass_break-18",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.969174802,
+          "probabilities": [
+            0.00860227179,
+            0.0208785161,
+            0.969174802,
+            0.00070249784,
+            0.000641980674
+          ],
+          "frames": 248
+        },
+        {
+          "id": "glass_break-19",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.999669552,
+          "probabilities": [
+            1.91943473e-05,
+            0.000280610315,
+            0.999669552,
+            1.11272429e-05,
+            1.95815282e-05
+          ],
+          "frames": 175
+        },
+        {
+          "id": "glass_break-20",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.879436612,
+          "probabilities": [
+            0.0436310209,
+            0.0223415364,
+            0.879436612,
+            0.0489785671,
+            0.0056122602
+          ],
+          "frames": 250
+        },
+        {
+          "id": "dog_bark-01",
+          "reference_label": "dog_bark",
+          "prediction": "cough",
+          "correct": false,
+          "confidence": 0.545851171,
+          "probabilities": [
+            0.0814618245,
+            0.545851171,
+            0.0286827646,
+            0.00399278942,
+            0.340011448
+          ],
+          "frames": 2098
+        },
+        {
+          "id": "dog_bark-04",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.979723573,
+          "probabilities": [
+            0.00677473284,
+            0.00990767032,
+            0.000198964233,
+            0.00339500862,
+            0.979723573
+          ],
+          "frames": 1720
+        },
+        {
+          "id": "dog_bark-06",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.60932076,
+          "probabilities": [
+            0.121118747,
+            0.223322734,
+            0.0303202998,
+            0.0159174725,
+            0.60932076
+          ],
+          "frames": 1947
+        },
+        {
+          "id": "dog_bark-07",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.789935589,
+          "probabilities": [
+            0.0303000212,
+            0.143660039,
+            0.0301663037,
+            0.0059380387,
+            0.789935589
+          ],
+          "frames": 766
+        },
+        {
+          "id": "dog_bark-08",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.794163585,
+          "probabilities": [
+            0.0206305645,
+            0.178002775,
+            0.00598758785,
+            0.00121549319,
+            0.794163585
+          ],
+          "frames": 1562
+        },
+        {
+          "id": "dog_bark-10",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.753975332,
+          "probabilities": [
+            0.120386042,
+            0.0373929143,
+            0.00356767839,
+            0.084678039,
+            0.753975332
+          ],
+          "frames": 645
+        },
+        {
+          "id": "dog_bark-11",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.832730234,
+          "probabilities": [
+            0.0379560217,
+            0.0807663426,
+            0.0376282446,
+            0.0109191118,
+            0.832730234
+          ],
+          "frames": 1764
+        },
+        {
+          "id": "dog_bark-12",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.494143933,
+          "probabilities": [
+            0.00168447534,
+            0.491200924,
+            0.0128362402,
+            0.000134418849,
+            0.494143933
+          ],
+          "frames": 587
+        },
+        {
+          "id": "dog_bark-13",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.607635856,
+          "probabilities": [
+            0.195924565,
+            0.137927845,
+            0.0161851738,
+            0.0423265509,
+            0.607635856
+          ],
+          "frames": 965
+        },
+        {
+          "id": "dog_bark-18",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.761696219,
+          "probabilities": [
+            0.145308301,
+            0.026078701,
+            0.00279697217,
+            0.064119786,
+            0.761696219
+          ],
+          "frames": 1075
+        },
+        {
+          "id": "dog_bark-20",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.86054641,
+          "probabilities": [
+            0.0521081761,
+            0.0651927292,
+            0.00247698883,
+            0.0196756665,
+            0.86054641
+          ],
+          "frames": 605
+        },
+        {
+          "id": "background-01",
+          "reference_label": "background",
+          "prediction": "glass_break",
+          "correct": false,
+          "confidence": 0.682247579,
+          "probabilities": [
+            0.288479507,
+            0.0190141033,
+            0.682247579,
+            0.00328806438,
+            0.00697071105
+          ],
+          "frames": 924
+        },
+        {
+          "id": "background-02",
+          "reference_label": "background",
+          "prediction": "glass_break",
+          "correct": false,
+          "confidence": 0.786885083,
+          "probabilities": [
+            0.0760280192,
+            0.101923451,
+            0.786885083,
+            0.00855652522,
+            0.0266069565
+          ],
+          "frames": 406
+        },
+        {
+          "id": "background-04",
+          "reference_label": "background",
+          "prediction": "glass_break",
+          "correct": false,
+          "confidence": 0.815561593,
+          "probabilities": [
+            0.173403874,
+            0.000688338769,
+            0.815561593,
+            0.0100440616,
+            0.000302161498
+          ],
+          "frames": 1611
+        },
+        {
+          "id": "background-05",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.595605195,
+          "probabilities": [
+            0.595605195,
+            0.00315599889,
+            0.0033634929,
+            0.394768804,
+            0.00310649048
+          ],
+          "frames": 734
+        },
+        {
+          "id": "background-06",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.830152273,
+          "probabilities": [
+            0.830152273,
+            0.0293307547,
+            0.0100931674,
+            0.0565034561,
+            0.073920466
+          ],
+          "frames": 447
+        },
+        {
+          "id": "background-08",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.680464804,
+          "probabilities": [
+            0.680464804,
+            0.163059711,
+            0.0647035614,
+            0.0215956494,
+            0.070176363
+          ],
+          "frames": 176
+        },
+        {
+          "id": "background-09",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.936474264,
+          "probabilities": [
+            0.936474264,
+            0.00673496025,
+            0.00398201635,
+            0.0345779657,
+            0.0182308331
+          ],
+          "frames": 2496
+        },
+        {
+          "id": "background-13",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.765995204,
+          "probabilities": [
+            0.765995204,
+            0.0618650317,
+            0.0313609019,
+            0.0424914546,
+            0.0982873738
+          ],
+          "frames": 1127
+        },
+        {
+          "id": "background-14",
+          "reference_label": "background",
+          "prediction": "cough",
+          "correct": false,
+          "confidence": 0.835434675,
+          "probabilities": [
+            0.060390763,
+            0.835434675,
+            0.0687095076,
+            0.00477868412,
+            0.0306863841
+          ],
+          "frames": 178
+        },
+        {
+          "id": "background-17",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.913183153,
+          "probabilities": [
+            0.913183153,
+            0.00586328004,
+            0.003811592,
+            0.0677937269,
+            0.00934821647
+          ],
+          "frames": 1605
+        },
+        {
+          "id": "background-18",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.881490409,
+          "probabilities": [
+            0.881490409,
+            0.0141306706,
+            0.00424883794,
+            0.0471898206,
+            0.0529401973
+          ],
+          "frames": 464
+        },
+        {
+          "id": "background-19",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.752773166,
+          "probabilities": [
+            0.752773166,
+            0.105291046,
+            0.00624326803,
+            0.0297512542,
+            0.105941258
+          ],
+          "frames": 409
+        },
+        {
+          "id": "background-20",
+          "reference_label": "background",
+          "prediction": "baby_cry",
+          "correct": false,
+          "confidence": 0.341256648,
+          "probabilities": [
+            0.295283526,
+            0.139979929,
+            0.139285192,
+            0.341256648,
+            0.0841946676
+          ],
+          "frames": 330
+        }
+      ]
+    },
+    {
+      "model": "fold_5",
+      "correct": 38,
+      "total": 45,
+      "accuracy": 0.8444444444444444,
+      "confusion_matrix": [
+        [
+          10,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          11,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          7,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          10
+        ]
+      ],
+      "max_probability_delta_python_c": 1.967227966304108e-06,
+      "wall_seconds": 0.8218505419999929,
+      "audio_seconds": 400.5396875,
+      "real_time_factor_including_io": 0.0020518579497818,
+      "model_sha256": "488d4b62bb3eb3e1763043ad74748fef60ec6b1d13dcc27c6f649bc0bee82639",
+      "binary_sha256": "3171d768b465cb592cadbc5250ae9e5d6d4a08ae1c356a1fc99dc37ec5ee848b",
+      "records": [
+        {
+          "id": "cough-01",
+          "reference_label": "cough",
+          "prediction": "background",
+          "correct": false,
+          "confidence": 0.771167338,
+          "probabilities": [
+            0.771167338,
+            0.0385149084,
+            0.164619327,
+            0.0151440762,
+            0.0105543621
+          ],
+          "frames": 1133
+        },
+        {
+          "id": "cough-04",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.693442941,
+          "probabilities": [
+            0.00474210223,
+            0.693442941,
+            0.00507430919,
+            0.0222389437,
+            0.274501771
+          ],
+          "frames": 2049
+        },
+        {
+          "id": "cough-06",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.549645483,
+          "probabilities": [
+            0.149984941,
+            0.549645483,
+            0.164834455,
+            0.0358866341,
+            0.0996484309
+          ],
+          "frames": 1321
+        },
+        {
+          "id": "cough-09",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.770098984,
+          "probabilities": [
+            0.0329422988,
+            0.770098984,
+            0.131980821,
+            0.0139137991,
+            0.0510641113
+          ],
+          "frames": 187
+        },
+        {
+          "id": "cough-10",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.8292889,
+          "probabilities": [
+            0.00626111729,
+            0.8292889,
+            0.00844768062,
+            0.00678380625,
+            0.149218515
+          ],
+          "frames": 154
+        },
+        {
+          "id": "cough-11",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.610167623,
+          "probabilities": [
+            0.0214041751,
+            0.610167623,
+            0.0586458519,
+            0.0327830575,
+            0.276999295
+          ],
+          "frames": 95
+        },
+        {
+          "id": "cough-12",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.785160899,
+          "probabilities": [
+            0.000170190819,
+            0.785160899,
+            0.000326382491,
+            0.00233097165,
+            0.212011591
+          ],
+          "frames": 447
+        },
+        {
+          "id": "cough-13",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.436353505,
+          "probabilities": [
+            0.0634813234,
+            0.436353505,
+            0.254384518,
+            0.186483279,
+            0.0592974275
+          ],
+          "frames": 300
+        },
+        {
+          "id": "cough-14",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.613105118,
+          "probabilities": [
+            0.0340449624,
+            0.613105118,
+            0.331834495,
+            0.00242136628,
+            0.0185940303
+          ],
+          "frames": 1301
+        },
+        {
+          "id": "cough-15",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.330309212,
+          "probabilities": [
+            0.251332611,
+            0.330309212,
+            0.233788475,
+            0.0723122731,
+            0.112257451
+          ],
+          "frames": 502
+        },
+        {
+          "id": "cough-17",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.782619119,
+          "probabilities": [
+            0.0247313119,
+            0.782619119,
+            0.160568222,
+            0.00711527513,
+            0.024966022
+          ],
+          "frames": 1666
+        },
+        {
+          "id": "cough-19",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.403784752,
+          "probabilities": [
+            0.167982981,
+            0.403784752,
+            0.173110425,
+            0.139701039,
+            0.115420796
+          ],
+          "frames": 1457
+        },
+        {
+          "id": "glass_break-06",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.409900934,
+          "probabilities": [
+            0.327683628,
+            0.0743936077,
+            0.409900934,
+            0.158209264,
+            0.0298126526
+          ],
+          "frames": 204
+        },
+        {
+          "id": "glass_break-07",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.953589857,
+          "probabilities": [
+            0.0146373641,
+            0.0242723972,
+            0.953589857,
+            0.00497886306,
+            0.00252163038
+          ],
+          "frames": 1745
+        },
+        {
+          "id": "glass_break-08",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.953977585,
+          "probabilities": [
+            0.0312462784,
+            0.00725536421,
+            0.953977585,
+            0.00711707864,
+            0.000403734797
+          ],
+          "frames": 259
+        },
+        {
+          "id": "glass_break-09",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.390837759,
+          "probabilities": [
+            0.284762084,
+            0.206342369,
+            0.390837759,
+            0.00864164252,
+            0.109416179
+          ],
+          "frames": 1116
+        },
+        {
+          "id": "glass_break-11",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.678770006,
+          "probabilities": [
+            0.294724137,
+            0.0205569658,
+            0.678770006,
+            0.00256907474,
+            0.00337985577
+          ],
+          "frames": 661
+        },
+        {
+          "id": "glass_break-17",
+          "reference_label": "glass_break",
+          "prediction": "cough",
+          "correct": false,
+          "confidence": 0.660099804,
+          "probabilities": [
+            0.000393858296,
+            0.660099804,
+            0.323867828,
+            0.000939171587,
+            0.0146994088
+          ],
+          "frames": 54
+        },
+        {
+          "id": "glass_break-18",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.952144504,
+          "probabilities": [
+            0.030426167,
+            0.0101209152,
+            0.952144504,
+            0.00646009669,
+            0.000848282245
+          ],
+          "frames": 248
+        },
+        {
+          "id": "glass_break-19",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.997443318,
+          "probabilities": [
+            0.0015504139,
+            0.000495507556,
+            0.997443318,
+            0.000495364366,
+            1.5429936e-05
+          ],
+          "frames": 175
+        },
+        {
+          "id": "glass_break-20",
+          "reference_label": "glass_break",
+          "prediction": "background",
+          "correct": false,
+          "confidence": 0.497923166,
+          "probabilities": [
+            0.497923166,
+            0.0242836326,
+            0.32714045,
+            0.145472363,
+            0.00518043619
+          ],
+          "frames": 250
+        },
+        {
+          "id": "dog_bark-01",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.751910031,
+          "probabilities": [
+            0.0159093514,
+            0.220589146,
+            0.00103064231,
+            0.0105608348,
+            0.751910031
+          ],
+          "frames": 2098
+        },
+        {
+          "id": "dog_bark-04",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.990846574,
+          "probabilities": [
+            0.00310313981,
+            0.00246569118,
+            2.66231382e-07,
+            0.00358435512,
+            0.990846574
+          ],
+          "frames": 1720
+        },
+        {
+          "id": "dog_bark-06",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.893556774,
+          "probabilities": [
+            0.0232152008,
+            0.0701661408,
+            0.000663036713,
+            0.0123988809,
+            0.893556774
+          ],
+          "frames": 1947
+        },
+        {
+          "id": "dog_bark-07",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.887732148,
+          "probabilities": [
+            0.00973135792,
+            0.089472197,
+            0.000366456399,
+            0.0126978764,
+            0.887732148
+          ],
+          "frames": 766
+        },
+        {
+          "id": "dog_bark-08",
+          "reference_label": "dog_bark",
+          "prediction": "cough",
+          "correct": false,
+          "confidence": 0.645775259,
+          "probabilities": [
+            0.0133247627,
+            0.645775259,
+            0.00202668039,
+            0.0107176686,
+            0.328155667
+          ],
+          "frames": 1562
+        },
+        {
+          "id": "dog_bark-10",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.472802639,
+          "probabilities": [
+            0.403659791,
+            0.00819985475,
+            1.51181066e-05,
+            0.115322642,
+            0.472802639
+          ],
+          "frames": 645
+        },
+        {
+          "id": "dog_bark-11",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.747762799,
+          "probabilities": [
+            0.0179592669,
+            0.194215521,
+            0.00187262404,
+            0.0381897837,
+            0.747762799
+          ],
+          "frames": 1764
+        },
+        {
+          "id": "dog_bark-12",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.669509351,
+          "probabilities": [
+            0.000332955417,
+            0.328141361,
+            8.45430623e-05,
+            0.00193185138,
+            0.669509351
+          ],
+          "frames": 587
+        },
+        {
+          "id": "dog_bark-13",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.942411542,
+          "probabilities": [
+            0.0101968246,
+            0.0367059335,
+            8.67888812e-05,
+            0.0105988849,
+            0.942411542
+          ],
+          "frames": 965
+        },
+        {
+          "id": "dog_bark-18",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.815646768,
+          "probabilities": [
+            0.13140735,
+            0.0180785172,
+            6.73243921e-05,
+            0.0348000638,
+            0.815646768
+          ],
+          "frames": 1075
+        },
+        {
+          "id": "dog_bark-20",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.83199954,
+          "probabilities": [
+            0.029243689,
+            0.0835871622,
+            0.000205358199,
+            0.054964222,
+            0.83199954
+          ],
+          "frames": 605
+        },
+        {
+          "id": "background-01",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.526410699,
+          "probabilities": [
+            0.526410699,
+            0.0218158122,
+            0.44946444,
+            0.000523763418,
+            0.00178534852
+          ],
+          "frames": 924
+        },
+        {
+          "id": "background-02",
+          "reference_label": "background",
+          "prediction": "glass_break",
+          "correct": false,
+          "confidence": 0.62513113,
+          "probabilities": [
+            0.181641564,
+            0.0869732276,
+            0.62513113,
+            0.0828582123,
+            0.0233958736
+          ],
+          "frames": 406
+        },
+        {
+          "id": "background-04",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.618436456,
+          "probabilities": [
+            0.618436456,
+            0.000807489385,
+            0.375987768,
+            0.00461050868,
+            0.00015776309
+          ],
+          "frames": 1611
+        },
+        {
+          "id": "background-05",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.819633186,
+          "probabilities": [
+            0.819633186,
+            0.00501619745,
+            0.040288575,
+            0.126607314,
+            0.0084546404
+          ],
+          "frames": 734
+        },
+        {
+          "id": "background-06",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.802833319,
+          "probabilities": [
+            0.802833319,
+            0.0424686633,
+            0.00683421362,
+            0.0398703441,
+            0.107993402
+          ],
+          "frames": 447
+        },
+        {
+          "id": "background-08",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.701635659,
+          "probabilities": [
+            0.701635659,
+            0.143351972,
+            0.0619319752,
+            0.0501447245,
+            0.0429356135
+          ],
+          "frames": 176
+        },
+        {
+          "id": "background-09",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.851989985,
+          "probabilities": [
+            0.851989985,
+            0.0155211128,
+            0.0236968361,
+            0.0708741099,
+            0.0379179865
+          ],
+          "frames": 2496
+        },
+        {
+          "id": "background-13",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.748741925,
+          "probabilities": [
+            0.748741925,
+            0.121132709,
+            0.0374302678,
+            0.033571437,
+            0.0591236427
+          ],
+          "frames": 1127
+        },
+        {
+          "id": "background-14",
+          "reference_label": "background",
+          "prediction": "cough",
+          "correct": false,
+          "confidence": 0.759311855,
+          "probabilities": [
+            0.0570306219,
+            0.759311855,
+            0.0615957417,
+            0.0223926082,
+            0.0996690914
+          ],
+          "frames": 178
+        },
+        {
+          "id": "background-17",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.956959665,
+          "probabilities": [
+            0.956959665,
+            0.00341904187,
+            0.00551895378,
+            0.0227633044,
+            0.0113389743
+          ],
+          "frames": 1605
+        },
+        {
+          "id": "background-18",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.884387076,
+          "probabilities": [
+            0.884387076,
+            0.022315314,
+            0.0121026607,
+            0.039488636,
+            0.0417063609
+          ],
+          "frames": 464
+        },
+        {
+          "id": "background-19",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.81641835,
+          "probabilities": [
+            0.81641835,
+            0.0762051865,
+            0.011172005,
+            0.0277359355,
+            0.068468444
+          ],
+          "frames": 409
+        },
+        {
+          "id": "background-20",
+          "reference_label": "background",
+          "prediction": "baby_cry",
+          "correct": false,
+          "confidence": 0.831198871,
+          "probabilities": [
+            0.0832539797,
+            0.00875818171,
+            0.0702722967,
+            0.831198871,
+            0.00651661167
+          ],
+          "frames": 330
+        }
+      ]
+    },
+    {
+      "model": "final_all_esc50",
+      "correct": 40,
+      "total": 45,
+      "accuracy": 0.8888888888888888,
+      "confusion_matrix": [
+        [
+          10,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          11,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          8,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          11
+        ]
+      ],
+      "max_probability_delta_python_c": 1.1028891448994216e-06,
+      "wall_seconds": 0.8274144899999101,
+      "audio_seconds": 400.5396875,
+      "real_time_factor_including_io": 0.0020657490776114667,
+      "model_sha256": "5532c322e79ca74b6b462e02059650bbde5d955ef6a7b4e7f8af0a74f59c770e",
+      "binary_sha256": "ef7e61b08240aec719243614aac9135c7d0dbdd7bf247482bcc16afb5a4746e0",
+      "records": [
+        {
+          "id": "cough-01",
+          "reference_label": "cough",
+          "prediction": "background",
+          "correct": false,
+          "confidence": 0.835762441,
+          "probabilities": [
+            0.835762441,
+            0.0299989134,
+            0.11205183,
+            0.0132103395,
+            0.0089765219
+          ],
+          "frames": 1133
+        },
+        {
+          "id": "cough-04",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.518410265,
+          "probabilities": [
+            0.00356474519,
+            0.518410265,
+            0.000456047244,
+            0.0106576597,
+            0.466911256
+          ],
+          "frames": 2049
+        },
+        {
+          "id": "cough-06",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.602716208,
+          "probabilities": [
+            0.210405707,
+            0.602716208,
+            0.083022058,
+            0.0210702121,
+            0.0827857926
+          ],
+          "frames": 1321
+        },
+        {
+          "id": "cough-09",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.811680138,
+          "probabilities": [
+            0.0142233158,
+            0.811680138,
+            0.165218994,
+            0.00243879599,
+            0.006438707
+          ],
+          "frames": 187
+        },
+        {
+          "id": "cough-10",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.99088788,
+          "probabilities": [
+            0.000689786335,
+            0.99088788,
+            0.00331761548,
+            0.000221910755,
+            0.00488271704
+          ],
+          "frames": 154
+        },
+        {
+          "id": "cough-11",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.823347747,
+          "probabilities": [
+            0.0106851943,
+            0.823347747,
+            0.0583024621,
+            0.00284774019,
+            0.104816832
+          ],
+          "frames": 95
+        },
+        {
+          "id": "cough-12",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.834679365,
+          "probabilities": [
+            0.000229132973,
+            0.834679365,
+            9.09706796e-05,
+            0.000753660512,
+            0.164246932
+          ],
+          "frames": 447
+        },
+        {
+          "id": "cough-13",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.584177613,
+          "probabilities": [
+            0.00676533626,
+            0.584177613,
+            0.385142863,
+            0.0135655375,
+            0.0103486339
+          ],
+          "frames": 300
+        },
+        {
+          "id": "cough-14",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.843584538,
+          "probabilities": [
+            0.0281034298,
+            0.843584538,
+            0.0274639186,
+            0.00611469196,
+            0.0947333947
+          ],
+          "frames": 1301
+        },
+        {
+          "id": "cough-15",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.474341452,
+          "probabilities": [
+            0.181491464,
+            0.474341452,
+            0.0966816321,
+            0.0652144775,
+            0.182271019
+          ],
+          "frames": 502
+        },
+        {
+          "id": "cough-17",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.950639367,
+          "probabilities": [
+            0.00973360334,
+            0.950639367,
+            0.0216607284,
+            0.00116553484,
+            0.0168007482
+          ],
+          "frames": 1666
+        },
+        {
+          "id": "cough-19",
+          "reference_label": "cough",
+          "prediction": "cough",
+          "correct": true,
+          "confidence": 0.591971338,
+          "probabilities": [
+            0.111650676,
+            0.591971338,
+            0.040862754,
+            0.0476013571,
+            0.207913905
+          ],
+          "frames": 1457
+        },
+        {
+          "id": "glass_break-06",
+          "reference_label": "glass_break",
+          "prediction": "background",
+          "correct": false,
+          "confidence": 0.424417943,
+          "probabilities": [
+            0.424417943,
+            0.290120125,
+            0.218957484,
+            0.0520936288,
+            0.0144108143
+          ],
+          "frames": 204
+        },
+        {
+          "id": "glass_break-07",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.963421881,
+          "probabilities": [
+            0.00636488758,
+            0.0291677173,
+            0.963421881,
+            0.000511995808,
+            0.000533434213
+          ],
+          "frames": 1745
+        },
+        {
+          "id": "glass_break-08",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.964763701,
+          "probabilities": [
+            0.0110182352,
+            0.0233528595,
+            0.964763701,
+            0.000692404574,
+            0.000172845364
+          ],
+          "frames": 259
+        },
+        {
+          "id": "glass_break-09",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.437402308,
+          "probabilities": [
+            0.29386279,
+            0.182299092,
+            0.437402308,
+            0.0115201445,
+            0.0749157518
+          ],
+          "frames": 1116
+        },
+        {
+          "id": "glass_break-11",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.536784232,
+          "probabilities": [
+            0.444801331,
+            0.0164783802,
+            0.536784232,
+            0.000953871233,
+            0.000982125173
+          ],
+          "frames": 661
+        },
+        {
+          "id": "glass_break-17",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.701547265,
+          "probabilities": [
+            1.16120209e-05,
+            0.298435926,
+            0.701547265,
+            1.55584544e-07,
+            5.04439959e-06
+          ],
+          "frames": 54
+        },
+        {
+          "id": "glass_break-18",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.982976019,
+          "probabilities": [
+            0.00369135919,
+            0.0129827717,
+            0.982976019,
+            0.000215481981,
+            0.000134419926
+          ],
+          "frames": 248
+        },
+        {
+          "id": "glass_break-19",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.996691585,
+          "probabilities": [
+            0.000450676453,
+            0.00283544441,
+            0.996691585,
+            1.75842615e-05,
+            4.70028726e-06
+          ],
+          "frames": 175
+        },
+        {
+          "id": "glass_break-20",
+          "reference_label": "glass_break",
+          "prediction": "glass_break",
+          "correct": true,
+          "confidence": 0.876247942,
+          "probabilities": [
+            0.0879316404,
+            0.0151850982,
+            0.876247942,
+            0.0188637935,
+            0.00177159009
+          ],
+          "frames": 250
+        },
+        {
+          "id": "dog_bark-01",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.710736215,
+          "probabilities": [
+            0.0243745409,
+            0.249692634,
+            0.000891738746,
+            0.0143048326,
+            0.710736215
+          ],
+          "frames": 2098
+        },
+        {
+          "id": "dog_bark-04",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.995776117,
+          "probabilities": [
+            0.000492567313,
+            0.00124752941,
+            8.2506908e-09,
+            0.00248385058,
+            0.995776117
+          ],
+          "frames": 1720
+        },
+        {
+          "id": "dog_bark-06",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.80746758,
+          "probabilities": [
+            0.0708465204,
+            0.0895653963,
+            0.00134039449,
+            0.0307800695,
+            0.80746758
+          ],
+          "frames": 1947
+        },
+        {
+          "id": "dog_bark-07",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.90151453,
+          "probabilities": [
+            0.010187041,
+            0.0752756298,
+            0.000163745237,
+            0.0128590213,
+            0.90151453
+          ],
+          "frames": 766
+        },
+        {
+          "id": "dog_bark-08",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.707831919,
+          "probabilities": [
+            0.0131709324,
+            0.274457902,
+            0.000118277203,
+            0.0044209864,
+            0.707831919
+          ],
+          "frames": 1562
+        },
+        {
+          "id": "dog_bark-10",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.800425053,
+          "probabilities": [
+            0.0547785051,
+            0.00817396771,
+            7.80163555e-06,
+            0.13661468,
+            0.800425053
+          ],
+          "frames": 645
+        },
+        {
+          "id": "dog_bark-11",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.946328104,
+          "probabilities": [
+            0.010852172,
+            0.034353938,
+            3.36917801e-05,
+            0.00843209308,
+            0.946328104
+          ],
+          "frames": 1764
+        },
+        {
+          "id": "dog_bark-12",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.674785912,
+          "probabilities": [
+            0.00104080851,
+            0.323262781,
+            4.03819722e-05,
+            0.000870063552,
+            0.674785912
+          ],
+          "frames": 587
+        },
+        {
+          "id": "dog_bark-13",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.895003974,
+          "probabilities": [
+            0.0339118093,
+            0.0408359542,
+            0.000131481909,
+            0.0301167686,
+            0.895003974
+          ],
+          "frames": 965
+        },
+        {
+          "id": "dog_bark-18",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.74758631,
+          "probabilities": [
+            0.0949467346,
+            0.0131880399,
+            4.70768391e-05,
+            0.144231781,
+            0.74758631
+          ],
+          "frames": 1075
+        },
+        {
+          "id": "dog_bark-20",
+          "reference_label": "dog_bark",
+          "prediction": "dog_bark",
+          "correct": true,
+          "confidence": 0.893579423,
+          "probabilities": [
+            0.0230393317,
+            0.049516391,
+            4.24291247e-05,
+            0.0338224582,
+            0.893579423
+          ],
+          "frames": 605
+        },
+        {
+          "id": "background-01",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.628422797,
+          "probabilities": [
+            0.628422797,
+            0.00633991836,
+            0.364954203,
+            0.000121878234,
+            0.000161203643
+          ],
+          "frames": 924
+        },
+        {
+          "id": "background-02",
+          "reference_label": "background",
+          "prediction": "glass_break",
+          "correct": false,
+          "confidence": 0.768857479,
+          "probabilities": [
+            0.0597980171,
+            0.159388542,
+            0.768857479,
+            0.0062126955,
+            0.00574316923
+          ],
+          "frames": 406
+        },
+        {
+          "id": "background-04",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.910995245,
+          "probabilities": [
+            0.910995245,
+            0.00227407389,
+            0.0859842077,
+            0.000558126136,
+            0.000188465245
+          ],
+          "frames": 1611
+        },
+        {
+          "id": "background-05",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.81006676,
+          "probabilities": [
+            0.81006676,
+            0.00871196575,
+            0.0259367153,
+            0.145678937,
+            0.00960575324
+          ],
+          "frames": 734
+        },
+        {
+          "id": "background-06",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.691046596,
+          "probabilities": [
+            0.691046596,
+            0.0389366448,
+            0.00865698792,
+            0.0561266541,
+            0.205233082
+          ],
+          "frames": 447
+        },
+        {
+          "id": "background-08",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.58363241,
+          "probabilities": [
+            0.58363241,
+            0.24447602,
+            0.0990237892,
+            0.0357828215,
+            0.0370850004
+          ],
+          "frames": 176
+        },
+        {
+          "id": "background-09",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.873794556,
+          "probabilities": [
+            0.873794556,
+            0.0310903005,
+            0.0183151048,
+            0.0387614407,
+            0.0380385667
+          ],
+          "frames": 2496
+        },
+        {
+          "id": "background-13",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.731967211,
+          "probabilities": [
+            0.731967211,
+            0.161496535,
+            0.0399740376,
+            0.0169590879,
+            0.0496031158
+          ],
+          "frames": 1127
+        },
+        {
+          "id": "background-14",
+          "reference_label": "background",
+          "prediction": "cough",
+          "correct": false,
+          "confidence": 0.910325825,
+          "probabilities": [
+            0.0133338403,
+            0.910325825,
+            0.0580383986,
+            0.00310682436,
+            0.01519504
+          ],
+          "frames": 178
+        },
+        {
+          "id": "background-17",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.951161265,
+          "probabilities": [
+            0.951161265,
+            0.00741053745,
+            0.00392330624,
+            0.0202890094,
+            0.0172157995
+          ],
+          "frames": 1605
+        },
+        {
+          "id": "background-18",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.89327997,
+          "probabilities": [
+            0.89327997,
+            0.0207823776,
+            0.00958117284,
+            0.0331481248,
+            0.0432083793
+          ],
+          "frames": 464
+        },
+        {
+          "id": "background-19",
+          "reference_label": "background",
+          "prediction": "background",
+          "correct": true,
+          "confidence": 0.668114066,
+          "probabilities": [
+            0.668114066,
+            0.185152575,
+            0.00942982454,
+            0.0326792076,
+            0.104624264
+          ],
+          "frames": 409
+        },
+        {
+          "id": "background-20",
+          "reference_label": "background",
+          "prediction": "baby_cry",
+          "correct": false,
+          "confidence": 0.805508614,
+          "probabilities": [
+            0.11190854,
+            0.0178291537,
+            0.0417302847,
+            0.805508614,
+            0.0230234265
+          ],
+          "frames": 330
+        }
+      ]
+    }
+  ],
+  "cnn_mean_fold_accuracy": 0.7911111111111111,
+  "cnn_final_model_accuracy": 0.8888888888888888,
+  "old_mean_fold_accuracy": 0.7244444444444444,
+  "old_final_model_accuracy": 0.7777777777777778,
+  "old_folds": [
+    {
+      "fold": 1,
+      "correct": 35,
+      "total": 45,
+      "accuracy": 0.7777777777777778,
+      "confusion_matrix": [
+        [
+          10,
+          1,
+          2,
+          0,
+          0
+        ],
+        [
+          1,
+          9,
+          1,
+          0,
+          1
+        ],
+        [
+          3,
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          10
+        ]
+      ]
+    },
+    {
+      "fold": 2,
+      "correct": 33,
+      "total": 45,
+      "accuracy": 0.7333333333333333,
+      "confusion_matrix": [
+        [
+          9,
+          2,
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          9,
+          1,
+          0,
+          0
+        ],
+        [
+          3,
+          1,
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          10
+        ]
+      ]
+    },
+    {
+      "fold": 3,
+      "correct": 30,
+      "total": 45,
+      "accuracy": 0.6666666666666666,
+      "confusion_matrix": [
+        [
+          8,
+          4,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          7,
+          3,
+          1,
+          1
+        ],
+        [
+          3,
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          9
+        ]
+      ]
+    },
+    {
+      "fold": 4,
+      "correct": 34,
+      "total": 45,
+      "accuracy": 0.7555555555555555,
+      "confusion_matrix": [
+        [
+          9,
+          0,
+          3,
+          0,
+          1
+        ],
+        [
+          2,
+          8,
+          1,
+          1,
+          0
+        ],
+        [
+          3,
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          11
+        ]
+      ]
+    },
+    {
+      "fold": 5,
+      "correct": 31,
+      "total": 45,
+      "accuracy": 0.6888888888888889,
+      "confusion_matrix": [
+        [
+          8,
+          0,
+          3,
+          0,
+          2
+        ],
+        [
+          2,
+          8,
+          2,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          9
+        ]
+      ]
+    }
+  ],
+  "old_final": {
+    "correct": 35,
+    "total": 45,
+    "accuracy": 0.7777777777777778
+  },
+  "final_per_class_recall": {
+    "background": 0.7692307692307693,
+    "cough": 0.9166666666666666,
+    "glass_break": 0.8888888888888888,
+    "baby_cry": null,
+    "dog_bark": 1.0
+  },
+  "old_esc50_held_out_accuracy": 0.8256410256410256,
+  "cnn_esc50_held_out_accuracy": 0.8025641025641026,
+  "protocol": {
+    "old_c": "Preserved v11 3-second event-priority decision, aggregated across the full recording",
+    "cnn_c": "Continuous causal frames; mean full-recording logits followed by softmax",
+    "five_fold_external": "Five ESC-50 fold models evaluate the same 45 external recordings; not 225 independent clips or external five-fold CV",
+    "limitations": "Seen external development validation set; four reference classes only. No time-annotated live accuracy or microphone test."
+  }
+}

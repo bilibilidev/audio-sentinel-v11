@@ -1,0 +1,3914 @@
+{
+  "metadata_sha256": "8f8cb574a57e381872129b77425ab31a3c69b93a7a82101ede48e0abbb9990ca",
+  "selection": "Current v11 import_esc50.py TARGETS; background_per_class=5; seed=42; preserve metadata category order",
+  "counts": {
+    "dog_bark": 40,
+    "background": 230,
+    "baby_cry": 40,
+    "cough": 40,
+    "glass_break": 40
+  },
+  "selected_recordings": 390,
+  "records": [
+    {
+      "filename": "1-100032-A-0.wav",
+      "fold": "1",
+      "src_file": "100032",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "f40a849a2375c8c63312a73dd2dd6c74007301fcc21b4be2ece29a642831e3d8",
+      "full_sha256": "11c816978491fc5cbe62b63279be41815c6b0a3a57e8b5b7834eb41d3c482b04"
+    },
+    {
+      "filename": "1-101296-B-19.wav",
+      "fold": "1",
+      "src_file": "101296",
+      "category": "thunderstorm",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "bdad401df959569dc44ad26fff3ff097de5ac98cde763eb37a557a4ab441440f",
+      "full_sha256": "a78011393df36f68f7809628ba163c7582a6759f0aeac664a4c38ff62f1136f0"
+    },
+    {
+      "filename": "1-103298-A-9.wav",
+      "fold": "1",
+      "src_file": "103298",
+      "category": "crow",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "e75bd5e27e7d68b15bf17bc348d8cf4ab338e9089dc1a1564f2c434ce22db27c",
+      "full_sha256": "5e9a74fb7aaabf658536ec6485d9c8d120650e43299eda8d6f15db40a4f95c7a"
+    },
+    {
+      "filename": "1-103995-A-30.wav",
+      "fold": "1",
+      "src_file": "103995",
+      "category": "door_wood_knock",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "1c1d3e65b7a58658766180d2faeeb9bdd1fe7405119bf100d9cd2f671a6e2b11",
+      "full_sha256": "45af4749babac7c369b278c35c7c5eed751fa2b06dd83c2d5d149c64062744fd"
+    },
+    {
+      "filename": "1-110389-A-0.wav",
+      "fold": "1",
+      "src_file": "110389",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "4a18f3f834eb184b9f02595ac74c7de37ef8048a3da92f58f27018fec580b36a",
+      "full_sha256": "f477ffb6f28d93cefe14064ac0be5028899a5c7688615a0a2441df2fa828ad43"
+    },
+    {
+      "filename": "1-115521-A-19.wav",
+      "fold": "1",
+      "src_file": "115521",
+      "category": "thunderstorm",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "87c3f36e376c3c26faac723d3d1a8ba0af76c8b3e1b456cfe4062975e67b88d2",
+      "full_sha256": "4da33529ee9ea3744a9f07018c41cfbbb09da9744d04895eacfc412b3e2c5f7e"
+    },
+    {
+      "filename": "1-115921-A-22.wav",
+      "fold": "1",
+      "src_file": "115921",
+      "category": "clapping",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "b87d30852b565dd2b7d5c33b6ef5d4bbaaf1c03235f98a85fde1d3ba70f1c027",
+      "full_sha256": "45808b49e052e58ba1a63e0dde2258cd2f894961a4a12a21b1647ae09f7773cb"
+    },
+    {
+      "filename": "1-160563-B-48.wav",
+      "fold": "1",
+      "src_file": "160563",
+      "category": "fireworks",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "810d1ca90e7a6b3ce1b84dcd918b11c010c38a0b0c3a0ae95f96f9c91c789c49",
+      "full_sha256": "c9d81b6bee5d64b7c128b9390c96c838796f957bc2db2d0f1df855453bcf1ab8"
+    },
+    {
+      "filename": "1-17150-A-12.wav",
+      "fold": "1",
+      "src_file": "17150",
+      "category": "crackling_fire",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "3d278bc2034dfb83881491a8eec97de6f1239f0a5b8a7c02be46b5aab0a51609",
+      "full_sha256": "72541bf6915e88d43b5852544875c482e8f0746971de08c8e7608140dbd09c8c"
+    },
+    {
+      "filename": "1-17295-A-29.wav",
+      "fold": "1",
+      "src_file": "17295",
+      "category": "drinking_sipping",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "e601deb1b2033c14d36562eb79bb2dbda60fd8f337d8c5d0d810ea65f2ef7c2f",
+      "full_sha256": "3316996e637a86407bff2899cee9b0402fdfdba5b831bc642db144c161e3e666"
+    },
+    {
+      "filename": "1-1791-A-26.wav",
+      "fold": "1",
+      "src_file": "1791",
+      "category": "laughing",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "dc6cd665f3d20eed6089d9593a2b776104d8671c57ce6c48e6be030c75a53643",
+      "full_sha256": "9d334498781e8b3ac55eac0545bb477988f5914813b5e1d787078bc4b30a845a"
+    },
+    {
+      "filename": "1-18074-B-6.wav",
+      "fold": "1",
+      "src_file": "18074",
+      "category": "hen",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "68c54aaccb36a91281ca689aaa8d4d888e7a53c571f4c00995a9f69b5ba1d333",
+      "full_sha256": "a14b35bdc42f6a8a3b1974d2fae2abac4d5dddb0c5c966b0bffaf0a657609b92"
+    },
+    {
+      "filename": "1-181071-B-40.wav",
+      "fold": "1",
+      "src_file": "181071",
+      "category": "helicopter",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "6727248f265e7f9d179c6b72e85f8d2cbc4a31edcac27492036422116bb1673d",
+      "full_sha256": "bd2711cf7709928865f028cdcfc51b2fcd935c9b16648fd0dd60d00cdb96daec"
+    },
+    {
+      "filename": "1-187207-A-20.wav",
+      "fold": "1",
+      "src_file": "187207",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "ddf5bf45f73bc73d1838bf0cb6af530584f324aef513112ee15c210e83ecbd6b",
+      "full_sha256": "0b99062df98363cecfde268e5d035f7340041fb201a1bd00583d362428f4bed7"
+    },
+    {
+      "filename": "1-19111-A-24.wav",
+      "fold": "1",
+      "src_file": "19111",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "ab2afe6d0ee0de5edc1f0107448077919c6ac94dcf59243497e6fcb333685438",
+      "full_sha256": "b716a141da0987f4651b8d418c729a8a20dfcec137685094580fe2fff04a0aa0"
+    },
+    {
+      "filename": "1-19118-A-24.wav",
+      "fold": "1",
+      "src_file": "19118",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "4fb6197f72791e50c465de8f1f715a7a3f93f7afab62dfa130f28d500303d8d9",
+      "full_sha256": "a8948c4f2cf2b4d68cdbf8abd1cd35ed8801b90552fd90d362819d8dcb3d1892"
+    },
+    {
+      "filename": "1-19898-B-41.wav",
+      "fold": "1",
+      "src_file": "19898",
+      "category": "chainsaw",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "cab4735712a7727e16cc1946308f80034c926c59ed467dccf539f39bebe8d61d",
+      "full_sha256": "4ec8401cd9e07c32c0a1c14076f6a9769feb56e2866a04318902537d94a039e4"
+    },
+    {
+      "filename": "1-20133-A-39.wav",
+      "fold": "1",
+      "src_file": "20133",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "db6946133c37fbd4513fe932dbb71e0b077bf7d240beaed339eb6c88e48c903b",
+      "full_sha256": "87291d2caeac89fe7011254cf0f58a11c81433c650b4a9c9b62d9925cab9acff"
+    },
+    {
+      "filename": "1-208757-B-2.wav",
+      "fold": "1",
+      "src_file": "208757",
+      "category": "pig",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "2d041c169d58f25bc769a057bc201bdcf8c289ef16b3b93388c248407f6a5d1a",
+      "full_sha256": "45ff4d5ea7dfc23e94a95eea0f1b0a2bfbb5b7f31d3551dbe9ac1ea219f6e09d"
+    },
+    {
+      "filename": "1-208757-E-2.wav",
+      "fold": "1",
+      "src_file": "208757",
+      "category": "pig",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "2085c6ff08ec19fba4dd4aad9462c592d925f4e92cfbca82b199f4289339301e",
+      "full_sha256": "421907cfaec59d8352cef6794163f8a22775409fe8be7b676026432fb7693098"
+    },
+    {
+      "filename": "1-211527-A-20.wav",
+      "fold": "1",
+      "src_file": "211527",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "3cbcd59a0db21f0ed8c252c74ea1bc193117d2c13ed99821885c46c564010b3e",
+      "full_sha256": "d6589f7a3f8713dc76417968453bea2cdfcb878f569c9f0643366cbff8ff9357"
+    },
+    {
+      "filename": "1-211527-B-20.wav",
+      "fold": "1",
+      "src_file": "211527",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "935be6bfdd4e24f767f5af092bb88c9a6ac000b926f1fe9075b66ebed907c8c0",
+      "full_sha256": "4f8188bdc0e8c4b0685cf3ba0d701e945cd21189960f5d933ad14e8d905e6fc8"
+    },
+    {
+      "filename": "1-211527-C-20.wav",
+      "fold": "1",
+      "src_file": "211527",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "165fa383fbfd24ea4455a84802a78970f02c3461677c23fabecd647c3c675dbc",
+      "full_sha256": "b7fd58702e407463da8be6112c9bdb0982f16e9482fcc2a302ac5ea4163d0160"
+    },
+    {
+      "filename": "1-21896-A-35.wav",
+      "fold": "1",
+      "src_file": "21896",
+      "category": "washing_machine",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "1b4210c50a01cabab07065a112463fad4f82de60385ef9aaf6316afe7d4b976c",
+      "full_sha256": "92d84ffa6212c85f47d316cd3f2f03b81a9459f15e3f58e62f2ffa7671b695c9"
+    },
+    {
+      "filename": "1-22694-A-20.wav",
+      "fold": "1",
+      "src_file": "22694",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "e97893bf8a391f769576ee70497ba51640d3bc646cbf20e719f6d22cc033b2e3",
+      "full_sha256": "cc5105b08ca33f352639dd007ed411ca3ba87f7136b412fdc0fd841bc057c59b"
+    },
+    {
+      "filename": "1-22694-B-20.wav",
+      "fold": "1",
+      "src_file": "22694",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "cf7f480ac6fe0f61ed436d230200ca160f0c936c70009f3622b71c432af8b5ce",
+      "full_sha256": "36cf83f997dc0c8f2858750ad2ed7299eecdbdfe359956bc34801a5126c4a969"
+    },
+    {
+      "filename": "1-22804-A-46.wav",
+      "fold": "1",
+      "src_file": "22804",
+      "category": "church_bells",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "2212340e03c7e481a21f0e4845f54dc521d6c8a5c961d3421445b85f9bdf1ca9",
+      "full_sha256": "76d7ea9193715ce25eedc062b6b02d5156be9a7fd2033b2fc34b6a786ef9dcc9"
+    },
+    {
+      "filename": "1-24524-A-19.wav",
+      "fold": "1",
+      "src_file": "24524",
+      "category": "thunderstorm",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "a0a8af38dc93186bdaef63b0eff44853604d4c2ba8a2f329109c784a8fab3f67",
+      "full_sha256": "ce9e6f25ccecfbb89a1ae1708328e960b1b95991f44665383e3c7b92b6b52342"
+    },
+    {
+      "filename": "1-254507-A-43.wav",
+      "fold": "1",
+      "src_file": "254507",
+      "category": "car_horn",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "ebe976ccd285cb44e6585d889f2a8759c5de47e9940f638ecaa300def46e544a",
+      "full_sha256": "de29a55f921661a9ec17ba8dc91a4bf0c43bfd433774dcccaba183801775cec7"
+    },
+    {
+      "filename": "1-25777-A-48.wav",
+      "fold": "1",
+      "src_file": "25777",
+      "category": "fireworks",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "b8e4b7411b687d7aea986070bee7ea02b2f13a6aec6c176961b7e53263a2c3af",
+      "full_sha256": "6585ab51e349ca6af10030410099a5f915e57af196e66f0c62b0ea959efb5705"
+    },
+    {
+      "filename": "1-27166-A-35.wav",
+      "fold": "1",
+      "src_file": "27166",
+      "category": "washing_machine",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "eb7e1055a911665a03ac65d7085798b77cfa3e0718c123f93e93b7b07ad34796",
+      "full_sha256": "5a6f50661e09ca346eff69c8d155ed1541560cbf2793d979d39272c1341b0cae"
+    },
+    {
+      "filename": "1-30226-A-0.wav",
+      "fold": "1",
+      "src_file": "30226",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "ca2626d2b49c7c20a3e0f9f8d7aa56f4497643c6bc264ff37764392be2b15753",
+      "full_sha256": "9779c58aad974266e49668a45ba9bc0242066d648d9cf1299c077d452163e6c5"
+    },
+    {
+      "filename": "1-30344-A-0.wav",
+      "fold": "1",
+      "src_file": "30344",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "52a876cff473fe9b6deb4feea9545a2b976e63e03744921afc72f9800758ce30",
+      "full_sha256": "0d54a2967343f006aa4a04cfea47b6e750d263c634d93ab1fa21b216a4d15c32"
+    },
+    {
+      "filename": "1-30830-A-24.wav",
+      "fold": "1",
+      "src_file": "30830",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "e0374e3191067ad9a63df3ae9157e0ca44a36f4f1fa7586982609565683f6a13",
+      "full_sha256": "e5b3eab8bdc088a865eefeaa79a25746691e1bd6eef6e686e3c8c2eb14d4060b"
+    },
+    {
+      "filename": "1-32318-A-0.wav",
+      "fold": "1",
+      "src_file": "32318",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "0e96f0bab8bbba81c98a8d7741cf258c8381c6481bac36961b8603a600a6c321",
+      "full_sha256": "ececf8bb24c55a017f4fe250286f112de3fa222a554530642d1f9c0f6ba6b7e3"
+    },
+    {
+      "filename": "1-34495-A-14.wav",
+      "fold": "1",
+      "src_file": "34495",
+      "category": "chirping_birds",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "3641b914303dca50d01c2ab5aceaaf918ce977028f4ee752c22beb64d09eeec3",
+      "full_sha256": "025aa656499da61e38ca38f42179930a99f9b61dd851fd38062d8808cfb387ed"
+    },
+    {
+      "filename": "1-34853-A-37.wav",
+      "fold": "1",
+      "src_file": "34853",
+      "category": "clock_alarm",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "87c0ead33b915845a8d86437b78755278408aedf8ed19e4880674a3679122cf4",
+      "full_sha256": "262fffd35152aa99ac146c53b095624c0adf399a2f9aa074e9e3b75e07617a55"
+    },
+    {
+      "filename": "1-35687-A-38.wav",
+      "fold": "1",
+      "src_file": "35687",
+      "category": "clock_tick",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "48f0b86e08a4349f66efed2b56405ba5b2b04cc01b8b5701465d9f283d4b5d8b",
+      "full_sha256": "f8d3fe734bd7c9fcfa86becf0192f6daa976ce8d2226c171e58c7181aabfbbb6"
+    },
+    {
+      "filename": "1-36393-A-23.wav",
+      "fold": "1",
+      "src_file": "36393",
+      "category": "breathing",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "04c196b0fd72862bcf065328a3393dd7444c60caec87bc3d2053c6043075bd2b",
+      "full_sha256": "905d889947a7017be8292d49d91cecc855fb83cb1397cbc66b88099baebc9f0d"
+    },
+    {
+      "filename": "1-42139-A-38.wav",
+      "fold": "1",
+      "src_file": "42139",
+      "category": "clock_tick",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "169e283f52931f7de0c752e59a5b5149c96fc33ed7323031fe22392e1abab283",
+      "full_sha256": "ff5eac12330a28892c67284d3fcada9cdd38189f4b4fcbc528aed797dcf4212b"
+    },
+    {
+      "filename": "1-43807-C-47.wav",
+      "fold": "1",
+      "src_file": "43807",
+      "category": "airplane",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "a89487592def765106789abc787d7eb1268dea9e9fa22a82e3c583c1bbfd9549",
+      "full_sha256": "dbee134fdc88393c1e2e014c7371270b0f3388472c8973c47032b4c06d5a073a"
+    },
+    {
+      "filename": "1-45645-A-31.wav",
+      "fold": "1",
+      "src_file": "45645",
+      "category": "mouse_click",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "0f109c4e08634da4b4683c050bcfcf5ad6c2b6dc73a908be654711a8c7d6f078",
+      "full_sha256": "cf6a1df0a9690db69b6628072d7374e7f2a9cffb4a2d4ed133381278d59fa02e"
+    },
+    {
+      "filename": "1-46744-A-36.wav",
+      "fold": "1",
+      "src_file": "46744",
+      "category": "vacuum_cleaner",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "2ce9931568a6e0ddf3cf840988ffd2af6fe3be62012a1f865e18180fb2b0f21e",
+      "full_sha256": "c9de1dd709d6cc82a3b1f32166856865a158da618722284a374e3ee25e70b145"
+    },
+    {
+      "filename": "1-47274-A-21.wav",
+      "fold": "1",
+      "src_file": "47274",
+      "category": "sneezing",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "c7114b4b84b83598dfacbf7d1774f34fb61ba87af426944db4ad8ade82c7779b",
+      "full_sha256": "cc6e822f6dea6ba06c372dd36c3aab45ee13f6b9436789a3385396da72bbd6bc"
+    },
+    {
+      "filename": "1-47819-B-5.wav",
+      "fold": "1",
+      "src_file": "47819",
+      "category": "cat",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "05884970b04e454d33b0ee8d5a6f185b941f38c466c19439f0b4124d262cc17e",
+      "full_sha256": "97ffb7c8d197518b410861e03e3f7ae4cf33679d83bc8a2bd7ea1b2370faeded"
+    },
+    {
+      "filename": "1-48413-A-38.wav",
+      "fold": "1",
+      "src_file": "48413",
+      "category": "clock_tick",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "e8aebc842de3e00fb0ba00f085e482fa8e9e43a4398d646341434e6c0f501bc3",
+      "full_sha256": "0b1ec858f9ae0cbad998a571f71d33615cca4364d0877c0049e0035a3287dd93"
+    },
+    {
+      "filename": "1-49409-B-8.wav",
+      "fold": "1",
+      "src_file": "49409",
+      "category": "sheep",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "5cc4ea4472513c766ab2c2f97f2a1abef2990c38e0cbf2bf1e535fd630f0f85a",
+      "full_sha256": "0ffd4287c51fc8ba9fc3fb8bc3939b520ab1245313deeb6c9b1a6415aaaaad14"
+    },
+    {
+      "filename": "1-50454-A-44.wav",
+      "fold": "1",
+      "src_file": "50454",
+      "category": "engine",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "8110a6df1a30a16513c9516caf46dd34b9ae516dd28982e521019ad99831bcfa",
+      "full_sha256": "cab9d5c1fd18ea480fd95dc256d34eb05ac69f9281129c63001d708a69958a76"
+    },
+    {
+      "filename": "1-50661-A-44.wav",
+      "fold": "1",
+      "src_file": "50661",
+      "category": "engine",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "10e7461b7fe455a10bceba5fd6299c5bb4bd73d7138853baa09f04ee777f09a4",
+      "full_sha256": "e2546fdc87eb03586163ad6399ea4561d7752b573546c76345a34e64924f72a2"
+    },
+    {
+      "filename": "1-52266-A-24.wav",
+      "fold": "1",
+      "src_file": "52266",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "dbf47513fb47c7cac8eb44110871b57ac9c51daf874d9185250fea1081e8917f",
+      "full_sha256": "01de3a848e39efd8f2d76a2efc3620d49fd5da237264560033028dc5775d299b"
+    },
+    {
+      "filename": "1-52323-A-24.wav",
+      "fold": "1",
+      "src_file": "52323",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "74d2b6a06d461e16b869c4ed5d3a83c5af698fe3650f1ac395976de974638d80",
+      "full_sha256": "365580fbe7940262aeeca88c1b06f7cfb4d4fdd9a2b40f7cf3b1d95d12ea33eb"
+    },
+    {
+      "filename": "1-53663-A-24.wav",
+      "fold": "1",
+      "src_file": "53663",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "325713c6d3370316b849ad7398d9a9c744e3a6a0ce31a7b5360c0d18c7a03b79",
+      "full_sha256": "5b087f0a5802ef4184e0d2ba86057cb48596dab5d18d72cd335886d2a1473196"
+    },
+    {
+      "filename": "1-54918-B-14.wav",
+      "fold": "1",
+      "src_file": "54918",
+      "category": "chirping_birds",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "86620fddba2ad91ec91181fa049a4e54ab02b667d426f7b4865ae53a3d7f0e45",
+      "full_sha256": "ae5fe4d307f91b399bfb5db3ef31be7ccd1b3b3b4b61a1be63a8eecdf4f41e14"
+    },
+    {
+      "filename": "1-56269-A-18.wav",
+      "fold": "1",
+      "src_file": "56269",
+      "category": "toilet_flush",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "02d3e8ed351d8e097cd8f5327f06ea8b2bbc1053c603cfdda30e179db050b7ba",
+      "full_sha256": "b0a31827a9cada62f67ad456c4c5ae88ad4bce81e2c9f9a745ecbda702f5d3ed"
+    },
+    {
+      "filename": "1-56311-A-10.wav",
+      "fold": "1",
+      "src_file": "56311",
+      "category": "rain",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "cf0dcbd49d979bf73992068b51db46cf3098995e66b3fb8ceb6ec276009aadc7",
+      "full_sha256": "0309085e88cacfe9c3507257b0e5134f2bf8114e999108984ac9746f5051e771"
+    },
+    {
+      "filename": "1-56380-B-5.wav",
+      "fold": "1",
+      "src_file": "56380",
+      "category": "cat",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "c4f5bc0cf370ff7cb75ef9be003e0b0ee867be6c58e81c1d47cad0018e1b5bce",
+      "full_sha256": "c5d1edee2814ecdf99653d440c9f4ba70838ef80048db72c2e13a567c9cb309c"
+    },
+    {
+      "filename": "1-58792-A-24.wav",
+      "fold": "1",
+      "src_file": "58792",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "ef5ceff5e8ff5ff73d3d35f7a6bf677b9ac52a89c0ccefe8a891bca52a6c80a9",
+      "full_sha256": "7e71a276eef6d7cf64acd4631cb9de1debed1182fdf72ee7a2a0898c48cee9a7"
+    },
+    {
+      "filename": "1-59513-A-0.wav",
+      "fold": "1",
+      "src_file": "59513",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "b573fcbb4d3a8a05a857dc1ffdb09c687253ff3a03baa326460e291ce4cbfee7",
+      "full_sha256": "8b58bc6a48ac8c2289bc5b51ed5e6169001dc88e957ba1e34a916036f96ee149"
+    },
+    {
+      "filename": "1-60460-A-36.wav",
+      "fold": "1",
+      "src_file": "60460",
+      "category": "vacuum_cleaner",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "b5be86f8883d3deb8ecde4d8bd18ca9264abebd2726439f06684028061ef5dd2",
+      "full_sha256": "3d65b195acab773330b7ed0d767d756614a022f4e5cc9e668c60472f1dfa6611"
+    },
+    {
+      "filename": "1-60997-A-20.wav",
+      "fold": "1",
+      "src_file": "60997",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "6e225fdade2a26e8477eab8f3d9058537cd919de78fd1a2dcb029dcc014ce744",
+      "full_sha256": "c11eda11b3c8c6fb11edeb1f209e0d78578e1ccc18b6326e2e3024672e18f40d"
+    },
+    {
+      "filename": "1-60997-B-20.wav",
+      "fold": "1",
+      "src_file": "60997",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "2de04b4d958ab53a2f66653f66bc640757bb07cacbb1a614c28777f505c9aa20",
+      "full_sha256": "81af019950499eaf6109724c11aa1909b1f82dae779602f217eb69bf3cc76a90"
+    },
+    {
+      "filename": "1-61221-A-17.wav",
+      "fold": "1",
+      "src_file": "61221",
+      "category": "pouring_water",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "71feb207837a30c5850278db8f09a828bf01bed3c606b6afbc0af15414efc1f2",
+      "full_sha256": "188b3c72fe0606c55c5a1f72ce8e20da4f71256b276c20235ccaf58034250995"
+    },
+    {
+      "filename": "1-63679-A-24.wav",
+      "fold": "1",
+      "src_file": "63679",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "d6905ec0b2937aae9bf3a2bcb35950d2d5dec0c7dcd8414af9a45f3116d3272a",
+      "full_sha256": "5c3ca4ad8eaccf34b29fcbc1ab711256dd41e4af29f98ae1c86b226c7336f5dc"
+    },
+    {
+      "filename": "1-64398-B-41.wav",
+      "fold": "1",
+      "src_file": "64398",
+      "category": "chainsaw",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "fc460220cde3dc9a080da0c1742d38755a25870463bc34d66aec65eb16050fb5",
+      "full_sha256": "b805bda4892d7a55d86c26cb641e33d79bb092a60abcffba6812bb2e56e78b5a"
+    },
+    {
+      "filename": "1-67152-A-17.wav",
+      "fold": "1",
+      "src_file": "67152",
+      "category": "pouring_water",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "f36846074aa0a4ba6ce6041cef2e26c808ca8de5e3ca655525a0ff3fcd01d112",
+      "full_sha256": "3fdaf58ce6167ea55b5db8b886697751e5185dc11a14e3db2ffa26e7bb2fdfc8"
+    },
+    {
+      "filename": "1-68628-A-27.wav",
+      "fold": "1",
+      "src_file": "68628",
+      "category": "brushing_teeth",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "30e375c4617803e44ccefa6b889fbfcdc169c92fb5a89ab8ef0595105259fb62",
+      "full_sha256": "6eaa4d91a68d727800434f67e30bfc148ba4ea6c95b13ac8f0218e411c7f9933"
+    },
+    {
+      "filename": "1-69422-A-3.wav",
+      "fold": "1",
+      "src_file": "69422",
+      "category": "cow",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "eae2114202f30a4adca8bae5d583c93a9e203eaec6297d638c0155117635f48a",
+      "full_sha256": "7e7b459bdf9fdc493401eda7ee9abd9f36a238897fd5cc74d2c9ef060f3caf4a"
+    },
+    {
+      "filename": "1-7057-A-12.wav",
+      "fold": "1",
+      "src_file": "7057",
+      "category": "crackling_fire",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "f92e52f9ab78d700dc10bcbc36020082613e669db245961b3205e8394c075da6",
+      "full_sha256": "899bbd1e517cd5d9948392a66f53771a8b0e816be3f17a74ecafb7eadd54f0d7"
+    },
+    {
+      "filename": "1-72229-B-6.wav",
+      "fold": "1",
+      "src_file": "72229",
+      "category": "hen",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "5e34754fb50a5e30240c2effaed7bb15cf4bb2efc3d88a4140ce61d0684591e4",
+      "full_sha256": "3e1f2a51c1e47e92dd0f6d4ab39101e69537f81ccb5aa7161113aa05f210fdbe"
+    },
+    {
+      "filename": "1-7456-A-13.wav",
+      "fold": "1",
+      "src_file": "7456",
+      "category": "crickets",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "e0d183004905b786e6e5e48aa9b6e0aa7630b4b4dfbaeae5da900c041b5e7408",
+      "full_sha256": "ac77a147e45fc6bd624fe560b7bdf08b9098311c6f46001d326fd7bf4231ba31"
+    },
+    {
+      "filename": "1-76831-D-42.wav",
+      "fold": "1",
+      "src_file": "76831",
+      "category": "siren",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "6e69b25168dae7ff0833fd132c37fe599ed98a946cf1e44d702444e06b9a1913",
+      "full_sha256": "54e037699ddf6e7a29108238513352ef214e30c472e47612029621e2146d5605"
+    },
+    {
+      "filename": "1-77160-A-3.wav",
+      "fold": "1",
+      "src_file": "77160",
+      "category": "cow",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "40acbd05cffe4f1a0a435a4ac31e2d1a747f3ecaa43a04ffaf93ea4b79e80007",
+      "full_sha256": "0c486236bf9eaf4f5f81960fedcb39bd3dc3e8f5910c7b10e461ce7df9cfd53e"
+    },
+    {
+      "filename": "1-79711-A-32.wav",
+      "fold": "1",
+      "src_file": "79711",
+      "category": "keyboard_typing",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "f3fd05d3bfed74942257ef036a83c7775c00a4213fd471c5ad6868e9487db525",
+      "full_sha256": "3c6b573cec51a3d1d00ad55673b68d258a7d23310dad28bbbdb700f8eb40994c"
+    },
+    {
+      "filename": "1-84536-A-39.wav",
+      "fold": "1",
+      "src_file": "84536",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "79efba4c0c54acadc88783e83b428fc9c430db94515b25339a6b5598e2ade0c0",
+      "full_sha256": "e50f61a480a2c62895f37373c445ed799fcb29826dd79ebef01a9be9771cb69e"
+    },
+    {
+      "filename": "1-84704-A-39.wav",
+      "fold": "1",
+      "src_file": "84704",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "c3e1abf0273f02b5f89e7d51cb890f3ad1575dc55fe1023650b0860b6f3abd15",
+      "full_sha256": "4353088823e2b2ff35e70e0496153ca2e292deb1a9cfc5d459fd95613b3a0601"
+    },
+    {
+      "filename": "1-84705-A-39.wav",
+      "fold": "1",
+      "src_file": "84705",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "e8cc52dd91213cd69031e10c0fe15f77230f588ececb13cc7c906c43ece32336",
+      "full_sha256": "d2d6f3b028c65736d4af0fb6777928aba13bc9e7db7b4242e5073927b5631411"
+    },
+    {
+      "filename": "1-85123-A-31.wav",
+      "fold": "1",
+      "src_file": "85123",
+      "category": "mouse_click",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "8e66ea2d3177ae19620834686b6bb1a1f9a91dae3d0a924a24e88e09284afcc2",
+      "full_sha256": "79b04feb4f75a4a018cf8f53f1d50462c185a8627e9601c0a1537a86c71af275"
+    },
+    {
+      "filename": "1-85168-A-39.wav",
+      "fold": "1",
+      "src_file": "85168",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "08fcf5a7656cc1c824122aba2a7dd1107130a0f9d6f3e3b73e7d06575b246ed5",
+      "full_sha256": "51b1e4e7ea7723f9c0b17b251cb7dbc67af5591189bed98b905d6fbdc8753696"
+    },
+    {
+      "filename": "1-85184-A-39.wav",
+      "fold": "1",
+      "src_file": "85184",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "aafacfae6a441ba21f4c76a11042726f933272709a099a54a15a905a1d65b837",
+      "full_sha256": "c693ed5b0797b57f3f6335c7c7c353a3f54ea8193fa163ea0bb11a6cb8f0dc64"
+    },
+    {
+      "filename": "1-85362-A-0.wav",
+      "fold": "1",
+      "src_file": "85362",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "2f7742933d677b0dc8d77b802e90ee0fb94b5828183ca96f7a8dd8d24ab57b7b",
+      "full_sha256": "f8f55ba8d21a568c175f5598cb2c6e95edb80183913c186106ab0f9cd8dd52a0"
+    },
+    {
+      "filename": "1-88807-A-39.wav",
+      "fold": "1",
+      "src_file": "88807",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "e5c368173342c2acba450c7d3116fac74fcec86bc8dc26055c6da7ebc509d191",
+      "full_sha256": "0d5c6e7b0550bb5e22e5f4d5124f6bbb22e2bb733f4e69dbe8eae9c5c40ce445"
+    },
+    {
+      "filename": "1-91359-A-11.wav",
+      "fold": "1",
+      "src_file": "91359",
+      "category": "sea_waves",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "dc68614d5082a595bce514b13304d91451cc6d570dddfb84a9283e5d77fc3148",
+      "full_sha256": "e6836f2189756b6fb12eb93e3582bfb93ee38292bf0c93505a09b4aa41d80c73"
+    },
+    {
+      "filename": "1-97392-A-0.wav",
+      "fold": "1",
+      "src_file": "97392",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "9ec2eb304d2a1ab3a50150a2a558dce0771e4ffc920d074e107fd76cb7b5d28c",
+      "full_sha256": "92ef112d2682a7f22ea76d6d692e90adeb5cec5d9314f731eac47bdcc9c2baa5"
+    },
+    {
+      "filename": "1-977-A-39.wav",
+      "fold": "1",
+      "src_file": "977",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "67c88e07db9e2dd7a7551f0c5b99da315ce7df041f83ed57b479d8fda8fbfe27",
+      "full_sha256": "a09a4c477647e50ed29c34a1aab72f8507687d53ae8686a4ad33473857b00119"
+    },
+    {
+      "filename": "2-100786-A-1.wav",
+      "fold": "2",
+      "src_file": "100786",
+      "category": "rooster",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "53704d16503042581837335ba937d399c028f788903f103abf44af1c2d2d5d71",
+      "full_sha256": "42d48b7802cae18bbba040d271eea91682fccc3fcdd908db2b0b6e0ea0d6097b"
+    },
+    {
+      "filename": "2-102414-G-17.wav",
+      "fold": "2",
+      "src_file": "102414",
+      "category": "pouring_water",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "41c21f5d38086e121b5b1aba9aecaa984268540d90bee5ecee47af986de1abc6",
+      "full_sha256": "eb99b74f3aa79b56f6526882fa7846f123029cd964e34d2ab74594b8ac51587d"
+    },
+    {
+      "filename": "2-103423-A-3.wav",
+      "fold": "2",
+      "src_file": "103423",
+      "category": "cow",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "8fea1be61f324f3ab5a98655cac91f027542aa2ab609d5c45e603cf9bda5d15e",
+      "full_sha256": "69d0dfaf2928f2d5426b52ec4166451c41f1ab23e4d14e04146ef54e4e220ccd"
+    },
+    {
+      "filename": "2-104952-A-16.wav",
+      "fold": "2",
+      "src_file": "104952",
+      "category": "wind",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "d3f15c7eaac8332a48fb0aeb921d1b50ae8eba558928eaa4f7c30639018854df",
+      "full_sha256": "e5916dd7cb30279a07c22ebf5f61c677627ba4089155eb08bbdd4fe7e4d7ca73"
+    },
+    {
+      "filename": "2-104952-B-16.wav",
+      "fold": "2",
+      "src_file": "104952",
+      "category": "wind",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "88d27648c6a78a46cebaba763af5e09dc491296dd49a0a928b1104c1cda1c735",
+      "full_sha256": "a1546fd25ac9aa4ae418a1bff21018d9500922a6725c317aeaa76949141ebdd0"
+    },
+    {
+      "filename": "2-106072-A-36.wav",
+      "fold": "2",
+      "src_file": "106072",
+      "category": "vacuum_cleaner",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "48d6c73a9f124f3d9454d1c93bbd91e088c96e7cc88352419bdad3f73ba499cd",
+      "full_sha256": "82c2bd09f55d66a978ec3775da16042495b2d75d8acdeff00084cb903ff6e5fd"
+    },
+    {
+      "filename": "2-106881-A-39.wav",
+      "fold": "2",
+      "src_file": "106881",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "e54a661c1fff8150b7c34d54da1686a18eaeaaf454394b866a251ceb68e3f886",
+      "full_sha256": "127ec452a626f6c541459dc7960198e74474816216aab28f19f0cf304ccae5a0"
+    },
+    {
+      "filename": "2-107351-A-20.wav",
+      "fold": "2",
+      "src_file": "107351",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "f89a24c9494eab238d80013b9409e6da4058b8097c665a789e48de1aef1bcef5",
+      "full_sha256": "80ccad7fe6990e70a2ea5f4104f5c887c3628d28ea3870388894223f3ec9d3a8"
+    },
+    {
+      "filename": "2-107351-B-20.wav",
+      "fold": "2",
+      "src_file": "107351",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "ebb3365010813cec4b951d1294d3376fc598116a1f86115a3e279ea013160a6a",
+      "full_sha256": "f32f30fdaccdf5569c2b2b001cad7d3ca573758b5d27ff56466dbb866279feab"
+    },
+    {
+      "filename": "2-108017-A-24.wav",
+      "fold": "2",
+      "src_file": "108017",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "0835f06693f5560d89f59de280351f1afbb90b839edacde718bb336726a5fa25",
+      "full_sha256": "28f8669c4e74090ddae83c7cde12d6fad1cb09a714beffc91cc9d18f71014cf0"
+    },
+    {
+      "filename": "2-108767-A-9.wav",
+      "fold": "2",
+      "src_file": "108767",
+      "category": "crow",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "3ba19aee2d427e51a971be11a3eb4fe340ffbfdbfd2f3ad9454a3a89e6ffeafb",
+      "full_sha256": "a2c1c2840e045424f827cb79c6896b4fd78303bdeeea4315971a0ef018ceb731"
+    },
+    {
+      "filename": "2-112213-A-39.wav",
+      "fold": "2",
+      "src_file": "112213",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "a6b60fb2268d7f0ceda0ff6f798d2d51b4ceb08218b3ac5ca91980a42d9c706b",
+      "full_sha256": "a5677d686c0042f546c654f14eafd2f50677356e0d27b14b25132a13d84ff7ad"
+    },
+    {
+      "filename": "2-112213-B-39.wav",
+      "fold": "2",
+      "src_file": "112213",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "d1d705535a4506b6e7f94c8ebff688bc0aa8bc115b42e8daf13542bec4f90ac7",
+      "full_sha256": "8b3bacf114caf547962f182a37faff3d3d03ef93147457c4419a05c2336b232a"
+    },
+    {
+      "filename": "2-114280-A-0.wav",
+      "fold": "2",
+      "src_file": "114280",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "23cd06e6c8b2e054d13ad6392d34d91588cd8572041d6f4c1c337048fd5deb69",
+      "full_sha256": "2aad86212efbc9d5f126837b08ca103e75224be350cf80d1e04d21f06fb8b977"
+    },
+    {
+      "filename": "2-114587-A-0.wav",
+      "fold": "2",
+      "src_file": "114587",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "34d7f9c32c2cda9b6b68483028bb85326259d1c5f2956eac2ecc48b18b06f999",
+      "full_sha256": "7b57099d8dc71421def9a3e28c33d62f9207953e38c7b25eb4566ae562bc0018"
+    },
+    {
+      "filename": "2-116400-A-0.wav",
+      "fold": "2",
+      "src_file": "116400",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "9830a9ccefad59e7ac9313b86913a6a15e5b4cb281fd479fc6fb076a06ff2a6e",
+      "full_sha256": "b635fbb837912917eae74cf6dbfccb1240cbbfdf2dc2af392c85a78783451c6e"
+    },
+    {
+      "filename": "2-117271-A-0.wav",
+      "fold": "2",
+      "src_file": "117271",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "636eb41093489304bb85802fdf2e8ac8b911500516e210e01f3b0b92f156c01d",
+      "full_sha256": "b0e126acd84129b9d15bd35202ba38033b7e2b406b5282d8a9dc7198c5ea9f84"
+    },
+    {
+      "filename": "2-117330-A-28.wav",
+      "fold": "2",
+      "src_file": "117330",
+      "category": "snoring",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "951c731b73de79207b37886d7b5721271c61d7bb0ee67bb0e9565d55aa6252e3",
+      "full_sha256": "26ca7cf2c364fadc748fd6162d9701644635f035eef1dc806b0c16aa6ccadbd4"
+    },
+    {
+      "filename": "2-118072-A-0.wav",
+      "fold": "2",
+      "src_file": "118072",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "c2003f5ce159e77c3a0e52ff042567d159ea8eab6cd3081e64c0b709556dcb4e",
+      "full_sha256": "824479c90ac7c027a4e65d2b16828c65e4284cb465f53b42758eee47c8893760"
+    },
+    {
+      "filename": "2-118964-A-0.wav",
+      "fold": "2",
+      "src_file": "118964",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "c684bc7d6ff7d8b9dbb7b033760319c4b4aac2ec0ae221df9ba684790a502d87",
+      "full_sha256": "c229f0091ca7a4a7d980efba76460321419c55bd8af4dce91d6d8fddb36283d7"
+    },
+    {
+      "filename": "2-119161-A-8.wav",
+      "fold": "2",
+      "src_file": "119161",
+      "category": "sheep",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "da487f739a2260c5f597cfb4fbf76f013fd0616180a4a9590989493837c5a40d",
+      "full_sha256": "3d74321570e1e601a6235c85ae9a0f21613dd7fb9a2a535a1fcefed58f84e4ad"
+    },
+    {
+      "filename": "2-120333-A-32.wav",
+      "fold": "2",
+      "src_file": "120333",
+      "category": "keyboard_typing",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "0221aef890f7252c3774518946c6bec589eeaab5a6d56fc593a488b7c51f95fc",
+      "full_sha256": "a54e28cc64cf7244bac87cbd9be5ed7e801c0f67138e591bb299c348dd8d1895"
+    },
+    {
+      "filename": "2-121978-A-29.wav",
+      "fold": "2",
+      "src_file": "121978",
+      "category": "drinking_sipping",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "0f9b70eb9c8809ad7782649fdea97708d0a53e371dd3a8eaaf1cb774ccef9a70",
+      "full_sha256": "a34401a884eccede5a9a07f6d91cdf95317a763714916e405b1b9cd89eaf513d"
+    },
+    {
+      "filename": "2-122067-A-45.wav",
+      "fold": "2",
+      "src_file": "122067",
+      "category": "train",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "359ec594e1755c59072bc2091b138124ecd3a6a8e0a4e12b4f0e5315d0cc9094",
+      "full_sha256": "349d72bdc8cde4a7a96d7ba0376ef54ff5244f9333955583d951c5715e812c8c"
+    },
+    {
+      "filename": "2-122104-A-0.wav",
+      "fold": "2",
+      "src_file": "122104",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "0ed7ff66a9d9a570768815d0027803283f091201ec8bf742f466441ad051f736",
+      "full_sha256": "d63183e82503db25b6fd392a6bcb23295fbab1a99cd72e250771ae19ae9c5e8b"
+    },
+    {
+      "filename": "2-122104-B-0.wav",
+      "fold": "2",
+      "src_file": "122104",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "3cbf9d8b919210c37a2c74706cdeacf99073a83e98ae6a797d31b34e35db9a59",
+      "full_sha256": "c1e91a28f7309dbee42ac8417349c31f9728244ebcb251a8f2357cb9de35a61f"
+    },
+    {
+      "filename": "2-123712-A-33.wav",
+      "fold": "2",
+      "src_file": "123712",
+      "category": "door_wood_creaks",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "dbc24b5fb968382149fb92d8327c6d212bf473c08818d2557f81d4d4db67dc00",
+      "full_sha256": "3c65c79ead65415b518084470b5778931b74aa5d7b20826efaf812b10218c184"
+    },
+    {
+      "filename": "2-123896-A-24.wav",
+      "fold": "2",
+      "src_file": "123896",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "4e1720d93a23e4e005b688fdddeed30a6cb3ff04ebf706921de8d01d0d1dfa3e",
+      "full_sha256": "823b95abeb491e106a2aaa3ed1787bedd1de88575dadf155008be67666ffc19f"
+    },
+    {
+      "filename": "2-125875-A-13.wav",
+      "fold": "2",
+      "src_file": "125875",
+      "category": "crickets",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "4c4360eca2d961048bde5fa984ca772b6ac2d2a7e9a7f8ff5c81cc9df6f6b839",
+      "full_sha256": "f34dedf462b2953cd763f1a44d6989c7b44385609e56d90b9aeedfdb9dedc190"
+    },
+    {
+      "filename": "2-132157-B-11.wav",
+      "fold": "2",
+      "src_file": "132157",
+      "category": "sea_waves",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "4158aa78341d58d23771deb264c7db18f9a3784b42fc838c77a002cb28e3f784",
+      "full_sha256": "f076430912519b33df790ea923ad5fe94350dae006c0b67e69aeecaec7f2ee87"
+    },
+    {
+      "filename": "2-134915-A-30.wav",
+      "fold": "2",
+      "src_file": "134915",
+      "category": "door_wood_knock",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "18d40b05f1f00bde85437275e099b2bc1d1ef55d98e9b086858b0506b270d9ee",
+      "full_sha256": "da4cacb63aa7925ca6b96fa26b239ec2c2e6b50dfdfd8ae84e798849318f76af"
+    },
+    {
+      "filename": "2-139748-B-15.wav",
+      "fold": "2",
+      "src_file": "139748",
+      "category": "water_drops",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "f00e971cd95874f3db87879e6fd6e687663184db5cb21dd681e44343f02932ee",
+      "full_sha256": "899254c2fd218e32e40151418875b536a73b2617e7f67e2adf876199b1f8d684"
+    },
+    {
+      "filename": "2-141563-A-39.wav",
+      "fold": "2",
+      "src_file": "141563",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "3ef4dae6a116b3d18a0f9f18d4373f0247debb168b0718eee89c0a30a38890c7",
+      "full_sha256": "d4c1842da1d8168f9a0bae706cca824ce4c83262fd77da9c6aa3015fe7807188"
+    },
+    {
+      "filename": "2-141584-A-38.wav",
+      "fold": "2",
+      "src_file": "141584",
+      "category": "clock_tick",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "b87b57fe9099b0eaf893274145d5237d2da3228dd9b641f473273dcd6759f3a3",
+      "full_sha256": "702364884abace0c2f063010b712834e19b7fe1955538ba17455bd6f0fd8e758"
+    },
+    {
+      "filename": "2-151079-A-20.wav",
+      "fold": "2",
+      "src_file": "151079",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "8a13243f77b12668061f6fb18e820d8398c75d35eca09f9640efdd9df6703499",
+      "full_sha256": "406068e82ec437e5686cbd9889f7ebfafa8780770c20fb22a4512db8a821e84b"
+    },
+    {
+      "filename": "2-152895-A-31.wav",
+      "fold": "2",
+      "src_file": "152895",
+      "category": "mouse_click",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "703b2a849372f6e18257fab9e14fd396de570fd68c194d286a6c053cd917b110",
+      "full_sha256": "be4ed8fc8037b32741539849494a479e6784a9964765b9cb505418f99526ec2b"
+    },
+    {
+      "filename": "2-155801-A-11.wav",
+      "fold": "2",
+      "src_file": "155801",
+      "category": "sea_waves",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "1851566021e7ad54163515236574452dd86cadc4657317f6bc285c9e06a9b436",
+      "full_sha256": "5fc1f11863821ec8114c9384e8b2a76d36fad62aec1eafa115a1b52e43c3bcee"
+    },
+    {
+      "filename": "2-166644-C-2.wav",
+      "fold": "2",
+      "src_file": "166644",
+      "category": "pig",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "e9b0017b9351df870d803c37c1ff61e6c2eee66bd93f53c9f28b95d0827ef192",
+      "full_sha256": "542320608d5ba9ee7b72e08ff881f3eb0bd3085c91180488f7ba5c70420a05a5"
+    },
+    {
+      "filename": "2-173559-A-39.wav",
+      "fold": "2",
+      "src_file": "173559",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "e60d74d17651551cb82e4fd8a542ceae3f278da1a6b4393fe9e704c786ff4125",
+      "full_sha256": "203a6754230521cde25fa70bbf23f0f9c4ccd36e97a3144d048dd943b0545a36"
+    },
+    {
+      "filename": "2-173607-A-39.wav",
+      "fold": "2",
+      "src_file": "173607",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "55cc07864f3f8195e51bbdf10fda1601df6b5ff0d5f486a356d79b60c0beb3d6",
+      "full_sha256": "00519df87c321f5d3c7b6f937d1ba1ff9c600b4c4d2993a54771801b5a314ae0"
+    },
+    {
+      "filename": "2-173618-A-39.wav",
+      "fold": "2",
+      "src_file": "173618",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "9170ecdc0903514ded47782447d6f0828d752ebc9765fa0cb257f869529dd830",
+      "full_sha256": "42966bdccc9981ff5ee2530dc083fa49c64c865b669794799f25b3534378368d"
+    },
+    {
+      "filename": "2-182508-A-8.wav",
+      "fold": "2",
+      "src_file": "182508",
+      "category": "sheep",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "e4199830c5ceffe30f815a7860f00ea135433be48e3bce764ff64a34e910c18a",
+      "full_sha256": "263c9c1335354c8549f7e1c0315648570b69ec0d04d506875b369719d556802c"
+    },
+    {
+      "filename": "2-209478-A-25.wav",
+      "fold": "2",
+      "src_file": "209478",
+      "category": "footsteps",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "7ba54c692fb8af61a12bbdc480822a27bf3500de75daad7160da78e96301151a",
+      "full_sha256": "21f80d053ac80389e355ac91ed82f93d8de6d3164cf26977a4ddd49b764e5e4d"
+    },
+    {
+      "filename": "2-250710-A-39.wav",
+      "fold": "2",
+      "src_file": "250710",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "ca0b7286ded500bd1f1928ef96ad5c35704bec66a790181afeb17ec7d995dbac",
+      "full_sha256": "2e0afd25a9cc525a07ee95554063d6a7af1489e780f054ff4928c2ddd8a1e396"
+    },
+    {
+      "filename": "2-25293-A-22.wav",
+      "fold": "2",
+      "src_file": "25293",
+      "category": "clapping",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "c8ddf76965ae2928c07e61d083825398c20ea06fe09d3a999c1a99492c771006",
+      "full_sha256": "4c71f17997f99bda02caba98b8f566243c39c77b9073d75a3348c2058b2ca6f3"
+    },
+    {
+      "filename": "2-39945-A-19.wav",
+      "fold": "2",
+      "src_file": "39945",
+      "category": "thunderstorm",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "6e9c5566161ac1dbc87720491cc92e70943ad44d5fd300767959fa4ef1371222",
+      "full_sha256": "3c3a559263ae466971168529c376972d873ff8dac65b9e5c46725ee4214b410c"
+    },
+    {
+      "filename": "2-50665-A-20.wav",
+      "fold": "2",
+      "src_file": "50665",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "8179d295f531f165ee89e92c3fb9f496ca6e13cff1fae3bb76067ee84da49078",
+      "full_sha256": "f4202a5e5e764502d21348abbcdf99125412101467414faa5ca82103087434bd"
+    },
+    {
+      "filename": "2-50666-A-20.wav",
+      "fold": "2",
+      "src_file": "50666",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "1f15be2b6c7bc156ccb5174b205b03eace593d728ea227a889ecd17375d4f5ea",
+      "full_sha256": "a05130c41fbb064aa7b2282e86e45db975e014a0a73d7d956be626818c278ef9"
+    },
+    {
+      "filename": "2-50774-A-23.wav",
+      "fold": "2",
+      "src_file": "50774",
+      "category": "breathing",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "904b4b8ef9936cd620d2ae7cb2c973eef8721bdeedd82ff3f6f01efee4d12dd1",
+      "full_sha256": "9a82d6021cfa860b546002c7b2bc896336ffbf619aa1cf4d3ec3ad2c2ddeff9c"
+    },
+    {
+      "filename": "2-51173-A-35.wav",
+      "fold": "2",
+      "src_file": "51173",
+      "category": "washing_machine",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "7eccffff137ad586328f05daa5cb3147bf665ebfe9a7b66c88feab499f995a10",
+      "full_sha256": "170157f2798551282af8d168e310ceb7c063c11670386e6d083b41edf16c3f07"
+    },
+    {
+      "filename": "2-51630-A-49.wav",
+      "fold": "2",
+      "src_file": "51630",
+      "category": "hand_saw",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "63a0634034f24bd2aa01d31b3f46091c1e3356c08444beb0726f91243c9f9bf0",
+      "full_sha256": "fb917d364ed59e2eb247f2511ccb30b09b1693251ab617f70ab2e43a00d1ae13"
+    },
+    {
+      "filename": "2-52001-A-28.wav",
+      "fold": "2",
+      "src_file": "52001",
+      "category": "snoring",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "dac7d619c76feb44b036a233372caa24856dfa6fe0d6f0b999ee970ab0b3e2e0",
+      "full_sha256": "1dcdf9f20d7c4acc7b943ea3a122b4250ad217a0e7b4d72ccd19130b9beb4fe6"
+    },
+    {
+      "filename": "2-52085-B-4.wav",
+      "fold": "2",
+      "src_file": "52085",
+      "category": "frog",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "9f3adbf5dffeffba4bdcd5991a9acccc9f22e411f553270b94b25ff10fbc44b3",
+      "full_sha256": "ff5496aaa9a217fd7e9460253033bfadcc464aa38c6c76f1a2cc27adc3ba8763"
+    },
+    {
+      "filename": "2-66637-A-20.wav",
+      "fold": "2",
+      "src_file": "66637",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "7956582f54756ada936b22c5d2e810d7237ddc95897a1557a59417e3b1be0f99",
+      "full_sha256": "68af95cea799dd350784056f22e813461ff89e319258a8b6dca21f742f3678f9"
+    },
+    {
+      "filename": "2-66637-B-20.wav",
+      "fold": "2",
+      "src_file": "66637",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "9ef70dfc68879c756405662282e61e32aa88b3716455b13205936c4f7a135bb8",
+      "full_sha256": "5e0b3ee08dece1ad10cfd75f6dbae029373b87fe8266e6061240a364ed3af6d8"
+    },
+    {
+      "filename": "2-68595-B-15.wav",
+      "fold": "2",
+      "src_file": "68595",
+      "category": "water_drops",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "55b4eb8b58dcaeea8805d48174f8f71a03b373dbe099ceff7eb2c6eb972f303d",
+      "full_sha256": "d9fcad635e32c96023156141c410c66cb8db6023ff421abf4fb768256cbc33ee"
+    },
+    {
+      "filename": "2-72547-C-14.wav",
+      "fold": "2",
+      "src_file": "72547",
+      "category": "chirping_birds",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "0b2fa30fd7c1a50c7b02f1865d6417d786d4fea910a14a65de7770a9be2aa57e",
+      "full_sha256": "e950bae976adc69869e37e9b182340f3f96b189514a869fac1ece09c475aed28"
+    },
+    {
+      "filename": "2-72547-D-14.wav",
+      "fold": "2",
+      "src_file": "72547",
+      "category": "chirping_birds",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "49a79fa3b76bdf17e00b0da2f43289b25f0345e989994d15d78bcd8501cda4e1",
+      "full_sha256": "698e0b35500671c8e793bc8d2e1459a1215ea2939b05717a8a93e9e09904ef79"
+    },
+    {
+      "filename": "2-73027-A-10.wav",
+      "fold": "2",
+      "src_file": "73027",
+      "category": "rain",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "42eba8ebc797e9fa843e8dbfb907c58ea8c8976277997d5f6e726b1bd3fe4111",
+      "full_sha256": "62c9136adf53ee655f2eacd668ee665ea5fd3138fa5514df3d90f31972c48b12"
+    },
+    {
+      "filename": "2-7321-A-33.wav",
+      "fold": "2",
+      "src_file": "7321",
+      "category": "door_wood_creaks",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "7bcac1e87a513b55f1317eb751e901934bea9c3ac8beff2775f1f9fc1a56f49a",
+      "full_sha256": "638b59e3a49bf6d158969059ddbb5e964bffc7dcf3006be2457e12ef6b47511b"
+    },
+    {
+      "filename": "2-76408-B-22.wav",
+      "fold": "2",
+      "src_file": "76408",
+      "category": "clapping",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "6bfd7d486b4c298ddeeb6ac0278ae80c067194928a2f2a9673dd1bff2084db8f",
+      "full_sha256": "1eda2dbeca4539d9124b633fcdaf3729b2321220194f1e578e47735b969aa1c8"
+    },
+    {
+      "filename": "2-76868-A-6.wav",
+      "fold": "2",
+      "src_file": "76868",
+      "category": "hen",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "78e7fb95586c595fdf72bd2b7eaa5aeb494d416c0c2ebf2912cf6a493f9b8050",
+      "full_sha256": "50e6aab09fc86b8a782b6273be7bb7fa269e001d85797cadf5eb003f8ec91879"
+    },
+    {
+      "filename": "2-77347-A-46.wav",
+      "fold": "2",
+      "src_file": "77347",
+      "category": "church_bells",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "e071e9a3fe23d98359303ba0a6e98531fd32060302988700de36798345b25de3",
+      "full_sha256": "9fef0753ac5b47647f50b6416008989fc90045878698b674b06f90017b1d8913"
+    },
+    {
+      "filename": "2-78651-A-44.wav",
+      "fold": "2",
+      "src_file": "78651",
+      "category": "engine",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "29aac54cca62321c035589859f2587bde651f0c358ff1e86463c6308e0ca4a98",
+      "full_sha256": "7b1562911cc6f508f8b2397836d6d6a429758a83788cbd8354d5280163e41f56"
+    },
+    {
+      "filename": "2-80482-A-20.wav",
+      "fold": "2",
+      "src_file": "80482",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "1bc0b84be46c90e74f19f4704f488cb17a4e34686fd76bc4454007f13bf64f33",
+      "full_sha256": "a419ace2d2a1248f8ef1c0e13d8b146f1a7c0fe79211f20978fb0529017beab6"
+    },
+    {
+      "filename": "2-81970-A-7.wav",
+      "fold": "2",
+      "src_file": "81970",
+      "category": "insects",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "424e1adafdcaa01fc5cb9afec55f7f0fa92c73236e113f4919cbc63d58aa2930",
+      "full_sha256": "d6001038eff8470212d8502a5aea92432333ca422afc6957cd61ac6e06de534e"
+    },
+    {
+      "filename": "2-81970-B-7.wav",
+      "fold": "2",
+      "src_file": "81970",
+      "category": "insects",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "62ea1a423fe75dae705567ae43b3174e1c92ff4b6fc705285437d7c86beb784b",
+      "full_sha256": "3160f24310196d03f50d76550c145266b00653adced837595b84e92f267e6173"
+    },
+    {
+      "filename": "2-82071-A-27.wav",
+      "fold": "2",
+      "src_file": "82071",
+      "category": "brushing_teeth",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "44e9fb08031664f031c2539e8797f72343be389b63babbf62cbdb77f2941fd35",
+      "full_sha256": "59f179a93caa9ca6dee45fe36a2162d3212ea66f38b29bbe83776b2c37889f32"
+    },
+    {
+      "filename": "2-82077-A-7.wav",
+      "fold": "2",
+      "src_file": "82077",
+      "category": "insects",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "916f2e34ad242ef01de0a1ad323cde7afd32663578774758e869a0f54c292395",
+      "full_sha256": "a80b6e313fc8b5a9dca469bbb47b5796bc43891aca2c042e8c257feda2c287c1"
+    },
+    {
+      "filename": "2-83536-A-27.wav",
+      "fold": "2",
+      "src_file": "83536",
+      "category": "brushing_teeth",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "7f1ac69e7b5444d19a56d54c0c5ea65ac4f7f61ccd1d5aaf2086af50443d31ba",
+      "full_sha256": "5e0bec4873f1c947d9e2bd62ce17fd5f7f17eded8fa8b83e3c6d267eea77d551"
+    },
+    {
+      "filename": "2-83667-A-34.wav",
+      "fold": "2",
+      "src_file": "83667",
+      "category": "can_opening",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "98b2edf7f0ebea77309d84893e571ea89f33c9bc11b405f0eff13ab69c52780a",
+      "full_sha256": "f876e70fc2db38583946fe9aa992cfe2202ba45d65afb5d5ce36289a67d2e015"
+    },
+    {
+      "filename": "2-83934-B-5.wav",
+      "fold": "2",
+      "src_file": "83934",
+      "category": "cat",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "7cf2bfd8a30fc64e4a014b98ba21f47f36cb6f330d051cda6677a8ac3d8c83d6",
+      "full_sha256": "6b21abc1a721c53dc084bc6521b054fc6cc51ce77d3711ecdb747b41a06fe335"
+    },
+    {
+      "filename": "2-85292-A-24.wav",
+      "fold": "2",
+      "src_file": "85292",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "848bf1ca81dd50d22544cb0ec7446a9e34e9c54d80e280295e263a06f4a340f0",
+      "full_sha256": "0028248f5643f5ffd2e88aa4c2781a53678d821e180bd5715f826945dfac5f04"
+    },
+    {
+      "filename": "2-85471-A-34.wav",
+      "fold": "2",
+      "src_file": "85471",
+      "category": "can_opening",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "5d8ac3badc149635ca5b210ed8ad50d9bb63cf050af078b5e2742b3235021b09",
+      "full_sha256": "4757f448c4bb682864b4c33fbde6229426281db36960cd30099eae41fdb920f3"
+    },
+    {
+      "filename": "2-85945-A-18.wav",
+      "fold": "2",
+      "src_file": "85945",
+      "category": "toilet_flush",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "12ad2de9729c89b4b423af1b53f9cd2e01a2a5ca9bc63120241c3b4d9236f360",
+      "full_sha256": "1cc29cd3e5333c2945bb906ab9ae2f35a34a71fed7c0c4b12e8023d28c26ad23"
+    },
+    {
+      "filename": "2-87412-A-24.wav",
+      "fold": "2",
+      "src_file": "87412",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "39381ec4b3c6d22ffca0f344200e23e3830acd5fcca6c99c50fbf357deab2d60",
+      "full_sha256": "c2f9d6d535e29380467f1e5595a359aef9156a37f952c8ba02187f29aa21f75e"
+    },
+    {
+      "filename": "2-87794-A-24.wav",
+      "fold": "2",
+      "src_file": "87794",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "404e4a1c21eb3296e3b317d27244ac7a5fcff11c88109f60265f973b4b797443",
+      "full_sha256": "c0d5ce5968160105c45ba816f7ae889222367805a0b00ae2097b01a84551a938"
+    },
+    {
+      "filename": "2-87795-A-24.wav",
+      "fold": "2",
+      "src_file": "87795",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "de50b4e44c3f1f88f44e18a74250068b3ef86cf240e5f1f3196dc709b1802330",
+      "full_sha256": "35d67729143faeededba88d3fad39c6ca867ddfb2bbe0c55a4f28720f057a3e5"
+    },
+    {
+      "filename": "2-87799-A-24.wav",
+      "fold": "2",
+      "src_file": "87799",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "8622b38aa1b5d9617257f44061d08b56f0d264e0b2b0e7fff8a435d9e4bd3a96",
+      "full_sha256": "625900b02bc39e192a91bd7acd20f6ddb129db0ba2b32733c98a0b2f2325dbee"
+    },
+    {
+      "filename": "2-89516-A-37.wav",
+      "fold": "2",
+      "src_file": "89516",
+      "category": "clock_alarm",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "dc52aabca65500b637d2cc526f7f09a9f5d9ad1951b1c00ad02558002159a039",
+      "full_sha256": "a89309344764a21c448fa46c122aa1a0b1046cc4cba98eb1609f9de3bf3bae55"
+    },
+    {
+      "filename": "2-93030-A-21.wav",
+      "fold": "2",
+      "src_file": "93030",
+      "category": "sneezing",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "e56f2b85d767caab2bf9ade0a4049bee154919d9650166a2c05c430face89347",
+      "full_sha256": "dc232f62f503b5467600a993e1d1d776dd45f47beed7102301eef66e21064404"
+    },
+    {
+      "filename": "2-95258-A-1.wav",
+      "fold": "2",
+      "src_file": "95258",
+      "category": "rooster",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "d28ca7b6710feb0ec50272e5a77f924e80fa83290bdec6ec4c0db82ce6576f07",
+      "full_sha256": "c182a71dc4a7866c01f5ea5fa4688addc4f6abcb68fb7a85b52e76e49a4ce9ca"
+    },
+    {
+      "filename": "2-96033-A-13.wav",
+      "fold": "2",
+      "src_file": "96033",
+      "category": "crickets",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "ecebe6fdc3440b0b4849b67dbbf5e31af47952cb6e2248d636671897735a79f7",
+      "full_sha256": "cec8c1e7f32cdba005e3e7c316445fc7639e6e0f9df54763cad5347a2c30aed9"
+    },
+    {
+      "filename": "2-98676-A-24.wav",
+      "fold": "2",
+      "src_file": "98676",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "2f0994190ebc5214e14e9e55684d9321695d273a609d4e8e4388601b42b15812",
+      "full_sha256": "60ee16e57574fa93fdd1e98cf8e24be1341ebefa5a179463c6b472b5df11e856"
+    },
+    {
+      "filename": "3-102583-A-49.wav",
+      "fold": "3",
+      "src_file": "102583",
+      "category": "hand_saw",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "7b98b19a3cb9ecc64ddab6e9c655d0073bb4060c2c560c41cbf311efcd26534b",
+      "full_sha256": "60c41927d99d8421d3c8c6f0865244856df64b6da4cd57d4f5489a12c6a9ab50"
+    },
+    {
+      "filename": "3-103597-A-25.wav",
+      "fold": "3",
+      "src_file": "103597",
+      "category": "footsteps",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "4d1fca3296291bcb12ca41ebf0a1f7edb2e2c8213cc04d61e8ebb62b98bf5638",
+      "full_sha256": "ca789923c8f3c2f48ec7c2536429ab750191068d288f570cdacb5567f9add2b1"
+    },
+    {
+      "filename": "3-104632-A-12.wav",
+      "fold": "3",
+      "src_file": "104632",
+      "category": "crackling_fire",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "415e6d92371447377a916760fdda326f55f6f88cf428dc45b3edfe45b1d2b0a5",
+      "full_sha256": "180b3b877bc242f3cddda80baa6adda4c12a9607ef5ab3cc232588051883c6f0"
+    },
+    {
+      "filename": "3-110913-D-7.wav",
+      "fold": "3",
+      "src_file": "110913",
+      "category": "insects",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "9bacabbba20e42035df9ab4c25f962b9b990c89b9c4812cd2d7f082b43c9a59a",
+      "full_sha256": "fca4fbbde7b7b9ce3035bffea0dfdb8817f888b045a2d297c385f6b760968733"
+    },
+    {
+      "filename": "3-111102-B-46.wav",
+      "fold": "3",
+      "src_file": "111102",
+      "category": "church_bells",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "ae91dd8bd047cd9046ab7f429a4a34d32254749dc9bdde00ed6a22444fa5d37a",
+      "full_sha256": "dadfeb7efb9d41abcb34e04471855553645f2301b67c58e88490fb722c346316"
+    },
+    {
+      "filename": "3-115387-C-47.wav",
+      "fold": "3",
+      "src_file": "115387",
+      "category": "airplane",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "79b3af558732ef99575e5b8e9f6b197350ca23f5930a28f4b640ef5a8f0410f8",
+      "full_sha256": "b1f56f7697c3361a16f09a7b6617a5cea3014d594d3f247d98837ada0bfa3d5f"
+    },
+    {
+      "filename": "3-117293-A-9.wav",
+      "fold": "3",
+      "src_file": "117293",
+      "category": "crow",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "dc15712702cb75cfb2d3ba036107508d59e1547573901d436203a2699f941c5c",
+      "full_sha256": "214d1b0faad9e55a3f6513c956c6d151d8f520adab280c0abd66e0502fc0c301"
+    },
+    {
+      "filename": "3-117504-A-16.wav",
+      "fold": "3",
+      "src_file": "117504",
+      "category": "wind",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "e8870d76a3bb29b43606231859c1b75ffc6dfaded319944028d122993470669e",
+      "full_sha256": "225e9336a5691c835b283617d42dda63a91bedb9612e9bf0fd0a87a6708643e0"
+    },
+    {
+      "filename": "3-117883-A-37.wav",
+      "fold": "3",
+      "src_file": "117883",
+      "category": "clock_alarm",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "93064c312872ee32c74e893a7b2a7fa2b8fa83170a17ce6267227186178ddcdb",
+      "full_sha256": "2c704aa43d6f06b8a42d13469062ab19cb464dd1ab22a3b586289d6ae7aac4f2"
+    },
+    {
+      "filename": "3-118656-A-41.wav",
+      "fold": "3",
+      "src_file": "118656",
+      "category": "chainsaw",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "c8b03e975750a6c264f839e6adc68a5450a5d44d4db808b443522d918fe3185f",
+      "full_sha256": "5db94c093a66febec3af1282aec60b4bd6335447386c1adb7d1b8f2ebc37e561"
+    },
+    {
+      "filename": "3-125418-A-24.wav",
+      "fold": "3",
+      "src_file": "125418",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "120275342f1cd23c1ace8f4c334dd7673b727821f9bdd9c710baff75c61123b4",
+      "full_sha256": "f6c7754ae657be3fae6bc3472a6bf9b346e059272038ddd26ec9307479264ecf"
+    },
+    {
+      "filename": "3-126113-A-26.wav",
+      "fold": "3",
+      "src_file": "126113",
+      "category": "laughing",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "fa437400cd1875436258ceaa9a3014ad5a0927e90911f24ca62e1d9d79316062",
+      "full_sha256": "9d236154e4dea29c80ab8b8622e858bdef2c8bbfc8a2d1085a0f53187afdea83"
+    },
+    {
+      "filename": "3-127874-A-17.wav",
+      "fold": "3",
+      "src_file": "127874",
+      "category": "pouring_water",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "8ff35e0895866b584c9156693116b59583c97ee776d6401622bb4c8ce9928d32",
+      "full_sha256": "f707655226b3b27b726ab3d5ebeeee51fd5974d00b0514f793115ed93a9bdf3f"
+    },
+    {
+      "filename": "3-129678-A-13.wav",
+      "fold": "3",
+      "src_file": "129678",
+      "category": "crickets",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "f6ae5649cfa7ef7276fbe0d04694edf9524b425213fe06a446648e5dbf2912b9",
+      "full_sha256": "2dadc9b84f10cc380a84ed8ca3c247f899bdd757c2c63322d1a212db6dd4ed5e"
+    },
+    {
+      "filename": "3-130998-A-28.wav",
+      "fold": "3",
+      "src_file": "130998",
+      "category": "snoring",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "ac184728b3578504423231424ef81ecca282e4403f374b4c41fd5ba471766485",
+      "full_sha256": "fb55d9bec420eebe0091c87e82f1b6af4021190870426e792a6336722f3bbd71"
+    },
+    {
+      "filename": "3-131943-A-37.wav",
+      "fold": "3",
+      "src_file": "131943",
+      "category": "clock_alarm",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "1d12a9f29903f1d8c5ed2cfd86873a768724b818d38f418afd924327c428e539",
+      "full_sha256": "d0efacd6105b25ba9b0c7e44a8d5ad595ff110e70a94457ace49350ed1c222b1"
+    },
+    {
+      "filename": "3-132601-A-24.wav",
+      "fold": "3",
+      "src_file": "132601",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "2a8cac7228cf69c63838c96b7381b807d518a75d60fa0e8b51ac589c35dbe2a7",
+      "full_sha256": "d4540c4f322fdd8790de1ab8746a0bd3ad7954cedd10fc9e946fdd542f993528"
+    },
+    {
+      "filename": "3-133977-A-29.wav",
+      "fold": "3",
+      "src_file": "133977",
+      "category": "drinking_sipping",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "127ab2b80563a740c639e293d477469b1bbcb00965f9684155149863a8457a9b",
+      "full_sha256": "781e7a98621de12238ba0ecc6b57274af345b36f7cd9b5655b221aaf925cc713"
+    },
+    {
+      "filename": "3-135650-B-45.wav",
+      "fold": "3",
+      "src_file": "135650",
+      "category": "train",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "ab5ca531ce389a27cf92e44e6dc91f09d5c7c072aaf3c0e9f8bbb0cf2e914e34",
+      "full_sha256": "1dc47dcd263ccdbee1504290b59ced949d4dfdce2dc06360550d1bdfddf4d8a3"
+    },
+    {
+      "filename": "3-136288-A-0.wav",
+      "fold": "3",
+      "src_file": "136288",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "8293b4fe3c40cf9bbe243fa27d153bbef86217f855e4295e89f41411267c9f8d",
+      "full_sha256": "6d79e5c2581776e71e3bbe936dde5d3beec448d6d48d50c00b432c9dec1bda0e"
+    },
+    {
+      "filename": "3-138114-A-22.wav",
+      "fold": "3",
+      "src_file": "138114",
+      "category": "clapping",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "0dd59218eee6155a51d69b3f2a6d618550d55f56260bf12032b46dbdd3ca5d0b",
+      "full_sha256": "2381251a2a9d18fe95c936d1f4bd00370441fb6ca43ede9c2a685a06428ed087"
+    },
+    {
+      "filename": "3-140199-B-8.wav",
+      "fold": "3",
+      "src_file": "140199",
+      "category": "sheep",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "9f8be8ed939c5152f20743628ac84b6c8b98e90e08d17e8561368423486cbf0f",
+      "full_sha256": "26ec884a40f75da7a33cf53397b9b7b3351923454b07c24796281875037d8819"
+    },
+    {
+      "filename": "3-142006-A-10.wav",
+      "fold": "3",
+      "src_file": "142006",
+      "category": "rain",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "bd24c750af1d7ed49a3d19ecc4401cd10368a18e02a07c3a5524fdb7a576d5af",
+      "full_sha256": "d990c00d1cef40650b0329e060f095ac50ff9c7d7b64000593e4e5e075cee798"
+    },
+    {
+      "filename": "3-142601-A-21.wav",
+      "fold": "3",
+      "src_file": "142601",
+      "category": "sneezing",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "ef15ba95b34a2a12a0b7f272d5b26422e828ceffa16613e3f89df1890d5f1d75",
+      "full_sha256": "dad2f2ffadea00277678ccc40ce42307fb9d451c8d9400b6a262666d9f04001c"
+    },
+    {
+      "filename": "3-142604-A-24.wav",
+      "fold": "3",
+      "src_file": "142604",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "6fb3161dd47d2f0807011dd52f807c90e8d0d2ab7de515cdcf2846e735c45c9c",
+      "full_sha256": "f32af867556d04b8d40cc62e71fa45a7743cbf8923dcf80ef205e8616d03ff83"
+    },
+    {
+      "filename": "3-144028-A-0.wav",
+      "fold": "3",
+      "src_file": "144028",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "2828c40f81b8bdfded734b1ea057444f780d1ada4241a2dc2ab70c646f963b47",
+      "full_sha256": "43ad7c2b894b110c62bb090bd52a0c79c536c3dd67ba33301c579f01ae2a0185"
+    },
+    {
+      "filename": "3-145487-A-24.wav",
+      "fold": "3",
+      "src_file": "145487",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "422b999e10eff69ad3fa06c6f05d6bf6e1fe675137c49830452712d9897abe09",
+      "full_sha256": "ab334b51602471c8488e32178efc791219c33e7f152af6a257da1c3ba2b45c9a"
+    },
+    {
+      "filename": "3-146873-A-24.wav",
+      "fold": "3",
+      "src_file": "146873",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "47c4721ef5cbeec84a67c294b06e14aa7c8a3df3be685fa3ec12ae71ddddf3ce",
+      "full_sha256": "b7b545e6a5d1527d73c8a3b6708b8af8979e1b086394aed8189da2884e023dec"
+    },
+    {
+      "filename": "3-149042-A-24.wav",
+      "fold": "3",
+      "src_file": "149042",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "33cb5ea4d5b8a0df92bcdef652df83cdcd3e02875468521d0e029ea63a371adb",
+      "full_sha256": "fd4bd415b4b665fe0f4d2f01d07c7a715415f33762a623ab3bd0399abb891b12"
+    },
+    {
+      "filename": "3-150979-B-40.wav",
+      "fold": "3",
+      "src_file": "150979",
+      "category": "helicopter",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "60f34984d5387e02be66cd64b3170c1b2c1d953defe874930c15f8fd775dc34d",
+      "full_sha256": "104824b03ae30ed2e1c373ceb02c0caf985639476ffddab394e360430aa3d266"
+    },
+    {
+      "filename": "3-150979-C-40.wav",
+      "fold": "3",
+      "src_file": "150979",
+      "category": "helicopter",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "38ee55ad9ddb3090622e41f502c5097214517b2a47c161f8d9e0d57c26636cd7",
+      "full_sha256": "c3af9c592b36e6c432fd417a69a00faf5ccdc1e8cec3d9f04ae991898d3a4e2c"
+    },
+    {
+      "filename": "3-151080-A-20.wav",
+      "fold": "3",
+      "src_file": "151080",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "e673e80074c99c9a8426ff708ca40d5f7a146605cf7b1625532276a7b95fd801",
+      "full_sha256": "eb6f2de3a01669c7a687c07ef3e7b4d5e1c45181d07d819c78097114552b6fcc"
+    },
+    {
+      "filename": "3-151081-A-20.wav",
+      "fold": "3",
+      "src_file": "151081",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "48a0009a2b2f7e97d19c020c1292e17ee0775dc7537bca3109c4128fb17ac7de",
+      "full_sha256": "9b6e9f91cf1abe2f114eb501fe7bec2f8d44698c0e8e52b130f36f06aa5281e5"
+    },
+    {
+      "filename": "3-151081-B-20.wav",
+      "fold": "3",
+      "src_file": "151081",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "922250bbeca13111c955a83958f013c3a50b48e240705c57a645faf8b47a35d6",
+      "full_sha256": "e37f38875737ec22f1c71eb619363a93ce6039f8b98eca8aa2150497e6d1d265"
+    },
+    {
+      "filename": "3-151212-A-24.wav",
+      "fold": "3",
+      "src_file": "151212",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "37c3f893f014dafc6d6b5ddcc21ae9dfb9f1302c2960296e9d150c027f779ba7",
+      "full_sha256": "b6d02eaf62d575ed3da5943964a24d9b38f60a7f063967f7be8ee63e4469a106"
+    },
+    {
+      "filename": "3-151213-A-24.wav",
+      "fold": "3",
+      "src_file": "151213",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "36a0a9a4ac42558cf3836d94e834fe376eb21a80d8f74349f98441a6cabfac50",
+      "full_sha256": "e189ba5d9b4077cd539d29e299b410ea6ca2b4b025a58f2c002f2273dc264834"
+    },
+    {
+      "filename": "3-152007-A-20.wav",
+      "fold": "3",
+      "src_file": "152007",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "dff786672fb70a78c6ddcde9935d1327fcb6704251844753c3a28b73ad2eef44",
+      "full_sha256": "afe95b733cc63735a4cb3aceb69828372b6646c2ed130157334ce02cce35380f"
+    },
+    {
+      "filename": "3-152007-B-20.wav",
+      "fold": "3",
+      "src_file": "152007",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "39f6c0417c9bc1154f1cc292a593a33caec51eb985482c89d57e5fede76cdb9f",
+      "full_sha256": "190eaa9257328e7817d452b12481b5c25e3b1a41af4b587873d487592bd9762f"
+    },
+    {
+      "filename": "3-152007-C-20.wav",
+      "fold": "3",
+      "src_file": "152007",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "ccd8f855a799a8d21f3234ba81cce8a4eccbbfdef8d141b938f2c5e0ea85aa44",
+      "full_sha256": "518759b0eb65c70e5410079ac6dc63369668700570a299e1156b0eba6ba76dd0"
+    },
+    {
+      "filename": "3-152007-D-20.wav",
+      "fold": "3",
+      "src_file": "152007",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "c47feeedb4dbf4681b595318dfc3ca0aa555af0a2ef87022715c55ff47922999",
+      "full_sha256": "d1fa3709ca4f89c31503cdbef96cf31eb39b038460ca58150700e28bd13c88aa"
+    },
+    {
+      "filename": "3-152007-E-20.wav",
+      "fold": "3",
+      "src_file": "152007",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "2369f99bd8ec01a9eb92d1be9a418143ff6f2298791d7811b614ba6cf92ef420",
+      "full_sha256": "467ceb1c24bf0d4afd10118f0b5f615c8b48f922dc5d82c4af19228382de7029"
+    },
+    {
+      "filename": "3-153444-A-32.wav",
+      "fold": "3",
+      "src_file": "153444",
+      "category": "keyboard_typing",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "ca3cd2deab66200c838c5395cf6221c95d309bec310456cf194bc316af410393",
+      "full_sha256": "49d0bfefb130887200ecf04ed087645e5a7b6fe194eb08602859efec4e0fad7b"
+    },
+    {
+      "filename": "3-155312-A-0.wav",
+      "fold": "3",
+      "src_file": "155312",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "cd91728dada57b9083122f0991dad5de4010287f91847bca4ac828d6402080e4",
+      "full_sha256": "405324edae7879284b964ee460610194d2567c917d1b3b3d6b497826377d1ea8"
+    },
+    {
+      "filename": "3-155578-A-14.wav",
+      "fold": "3",
+      "src_file": "155578",
+      "category": "chirping_birds",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "3203e75865f750f362b9c0b8d8265b4a4332631d8b2d48b5d7e5324f79456fdf",
+      "full_sha256": "b705122a0c16133c7f72b62191cfbf8a8475fa3c171f93fd016af3cd9300d78e"
+    },
+    {
+      "filename": "3-157695-A-0.wav",
+      "fold": "3",
+      "src_file": "157695",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "7a6099b6ef5f58af8b6f9a9deda41cc0d8efe5a0fd60fdd638a711523674903a",
+      "full_sha256": "c0999ef16e3c30e7893a4a20edcdb1fb3a884ae6440a886a65883f69b233936f"
+    },
+    {
+      "filename": "3-159445-A-45.wav",
+      "fold": "3",
+      "src_file": "159445",
+      "category": "train",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "28e9d41a002374dff5fa73616b8c1711a6de78cd4ba3d009d0d0db8156229042",
+      "full_sha256": "4f15f111d60bcc647aa4952fb11dfb82111ab3d083205277ae80f7b3b46e662d"
+    },
+    {
+      "filename": "3-159445-B-45.wav",
+      "fold": "3",
+      "src_file": "159445",
+      "category": "train",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "fc76bed7e8c79bde05d7826648b6ea78bd436e1b07adc2c40d5b8851c9a9b455",
+      "full_sha256": "66307371fac12dc2b932b6bed492e39df0d44765f3de8725342492314f714e7f"
+    },
+    {
+      "filename": "3-163459-A-0.wav",
+      "fold": "3",
+      "src_file": "163459",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "fede0d9dcbf6c0252880acf39d411d62e0060e9c9ff3bda9135b3dc2bccb41fe",
+      "full_sha256": "603053cc53280fea5966530cd7cff8dc400bbf80a0210bad70d31395d48ecd07"
+    },
+    {
+      "filename": "3-170015-A-0.wav",
+      "fold": "3",
+      "src_file": "170015",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "7aff1d04c4c381636e0bfc7d9dfbf76509d0f30674fc542bb8f8ed757f29e29d",
+      "full_sha256": "206621dbd644e5b56ea5b347e4de22db1c2bda4c44c5a820cc243dc8a6b38ac0"
+    },
+    {
+      "filename": "3-170383-A-38.wav",
+      "fold": "3",
+      "src_file": "170383",
+      "category": "clock_tick",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "04e08776e964a521d01760abfced1577572fc873f43a93a0039f41dcf61f9e68",
+      "full_sha256": "3edc08e7274da4d7503274e515cff56dba03204bb6e6c932ac042a18a26dd351"
+    },
+    {
+      "filename": "3-171281-A-6.wav",
+      "fold": "3",
+      "src_file": "171281",
+      "category": "hen",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "23dfcb563aa880deeeb8e4e8f590c79d1fe7368f7e28b0e79ec266c421c1f9cc",
+      "full_sha256": "3ac58aa682ed56d00dbaa8cd2ad36afe276e88b1051b12fdbeb8b4ac3bb051ce"
+    },
+    {
+      "filename": "3-172922-A-48.wav",
+      "fold": "3",
+      "src_file": "172922",
+      "category": "fireworks",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "319fb7db7a182ce44acd1d0cc692da12aa94183b064e9ee8621b6eb0aaac604b",
+      "full_sha256": "4dc6c6cfda809a154e7cd2e6de6731860848e387b31796b8589cc09d9aea0197"
+    },
+    {
+      "filename": "3-180256-A-0.wav",
+      "fold": "3",
+      "src_file": "180256",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "39ed8c8b60974843511f0f53e33e37f670f9cf22eebcb8b23798d52e0309127b",
+      "full_sha256": "4d7fc341ef78cf9fe863e9e4475d2d928daf020cd18b5c9fe57815903867aee9"
+    },
+    {
+      "filename": "3-180977-A-0.wav",
+      "fold": "3",
+      "src_file": "180977",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "d5d290a12f7aac1e5a5cee44e7a4d6033ee9f9999846f84b2278f7fbd6516df2",
+      "full_sha256": "4e5447caf4213c352e07024ed5a8e24758813295c474a4178f96f44abac75236"
+    },
+    {
+      "filename": "3-181278-A-22.wav",
+      "fold": "3",
+      "src_file": "181278",
+      "category": "clapping",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "97e2141a16f5144c1e9959f9e8783017f60c1f8b7d034d6f2a152ebfc0929ad5",
+      "full_sha256": "8a33c6f20572d4f578653d13368af6538bc7f4fcb0638191f6b00094d842f5cb"
+    },
+    {
+      "filename": "3-185313-A-31.wav",
+      "fold": "3",
+      "src_file": "185313",
+      "category": "mouse_click",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "35dc5189d6df94e6dcbc5a92efe06de7e98bcd34ffc87a2c34a8dc2740a20348",
+      "full_sha256": "05151e0d6162360e1d490e49c50907cb2134a93bfd74dc39943a533297533c39"
+    },
+    {
+      "filename": "3-188390-A-6.wav",
+      "fold": "3",
+      "src_file": "188390",
+      "category": "hen",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "904c4bb1948ddd19347052c7649dfe1f964eed60c2a47729ac01a77587d9c307",
+      "full_sha256": "f839bb80e7a5a37893993acb323959487433bcd6c49434ca9cdae56bca889dd2"
+    },
+    {
+      "filename": "3-203371-A-39.wav",
+      "fold": "3",
+      "src_file": "203371",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "60a600ff3e1ac00b41c60b0e3979ee8b1b46ebfcbc370523389094e4fbda415b",
+      "full_sha256": "e844c463c9de72921d3aef00b6c2262226edc6bdb9a2436b24ca3a39fbc79722"
+    },
+    {
+      "filename": "3-203373-A-39.wav",
+      "fold": "3",
+      "src_file": "203373",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "beb0605537f3fe20e98b54f19f20842d92b7a95f9408dee41e620a8955b33111",
+      "full_sha256": "6dac5a83bbaa633d1217af52aeb5cd458c7aaf4d6d5ca384ad96f92e7cdeeb41"
+    },
+    {
+      "filename": "3-203374-A-39.wav",
+      "fold": "3",
+      "src_file": "203374",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "d2d0b97a0ad01b927a83605cd4e5cc988c4b868e1e01a4fa874563c038e16473",
+      "full_sha256": "3e5039bbcdd871cd572947e6612594169f299943e4fdf5ae55f7db65a17661c0"
+    },
+    {
+      "filename": "3-203375-A-39.wav",
+      "fold": "3",
+      "src_file": "203375",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "b6a987feb4855cf91f55498dcc04bee4fd0f8ed06290d451ce37a07fff230feb",
+      "full_sha256": "c10245d3ded9f0d1f060120a3bde288a39eff8c790fba62a923ce998335c0b5a"
+    },
+    {
+      "filename": "3-203377-A-39.wav",
+      "fold": "3",
+      "src_file": "203377",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "66c6c338f75f509754b454cedae44597f70c97a44f79a3079da0183a63e34562",
+      "full_sha256": "099bd5f3244086f361b0769a9321fb2f278cfb87185a6d4ea5a0b26f32c50035"
+    },
+    {
+      "filename": "3-216280-A-39.wav",
+      "fold": "3",
+      "src_file": "216280",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "2ff2076e898eb818ee6ce5edb615126500b72f6c2fb525ea6bd411d73f8ca580",
+      "full_sha256": "3391a498b405c80c5b4a3681bf34b96b831cb1717bdcef044ca3b6ea8bd26728"
+    },
+    {
+      "filename": "3-216281-A-39.wav",
+      "fold": "3",
+      "src_file": "216281",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "6f0ae114a872f560946a6a45d474f2b9e0664325ac5b236bc396723ecfbcb5ff",
+      "full_sha256": "1a7310647abd538ddebb723af52eea7b484bfdf47ccaf317085f2c9e8079bd8b"
+    },
+    {
+      "filename": "3-216284-A-39.wav",
+      "fold": "3",
+      "src_file": "216284",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "b494fb47b9afd88715976c1476e6115024b8869681a293ea761fea72a03abf3e",
+      "full_sha256": "1c486ac6df56ee8b87984a93a445e3b184f005b96c84591607a232d8f9c62031"
+    },
+    {
+      "filename": "3-253084-D-2.wav",
+      "fold": "3",
+      "src_file": "253084",
+      "category": "pig",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "a8758acdee34d79fb66ef85573ac520a569254cb2f89a856af54047542b129b9",
+      "full_sha256": "c3b34ff25573eb47fd9b9a150d6c63c4ed53b39a5a3c74d7c000c566bb3e7629"
+    },
+    {
+      "filename": "3-62878-A-42.wav",
+      "fold": "3",
+      "src_file": "62878",
+      "category": "siren",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "9a68c6a6678a7fda587c12dd45064d12093befd4b8b4b10e187ad2248c71e445",
+      "full_sha256": "00910026abba8367f33e1ff8f5b8c30eaf3e19a376d912b05afb81e8a5987554"
+    },
+    {
+      "filename": "3-68630-A-40.wav",
+      "fold": "3",
+      "src_file": "68630",
+      "category": "helicopter",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "f085e649b44c0ff59ce93228fd367da81c68f53e5f932fb3c2dbbcc66c997a66",
+      "full_sha256": "1265933e83680874f43c74eb2ed3a567ee3cfc5696607fbf69a10b5815575fde"
+    },
+    {
+      "filename": "3-83527-A-4.wav",
+      "fold": "3",
+      "src_file": "83527",
+      "category": "frog",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "132e40f789fa26bd861af24281ca956470506b1bcd03cb4bea94deb16cffbf71",
+      "full_sha256": "812ba2d8dddf9817ac8844215d01a44810991d12f029523dc1930e4a29789e9c"
+    },
+    {
+      "filename": "3-87936-A-46.wav",
+      "fold": "3",
+      "src_file": "87936",
+      "category": "church_bells",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "a6b64ebbceb2f946ab37609967aedaf8d66a5299f270071a5afff4e220eb01c3",
+      "full_sha256": "38b4387e67689080c1f5db396adacb589a9880aa3cf17f20a1d77e0d86698c76"
+    },
+    {
+      "filename": "3-95695-B-5.wav",
+      "fold": "3",
+      "src_file": "95695",
+      "category": "cat",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "8d589319aec05ca53a8c5b8e0ccd5ae5495c9347f2f9c07d9dd366ba8d708f9b",
+      "full_sha256": "157a9d70a29a8fc4c44f10faf72b605c69fbcff773688ed34ed547383dbfc877"
+    },
+    {
+      "filename": "3-98771-A-18.wav",
+      "fold": "3",
+      "src_file": "98771",
+      "category": "toilet_flush",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "61aa0f50125b1dc08fe84fae0f5dc0a4af8abcf9ec4b8e8d0abf3c69df2de936",
+      "full_sha256": "6df3c33205a69eb73e6ccfc80377c9d84ebd93a0be3c53157b449cb1c9db9fb7"
+    },
+    {
+      "filename": "4-108352-A-33.wav",
+      "fold": "4",
+      "src_file": "108352",
+      "category": "door_wood_creaks",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "d5c4e651d1bb6e02ce60b403818965a077903903b822884573d8eff0f2198e02",
+      "full_sha256": "5522df7a22a175ffbc96aa38bfff9f8354673d0f1e64d1ad2e1cb99766b672fd"
+    },
+    {
+      "filename": "4-111671-B-42.wav",
+      "fold": "4",
+      "src_file": "111671",
+      "category": "siren",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "7b862bec0a634cc342e53fe54fbac85c28801588903e2a35e9eff705b5593b05",
+      "full_sha256": "8200556bd23bd8b8878c2b23b87f2b72cd8a05f36f7cde02e74b4d960b83dd16"
+    },
+    {
+      "filename": "4-119647-A-48.wav",
+      "fold": "4",
+      "src_file": "119647",
+      "category": "fireworks",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "0ee8c78bf99e24c3733bfa9044f543f9437909ca12dc85d9322e1f45b03cc526",
+      "full_sha256": "956823f899668df5350c4a3f52e31d26bf0476561a098f5d2a03d59487a65bb6"
+    },
+    {
+      "filename": "4-121532-A-42.wav",
+      "fold": "4",
+      "src_file": "121532",
+      "category": "siren",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "9f7d32892f55d06a7ce39a0c97c5fd24fcc477c3e517c6e34003a5a9d2c822f5",
+      "full_sha256": "0f089a8491d2fc56fb66fa132a4f4178d9838c0cf16364a262db250296561fbf"
+    },
+    {
+      "filename": "4-125072-B-19.wav",
+      "fold": "4",
+      "src_file": "125072",
+      "category": "thunderstorm",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "740bc4d9421e207dd70835ed6daa6982fda8c16a51a00256baaa69b4491ca29e",
+      "full_sha256": "93d07d959f6de5e1609f961d47b3e458864cd986a661cc461b5784c06cb850d1"
+    },
+    {
+      "filename": "4-128659-A-33.wav",
+      "fold": "4",
+      "src_file": "128659",
+      "category": "door_wood_creaks",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "27d3a2001cf9323b69ee247d3c527e69ab2c9a19fcbd1fcbe5b60886c4352040",
+      "full_sha256": "81a9a8070ceb7d2261f54fc024a8089d38c184287407721a6465c9b370c813b3"
+    },
+    {
+      "filename": "4-133047-A-5.wav",
+      "fold": "4",
+      "src_file": "133047",
+      "category": "cat",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "28e3fb5e2dbc18984b5e5e82eb85e7301093fa60f46341ae1f682dc111ffedc1",
+      "full_sha256": "35809545130010366d403b783217959e431155d9abf2f28b4e77cd42e8ef4616"
+    },
+    {
+      "filename": "4-135439-A-18.wav",
+      "fold": "4",
+      "src_file": "135439",
+      "category": "toilet_flush",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "d14d906a98bd58ea4853431f0b482518dcdcb5dd90b39c2c4d37a540ce3dd5c7",
+      "full_sha256": "08dbb0e8b027cb5ce35547809508814000ba28b2de022429f53a18bdfa38005e"
+    },
+    {
+      "filename": "4-144083-B-16.wav",
+      "fold": "4",
+      "src_file": "144083",
+      "category": "wind",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "6295c5592ebaa83de1109be26a2473912d15565d5594abb24784b89cb17d29ae",
+      "full_sha256": "b8cd4b9ec61538d70571f3b41f82ced2eb27b88bbc4f2af8095dbce6f25a5412"
+    },
+    {
+      "filename": "4-152995-A-24.wav",
+      "fold": "4",
+      "src_file": "152995",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "ca9a065e5c3c2427954a9d4fb74dff3891ce63e9bda66878e19448237e194e71",
+      "full_sha256": "4fac0ae8f98d9f1fa052a24e8c3a76c3ae2fa14928be021b5963735dca22e86a"
+    },
+    {
+      "filename": "4-154405-B-27.wav",
+      "fold": "4",
+      "src_file": "154405",
+      "category": "brushing_teeth",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "7fb82f2e2eb895f2d8d14c8bf845d168ac57d8fafa1d93ab2439af13912f2c8c",
+      "full_sha256": "baf9febe3f23cc377890bdb6aa17781c62e858157ba10b26d7978463284c9ea0"
+    },
+    {
+      "filename": "4-154443-A-24.wav",
+      "fold": "4",
+      "src_file": "154443",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "a797267e864e22e93777a5822b91f029fe7dd0686003dec30e0fa708afca2e86",
+      "full_sha256": "131cbb1ddf6038f4dce37281828f56e960c89386f87bb8e3e530219169bf6305"
+    },
+    {
+      "filename": "4-154793-A-4.wav",
+      "fold": "4",
+      "src_file": "154793",
+      "category": "frog",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "70848cc5cfe7f2c5f3ef1266f47901c50463a4887ff6ffa8910cba9b22c89d4f",
+      "full_sha256": "00f2b6f25832d5d108fdb2ba4f243f7f50285d834e8b90dbf6627bbd636c4ad9"
+    },
+    {
+      "filename": "4-155650-A-24.wav",
+      "fold": "4",
+      "src_file": "155650",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "40b7ab01d71f32d21b193d0a90b5f202264e82dff15a45e4b9e95e7d93f2bd64",
+      "full_sha256": "30961e7d150f096e1ffb186e409e6d86aa715d0814fd653d09b9a473af10bfc4"
+    },
+    {
+      "filename": "4-155650-B-24.wav",
+      "fold": "4",
+      "src_file": "155650",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "c52dc2cf771d93225ad071a05099a6a0ad37569b09d21d54ef15efae2b4fe6f0",
+      "full_sha256": "e7bf8927d02feade3571a9c263041708f2b2fa8e89933592ed2fd02a920a6839"
+    },
+    {
+      "filename": "4-156227-A-9.wav",
+      "fold": "4",
+      "src_file": "156227",
+      "category": "crow",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "d34e7eb113233542edb49de449196a982d96ea912af90816c37655de30bdf634",
+      "full_sha256": "bae3a75b7898580cde93183f9aa6bd993ff16b653bbb46c8f05b5322d1965176"
+    },
+    {
+      "filename": "4-157296-A-24.wav",
+      "fold": "4",
+      "src_file": "157296",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "918b5180068c452637051ad4037ba51ad5e9d4c422dbbd2b99efe687d9219f42",
+      "full_sha256": "9915b41ef5c2cd4813a7c034b7537a0e795798ce957e0c855e5667310d564908"
+    },
+    {
+      "filename": "4-161099-A-47.wav",
+      "fold": "4",
+      "src_file": "161099",
+      "category": "airplane",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "2264c8830b42634fb6df30886667ea375dd988d38c005662b1218adbd46755dd",
+      "full_sha256": "17e7defa85aa2beca6a6053064bcb3a722caf49f7c93c819d747f233d0e11fcf"
+    },
+    {
+      "filename": "4-163608-B-16.wav",
+      "fold": "4",
+      "src_file": "163608",
+      "category": "wind",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "696f32e8d0e62b5cb5bf388f6045b720bb81f93c887e3b15991b01aeb293b732",
+      "full_sha256": "a82fa5e2423a3a593c7e81b1338eb439c584b497f599161bbdc2ae66ad012d48"
+    },
+    {
+      "filename": "4-165823-B-41.wav",
+      "fold": "4",
+      "src_file": "165823",
+      "category": "chainsaw",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "b65207c334c37b5ce88da303197f15d1b2e21ee3002b6d644d06c9f9cd5c0a6e",
+      "full_sha256": "c0d816895e908599966037244085945d26b0b53cf8e7301b7afe1ac15964b77c"
+    },
+    {
+      "filename": "4-165933-A-45.wav",
+      "fold": "4",
+      "src_file": "165933",
+      "category": "train",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "06f9ae9aff48c5bac6b61cc0d9c2e02fd79bf659a4519828dfea4dc3065e3ae7",
+      "full_sha256": "69e27bb68701377172b19b333d1849a41b491eec5784a816a06ae70c5f307913"
+    },
+    {
+      "filename": "4-167063-C-11.wav",
+      "fold": "4",
+      "src_file": "167063",
+      "category": "sea_waves",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "0c11db409fe2f395dbd8d34d83b9d96cb10d8e971cda562120d7fea19d61d62d",
+      "full_sha256": "1fa01acc7c42dd099d63af02afa0a16be9c5a3b4bd3aaef04861de0ceb3e6000"
+    },
+    {
+      "filename": "4-167077-A-20.wav",
+      "fold": "4",
+      "src_file": "167077",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "43a894a23a4a1bed053e2ca040f7029a5d9029269173d8bac1c650c52c03e937",
+      "full_sha256": "41547635a6415f26adb20fb68da9b91d1e0fa1debfb37e5b083928185f30afd2"
+    },
+    {
+      "filename": "4-167077-B-20.wav",
+      "fold": "4",
+      "src_file": "167077",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "0dd0122251e1b989c8309596e92ea95d06989db8b37d28fee3c485842f9f0014",
+      "full_sha256": "660c7bad4599194ba8c20f587a72f41d24de7db4126619987a5eaa37f0ae8edc"
+    },
+    {
+      "filename": "4-167077-C-20.wav",
+      "fold": "4",
+      "src_file": "167077",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "c9ec416d8fb525a66d084250b4fbbf041e8bd5f31cc1c7c809e381a45902cc06",
+      "full_sha256": "23d3cd00194ab6a23ef331050ba6255402690e6e4aeb92d3fcff7f8db7866eda"
+    },
+    {
+      "filename": "4-168155-A-15.wav",
+      "fold": "4",
+      "src_file": "168155",
+      "category": "water_drops",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "2cd2ad18953fa15ac00e34417479f1021d9f01afdfc193aeaa486c1a3473313e",
+      "full_sha256": "2f79e57cd78499f1edf81bec4f56dea3a199e4974c5af484b104b986a00009a3"
+    },
+    {
+      "filename": "4-168868-A-17.wav",
+      "fold": "4",
+      "src_file": "168868",
+      "category": "pouring_water",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "e9d0e25a0565a8a9ebe5e26bf2c0dd65bded68eda8268cf24d7cfeb417c7c3e4",
+      "full_sha256": "faa09ababffc17935f599e338ebc6ce59c522cacab121d9308273cb4d515f106"
+    },
+    {
+      "filename": "4-169508-A-37.wav",
+      "fold": "4",
+      "src_file": "169508",
+      "category": "clock_alarm",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "1b78f0e61352c9d8d4c95987ba852cc3f9e84c3d6a4f3be7424e2704057570a2",
+      "full_sha256": "185ed542be2a277c80480487daa996f19c6e92f93e6251dab1a725f9322eafcb"
+    },
+    {
+      "filename": "4-169726-A-24.wav",
+      "fold": "4",
+      "src_file": "169726",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "ec8defa24843e95c9448fa7bcd3f619d032856856fbc892cf357e2890b903700",
+      "full_sha256": "945b5babe391bf842d19d4657256e88ebf7c068f83559a554c44aabda4e99146"
+    },
+    {
+      "filename": "4-171396-A-24.wav",
+      "fold": "4",
+      "src_file": "171396",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "343764265d080bdba2b49a58f86874843865bef82c753adfff866625f9999800",
+      "full_sha256": "c723b01a3093f5c3251e8913af650e383d34bbb8a95dd7d2279fa8536e56b460"
+    },
+    {
+      "filename": "4-175000-A-40.wav",
+      "fold": "4",
+      "src_file": "175000",
+      "category": "helicopter",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "1955ca9fc02340cef8d66b125b0e2cdaabea757b1ee38fe9dc3df9646a50657e",
+      "full_sha256": "c908e8d5ab4a1b46ab183d6ae03f447c728d9376ee8d02cef99cd34d646613fa"
+    },
+    {
+      "filename": "4-175845-A-43.wav",
+      "fold": "4",
+      "src_file": "175845",
+      "category": "car_horn",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "aeaf26bd07b54964985f7c5726b2724f57b9912b6e70c0af2f8bf3758ca0f18c",
+      "full_sha256": "f852ac86f880b3639206c92f9766bb561f59f223fb7c18cfc36886b14a460ec7"
+    },
+    {
+      "filename": "4-176638-A-43.wav",
+      "fold": "4",
+      "src_file": "176638",
+      "category": "car_horn",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "6e2cf0e0671f26167772c0aa34bcdeb711fec40b62b79311433bf4dd9497ce5a",
+      "full_sha256": "3d39eb0fdaee1ddf5a8b57969f2c27f18592e8b9b9916cba9483107097dcd8d6"
+    },
+    {
+      "filename": "4-177835-A-24.wav",
+      "fold": "4",
+      "src_file": "177835",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "107f49aa987e3155662f7713709ebfc7665202f42cd0e4adaefa57eff4b89208",
+      "full_sha256": "8476a599118f51bcdc90b479546fb45c12c2d86d4e397f099a63fced845a3860"
+    },
+    {
+      "filename": "4-181599-A-26.wav",
+      "fold": "4",
+      "src_file": "181599",
+      "category": "laughing",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "e414fc3ba7dea88437d0be3c0dd1101177cfcc0052e2a2b2cb8973cad984e178",
+      "full_sha256": "07b966dd64015bbfc04ff6bd6cd2a9476663faac4ecb8b1d9a7305001e4c39e0"
+    },
+    {
+      "filename": "4-182395-A-0.wav",
+      "fold": "4",
+      "src_file": "182395",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "c249bcb8ef81d12516ad17c8a77f88c01952cdf70b9413732af5fb8b803f9c7d",
+      "full_sha256": "7d29d27f026dd4b72339061a5c38a43bce26b2763bcb736c1c83fb0d0b92d371"
+    },
+    {
+      "filename": "4-183487-A-1.wav",
+      "fold": "4",
+      "src_file": "183487",
+      "category": "rooster",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "0cb40e860a07d9ef3843375df34033fcc7a655ffd01f1d693ae58f9ecfa0e1a3",
+      "full_sha256": "dfb42224061302f8a5a7dfa54a3d03b7e28a69564c9515a73afff39d3ed62056"
+    },
+    {
+      "filename": "4-183882-A-28.wav",
+      "fold": "4",
+      "src_file": "183882",
+      "category": "snoring",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "d80e203b4295fcd4d4ab92079372ac4017e7eccd44310c729b8e0d46a96e95a3",
+      "full_sha256": "b6acc9c0a19272341cb0ed72c822cce928e44109843eac8ac8c7b5e18e1407e5"
+    },
+    {
+      "filename": "4-183992-A-0.wav",
+      "fold": "4",
+      "src_file": "183992",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "96bf2e0efce166f347db6ae02b3c17d24acadffc45d67ad6015de7b1162f54dc",
+      "full_sha256": "f322af3477a2febe12407dcb95f8b173802aa73ece5a3df53e96b3cc74fb04d2"
+    },
+    {
+      "filename": "4-184575-A-0.wav",
+      "fold": "4",
+      "src_file": "184575",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "417a923837951edc374447528f1387b6bfb961a9605b165cfcb3d9d63735d179",
+      "full_sha256": "9a33a6c8891f0ee86a5db88fdbbae1baadd3e5c301d5028e22b2f8fd2ffcef8a"
+    },
+    {
+      "filename": "4-185575-A-20.wav",
+      "fold": "4",
+      "src_file": "185575",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "9f40eaeef4e23e134a64b010d8a42636c7a9337e066539ebb183117744745f48",
+      "full_sha256": "0b9d193751d2914bdf4b11258a10301be0fd4e055f77d37622194c206be6c073"
+    },
+    {
+      "filename": "4-185575-B-20.wav",
+      "fold": "4",
+      "src_file": "185575",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "630641ffb71938bd943b0ac6c5c2523fea1d7aa1e34a93de6f7268183a25ee5a",
+      "full_sha256": "c3daca4cdc08bccd7600e1226e7125350ac653d2071a4c7444ff438278349264"
+    },
+    {
+      "filename": "4-185575-C-20.wav",
+      "fold": "4",
+      "src_file": "185575",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "7cdd46d701197c99ab637a10bc37e61a9859fd88218d339d4699a46f748c0200",
+      "full_sha256": "c62075ca7d82e58eb76b858b783ad05603bb44b1a69053af2139070797f7f013"
+    },
+    {
+      "filename": "4-185613-A-32.wav",
+      "fold": "4",
+      "src_file": "185613",
+      "category": "keyboard_typing",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "e7c612cbd5ed3fa812dc1dcfc30af74670a6f9d4265a0d3e512396624a6eb7d6",
+      "full_sha256": "d1d52e61c14837e7e6757d05c7fabfea41bd58ce2be997259de82b4a3304ae57"
+    },
+    {
+      "filename": "4-185619-A-21.wav",
+      "fold": "4",
+      "src_file": "185619",
+      "category": "sneezing",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "3c07f7c7150ca66a8f690bfc56ccbcdab63d94b870c2e0e9c6ec150f56316c91",
+      "full_sha256": "b9a61dcb231e9ec9ba60a2cc24248287e8458d3b5c23f57be17a102abe778c5a"
+    },
+    {
+      "filename": "4-187384-A-34.wav",
+      "fold": "4",
+      "src_file": "187384",
+      "category": "can_opening",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "e464c26f74fd0bbf94788304885828c272f42173f944fcd2f49665865ae71d69",
+      "full_sha256": "de187b8e41c508c2da0a96d681ce2a4c290509af62fa7e8b7c9b069b159aefc1"
+    },
+    {
+      "filename": "4-191687-A-0.wav",
+      "fold": "4",
+      "src_file": "191687",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "65bcaf4cce64177bb0dcc139c63dc9bee48d86c559b3019248d7c79db6a8b2ef",
+      "full_sha256": "e92a4f2f0e261eff56c6d78441197fddf84235eab557ab95bd2be69db6092ffa"
+    },
+    {
+      "filename": "4-192236-A-0.wav",
+      "fold": "4",
+      "src_file": "192236",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "cea20645e18a4ad56ad53905a6185e891b53f65989e4208f3014aba838096f08",
+      "full_sha256": "42eb50b43254e80eb9045ee8c6aeea7090cdd22d6c969716a9f58314a0337f4b"
+    },
+    {
+      "filename": "4-194754-A-0.wav",
+      "fold": "4",
+      "src_file": "194754",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "89e569fc4f5659de5a5c70fc5b196270b218d8f51cb6d1235d9568540061b309",
+      "full_sha256": "a421dd3ff1813438e5c9bd1ebf47eacc216b937d31ffe9c3f606bf05e1d687db"
+    },
+    {
+      "filename": "4-195497-B-11.wav",
+      "fold": "4",
+      "src_file": "195497",
+      "category": "sea_waves",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "e227f80e99d397ec87eeb3d6d773c89238ddd10d6aae8d6cba0cd6988b054099",
+      "full_sha256": "094e5fb94bdf9e1b0e3520527603a04c07d500997505e5daef13b21123137614"
+    },
+    {
+      "filename": "4-195707-A-13.wav",
+      "fold": "4",
+      "src_file": "195707",
+      "category": "crickets",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "abda8af0a90cb34def75f542a913e0facf441155340243441d4182199030d66f",
+      "full_sha256": "89672d364662d4aeb8903594ae1127ff17340442964eee961d96e6cd7d86a83e"
+    },
+    {
+      "filename": "4-198360-A-49.wav",
+      "fold": "4",
+      "src_file": "198360",
+      "category": "hand_saw",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "da1175ae1546391f81a565f0eb22a39772a7d658652974b8c889fb990ac15b21",
+      "full_sha256": "d3f3ed6816939c0d80af2cc03919dde3144e585a096bfab92a575c6fe1937e5f"
+    },
+    {
+      "filename": "4-199261-A-0.wav",
+      "fold": "4",
+      "src_file": "199261",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "527a52b5cd50b5171b45ea0dd3c5efe5d11fb75a0c29cdd777c6f17255ac8262",
+      "full_sha256": "ae9c996ca5760d15f604f32ccfd9d431ccef7fc07d3a19aec1e808eef2db2f1c"
+    },
+    {
+      "filename": "4-201988-A-44.wav",
+      "fold": "4",
+      "src_file": "201988",
+      "category": "engine",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "6e42b414c1b9a63712d74475f21afefc6553aa446c46b0b03ad8de40e061a3c0",
+      "full_sha256": "fe8da9a200d2d4d4a9efd648c0561597ec5ceac116bfe4aacbd6cf99f1991856"
+    },
+    {
+      "filename": "4-204115-A-39.wav",
+      "fold": "4",
+      "src_file": "204115",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "3d4a520122727b384d55738c254f33103e1eee73152f4c45893736089915eff9",
+      "full_sha256": "1ec64671486bcd0cd4d88c851ec57b8e74040d4ef6472457770db69e9fe18ea0"
+    },
+    {
+      "filename": "4-204119-A-39.wav",
+      "fold": "4",
+      "src_file": "204119",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "2fbc4acd76fa931f8461c3370eeef3e417b1ea28da20eff7874d4b4e2177fc41",
+      "full_sha256": "0fc5df2dd32dae08d264fc772773e6a9aaced79d1ac50a73d8e228cb5717a089"
+    },
+    {
+      "filename": "4-204121-A-39.wav",
+      "fold": "4",
+      "src_file": "204121",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "ad42b3c91dd21d4f3a8238290c20dac179e7a7674320dab7029c5b111116d1d1",
+      "full_sha256": "9f917657690d7201518d7456b6bde3ae369a5ca1c9fd8187b4e132f6be44c6fd"
+    },
+    {
+      "filename": "4-204123-A-39.wav",
+      "fold": "4",
+      "src_file": "204123",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "a35fd2223acb65ae87ab1e3ad4c774e8cda44a5482b639f11b6aa0d8065b4a7a",
+      "full_sha256": "bdbf3905e7d31f448ca675551cb61018f6ad99f592997cd56854e7a6b42ca619"
+    },
+    {
+      "filename": "4-204202-A-29.wav",
+      "fold": "4",
+      "src_file": "204202",
+      "category": "drinking_sipping",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "78b15b053ab54c811192b581cc13196e3f0b9c418bf312c3d12db5be4c4fcfaa",
+      "full_sha256": "3ef4048fe2e861576ab4b8e0529742568d202a33624b2175463082d1e2cdf54d"
+    },
+    {
+      "filename": "4-204777-A-39.wav",
+      "fold": "4",
+      "src_file": "204777",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "872608ee9201b147b13b9cdc871558b39368bd09d3eb7dc469544866e414c0f8",
+      "full_sha256": "c17cafe69d42c621b2c8b555e0663949ce47d367ccc892e0ef77a3debf1d23df"
+    },
+    {
+      "filename": "4-204777-B-39.wav",
+      "fold": "4",
+      "src_file": "204777",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "98b930c2e4028e80749d82616ccba7640e58650a9ccf7770a77f814e3b2dcd24",
+      "full_sha256": "422e92affa3892fd5ec28f8a902e961e5e7a920c5cb790f389e5bd6f6e5ccd8c"
+    },
+    {
+      "filename": "4-204777-C-39.wav",
+      "fold": "4",
+      "src_file": "204777",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "88bbd7af8f04d1b46f9e0c13a304223efea777c1dd908564b8eff73b9774477b",
+      "full_sha256": "c7f98f14148b8d8990b95fc3dbab87926a2676da32e6feb2ba39d92d6f696d86"
+    },
+    {
+      "filename": "4-207124-A-0.wav",
+      "fold": "4",
+      "src_file": "207124",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "4172efa07482e36b67f50bc730d9ecaf95da20c81f79242d0439ac6bae21f53c",
+      "full_sha256": "349c1e7d7aafecfbb135ba9897f94e4cc6d5041535f3870436c8ed0552b4e175"
+    },
+    {
+      "filename": "4-210000-A-23.wav",
+      "fold": "4",
+      "src_file": "210000",
+      "category": "breathing",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "3c050b085aeec30155b0f656249449ac9b0e889844e1c1d1e3557008c61be7d9",
+      "full_sha256": "8ffe59365a1958ac2675c2208a533b025fb7fcc168eeb3b14820a502db9f3f48"
+    },
+    {
+      "filename": "4-212604-A-15.wav",
+      "fold": "4",
+      "src_file": "212604",
+      "category": "water_drops",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "2ec358c578592ba2f8fa7e8747af7fb3de71413492cab82a868abbd6e972e966",
+      "full_sha256": "fca5b8d8235af9032fc51324898e7d56fc9f6143fd2fe625c280fac74ad63c92"
+    },
+    {
+      "filename": "4-212698-A-39.wav",
+      "fold": "4",
+      "src_file": "212698",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "4491d08becad3c0074b46fbe25eeb7536a458036ecd5eed77f5709ed77313ef8",
+      "full_sha256": "a81a733fda32ec213e5ac34295c2a05847c1dbceef87d24d35465f5011dfe75b"
+    },
+    {
+      "filename": "4-212728-A-34.wav",
+      "fold": "4",
+      "src_file": "212728",
+      "category": "can_opening",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "a652b5e90dc99a8b9b69854cd54bec0be47872dc98b44306ff883e970f0b8f9e",
+      "full_sha256": "b7c78ab1d2a0de8fb4cfcace6b054bc2dc6d905ad9688a5235f1c37259cc0423"
+    },
+    {
+      "filename": "4-213915-C-3.wav",
+      "fold": "4",
+      "src_file": "213915",
+      "category": "cow",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "cb961557c652b3cfadac4acf581494e61994657926ba33656f3b19958e6601fc",
+      "full_sha256": "8caab1f1e2c263ebb5c0ce08b3b7ae95390dfa50771f2e0cc6486e129390e5ad"
+    },
+    {
+      "filename": "4-59579-A-20.wav",
+      "fold": "4",
+      "src_file": "59579",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "9c21cb5f694f7c375c0d9d33f2f618b58460b7d1b39681dd2d3fbb493f0b0052",
+      "full_sha256": "2aa67b3e519883f956cf1228004897bc9fce8afb4b853f62c7d334ba812b59ed"
+    },
+    {
+      "filename": "4-59579-B-20.wav",
+      "fold": "4",
+      "src_file": "59579",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "8129eb08025521fbb11f273c6c506ebed89becab8ccb31ec6c0954162b2242c1",
+      "full_sha256": "f02a2ceaba74fcfb54834e32aea8e329edd1028e9be97d2bd9189d88717bf42d"
+    },
+    {
+      "filename": "4-80761-A-42.wav",
+      "fold": "4",
+      "src_file": "80761",
+      "category": "siren",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "d1301a63a3d7f4429b40244d7a52f11636c3ed28b846f6213bda6e0005b1c072",
+      "full_sha256": "0458e7a66e4452347e45c44631e9b277ae2f0408555dca22ac3bc454947482b8"
+    },
+    {
+      "filename": "4-99193-B-4.wav",
+      "fold": "4",
+      "src_file": "99193",
+      "category": "frog",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "f8554c373bb4ec21a2e117c5e47bb692297683caf401db6938f8120eee8bfd38",
+      "full_sha256": "47fb43f3396f85d00412d371689c5162f70b5c381015b2b3cb4dd9d4a15cf628"
+    },
+    {
+      "filename": "5-103422-A-2.wav",
+      "fold": "5",
+      "src_file": "103422",
+      "category": "pig",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "4c82ac9cbaa3a0e8fd14f6b45fb596727585f4fb7126d22c5b734ea2ee6e60af",
+      "full_sha256": "47ccb7b47f4f0d93ddb19d7601dc71e1801899cab279564c821268d6681cdbc0"
+    },
+    {
+      "filename": "5-151085-A-20.wav",
+      "fold": "5",
+      "src_file": "151085",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "e46d87b3673136a4d97b42f0ac6411ed299075bb2c88d61f7c456c0afe6804db",
+      "full_sha256": "02eabeb291627e4759212bdc2627bc6c11bdfcbbd807cf53269943d9159715c3"
+    },
+    {
+      "filename": "5-160614-G-48.wav",
+      "fold": "5",
+      "src_file": "160614",
+      "category": "fireworks",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "9d1b69c0be10cf245ef400ea0466a0be5d4235ccd6c549740c06c1582bc413f7",
+      "full_sha256": "99ae037813f77c67d0e7b167fd71ec4fa108a994be5ad1b603d0429670513d32"
+    },
+    {
+      "filename": "5-171653-A-41.wav",
+      "fold": "5",
+      "src_file": "171653",
+      "category": "chainsaw",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "2fcbbc97d0ac376a8219ec709ee6d90ccfca3df7bcbd2abbbf9a60491cddbb5d",
+      "full_sha256": "e7c92eeead7f225f6485ae794ff7acc4f22fbe367c762de23b432e0f211cad6f"
+    },
+    {
+      "filename": "5-173568-A-33.wav",
+      "fold": "5",
+      "src_file": "173568",
+      "category": "door_wood_creaks",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "c2b965ee82fd757d99c9075cfc4362e2654a981ffcdfc34103664392e6f36294",
+      "full_sha256": "b02a61d3eafb9fbe43e190ead950eeb985c7ab636714d2754856db557fe83234"
+    },
+    {
+      "filename": "5-177034-A-18.wav",
+      "fold": "5",
+      "src_file": "177034",
+      "category": "toilet_flush",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "a20b707d80b8abf2cf12062328bd19d1f93d801f18a03aaceceecf153d818db0",
+      "full_sha256": "98d671d0f722a6deed416f3835822fbc672d54986309a8589d38a4e9d16b289a"
+    },
+    {
+      "filename": "5-178997-A-24.wav",
+      "fold": "5",
+      "src_file": "178997",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "c7aba9fe825d201275860a99588bf8ee1cf26c2d6232f9d89eb52e47cab19221",
+      "full_sha256": "02a44c05fc0d65bcc8c00feba8c032d5c3113ffc0d9ec3886f7fffb10695d993"
+    },
+    {
+      "filename": "5-179863-A-43.wav",
+      "fold": "5",
+      "src_file": "179863",
+      "category": "car_horn",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "9a777c790a2476a3de0efd0318e6fb369ad5af8bee0d007193ce08913dd9ae33",
+      "full_sha256": "45c2581e7a5fe57715fc2c1ca5b9dba5e8e7af943f5d56a6472287fb7ccab1f6"
+    },
+    {
+      "filename": "5-180156-B-43.wav",
+      "fold": "5",
+      "src_file": "180156",
+      "category": "car_horn",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "0593cc83b35ce0a14c18f6a176f90044a38600e77e8cfe6806a5ccbd3f2e0d1a",
+      "full_sha256": "6e1960f30e4196070916b457872e16b9f7ad859e90ad68582cfcff37efbd1cf2"
+    },
+    {
+      "filename": "5-181766-A-10.wav",
+      "fold": "5",
+      "src_file": "181766",
+      "category": "rain",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "608fcc0bef32512e2a984c7d3d2cac8ea161f6337ec0056850a6d34f07f8db35",
+      "full_sha256": "d15a83330814a60d21c13f367027415135e2ef2c49db033870c8ee1f61594815"
+    },
+    {
+      "filename": "5-182012-A-36.wav",
+      "fold": "5",
+      "src_file": "182012",
+      "category": "vacuum_cleaner",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "8fa37e0bd01c6e825f68c8a21bb057a25d4a98b5088f16e16de0fdf0d4a42b03",
+      "full_sha256": "5ab88c9dfaeea43fec7591e157462ded343300967b76e60d5b83f0ea9b48c7e4"
+    },
+    {
+      "filename": "5-184871-A-24.wav",
+      "fold": "5",
+      "src_file": "184871",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "94215401f4f1c623c0fa515c44cd3d4940205302a69727b5467ad59f56654d74",
+      "full_sha256": "df9295811ac3910326500a9cebfb2aa9d76905f43bf50972fb20f0dbf749416e"
+    },
+    {
+      "filename": "5-187201-B-4.wav",
+      "fold": "5",
+      "src_file": "187201",
+      "category": "frog",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "ce055f61c4e3024443227caf701f1ea35bed562e22fe14fc8a651280dac189be",
+      "full_sha256": "a84ec3a51dd7bbcf8fe990a5804729f1bc6956e778740c6a8e39afb64d8e9832"
+    },
+    {
+      "filename": "5-187979-A-21.wav",
+      "fold": "5",
+      "src_file": "187979",
+      "category": "sneezing",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "f9b1c8dcaebec0e9d7bba56142e831a6530ee06bd969e0b80c91bf7cd57e4b4f",
+      "full_sha256": "dac0d1229675fc8213a1f25e65491ee30e46f2c3f890b84a2fa8260ea91a9eca"
+    },
+    {
+      "filename": "5-189237-A-12.wav",
+      "fold": "5",
+      "src_file": "189237",
+      "category": "crackling_fire",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "41ab28c22910b7fd2834728fd4819d8a0d4a9268e5d1b8b434a5705473fb373a",
+      "full_sha256": "3a79d8722de72d06e5800bdee33357ab56830e969a5a260da6e788c6bb3a3533"
+    },
+    {
+      "filename": "5-193473-A-12.wav",
+      "fold": "5",
+      "src_file": "193473",
+      "category": "crackling_fire",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "0c34b4945be60984588bf5b3048ff62974eaaf69b0fa8ef4f06408debb0d7fc9",
+      "full_sha256": "50e9c5b239dc44453b216d789eefd2662eecd9e94e52b3043affc073e6c7d92a"
+    },
+    {
+      "filename": "5-194899-A-3.wav",
+      "fold": "5",
+      "src_file": "194899",
+      "category": "cow",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "5250b8ec60b7dec29eac9d8ea2edddf111405741bceb6a0efd43d85096421164",
+      "full_sha256": "4910d7c20f929466438f4155b79b567fdb10845607bd1f43a5ec053a4f5cd14b"
+    },
+    {
+      "filename": "5-195518-A-7.wav",
+      "fold": "5",
+      "src_file": "195518",
+      "category": "insects",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "d826d4ceb38127fac8fdead53b89274ffe716088acfedd2c5168913ad4564e14",
+      "full_sha256": "f50f05cb77902e5431bce68ae62767ac35b997804c97cae18945e19d0933ead0"
+    },
+    {
+      "filename": "5-198373-A-46.wav",
+      "fold": "5",
+      "src_file": "198373",
+      "category": "church_bells",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "8f8f7c9c79e6ae65d068c431986e0621e7066512bf3e3f54203542059a5e7c90",
+      "full_sha256": "6a0acc999bbf0c93c4a559efbd519a748d0cf1176960d2999e17f78be3e71dd2"
+    },
+    {
+      "filename": "5-198411-A-20.wav",
+      "fold": "5",
+      "src_file": "198411",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "efa9989fa053f1bcb7916965791c7bf55c05e4e5acf0bd6d61c649d833659494",
+      "full_sha256": "89b9c0f7243471ff0ada9ce7984a1cca3fb7d583beeda25720097c9095ddc46f"
+    },
+    {
+      "filename": "5-198411-B-20.wav",
+      "fold": "5",
+      "src_file": "198411",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "0a322dd25c0a694b06732a57f9e153f4615679c02fd5ec274aedf0bee3102b7d",
+      "full_sha256": "8336c8aad98c97340b95d2373b944d97f9532a82c16eb9f389d98752490e91bd"
+    },
+    {
+      "filename": "5-198411-C-20.wav",
+      "fold": "5",
+      "src_file": "198411",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "23cf024e102435298b16a8138129f411326a239a2486fc49ca61b4cc15f24875",
+      "full_sha256": "037a2e6f80e9a2b0ba9923d683bd64caf4f8f4a34082d959bd8cb6e388cd350a"
+    },
+    {
+      "filename": "5-198411-D-20.wav",
+      "fold": "5",
+      "src_file": "198411",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "ea7b47c6eb1383ec5b8ba4147aa63f7adaff0b218d02731e24bcb3903549abd9",
+      "full_sha256": "bda4895b0e9929ae8e0bba7bb141b0fabc1fb32f12f5b69bf5734563ce8c3bbd"
+    },
+    {
+      "filename": "5-198411-E-20.wav",
+      "fold": "5",
+      "src_file": "198411",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "d473b14efed04cdc8cfa37dff146f2d861e744414b86a8b113d42a506df598ad",
+      "full_sha256": "3fc40c29040398d46a1d3052b70c47340d44656e8547f856ba93af6640af059b"
+    },
+    {
+      "filename": "5-198411-F-20.wav",
+      "fold": "5",
+      "src_file": "198411",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "c7a8af6048461639c8931e6c0622a79ccfde881ec5b0ce0c902cb446eb699ec1",
+      "full_sha256": "142eed787f08a62d08b06917db6c124d19ea7719d4e04c20fb77aa4c2681360f"
+    },
+    {
+      "filename": "5-198411-G-20.wav",
+      "fold": "5",
+      "src_file": "198411",
+      "category": "crying_baby",
+      "label": "baby_cry",
+      "label_id": 3,
+      "raw_sha256": "a5172b7c92be5d7663f1e97b629dda2e9020ee4caf4b626db1b05817b1ee7f1c",
+      "full_sha256": "147daa881182d6c04ed8331ed6e602f3b4c34fe1d0245ca7fe50f20689224868"
+    },
+    {
+      "filename": "5-200329-C-8.wav",
+      "fold": "5",
+      "src_file": "200329",
+      "category": "sheep",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "5bd68391d0cccec67d32b243f99965c410511268b8b3bdc6d5f0ccca839fe9e4",
+      "full_sha256": "c40f134e2d23638219a0fd7a5bf8e2371c7caf72b7744ba22712cb675d285053"
+    },
+    {
+      "filename": "5-200334-A-1.wav",
+      "fold": "5",
+      "src_file": "200334",
+      "category": "rooster",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "6c5e64aad993a023cf4748b96759f97793b4c9d55db0fcf3d42754912cdabdbd",
+      "full_sha256": "e26e513eecca99647aca50dd19cacee41be85032e8d8b8c812cc30f2f9b8cfa4"
+    },
+    {
+      "filename": "5-200339-A-1.wav",
+      "fold": "5",
+      "src_file": "200339",
+      "category": "rooster",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "a29c86e2ebae1084f18a17ff73f6de34a3470a974de6c44f714801fc3eb49fde",
+      "full_sha256": "3ab6af3fa9f22c8465b9f30f26b6cccf5a670ea37103bbd629e7ad3a35238c81"
+    },
+    {
+      "filename": "5-202898-A-10.wav",
+      "fold": "5",
+      "src_file": "202898",
+      "category": "rain",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "06ba576df5efc793523c7adebfca21094e1d3cbdd924c0655a16ac5aa5785b78",
+      "full_sha256": "f22c551647c60e06cd36cf2b4524b4dacb3543d38383a7847e4a18ff7b577af2"
+    },
+    {
+      "filename": "5-203128-A-0.wav",
+      "fold": "5",
+      "src_file": "203128",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "435e476d5d429aa1cc51c23c9b5e5f8f472faf022846996ade18a457621d0552",
+      "full_sha256": "a93f9ec3368ad31c8806063c0821f6f9dea4ae495c488054212de7e115c30fbf"
+    },
+    {
+      "filename": "5-203128-B-0.wav",
+      "fold": "5",
+      "src_file": "203128",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "2a253659c2c3c86a0fbaf1e928d8a30933e90c7e7d4be43a3e4b4217e5be0c26",
+      "full_sha256": "33cb39dfe54cca7339d9172da71c7c5e10cfc6ced6d957ebc75d63449fb789e4"
+    },
+    {
+      "filename": "5-204114-A-29.wav",
+      "fold": "5",
+      "src_file": "204114",
+      "category": "drinking_sipping",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "994383e744a6f4d248ecc1a1a786aaf6a53517db706498705b70459a59759a88",
+      "full_sha256": "fd83b2e7c4b63d6aed8b7532c0b3d5bcd030378ba7a1d5208440c0fc58a44f1a"
+    },
+    {
+      "filename": "5-204604-A-24.wav",
+      "fold": "5",
+      "src_file": "204604",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "a0246cf0d122038d7665c037f3c0f74dd5f4efe8334c4e4ab1b3aa94651c9b1f",
+      "full_sha256": "e22f53686e7000997a51d458586e7b21c5e300270a371dab24cec8545d035f0e"
+    },
+    {
+      "filename": "5-207681-A-24.wav",
+      "fold": "5",
+      "src_file": "207681",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "be04f11bf1ea8d8f12d4922c37419d9e7369f65bf6def508b4b164d7f8164f28",
+      "full_sha256": "0789943395cc8691e9489bd1d0cd806c7489777a1e7d82b3588d8b7d2da9fd2c"
+    },
+    {
+      "filename": "5-207811-B-35.wav",
+      "fold": "5",
+      "src_file": "207811",
+      "category": "washing_machine",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "604878b6b4d00014e07006f94d9832706de28e9d04a8a95ad1d142925152d151",
+      "full_sha256": "8f74e6e63009b4ea46b9eee06986cc253e07a6dd979890ac18637c6af19a5c9e"
+    },
+    {
+      "filename": "5-208030-A-0.wav",
+      "fold": "5",
+      "src_file": "208030",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "8b3f5052dad5383ea171aa8feaead47879bf7b5ae3acaf5a26c5167838a49494",
+      "full_sha256": "b8bdb6baafb390f47f4af19eded0998559b6871b0541edebd9b9b1a2c40279b8"
+    },
+    {
+      "filename": "5-208761-A-24.wav",
+      "fold": "5",
+      "src_file": "208761",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "8cbc33a3752174636694712e59a1c597615c7c8ad44fec7d005c343ffb1ed549",
+      "full_sha256": "b7136228410c699e1b07c8b614175a171e067e9001a539f30398251771da937d"
+    },
+    {
+      "filename": "5-209719-A-24.wav",
+      "fold": "5",
+      "src_file": "209719",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "b041042160b4b536fca9d9d0b06a3f820db280a7e8c66526544d2574bc0de744",
+      "full_sha256": "ae99940fadba8f85115bfa2b923eff841352604f231a3bf6d86971403112c8de"
+    },
+    {
+      "filename": "5-211197-A-24.wav",
+      "fold": "5",
+      "src_file": "211197",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "1b714d7c87dd8ce622a5dd59d59ebb15afe7f40994ad0dcbe4a9f8064e5caa79",
+      "full_sha256": "737c1fdeb624e970e2d6a50194e35bcab807dd2b57c378ad04182522e748873a"
+    },
+    {
+      "filename": "5-212059-A-36.wav",
+      "fold": "5",
+      "src_file": "212059",
+      "category": "vacuum_cleaner",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "99df07d9b9dce2b58c52389933adaa286e531f422ca51cccb0bb3db6425d8c45",
+      "full_sha256": "024d9a3103dbb08698515aa2dbdd0f21f404f23ae3333752b7ede4f32506ce8f"
+    },
+    {
+      "filename": "5-212454-A-0.wav",
+      "fold": "5",
+      "src_file": "212454",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "a3f7089d31d506d7a5c80f0af79afebfdb8fd61759eab03891b01c809d210e5a",
+      "full_sha256": "82044e346a3be5c097e862d1b7ba85e7d08b71f32b5baadc4c888d07e11ba128"
+    },
+    {
+      "filename": "5-213855-A-0.wav",
+      "fold": "5",
+      "src_file": "213855",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "1013f545442642bd8a7788279d75d131754127a4bdee39dc9c5299c04c4962c8",
+      "full_sha256": "671222ad532e30063fe0106c53d9b9316c8f7fab4bfbbbc223315c1f7d1b0d7e"
+    },
+    {
+      "filename": "5-217158-A-0.wav",
+      "fold": "5",
+      "src_file": "217158",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "170df4aad8dd13df6e418c8ff4e5a8cf8bec6fece5e3d0150b94d391e91b1356",
+      "full_sha256": "976da342d35129140e253689e09be46216f6535aed0bbbaf9e971d310884a524"
+    },
+    {
+      "filename": "5-218980-A-30.wav",
+      "fold": "5",
+      "src_file": "218980",
+      "category": "door_wood_knock",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "c917686cc7048be91d4dec61539344094a01233e649989264187388c9e95f82f",
+      "full_sha256": "622a76d1226630e9ed54e4f2e14f385b5efee0c25a3c43bd2fc1f742f2a22383"
+    },
+    {
+      "filename": "5-220939-A-27.wav",
+      "fold": "5",
+      "src_file": "220939",
+      "category": "brushing_teeth",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "44d2fb9fee4d70db7c59db63d70dc71f8ed033936906afd3a6d6b83eb838f311",
+      "full_sha256": "a3d15f22605ab8fb7b4a762e359277b8269daa829977962d28e28ac520dd53a9"
+    },
+    {
+      "filename": "5-221528-A-39.wav",
+      "fold": "5",
+      "src_file": "221528",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "f4796e4ec53c1dee2257365e58ff5ab75cf37d9a813f07b681927e85ee472cde",
+      "full_sha256": "18bcbbbd8194a52d150d924b4c65590b91bbc85dd9785acbef7cd1ea86baf678"
+    },
+    {
+      "filename": "5-221529-A-39.wav",
+      "fold": "5",
+      "src_file": "221529",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "3863f5097117a5eebbb75ca1a9eddd13fb2cd735542313fe5aa88c940db6a758",
+      "full_sha256": "d1a6646ea29cac7c325ba8e4859445411906a8294b69a9074e36ac040ee5840d"
+    },
+    {
+      "filename": "5-222041-A-9.wav",
+      "fold": "5",
+      "src_file": "222041",
+      "category": "crow",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "e862f494715badbcc9d6a8d37ca6203777a18cf89f91046399cc0f348a0aea2d",
+      "full_sha256": "9c413d906198bb757e3172a767042ea163bea2648a9cc3159c81be59976ade5c"
+    },
+    {
+      "filename": "5-223099-A-32.wav",
+      "fold": "5",
+      "src_file": "223099",
+      "category": "keyboard_typing",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "d4189f4b4acc489e7bb8314685ebff687ccf8cdf7925d73a3aab1f30c40f44c4",
+      "full_sha256": "73a6f81f267c15a7ee8f13713c30ea17169aad43a10936e7a79faf7423d67727"
+    },
+    {
+      "filename": "5-231762-A-0.wav",
+      "fold": "5",
+      "src_file": "231762",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "cb686222c5eeb07c8c8ee508adce7bedbabb3358aee5c46b051788075835bd96",
+      "full_sha256": "984c5730a392d96c88280f3499240360cec8540773f4e1e0bb6e25487ccddb86"
+    },
+    {
+      "filename": "5-233019-A-31.wav",
+      "fold": "5",
+      "src_file": "233019",
+      "category": "mouse_click",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "fabca2be7b3814577c6d88df528338142bf8aa77d559b97ae656747b493cd996",
+      "full_sha256": "267a3686a963ca283030fede8924809865d5223064d9f76936a2f5bde8566b30"
+    },
+    {
+      "filename": "5-233260-A-23.wav",
+      "fold": "5",
+      "src_file": "233260",
+      "category": "breathing",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "0ea99448699adde99988c1f148a3715fc94cc9abb5a3ac728050f1dab3a3aadf",
+      "full_sha256": "f3a9a4676e84285bc3c9af9485586fdb064dc85856ab0fb0ca3fd90b3e12d50f"
+    },
+    {
+      "filename": "5-233605-A-39.wav",
+      "fold": "5",
+      "src_file": "233605",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "ae86e74bf03c69cb2c2962b7327b5524dda7d531e553b9fab91a375de5299bff",
+      "full_sha256": "87615450a5f2871fc8fccc6597ba827a6687a8973c474f75ba65bef0b93fc246"
+    },
+    {
+      "filename": "5-233607-A-39.wav",
+      "fold": "5",
+      "src_file": "233607",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "c2988d2ecd448a3e27bc80a248355a5d3bb85c769ec25f37fda4b9ec990c94dc",
+      "full_sha256": "e66dacd34d5a8774a522ed40c6b3ce44dd6b4c024d28aca2aeb1369e93c75a40"
+    },
+    {
+      "filename": "5-234145-A-28.wav",
+      "fold": "5",
+      "src_file": "234145",
+      "category": "snoring",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "23739f0c670f2a0cf1719b47da519504dc510f929d21ef6c780499669c9a65c1",
+      "full_sha256": "48ecf34421631512763ecf879db4c5e8d0c1084851aa94ebd349d09d337ebaac"
+    },
+    {
+      "filename": "5-234335-A-23.wav",
+      "fold": "5",
+      "src_file": "234335",
+      "category": "breathing",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "cc2cf787b1f5283717ccc2fb8394e613a218cb06ed9141594b2bb2f6794bbb73",
+      "full_sha256": "0b312bd1f81569e84a7a8fc5e443d73d9db5fdaad3f1bb79927a0e0fd63a6245"
+    },
+    {
+      "filename": "5-235956-A-47.wav",
+      "fold": "5",
+      "src_file": "235956",
+      "category": "airplane",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "3575adfd109a40d1cfb40fdd0c93031842f9559cad66c9cc8ae6933a1ab07398",
+      "full_sha256": "2968e4bc601f8cf5cbec48e6ac849226af87e4f8efecd3c57583cea2559778ea"
+    },
+    {
+      "filename": "5-237795-A-34.wav",
+      "fold": "5",
+      "src_file": "237795",
+      "category": "can_opening",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "c687632878ef0f0a15554227ee10a108d8373f94331e159af0f7fabad2df209d",
+      "full_sha256": "da3bbc8b5c5855013bc4581c7d4b0c2a0d05cb57046e57c2b2692261de630acb"
+    },
+    {
+      "filename": "5-238021-A-35.wav",
+      "fold": "5",
+      "src_file": "238021",
+      "category": "washing_machine",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "5b3fb9d4fa999f75e8e7ca37e96304322beb04a73949a64012eabba0834f6fbf",
+      "full_sha256": "03236cfe8b926c0cf1658f22ac3bcc8fa642b9279515e73bb96ddfc5078520db"
+    },
+    {
+      "filename": "5-240671-A-44.wav",
+      "fold": "5",
+      "src_file": "240671",
+      "category": "engine",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "6b318bda177d8f8b3e06c11ff493f040092daab80a889606587f4fc43dd45f80",
+      "full_sha256": "4147e0b04e224bd7c6bc8037e4a27ed8381fd63934f52a07c79cf3041890d2e9"
+    },
+    {
+      "filename": "5-242932-A-26.wav",
+      "fold": "5",
+      "src_file": "242932",
+      "category": "laughing",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "9c2021684ccd03cbb5606565178197bc1251de351c65e2e10c068e0da0499a87",
+      "full_sha256": "84d322481f1b06e5ae641e5a4fffb38c19f0c8a27ac3e1026bf79d532f21b05a"
+    },
+    {
+      "filename": "5-243025-A-25.wav",
+      "fold": "5",
+      "src_file": "243025",
+      "category": "footsteps",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "4479d47415b811e5459c8420a1b8a721eca414147b017fed5b5a80636762028e",
+      "full_sha256": "6c154a0928a620656c95f9a8f28c4d3d7b1809c0caed879eabbf0de2509e74ec"
+    },
+    {
+      "filename": "5-244310-A-25.wav",
+      "fold": "5",
+      "src_file": "244310",
+      "category": "footsteps",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "6f5c1eea1ef6068ead03b6f5a12a2698da258cb0bc49b56fa01976a9371a7c02",
+      "full_sha256": "80e4b5cf04ce3d8eea39d864a06a6a8e535251a9894df1624d53f5f2a849f70d"
+    },
+    {
+      "filename": "5-250026-A-30.wav",
+      "fold": "5",
+      "src_file": "250026",
+      "category": "door_wood_knock",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "6d249f1a956ff78b494ddd919f2ff032f092e2ca0adccb47fef00e8cc03edf6d",
+      "full_sha256": "a2ae741be5e670aefecab4967e36775fc4352598d290ef996ce9e115eabca0e0"
+    },
+    {
+      "filename": "5-251426-B-30.wav",
+      "fold": "5",
+      "src_file": "251426",
+      "category": "door_wood_knock",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "2738fe71989e18f2e8e0800c678793af2eeba6ca84551f8745f64d21e738ab81",
+      "full_sha256": "522014d987be81e1889669f5360a551b2ec80bc8f4cd28fd846bb663772d4ce0"
+    },
+    {
+      "filename": "5-251489-A-24.wav",
+      "fold": "5",
+      "src_file": "251489",
+      "category": "coughing",
+      "label": "cough",
+      "label_id": 1,
+      "raw_sha256": "dbb23515f40248ab07e055c714151bc05fb107d12146cb213bc909fb5b20f17e",
+      "full_sha256": "d4e7d7797956a4d390e89c9b12b9efd6ca16d98c0e02cad7c95e8ae0b2852908"
+    },
+    {
+      "filename": "5-251971-A-47.wav",
+      "fold": "5",
+      "src_file": "251971",
+      "category": "airplane",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "ba15a37c7fa2d183324f28930ad7eac334ac076791a2e590e6e3612ee3632b7f",
+      "full_sha256": "4bc4b0f53e3278bd4ce885e4efdbc30c00fa7db53d0cc34abe3f2d12bb4ab513"
+    },
+    {
+      "filename": "5-253094-A-49.wav",
+      "fold": "5",
+      "src_file": "253094",
+      "category": "hand_saw",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "adef71efcffdbc20d1889b60ad57b15b7b3df8fc10628ca1ccd9fe62f6be98ea",
+      "full_sha256": "95eec1b9cd7e615a339300d127a16f77465153afce86812981254008cd2fb45e"
+    },
+    {
+      "filename": "5-253101-B-49.wav",
+      "fold": "5",
+      "src_file": "253101",
+      "category": "hand_saw",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "73152d9ce343d1b1bc5895f861ab954145296c00929ce6733692e5464a96d7e6",
+      "full_sha256": "4f13c20c04c530bc595b619274006a8570cf4c11cf840380f4ace62936f564e9"
+    },
+    {
+      "filename": "5-254832-B-15.wav",
+      "fold": "5",
+      "src_file": "254832",
+      "category": "water_drops",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "e05488cd28dcfabf6d02e8b719f27a4b586b83aadf81f8d83d72879bbc603f65",
+      "full_sha256": "983e3abf451007a6a169ac4dc0cd441b63b2acff7cf49443e1f457d8a71b251b"
+    },
+    {
+      "filename": "5-257642-A-39.wav",
+      "fold": "5",
+      "src_file": "257642",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "a93747921a23b090d444c7ecc57adace2d856abbe18c038bd52773a57512613b",
+      "full_sha256": "e39a019234ef4135aeceb34de1ec0893bf16c8a72196662864a5785cacc1e5d3"
+    },
+    {
+      "filename": "5-260432-A-39.wav",
+      "fold": "5",
+      "src_file": "260432",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "e1da0f73ebaca89112dfd6aff25d154c08961aab7eeea5ed033223d6cabfaef0",
+      "full_sha256": "9713d281214ba9594d0b29189bf94d728ace9f41d4e58e6ed66ee5b21f6604e9"
+    },
+    {
+      "filename": "5-260433-A-39.wav",
+      "fold": "5",
+      "src_file": "260433",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "04a46ed54d5159b4afa7015d9799901a2806f3012507fa6bc923e23124efcdfc",
+      "full_sha256": "24818115c35f9e495651733b67c1b629691e784807d1956ecd78375c7e877fdc"
+    },
+    {
+      "filename": "5-260434-A-39.wav",
+      "fold": "5",
+      "src_file": "260434",
+      "category": "glass_breaking",
+      "label": "glass_break",
+      "label_id": 2,
+      "raw_sha256": "92d7ac3de371429d81338c1233cadfbcfb3873253c005f2f6aa4be7dce8a014e",
+      "full_sha256": "603d4308fe8fe8511a83be20fcf7254641684eec743b25fad9aa992c64535ec4"
+    },
+    {
+      "filename": "5-263491-A-25.wav",
+      "fold": "5",
+      "src_file": "263491",
+      "category": "footsteps",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "17ba4c24a5065450732d07633e1ccfddda384b253150d659d0bd87735426a183",
+      "full_sha256": "0b574b497f66af29809487f321967094c0fe91bce2bcf7b206969b2606a59fe4"
+    },
+    {
+      "filename": "5-263775-A-26.wav",
+      "fold": "5",
+      "src_file": "263775",
+      "category": "laughing",
+      "label": "background",
+      "label_id": 0,
+      "raw_sha256": "3da4f9803fcd4044d76160ac5a4bcdbfc167f8422c6ca089e957be938d8b1dfe",
+      "full_sha256": "be12c2ebc67fd7b75cc8f7a90e5cdee0ef21c25f1a9d8baf63d6fd921505ca27"
+    },
+    {
+      "filename": "5-9032-A-0.wav",
+      "fold": "5",
+      "src_file": "9032",
+      "category": "dog",
+      "label": "dog_bark",
+      "label_id": 4,
+      "raw_sha256": "e49492e3cd7be48c3e5f82a121e71f23687ecb047609085231e06a0cccb2b12d",
+      "full_sha256": "cf87f80eb2fb44f8f00fb40d0e99ff2dfc17a51f3c7415c75ce828676cf30a88"
+    }
+  ]
+}

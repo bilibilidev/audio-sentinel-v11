@@ -1,0 +1,61 @@
+{
+  "created": "2026-10-17T16:43:48.283565+08:00",
+  "application_head": "b465d17afd43b6a574f5c368ad90ac24d102cbb7",
+  "training_data": "Only the same 390 ESC-50 original recordings selected by current v11; five official folds, source separated",
+  "external_training": false,
+  "external_hyperparameter_selection": false,
+  "epochs": 80,
+  "batch_size": 32,
+  "learning_rate": 0.002,
+  "weight_decay": 0.005,
+  "class_weight_power": 0.5,
+  "label_smoothing": 0.05,
+  "seed": 42,
+  "architecture": {
+    "input_logmel_bands": 26,
+    "channels": 24,
+    "kernel": 5,
+    "dilations": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "causal": true,
+    "frame_len_samples": 400,
+    "hop_samples": 160,
+    "receptive_field_frames": 125,
+    "parameter_count": 14885
+  },
+  "augmentation": "Training only: +/-12 dB gain shift, up to 3 mel-band mask, up to 30-frame time mask on 30% of samples, normalized Gaussian noise std .02",
+  "selection": "One architecture and fixed epoch count decided before any new model external result. No epoch or threshold selection from external recordings.",
+  "cv": "Each of five models trains on four official folds and tests on the fifth, including source-ID overlap assertions; no external training",
+  "normalization": "Per mel band mean/std of training folds only; final model uses all ESC training recordings only",
+  "file_decision": "Mean causal frame logits over original recording, then softmax/argmax; Python and C must use exactly this same rule",
+  "streaming": "Maintain STFT/pre-emphasis and causal convolution states across input callbacks; emit every 10 frames (100 ms); no 1 s/3 s capture reset",
+  "streaming_decoder": "Prototype EMA of frame logits alpha=.02; no live threshold tuned on external set. File accuracy remains a separate mean-logit metric.",
+  "torch": "2.14.1+cpu",
+  "numpy": "2.3.5",
+  "threads": 4,
+  "dataset_manifest_sha256": "2a39c78961b8459f89f6f96e7f4464477d44490149f3ecccdedf3170b8e3ffdc",
+  "protected_deployment_files": {
+    "model/tiny_mlp_mfcc92_robust_simulator.npz": "c96333aaae66d324b8b8cec48ffb0ec981ac4e975d3cf9a7d4a2fdba4307c97e",
+    "app/audiodetect/model_weights.h": "3eae74f43e0c140cdf61e8b0ba60d162bddc030bdd59f4fabd92e996338506a1",
+    "app/audiodetect/model_weights_int8.h": "a5af4f8585bc11485abac6446bb7abcbc75f125c083b4fb0496fccaa2d9f24c9",
+    "simulator/generated/model_weights_int8.h": "bae40c5140d72b5604fbff7e4d4d311aee042e29f5e59f6d8291f01991e7e985"
+  },
+  "source_scripts_sha256_at_training": {
+    "causal_cnn.py": "7482cc9190e56c699c08429d3832b9a629c33290c6762ae0f53dd97cbc52b3cc",
+    "train_causal_cnn.py": "6234829581c0b09907f6be29e96c0261a30b97b34b7d8a0440a0c09bcf58313e"
+  },
+  "training_seed_per_fold": [
+    43,
+    44,
+    45,
+    46,
+    47
+  ],
+  "final_training_seed": 4242,
+  "protected_hash_basis": "Git baseline blob bytes; original training checkout had platform-specific line endings"
+}

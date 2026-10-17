@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 .venv/
+.venv-*/
 
 # Downloaded datasets and generated feature caches
 training/data/
@@ -34,4 +35,11 @@ docs/submission/
 *.pptx
 *.mp4
 *.zip
+*.tar
+*.tar.gz
+*.wav
+*.flac
+*.mp3
+.vm_access/
+.ssh/
 
