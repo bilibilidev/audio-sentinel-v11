@@ -1,0 +1,7 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.14.1+cpu
+numpy==2.3.5
+scikit-learn==1.9.1
+scipy==1.18.1
+torchlibrosa==0.1.0
+librosa==1.0.0

@@ -1,4 +1,5 @@
 .gitattributes text eol=lf
+*.sh text eol=lf
 .gitignore text eol=lf
 scripts/build_cnn_c_simulator.sh text eol=lf
 simulator/cnn/* text eol=lf
@@ -8,3 +9,10 @@ model/cnn-v1/*.json text eol=lf
 results/cnn-v1/*.json text eol=lf
 docs/cnn-v1.md text eol=lf
 *.npz -text
+training/cnn_v2/* text eol=lf
+scripts/build_cnn_v2_*.sh text eol=lf
+simulator/cnn_v2/* text eol=lf
+app/audiodetect/cnn_*v2.* text eol=lf
+app/audiodetect/audio_classifier* text eol=lf
+model/cnn-v2/*.json text eol=lf
+results/cnn-v2/*.json text eol=lf
