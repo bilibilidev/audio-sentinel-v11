@@ -71,15 +71,19 @@ python3 - "$pack_root" "$out" "$model_sha" "$repo_dir" <<'PY'
 import hashlib,json,pathlib,shutil,subprocess,sys
 pack,out=map(pathlib.Path,sys.argv[1:3]);model=sys.argv[3];repo=pathlib.Path(sys.argv[4]);start=(out/'pack-start').stat().st_mtime_ns
 candidates=[]
-for p in (pack/'board/r528s3/gemini-s1_nand').glob('*.img'):
+for p in (pack/'out/r528s3/gemini-s1_nand').glob('*.img'):
     if p.stat().st_mtime_ns>=start and p.open('rb').read(8)==b'IMAGEWTY':candidates.append(p)
 assert len(candidates)==1,('Expected one fresh Allwinner IMAGEWTY container',candidates)
+ap=(out/'debug/vela.bin').read_bytes()
+offset=candidates[0].read_bytes().find(ap)
+assert offset>=0,'Packed container does not contain the exact newly built AP payload'
 name=f'AudioSentinel-CNN-v2-R528S3-GeminiS1-ILI9341-{model[:12]}.img'
 image=out/name;shutil.copyfile(candidates[0],image)
 digest=hashlib.sha256(image.read_bytes()).hexdigest()
 (out/'SHA256SUMS').write_text(digest+'  '+name+'\n')
 receipt={'status':'BUILD_AND_PACK_PASS','target':'R528S3 Gemini S1 / 128MB NAND / ILI9341 320x240','image':name,'image_sha256':digest,'image_bytes':image.stat().st_size,
          'model_sha256':model,'application_commit':subprocess.check_output(['git','-C',str(repo),'rev-parse','HEAD'],text=True).strip(),
+         'exact_ap_payload_offset':offset,'ap_payload_sha256':hashlib.sha256(ap).hexdigest(),
          'flashed_by_this_script':False,'real_board_runtime_verified':False,'historical_image_byte_identity_claimed':False}
 (out/'image-acceptance.json').write_text(json.dumps(receipt,indent=2)+'\n')
 print(image)

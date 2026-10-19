@@ -4,9 +4,9 @@
 
 ### CNN v2 更新（2026-10-19）
 
-当前暂存的是 `clean_anchor` **待验收候选**，不是已完成系统验证的正式版。Python INT8 在外部 65 条上为 52/65（80.0%）、婴儿 13/20（65.0%）；v1 为 52/65、12/20，仅多识别一条婴儿录音。按现有 0.80 阈值计数两版均为 7/20，不能宣称实时告警已有提升。该候选用外部开发集选型，尚需最终 Ubuntu C、App 和系统镜像验收；不会将旧模型预构建镜像当作 v2 交付。
+当前部署候选为 `clean_anchor`。最终 Ubuntu C 与共用 App CLI 已在 65 条外部录音上通过一致性验收，正确 52/65（80.0%）、婴儿 13/20（65.0%）；v1 为 52/65、12/20，仅多识别一条婴儿录音。按现有 0.80 全片置信度阈值计数两版均为 7/20，不能宣称实时告警已有提升。该候选用外部开发集选型。R528S3 Gemini S1 / 128MB NAND / ILI9341 完整镜像已完成编译与官方打包，镜像内 AP 固件及 Windows 传输 SHA256 已校验；真板由用户后续烧录测试。完整 goldfish 模拟器的 v2 运行尚未验收。
 
-新增按 ESC-50 官方折进行的内层选型、标准 MFCC+SVM/RF 和 PANNs 冻结特征+SVM 对照，以及 time-only、MFCC-only、无增强、通道和 dilation 消融。外部 65 条录音均由用户确认标签，未用于训练；它们是已用于开发的验证集，不是全新盲测集。协议及结果位于 `results/cnn-v2/`，训练入口见 [training/cnn_v2](training/cnn_v2/README.md)。
+新增按 ESC-50 官方折进行的内层选型、标准 MFCC+SVM/RF 和 PANNs 冻结特征+SVM 对照，以及 time-only、MFCC-only、无增强、通道和 dilation 消融。外部 65 条录音均由用户确认标签，未用于梯度训练；它们参与过开发选型，不是全新盲测集。协议、实际运行验收和镜像哈希位于 `results/cnn-v2/`，训练入口见 [training/cnn_v2](training/cnn_v2/README.md)。
 
 新默认入口为 `scripts/build_cnn_v2_app.sh` 和 `scripts/build_cnn_v2_stream.sh`。App 不再调用 MLP 的静音强制改判和一秒窗口投票，完整 WAV 的聚合与 Python 模型一致；本地告警置信度仍为 0.80。UI 保留三秒 `arecord` 文件采集，每个文件内部连续推理，尚不是无间断 PCM 采集。使用方式、模型版本和执行层级见 [CNN v2](docs/cnn-v2.md)。
 

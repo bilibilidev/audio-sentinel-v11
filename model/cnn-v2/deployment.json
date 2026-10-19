@@ -1119,7 +1119,7 @@
       }
     }
   },
-  "candidate_status": "Staged; actual final Linux C and system image acceptance recorded separately",
+  "candidate_status": "Actual Ubuntu C/App and R528 build/pack accepted; real-board runtime and new blind-set evaluation pending",
   "external_gradient_training": false,
   "external_model_selection": true,
   "extra_pretraining": null,

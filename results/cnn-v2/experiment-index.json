@@ -1,6 +1,6 @@
 {
   "selected_candidate_round": "round4",
-  "selected_candidate_status": "Staged only, pending actual final Ubuntu C / App / system image acceptance",
+  "selected_candidate_status": "Final Ubuntu C/App acceptance and R528 build/pack PASS; user will perform board flashing/runtime tests",
   "experiments": [
     {
       "round": "round1",
@@ -402,7 +402,7 @@
       "extra_pretraining": null,
       "external_used_for_model_selection": true,
       "accepted_as_current_staged_candidate": true,
-      "linux_c_final_candidate_executed": false
+      "linux_c_final_candidate_executed": true
     },
     {
       "round": "round5",
@@ -609,34 +609,48 @@
   ],
   "execution_layers": {
     "python_training_and_external_evaluation": "Completed; all65 labels user-confirmed; external not in gradients",
-    "generic_linux_c_core": "Earlier Ubuntu numerical/chunk/causality/ASan/UBSan matrix PASS, up to32 channels; latest scratch-size change and final candidate pending",
+    "generic_linux_c_core": "Final 24-channel deployed model: numerical/chunk/causality/EMA/ASan/UBSan PASS; wider rejected students not covered",
     "linux_c_round1_external": "Executed six models390 predictions; rejected final45/65,11/20 babies; parity passed",
-    "linux_c_round2_to_round6_external": "Not executed: upload/SSH commands stopped before execution by auto-review capacity failure",
-    "final_candidate_app_cli": "Pending actual65-recording run",
+    "linux_c_round2_to_round6_external": "Round4 executed six models (390 predictions) with parity PASS; other rejected rounds2,3,5,6 remain Python-only",
+    "final_candidate_app_cli": "Actual Ubuntu App CLI65 recordings PASS,52/65 correct, baby13/20",
     "goldfish_v2_full_simulator": "Not built or run",
     "r528_system_preflight": "Independent SDK dependency/system build PASS with old application; not a v2 release",
-    "r528_v2_image": "Not built/packed; requires final C acceptance and approved32-bit dragon runtime",
+    "r528_v2_image": "BUILD_AND_PACK_PASS; exact AP bytes present in IMAGEWTY; Windows transfer SHA256 PASS; actual source commit c7367a46a0c021cad3cd0a618895819990e19f97",
     "real_board": "No flashing or hardware changes; no runtime claims"
   },
   "automatic_approval_failure": {
     "attempts": 3,
     "message": "Selected model is at capacity",
     "unsafe_determination": false,
-    "action_executed": false
+    "action_executed": false,
+    "resolved": true
   },
-  "pending_user_confirmation": {
-    "environment": "Existing Ubuntu22.04 VM",
-    "packages": [
-      "libc6-i386",
-      "lib32stdc++6",
-      "lib32z1"
-    ],
-    "reason": "Official dragon32bit loader/C++ runtime missing; original user requires confirmation before software installation"
-  },
+  "pending_user_confirmation": null,
   "source_main_verified": "aeb1e516a298894a74c30d93619476aa90bbea98",
   "guest_sdk_original": "/home/sentinel/projects/audio-sentinel-v11-openvela",
   "guest_sdk_isolated_board": "/home/sentinel/projects/audio-sentinel-v11-cnn-v2-board",
   "guest_evidence": "/home/sentinel/recovery-evidence/cnn-v2-20261019",
-  "candidate_review_url": "http://127.0.0.1:18765/curation-v3-baby-20261019/cnn-v2-candidate-20261019/index.html",
-  "release_guard": "build_r528s3_cnn_image.sh refuses image creation without matching final runtime-acceptance.json; validates fresh IMAGEWTY container and embedded model SHA"
+  "candidate_review_url": "http://127.0.0.1:18765/curation-v3-baby-20261019/evaluation-cnn-v2-final-20261019/errors.html",
+  "release_guard": "build_r528s3_cnn_image.sh refuses image creation without matching final runtime-acceptance.json; validates fresh IMAGEWTY container and embedded model SHA",
+  "packer_dependencies": "User approved; installed libc6-i386, lib32stdc++6, lib32z1; actual versions in delivery",
+  "image_acceptance": {
+    "status": "BUILD_AND_PACK_PASS",
+    "target": "R528S3 Gemini S1 / 128MB NAND / ILI9341 320x240",
+    "image": "AudioSentinel-CNN-v2-R528S3-GeminiS1-ILI9341-24c161d8f234.img",
+    "image_sha256": "16e11619e0e0b44614b5a0430c3625722e724d523db70c115ba07507a38aa024",
+    "image_bytes": 27325440,
+    "model_sha256": "24c161d8f23413be0778ffa332ccb4cc90bb06af648d6509553dfe68bc500560",
+    "application_commit": "c7367a46a0c021cad3cd0a618895819990e19f97",
+    "exact_ap_payload_offset": 1993728,
+    "ap_payload_sha256": "62435d01c36c6bc2f3ff048fae9038359d77edf6a6d6b046d98d3c32e767045f",
+    "ap_payload_bytes": 5421556,
+    "container_magic": "IMAGEWTY",
+    "official_output": "/home/sentinel/projects/audio-sentinel-v11-cnn-v2-board/vendor/allwinnertech/lichee/out/r528s3/gemini-s1_nand/rtos_nuttx_r528s3-gemini-s1_uart0_128Mnand.img",
+    "pack_output_location_correction": "Validator corrected board/ to actual official out/; compiled App and model unchanged",
+    "verification_script_sha256": "2e06974a3452d169ed3dab859f5888604d4e7e5100501335e7a49ef4f665e981",
+    "flashed_by_this_script": false,
+    "real_board_runtime_verified": false,
+    "historical_image_byte_identity_claimed": false,
+    "vendor_compile_warnings_present": true
+  }
 }
