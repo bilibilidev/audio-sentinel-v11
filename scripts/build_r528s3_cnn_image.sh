@@ -29,7 +29,7 @@ out_parent=$(realpath -m "$2")
 out="$out_parent/cnn-v2-r528s3-${model_sha:0:12}"
 test ! -e "$out" || { echo "Use a fresh output directory: $out" >&2; exit 2; }
 mkdir -p "$out/debug"
-export PATH="$sdk/prebuilts/gcc/linux-x86_64/arm-none-eabi/bin:$PATH"
+export PATH="$sdk/prebuilts/gcc/linux-x86_64/arm-none-eabi/bin:$sdk/prebuilts/build-tools/linux-x86_64/bin:$PATH"
 {
   uname -a
   arm-none-eabi-gcc --version
