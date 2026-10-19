@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "model_sha256": "24c161d8f23413be0778ffa332ccb4cc90bb06af648d6509553dfe68bc500560",
+  "actual_linux_c_recordings": 65,
+  "app_cli_recordings": 65,
+  "final_correct": 52,
+  "baby_cry_correct": 13,
+  "max_probability_delta_all_models": 2.0566351318085374e-06,
+  "app_core_max_probability_delta": 4.999999997368221e-10,
+  "streaming_numerical_and_sanitizers": "PASS",
+  "complete_openvela_simulator": false,
+  "real_board": false,
+  "evidence_sha256": {
+    "external-c-selected.json": "fab65e44e5f096fd0399907f04afe4870565395994c15ad6f930a0a58a352f6a",
+    "app-final-verification.json": "b5e0acd3a4b6a4fd0ae460afe684fff7878b88489bf3517d5d5ab344b0addbef",
+    "final-parity-verification.json": "82d96e5af9671d7f485a406f80888d9234e377b83ff670550f1f24cb740a1ec3"
+  }
+}
