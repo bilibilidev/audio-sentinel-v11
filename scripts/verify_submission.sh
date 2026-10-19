@@ -10,6 +10,10 @@ audio-sentinel-v11.xml
 app/audiodetect/audiodetect_main.c
 app/audiodetect/audiodetect_ui.c
 app/audiodetect/audio_classifier.c
+app/audiodetect/cnn_stream_v2.c
+app/audiodetect/cnn_stream_v2.h
+app/audiodetect/cnn_model_config_v2.h
+app/audiodetect/cnn_weights_v2.h
 app/audiodetect/keyword_detect.c
 app/audiodetect/keyword_detect.h
 app/audiodetect/keyword_templates.h
@@ -22,6 +26,12 @@ training/train_edge_mfcc.py
 training/extract_features_mfcc.py
 training/keyword_detect.py
 model/tiny_mlp_mfcc92_robust_simulator.npz
+model/cnn-v2/final_all_esc50.npz
+model/cnn-v2/sha256.json
+model/cnn-v2/deployment.json
+scripts/build_cnn_v2_app.sh
+scripts/build_cnn_v2_stream.sh
+results/cnn-v2/baselines.json
 board/r528s3-gemini-s1/configs/nsh/defconfig
 board/r528s3-gemini-s1/src/etc/init.d/rcS.nsh
 results/python_cv/metrics.json
@@ -62,5 +72,23 @@ for header in app/audiodetect/model_weights.h \
     echo "unexpected NUM_CLASSES in $header" >&2; exit 1; }
 done
 
-echo "Submission source tree is complete."
+python3 - <<'PY'
+import hashlib,json,pathlib
+root=pathlib.Path('.')
+digest=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+models=root/'model/cnn-v2'
+hashes=json.loads((models/'sha256.json').read_text())
+assert set(hashes)=={*[f'fold_{i}.npz' for i in range(1,6)],'final_all_esc50.npz'}
+for name,expected in hashes.items():assert digest(models/name)==expected,name
+deployment=json.loads((models/'deployment.json').read_text())
+assert deployment['model_sha256']==hashes['final_all_esc50.npz']
+assert deployment['training_recordings']==390
+assert deployment['labels']==['background','cough','glass_break','baby_cry','dog_bark']
+for name,expected in deployment['header_sha256'].items():
+    assert digest(root/'app/audiodetect'/name)==expected,name
+assert deployment['model_sha256'] in (root/'app/audiodetect/cnn_model_config_v2.h').read_text()
+print('CNN v2 model/header hashes match:',deployment['model_sha256'])
+PY
+
+echo "Submission source tree is complete (integrity check; runtime acceptance is separate)."
 echo "Model SHA256: $actual"

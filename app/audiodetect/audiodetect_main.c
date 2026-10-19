@@ -1,12 +1,12 @@
 /* audiodetect_main.c — A/B/C/E/F 全功能主程序（Linux C 与 OpenVela 通用）
  *   A 类别扩展：5 类检测（默认）
  *   B 鲁棒性  ：robust <wav>，clean/20/10/5 dB 噪声下检测对比
- *   C 模型优化：--int8 走 INT8 量化推理
+ *   C 模型优化：CNN v2，INT8 权重存储、浮点运算；--int8 为兼容别名
  *   E 告警上报：--report 通过 HTTP/MQTT 上报
  *   F 关键词  ：keyword <wav>，MFCC+DTW 识别 救命/帮助/报警
  */
-#include "feature_extractor.h"
-#include "model_infer.h"
+#include "audio_classifier.h"
+#include "cnn_stream_v2.h"
 #include "wav_reader.h"
 #include "alarm_report.h"
 #include "keyword_detect.h"
@@ -29,19 +29,13 @@
 #define ALARM_HTTP_PORT     8080
 #define ALARM_MQTT_PORT     1883
 #define ALARM_DEVICE_ID     "openvela_aed_01"
-
-/* The board microphone's idle floor is far below the ESC-50 training
- * clips. Avoid turning electrically quiet rooms into a high-confidence
- * event merely because the classifier was never trained on this ADC floor. */
-#define QUIET_ENERGY_GATE   2.0e-5f
-
-/* INT8 推理入口：单独前向声明，避免同时包含 float/int8 两个权重头（同名 static 数组冲突） */
-int model_predict_int8(const float features[FEATURE_DIM], float probabilities[NUM_CLASSES]);
+#define AUDIO_NUM_SAMPLES 16000
 
 static void usage(const char *prog)
 {
     printf("usage:\n");
-    printf("  %s input.wav [--debug|--report|--int8]   classify an audio file\n", prog);
+    printf("  %s input.wav [--debug] [--report] [--int8]  CNN v2 full-file inference\n", prog);
+    printf("  --int8 is a compatibility alias: CNN v2 always stores INT8 weights, with float arithmetic.\n");
     printf("  %s robust input.wav                      compare several SNR levels\n", prog);
     printf("  %s keyword input.wav                     detect emergency keywords\n", prog);
 #ifdef CONFIG_AE_AUDIODETECT_UI
@@ -87,28 +81,25 @@ static int robust_demo_main(int argc, char *argv[])
 {
     static int16_t pcm[AUDIO_NUM_SAMPLES];
     static int16_t noisy[AUDIO_NUM_SAMPLES];
-    static float features[AUDIO_FEATURE_DIM];
-    float probs[NUM_CLASSES];
+    aed_result_t result;
     int snrs[] = {20, 10, 5};
-    int i, k;
+    int k, count;
 
     if (argc != 2) { usage(argv[-1]); return 1; }
     printf("Robustness Demo (multi-SNR)\n");
     printf("Input: %s\n", argv[1]);
-    if (read_wav_16k_mono(argv[1], pcm, AUDIO_NUM_SAMPLES) < 0) return 1;
-
-    extract_audio_features(pcm, AUDIO_NUM_SAMPLES, features);
-    int pred = model_predict(features, probs);
-    printf("  SNR=clean -> %-12s (%.3f)\n", model_label_name(pred), probs[pred]);
+    count = read_wav_16k_mono(argv[1], pcm, AUDIO_NUM_SAMPLES);
+    if (count <= 0) return 1;
+    printf("CNN v2 robustness probe: first %.3f seconds only\n", count / 16000.0);
+    if (aed_classify_pcm(pcm, (size_t)count, &result)) return 1;
+    printf("  SNR=clean -> %-12s (%.3f)\n", cnn_v2_label(result.class_index), result.confidence);
 
     for (k = 0; k < 3; k++) {
         memcpy(noisy, pcm, sizeof(pcm));
-        add_noise(noisy, AUDIO_NUM_SAMPLES, (float)snrs[k]);
-        extract_audio_features(noisy, AUDIO_NUM_SAMPLES, features);
-        pred = model_predict(features, probs);
-        printf("  SNR=%3ddB  -> %-12s (%.3f)\n", snrs[k], model_label_name(pred), probs[pred]);
+        add_noise(noisy, count, (float)snrs[k]);
+        if (aed_classify_pcm(noisy, (size_t)count, &result)) return 1;
+        printf("  SNR=%3ddB  -> %-12s (%.3f)\n", snrs[k], cnn_v2_label(result.class_index), result.confidence);
     }
-    (void)i;
     return 0;
 }
 
@@ -133,9 +124,7 @@ static int keyword_demo_main(int argc, char *argv[])
 
 int audiodetect_main(int argc, char *argv[])
 {
-    static int16_t pcm[AUDIO_NUM_SAMPLES];
-    static float features[AUDIO_FEATURE_DIM];
-    float probabilities[NUM_CLASSES];
+    aed_result_t result;
     int pred, i;
     int debug = 0;
     int remote_report = 0;
@@ -151,7 +140,7 @@ int audiodetect_main(int argc, char *argv[])
     if (argc >= 2 && strcmp(argv[1], "robust") == 0)
         return robust_demo_main(argc - 1, argv + 1);
 
-    if (argc < 2 || argc > 4) { usage(argv[0]); return 1; }
+    if (argc < 2 || argc > 5) { usage(argv[0]); return 1; }
     for (i = 2; i < argc; i++) {
         if (strcmp(argv[i], "--debug") == 0) debug = 1;
         else if (strcmp(argv[i], "--report") == 0) remote_report = 1;
@@ -159,32 +148,26 @@ int audiodetect_main(int argc, char *argv[])
         else { usage(argv[0]); return 1; }
     }
 
-    printf("Audio Event Detection Demo\n");
+    printf("Audio Sentinel CNN v2 (INT8 weights / float arithmetic)\n");
+    printf("Model SHA256: %s\n", CNNV2_MODEL_SHA256);
     printf("Input: %s%s\n", argv[1], use_int8 ? " (INT8)" : "");
-    if (read_wav_16k_mono(argv[1], pcm, AUDIO_NUM_SAMPLES) < 0) return 1;
-    extract_audio_features(pcm, AUDIO_NUM_SAMPLES, features);
-
-    if (features[0] < QUIET_ENERGY_GATE) {
-        /* features[0] is the mean normalized frame energy. */
-        memset(probabilities, 0, sizeof(probabilities));
-        probabilities[0] = 1.0f;
-        pred = 0;
-        printf("Input energy %.8f is below quiet-room gate\n", features[0]);
-    } else if (use_int8) {
-        pred = model_predict_int8(features, probabilities);
-    } else {
-        pred = model_predict(features, probabilities);
+    if (aed_classify_wav(argv[1], &result)) {
+        fprintf(stderr, "Failed to classify WAV input: %s\n", argv[1]);
+        return 1;
     }
-    const char *label = model_label_name(pred);
-    float confidence = probabilities[pred];
+    pred = result.class_index;
+    const char *label = cnn_v2_label(pred);
+    float confidence = result.confidence;
 
     printf("Result: %s\n", label);
     printf("Confidence: %.3f\n", confidence);
 
     if (debug) {
+        printf("Samples: %llu Frames: %llu\n", (unsigned long long)result.samples,
+               (unsigned long long)result.analyzed_frames);
         printf("\nProbabilities:\n");
         for (i = 0; i < NUM_CLASSES; i++)
-            printf("  %s: %.6f\n", model_label_name(i), probabilities[i]);
+            printf("  %s: %.9f\n", cnn_v2_label(i), result.probabilities[i]);
     }
 
     if (pred != 0 && confidence > 0.80f) {

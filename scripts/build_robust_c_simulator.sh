@@ -15,7 +15,7 @@ mkdir -p "$out_dir"
 cc -std=c11 -O2 -Wall -Wextra \
   -I "$repo_dir/simulator" -I "$app_dir" \
   "$repo_dir/scripts/board_simulator_harness.c" \
-  "$app_dir/audio_classifier.c" \
+  "$app_dir/audio_classifier_mlp.c" \
   "$app_dir/wav_reader.c" \
   "$app_dir/feature_extractor.c" \
   "$app_dir/keyword_detect.c" \

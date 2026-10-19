@@ -1,18 +1,17 @@
 # CMakeLists.txt for audiodetect app (OpenVela / NuttX CMake build)
-# Lightweight offline audio event detection demo (5 classes + alarm + keyword + int8)
+# Shared causal CNN v2 (INT8 weight storage, float arithmetic).
 
 if(CONFIG_AE_AUDIODETECT)
   set(AUDIODETECT_SRCS
       audiodetect_main.c
       wav_reader.c
-      feature_extractor.c
-      model_infer.c
-      model_infer_int8.c
+      cnn_stream_v2.c
+      audio_classifier.c
       alarm_report.c
       keyword_detect.c)
 
   if(CONFIG_AE_AUDIODETECT_UI)
-    list(APPEND AUDIODETECT_SRCS audiodetect_ui.c audio_classifier.c)
+    list(APPEND AUDIODETECT_SRCS audiodetect_ui.c)
     set(AUDIODETECT_DEPENDS lvgl)
   endif()
 

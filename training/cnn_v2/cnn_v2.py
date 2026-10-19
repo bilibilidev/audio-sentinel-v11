@@ -46,6 +46,7 @@ def all_features(pcm):
 
 def select_features(full, kind):
     if kind=='logmel':return full[...,:26,:]
+    if kind=='lowband':return full[...,:19,:]
     if kind=='time':return full[...,26:,:]
     if kind=='hybrid':return full
     if kind=='mfcc':return np.matmul(DCT,full[...,:26,:])
@@ -55,6 +56,7 @@ def gain_vector(kind):
     mel=np.ones(26,dtype=np.float32)
     time=np.asarray([1,0,.5,.5,1],dtype=np.float32)
     if kind=='logmel':return mel
+    if kind=='lowband':return mel[:19]
     if kind=='time':return time
     if kind=='hybrid':return np.r_[mel,time]
     if kind=='mfcc':return DCT@mel
@@ -63,7 +65,7 @@ def gain_vector(kind):
 class CNNV2(nn.Module):
     def __init__(self,config):
         super().__init__();self.config=dict(config)
-        inputs={'logmel':26,'time':5,'mfcc':13,'hybrid':31}[config['feature']]
+        inputs={'logmel':26,'lowband':19,'time':5,'mfcc':13,'hybrid':31}[config['feature']]
         channels=config['channels']
         self.convs=nn.ModuleList([nn.Conv1d(inputs if i==0 else channels,channels,5,dilation=d) for i,d in enumerate(config['dilations'])])
         self.dropout=nn.Dropout(.15);self.head=nn.Conv1d(channels,5,1)

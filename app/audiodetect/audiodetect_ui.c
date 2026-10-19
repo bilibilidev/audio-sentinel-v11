@@ -192,7 +192,7 @@ static void *capture_worker(void *arg)
         }
 
       set_phase(AED_PHASE_ANALYZING, NULL);
-      if (aed_classify_three_second_wav(AED_CAPTURE_PATH, &result) < 0)
+      if (aed_classify_wav(AED_CAPTURE_PATH, &result) < 0)
         {
           set_phase(AED_PHASE_ERROR, "Audio analysis failed");
           sleep(1);
@@ -305,7 +305,7 @@ static void build_ui(void)
   label = make_label(header, "AUDIO SENTINEL",
                      &lv_font_montserrat_16, 0xffffff);
   lv_obj_set_pos(label, 10, 6);
-  label = make_label(header, "OFFLINE",
+  label = make_label(header, "CNN v2",
                      &lv_font_montserrat_10, 0x9fd7cc);
   lv_obj_align(label, LV_ALIGN_RIGHT_MID, -10, 0);
 
@@ -362,12 +362,12 @@ static void build_ui(void)
   lv_obj_add_event_cb(g_widgets.auto_switch, auto_event_cb,
                       LV_EVENT_VALUE_CHANGED, NULL);
 
-  label = make_label(control_panel, "3-second windows",
+  label = make_label(control_panel, "3-second capture",
                      &lv_font_montserrat_10, 0x637381);
   lv_obj_set_pos(label, 190, 40);
 
   footer = make_panel(screen, 8, 204, 304, 28);
-  g_widgets.segment_label = make_label(footer, "Windows 0",
+  g_widgets.segment_label = make_label(footer, "Clips 0",
                                         &lv_font_montserrat_10, 0x384854);
   lv_obj_set_pos(g_widgets.segment_label, 10, 7);
   g_widgets.event_label = make_label(footer, "Alerts 0",
@@ -401,7 +401,7 @@ static void refresh_ui(lv_timer_t *timer)
   if (snapshot.phase == AED_PHASE_RECORDING)
     {
       status_text = snapshot.enabled ? "LISTENING - CAPTURING 3S"
-                                     : "STOPPING CURRENT WINDOW";
+                                     : "STOPPING CAPTURE";
       status_color = 0x0b8f78;
     }
   else if (snapshot.phase == AED_PHASE_ANALYZING)
@@ -460,7 +460,7 @@ static void refresh_ui(lv_timer_t *timer)
       lv_obj_clear_state(g_widgets.auto_switch, LV_STATE_CHECKED);
     }
 
-  lv_label_set_text_fmt(g_widgets.segment_label, "Windows %lu",
+  lv_label_set_text_fmt(g_widgets.segment_label, "Clips %lu",
                         (unsigned long)snapshot.segment_count);
   lv_label_set_text_fmt(g_widgets.event_label, "Alerts %lu",
                         (unsigned long)snapshot.event_count);

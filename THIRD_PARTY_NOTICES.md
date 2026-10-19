@@ -37,7 +37,9 @@
 
 2026-10-17 新增独立 CNN v1 候选：源码位于 `training/cnn/` 和 `simulator/cnn/`，六个权重文件位于 `model/cnn-v1/`，仍仅由 ESC-50 选择集训练，无第三方预训练声学模型。PyTorch 2.14.1+cpu 仅用于本次 CPU 训练与 Python 参考，不随仓库再分发；C 推理无此依赖。C FFT 结构沿用本仓库 `app/audiodetect/keyword_detect.c` 并保留来源说明。原 v11 MLP 的范围和历史状态不变。
 
-外部 FSD50K 录音仅用于评测，不加入训练、不随 Git 分发。逐条来源、许可链接及哈希保存在 `results/cnn-v1/external-reviewed-45.json`；该清单不改变原始录音条款。Donate-a-Cry 候选尚待人工复核，未纳入本次计分或训练。模型用途、数据许可及商业使用的边界继续适用下文说明。
+外部 FSD50K 录音不加入梯度训练、不随 Git 分发。逐条来源、许可链接及哈希保存在 `results/cnn-v1/external-reviewed-45.json`；该清单不改变原始录音条款。2026-10-19，用户确认另 20 条 Donate-a-Cry 婴儿录音标签正确，组成共 65 条的外部开发验证集。CNN v2 第四轮使用该集合选择候选，因而它不是未见过的盲测集；原始音频仍不随 Git 分发。模型用途、数据许可及商业使用的边界继续适用下文说明。
+
+2026-10-19 的 CNN v2 当前候选沿用仅以 ESC-50 选择集训练的 CNN v1 权重进行微调。另行开展的 PANNs Cnn6 冻结特征基线和教师特征蒸馏实验使用了 AudioSet 预训练先验，应与仅使用 ESC-50 的实验分开比较。官方权重来自 [PANNs 官方发布记录](https://zenodo.org/records/3987831)，模型实现来源为 [qiuqiangkong/audioset_tagging_cnn](https://github.com/qiuqiangkong/audioset_tagging_cnn)，固定提交和权重哈希见 `results/cnn-v2/panns-provenance.json`。本仓库不再分发该第三方原始权重或上游模型源码；本说明不额外授予其许可。
 
 模型和权重作为当前研究原型的一部分保留。训练来源与数据条款继续需要核对，不对商业使用作额外授权保证；商业部署或再分发前应确认实际素材、共同权利人和适用条款。本说明不宣称权重当然继承某一种数据许可，也不替代具体权利核查。合成语音关键词模板、DTW识别和生成脚本按v11快照保留，来源与性能边界见上表；生成脚本中的合成测试结果不能当作真实语音识别准确率。
 
