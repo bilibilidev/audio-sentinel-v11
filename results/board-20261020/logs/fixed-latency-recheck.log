@@ -1,0 +1,486 @@
+nsh> [Kps
+  PID GROUP CPU(AFFINITY)   PRI POLICY   TYPE    NPX STATE    EVENT     SIGMASK          COMMAND
+    0     0 000(0x00000003)   0 FIFO     Kthread   - Running            0000000000000000 CPU0 IDLE
+    1     0 001(0x00000003)   0 FIFO     Kthread   - Assigned           0000000000000000 CPU1 IDLE
+    2     0 ---(0x00000003) 254 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 hpwork 0x418fed40 0x418fed8c
+    3     0 ---(0x00000003) 100 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 lpwork 0x418fecc0 0x418fed0c
+    5     0 ---(0x00000003) 100 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 ltr553_thread
+    6     0 ---(0x00000001) 120 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 nftld 1107528112
+    7     0 ---(0x00000001) 120 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 nand_rcd 1107532496
+    8     0 ---(0x00000001) 120 FIFO     Kthread   - Waiting  MQ empty  0000000000000000 nand_proxy 1107537752
+    9     0 ---(0x00000003) 106 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 realtek_txpool_thread
+   10     0 ---(0x00000003) 100 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 bt_recv
+   11     0 ---(0x00000003) 100 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 bt_fw
+   12     0 ---(0x00000003) 111 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 TIMERWORKER 0x420ce900 0x420ce94c
+   13    13 ---(0x00000003) 100 FIFO     Task      - Waiting  Semaphore 0000000000000000 nsh_main
+   20    20 ---(0x00000003) 100 FIFO     Task      - Waiting  Semaphore 0000000000000000 adbd
+   31    31 ---(0x00000003) 100 FIFO     Task      - Waiting  Signal    0000000000000000 NTP_daemon 0.pool.ntp.org;1.pool.ntp.org;2.pool.ntp.org
+   53     0 ---(0x00000003) 108 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 timer_thread 0x41fbe5ec
+   54     0 ---(0x00000003) 110 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 WIFIWORKER 0x421712f0 0x4217133c
+   55     0 ---(0x00000003) 106 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 realtek_sdio_thread 0x42091b48
+   56     0 ---(0x00000003) 107 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 xmit_thread 0x42166d9c
+   57     0 ---(0x00000003) 105 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 recv_task_thread 0x42166dcc
+   58     0 ---(0x00000003) 106 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 cmd_thread 0x42166d84
+   59    59 ---(0x00000003) 100 FIFO     Task      - Waiting  Signal    0000000000000000 sh -c getprop
+   60    60 ---(0x00000003) 100 FIFO     Task      - Waiting  Signal    0000000000000000 getprop
+   61    61 ---(0x00000003) 100 FIFO     Task      - Waiting  Signal    0000000000000000 bluetoothd
+   68    68 ---(0x00000003) 100 FIFO     Task      - Waiting  Semaphore 0000000000000000 audiodetect ui
+   79    68 ---(0x00000003) 100 FIFO     pthread   - Waiting  Signal    0000000000000000 audiodetect 0x414ef169 0
+  850   850 000(0x00000003) 100 FIFO     Task      - Running            0000000000000000 sh
+nsh> [Kecho AED_RC $?
+AED_RC 0
+nsh> [Kls /data/c20
+/data/c20:
+ .
+ ..
+ mic.nsh
+ f.wav
+ b/
+nsh> [Kecho AED_RC $?
+AED_RC 0
+nsh> [Ktime "audiodetect /data/c20/f.wav --debug"
+Audio Sentinel CNN v2 (INT8 weights / float arithmetic)
+Model SHA256: 24c161d8f23413be0778ffa332ccb4cc90bb06af648d6509553dfe68bc500560
+Input: /data/c20/f.wav
+Result: background
+Confidence: 0.883
+Samples: 48000 Frames: 298
+
+Probabilities:
+  background: 0.883323491
+  cough: 0.026066120
+  glass_break: 0.062309328
+  baby_cry: 0.017274426
+  dog_bark: 0.011026664
+
+0.2230 sec
+nsh> [Kecho AED_RC $?
+AED_RC 0
+nsh> [Ktime "audiodetect /data/c20/f.wav --debug"
+Audio Sentinel CNN v2 (INT8 weights / float arithmetic)
+Model SHA256: 24c161d8f23413be0778ffa332ccb4cc90bb06af648d6509553dfe68bc500560
+Input: /data/c20/f.wav
+Result: background
+Confidence: 0.883
+Samples: 48000 Frames: 298
+
+Probabilities:
+  background: 0.883323491
+  cough: 0.026066120
+  glass_break: 0.062309328
+  baby_cry: 0.017274426
+  dog_bark: 0.011026664
+
+0.2240 sec
+nsh> [Kecho AED_RC $?
+AED_RC 0
+nsh> [Ktime "audiodetect /data/c20/f.wav --debug"
+Audio Sentinel CNN v2 (INT8 weights / float arithmetic)
+Model SHA256: 24c161d8f23413be0778ffa332ccb4cc90bb06af648d6509553dfe68bc500560
+Input: /data/c20/f.wav
+Result: background
+Confidence: 0.883
+Samples: 48000 Frames: 298
+
+Probabilities:
+  background: 0.883323491
+  cough: 0.026066120
+  glass_break: 0.062309328
+  baby_cry: 0.017274426
+  dog_bark: 0.011026664
+
+0.2240 sec
+nsh> [Kecho AED_RC $?
+AED_RC 0
+nsh> [Ktime "audiodetect /data/c20/f.wav --debug"
+Audio Sentinel CNN v2 (INT8 weights / float arithmetic)
+Model SHA256: 24c161d8f23413be0778ffa332ccb4cc90bb06af648d6509553dfe68bc500560
+Input: /data/c20/f.wav
+Result: background
+Confidence: 0.883
+Samples: 48000 Frames: 298
+
+Probabilities:
+  background: 0.883323491
+  cough: 0.026066120
+  glass_break: 0.062309328
+  baby_cry: 0.017274426
+  dog_bark: 0.011026664
+
+0.2230 sec
+nsh> [Kecho AED_RC $?
+AED_RC 0
+nsh> [Ktime "audiodetect /data/c20/f.wav --debug"
+Audio Sentinel CNN v2 (INT8 weights / float arithmetic)
+Model SHA256: 24c161d8f23413be0778ffa332ccb4cc90bb06af648d6509553dfe68bc500560
+Input: /data/c20/f.wav
+Result: background
+Confidence: 0.883
+Samples: 48000 Frames: 298
+
+Probabilities:
+  background: 0.883323491
+  cough: 0.026066120
+  glass_break: 0.062309328
+  baby_cry: 0.017274426
+  dog_bark: 0.011026664
+
+0.2230 sec
+nsh> [Kecho AED_RC $?
+AED_RC 0
+nsh> [Ktime "audiodetect /data/c20/f.wav --debug"
+Audio Sentinel CNN v2 (INT8 weights / float arithmetic)
+Model SHA256: 24c161d8f23413be0778ffa332ccb4cc90bb06af648d6509553dfe68bc500560
+Input: /data/c20/f.wav
+Result: background
+Confidence: 0.883
+Samples: 48000 Frames: 298
+
+Probabilities:
+  background: 0.883323491
+  cough: 0.026066120
+  glass_break: 0.062309328
+  baby_cry: 0.017274426
+  dog_bark: 0.011026664
+
+0.2230 sec
+nsh> [Kecho AED_RC $?
+AED_RC 0
+nsh> [Ktime "audiodetect /data/c20/f.wav --debug"
+Audio Sentinel CNN v2 (INT8 weights / float arithmetic)
+Model SHA256: 24c161d8f23413be0778ffa332ccb4cc90bb06af648d6509553dfe68bc500560
+Input: /data/c20/f.wav
+Result: background
+Confidence: 0.883
+Samples: 48000 Frames: 298
+
+Probabilities:
+  background: 0.883323491
+  cough: 0.026066120
+  glass_break: 0.062309328
+  baby_cry: 0.017274426
+  dog_bark: 0.011026664
+
+0.2230 sec
+nsh> [Kecho AED_RC $?
+AED_RC 0
+nsh> [Ktime "audiodetect /data/c20/f.wav --debug"
+Audio Sentinel CNN v2 (INT8 weights / float arithmetic)
+Model SHA256: 24c161d8f23413be0778ffa332ccb4cc90bb06af648d6509553dfe68bc500560
+Input: /data/c20/f.wav
+Result: background
+Confidence: 0.883
+Samples: 48000 Frames: 298
+
+Probabilities:
+  background: 0.883323491
+  cough: 0.026066120
+  glass_break: 0.062309328
+  baby_cry: 0.017274426
+  dog_bark: 0.011026664
+
+0.2240 sec
+nsh> [Kecho AED_RC $?
+AED_RC 0
+nsh> [Ktime "audiodetect /data/c20/f.wav --debug"
+Audio Sentinel CNN v2 (INT8 weights / float arithmetic)
+Model SHA256: 24c161d8f23413be0778ffa332ccb4cc90bb06af648d6509553dfe68bc500560
+Input: /data/c20/f.wav
+Result: background
+Confidence: 0.883
+Samples: 48000 Frames: 298
+
+Probabilities:
+  background: 0.883323491
+  cough: 0.026066120
+  glass_break: 0.062309328
+  baby_cry: 0.017274426
+  dog_bark: 0.011026664
+
+0.2240 sec
+nsh> [Kecho AED_RC $?
+AED_RC 0
+nsh> [Ktime "audiodetect /data/c20/f.wav --debug"
+Audio Sentinel CNN v2 (INT8 weights / float arithmetic)
+Model SHA256: 24c161d8f23413be0778ffa332ccb4cc90bb06af648d6509553dfe68bc500560
+Input: /data/c20/f.wav
+Result: background
+Confidence: 0.883
+Samples: 48000 Frames: 298
+
+Probabilities:
+  background: 0.883323491
+  cough: 0.026066120
+  glass_break: 0.062309328
+  baby_cry: 0.017274426
+  dog_bark: 0.011026664
+
+0.2230 sec
+nsh> [Kecho AED_RC $?
+AED_RC 0
+nsh> [Ktime "audiodetect /data/c20/f.wav --debug"
+Audio Sentinel CNN v2 (INT8 weights / float arithmetic)
+Model SHA256: 24c161d8f23413be0778ffa332ccb4cc90bb06af648d6509553dfe68bc500560
+Input: /data/c20/f.wav
+Result: background
+Confidence: 0.883
+Samples: 48000 Frames: 298
+
+Probabilities:
+  background: 0.883323491
+  cough: 0.026066120
+  glass_break: 0.062309328
+  baby_cry: 0.017274426
+  dog_bark: 0.011026664
+
+0.2230 sec
+nsh> [Kecho AED_RC $?
+AED_RC 0
+nsh> [Ktime "audiodetect /data/c20/f.wav --debug"
+Audio Sentinel CNN v2 (INT8 weights / float arithmetic)
+Model SHA256: 24c161d8f23413be0778ffa332ccb4cc90bb06af648d6509553dfe68bc500560
+Input: /data/c20/f.wav
+Result: background
+Confidence: 0.883
+Samples: 48000 Frames: 298
+
+Probabilities:
+  background: 0.883323491
+  cough: 0.026066120
+  glass_break: 0.062309328
+  baby_cry: 0.017274426
+  dog_bark: 0.011026664
+
+0.2230 sec
+nsh> [Kecho AED_RC $?
+AED_RC 0
+nsh> [Ktime "audiodetect /data/c20/f.wav --debug"
+Audio Sentinel CNN v2 (INT8 weights / float arithmetic)
+Model SHA256: 24c161d8f23413be0778ffa332ccb4cc90bb06af648d6509553dfe68bc500560
+Input: /data/c20/f.wav
+Result: background
+Confidence: 0.883
+Samples: 48000 Frames: 298
+
+Probabilities:
+  background: 0.883323491
+  cough: 0.026066120
+  glass_break: 0.062309328
+  baby_cry: 0.017274426
+  dog_bark: 0.011026664
+
+0.2230 sec
+nsh> [Kecho AED_RC $?
+AED_RC 0
+nsh> [Ktime "audiodetect /data/c20/f.wav --debug"
+Audio Sentinel CNN v2 (INT8 weights / float arithmetic)
+Model SHA256: 24c161d8f23413be0778ffa332ccb4cc90bb06af648d6509553dfe68bc500560
+Input: /data/c20/f.wav
+Result: background
+Confidence: 0.883
+Samples: 48000 Frames: 298
+
+Probabilities:
+  background: 0.883323491
+  cough: 0.026066120
+  glass_break: 0.062309328
+  baby_cry: 0.017274426
+  dog_bark: 0.011026664
+
+0.2240 sec
+nsh> [Kecho AED_RC $?
+AED_RC 0
+nsh> [Ktime "audiodetect /data/c20/f.wav --debug"
+Audio Sentinel CNN v2 (INT8 weights / float arithmetic)
+Model SHA256: 24c161d8f23413be0778ffa332ccb4cc90bb06af648d6509553dfe68bc500560
+Input: /data/c20/f.wav
+Result: background
+Confidence: 0.883
+Samples: 48000 Frames: 298
+
+Probabilities:
+  background: 0.883323491
+  cough: 0.026066120
+  glass_break: 0.062309328
+  baby_cry: 0.017274426
+  dog_bark: 0.011026664
+
+0.2230 sec
+nsh> [Kecho AED_RC $?
+AED_RC 0
+nsh> [Ktime "audiodetect /data/c20/f.wav --debug"
+Audio Sentinel CNN v2 (INT8 weights / float arithmetic)
+Model SHA256: 24c161d8f23413be0778ffa332ccb4cc90bb06af648d6509553dfe68bc500560
+Input: /data/c20/f.wav
+Result: background
+Confidence: 0.883
+Samples: 48000 Frames: 298
+
+Probabilities:
+  background: 0.883323491
+  cough: 0.026066120
+  glass_break: 0.062309328
+  baby_cry: 0.017274426
+  dog_bark: 0.011026664
+
+0.2240 sec
+nsh> [Kecho AED_RC $?
+AED_RC 0
+nsh> [Ktime "audiodetect /data/c20/f.wav --debug"
+Audio Sentinel CNN v2 (INT8 weights / float arithmetic)
+Model SHA256: 24c161d8f23413be0778ffa332ccb4cc90bb06af648d6509553dfe68bc500560
+Input: /data/c20/f.wav
+Result: background
+Confidence: 0.883
+Samples: 48000 Frames: 298
+
+Probabilities:
+  background: 0.883323491
+  cough: 0.026066120
+  glass_break: 0.062309328
+  baby_cry: 0.017274426
+  dog_bark: 0.011026664
+
+0.2240 sec
+nsh> [Kecho AED_RC $?
+AED_RC 0
+nsh> [Ktime "audiodetect /data/c20/f.wav --debug"
+Audio Sentinel CNN v2 (INT8 weights / float arithmetic)
+Model SHA256: 24c161d8f23413be0778ffa332ccb4cc90bb06af648d6509553dfe68bc500560
+Input: /data/c20/f.wav
+Result: background
+Confidence: 0.883
+Samples: 48000 Frames: 298
+
+Probabilities:
+  background: 0.883323491
+  cough: 0.026066120
+  glass_break: 0.062309328
+  baby_cry: 0.017274426
+  dog_bark: 0.011026664
+
+0.2230 sec
+nsh> [Kecho AED_RC $?
+AED_RC 0
+nsh> [Ktime "audiodetect /data/c20/f.wav --debug"
+Audio Sentinel CNN v2 (INT8 weights / float arithmetic)
+Model SHA256: 24c161d8f23413be0778ffa332ccb4cc90bb06af648d6509553dfe68bc500560
+Input: /data/c20/f.wav
+Result: background
+Confidence: 0.883
+Samples: 48000 Frames: 298
+
+Probabilities:
+  background: 0.883323491
+  cough: 0.026066120
+  glass_break: 0.062309328
+  baby_cry: 0.017274426
+  dog_bark: 0.011026664
+
+0.2230 sec
+nsh> [Kecho AED_RC $?
+AED_RC 0
+nsh> [Ktime "audiodetect /data/c20/f.wav --debug"
+Audio Sentinel CNN v2 (INT8 weights / float arithmetic)
+Model SHA256: 24c161d8f23413be0778ffa332ccb4cc90bb06af648d6509553dfe68bc500560
+Input: /data/c20/f.wav
+Result: background
+Confidence: 0.883
+Samples: 48000 Frames: 298
+
+Probabilities:
+  background: 0.883323491
+  cough: 0.026066120
+  glass_break: 0.062309328
+  baby_cry: 0.017274426
+  dog_bark: 0.011026664
+
+0.2230 sec
+nsh> [Kecho AED_RC $?
+AED_RC 0
+nsh> [Ktime "audiodetect /data/c20/f.wav --debug"
+Audio Sentinel CNN v2 (INT8 weights / float arithmetic)
+Model SHA256: 24c161d8f23413be0778ffa332ccb4cc90bb06af648d6509553dfe68bc500560
+Input: /data/c20/f.wav
+Result: background
+Confidence: 0.883
+Samples: 48000 Frames: 298
+
+Probabilities:
+  background: 0.883323491
+  cough: 0.026066120
+  glass_break: 0.062309328
+  baby_cry: 0.017274426
+  dog_bark: 0.011026664
+
+0.2240 sec
+nsh> [Kecho AED_RC $?
+AED_RC 0
+nsh> [Ktime "audiodetect /data/c20/f.wav --debug"
+Audio Sentinel CNN v2 (INT8 weights / float arithmetic)
+Model SHA256: 24c161d8f23413be0778ffa332ccb4cc90bb06af648d6509553dfe68bc500560
+Input: /data/c20/f.wav
+Result: background
+Confidence: 0.883
+Samples: 48000 Frames: 298
+
+Probabilities:
+  background: 0.883323491
+  cough: 0.026066120
+  glass_break: 0.062309328
+  baby_cry: 0.017274426
+  dog_bark: 0.011026664
+
+0.2230 sec
+nsh> [Kecho AED_RC $?
+AED_RC 0
+nsh> [Ktime "audiodetect /data/c20/f.wav --debug"
+Audio Sentinel CNN v2 (INT8 weights / float arithmetic)
+Model SHA256: 24c161d8f23413be0778ffa332ccb4cc90bb06af648d6509553dfe68bc500560
+Input: /data/c20/f.wav
+Result: background
+Confidence: 0.883
+Samples: 48000 Frames: 298
+
+Probabilities:
+  background: 0.883323491
+  cough: 0.026066120
+  glass_break: 0.062309328
+  baby_cry: 0.017274426
+  dog_bark: 0.011026664
+
+0.2230 sec
+nsh> [Kecho AED_RC $?
+AED_RC 0
+nsh> [Kps
+  PID GROUP CPU(AFFINITY)   PRI POLICY   TYPE    NPX STATE    EVENT     SIGMASK          COMMAND
+    0     0 000(0x00000003)   0 FIFO     Kthread   - Running            0000000000000000 CPU0 IDLE
+    1     0 001(0x00000003)   0 FIFO     Kthread   - Assigned           0000000000000000 CPU1 IDLE
+    2     0 ---(0x00000003) 254 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 hpwork 0x418fed40 0x418fed8c
+    3     0 ---(0x00000003) 100 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 lpwork 0x418fecc0 0x418fed0c
+    5     0 ---(0x00000003) 100 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 ltr553_thread
+    6     0 ---(0x00000001) 120 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 nftld 1107528112
+    7     0 ---(0x00000001) 120 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 nand_rcd 1107532496
+    8     0 ---(0x00000001) 120 FIFO     Kthread   - Waiting  MQ empty  0000000000000000 nand_proxy 1107537752
+    9     0 ---(0x00000003) 106 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 realtek_txpool_thread
+   10     0 ---(0x00000003) 100 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 bt_recv
+   11     0 ---(0x00000003) 100 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 bt_fw
+   12     0 ---(0x00000003) 111 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 TIMERWORKER 0x420ce900 0x420ce94c
+   13    13 ---(0x00000003) 100 FIFO     Task      - Waiting  Semaphore 0000000000000000 nsh_main
+   20    20 ---(0x00000003) 100 FIFO     Task      - Waiting  Semaphore 0000000000000000 adbd
+   31    31 ---(0x00000003) 100 FIFO     Task      - Waiting  Signal    0000000000000000 NTP_daemon 0.pool.ntp.org;1.pool.ntp.org;2.pool.ntp.org
+   53     0 ---(0x00000003) 108 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 timer_thread 0x41fbe5ec
+   54     0 ---(0x00000003) 110 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 WIFIWORKER 0x421712f0 0x4217133c
+   55     0 ---(0x00000003) 106 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 realtek_sdio_thread 0x42091b48
+   56     0 ---(0x00000003) 107 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 xmit_thread 0x42166d9c
+   57     0 ---(0x00000003) 105 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 recv_task_thread 0x42166dcc
+   58     0 ---(0x00000003) 106 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 cmd_thread 0x42166d84
+   59    59 ---(0x00000003) 100 FIFO     Task      - Waiting  Signal    0000000000000000 sh -c getprop
+   60    60 ---(0x00000003) 100 FIFO     Task      - Waiting  Signal    0000000000000000 getprop
+   61    61 ---(0x00000003) 100 FIFO     Task      - Waiting  Signal    0000000000000000 bluetoothd
+   68    68 ---(0x00000003) 100 FIFO     Task      - Waiting  Signal    0000000000000000 audiodetect ui
+   79    68 ---(0x00000003) 100 FIFO     pthread   - Waiting  Signal    0000000000000000 audiodetect 0x414ef169 0
+  850   850 001(0x00000003) 100 FIFO     Task      - Running            0000000000000000 sh
+nsh> [Kecho AED_RC $?
+AED_RC 0
+nsh> [K

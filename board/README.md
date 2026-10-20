@@ -1,25 +1,17 @@
 # R528S3 Gemini S1 板级配置
 
-本目录保存 v11 构建时使用的板级增量（不含厂商 BSP 全量拷贝）。
+当前 `r528s3-gemini-s1/configs/nsh/defconfig` 为 2026-10-20 真板验证的 128 MiB DDR + 板载 ILI9341 320×240 小屏配置。RAM 从 `0x41400000` 到 `0x47fe7000`，避开顶部 100 KiB RAMLOG；关闭 framebuffer/externinit 以进入物理 LCD 注册分支，使用 `/dev/lcd0`。`AE_AUDIODETECT_UI_AUTOSTART` 启用，rcS 启动 `audiodetect ui`。
 
-- `r528s3-gemini-s1/configs/nsh/defconfig`：v11 镜像实际使用的板级配置，启用 R528 Audio、PCM、LCD（ILI9341，320×240）、GT911 触摸、LVGL 和 audiodetect。
-- `r528s3-gemini-s1/src/etc/init.d/rcS.nsh`：硬件初始化后自动启动 `audiodetect ui`。
-- `r528s3-gemini-s1/reference/openvela_active.config`：冻结时的完整活动配置，仅供审计。
-- `r528s3-gemini-s1/reference/nuttx_savedefconfig`：构建后保存的最小配置参考，与 `configs/nsh/defconfig` 逐字节相同。
+`patches/lvgl-aligned-buffers.patch` 是此构建必需的 LVGL 对齐及释放适配，随 overlay 幂等检查应用。原 `reference/openvela_active.config` 与 `reference/nuttx_savedefconfig` 保留为历史 v11 冻结参考，不会随新版配置覆盖；不再与当前 defconfig 字节相同。
 
-使用工作区根目录的 `contest2026_456_wuheihei/scripts/apply_board_overlay.sh` 将增量复制到对应 vendor 目录，再进行构建：
+在隔离且来源明确的完整 OpenVela SDK 中：
 
-```bash
-./contest2026_456_wuheihei/scripts/apply_board_overlay.sh .
-./nuttx/tools/configure.sh -e \
-  vendor/allwinnertech/boards/r528/r528s3-gemini-s1/configs/nsh
-make -C nuttx EXTRAFLAGS="-Wno-cpp -Wno-deprecated-declarations" -j16
+```sh
+sh audio-sentinel-v11/scripts/apply_board_overlay.sh /absolute/path/to/sdk
+# 正式镜像构建与归档使用：
+bash audio-sentinel-v11/scripts/build_r528s3_cnn_image.sh /absolute/path/to/sdk /absolute/path/to/fresh-output
 ```
 
-## 显示面板
+构建入口检查隔离标记、应用提交和模型验收记录，不安装依赖、不烧录。不要套用此配置到 goldfish 或 7 寸 MIPI 屏。具体应用路径须与 manifest 映射一致。
 
-v11 镜像使用 **ILI9341（320×240）** 配置，`audiodetect_ui.c` 的界面按 320×232 布局，与之匹配。
-
-厂商 BSP 自带的 `configs/nsh/defconfig` 选择的是 7 英寸 **T070S140B（1024×600）** MIPI 面板，与 v11 镜像实际使用的配置不一致；本仓库的 `configs/nsh/defconfig` 已替换为构建镜像时实际生效的 ILI9341 版本，因此 `apply_board_overlay.sh` + `configure.sh` 可以复现当前镜像的板级配置。
-
-`app/audiodetect/Kconfig` 中 `AE_AUDIODETECT_UI` 的帮助文字描述的是同一块 320×240 界面。
+最新实际 manifest、工具链、补丁、镜像哈希和板级边界见 [真板结果](../results/board-20261020/README.md)。用户分区擦除烧录后当前小屏/自启正常、WAV 推理通过；保留数据升级、软件重启和实际采集稳定性不能视为已解决。旧镜像与备份保留，不宣称重建镜像与历史镜像字节一致。

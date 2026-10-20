@@ -12,8 +12,8 @@ test -f "$sdk/.audio-sentinel-cnn-v2-isolated" || {
 }
 test "$(realpath "$sdk/apps/audiodetect")" = "$sdk/audio-sentinel-v11/app/audiodetect"
 test "$(git -C "$sdk/audio-sentinel-v11" rev-parse HEAD)" = "$(git -C "$repo_dir" rev-parse HEAD)"
-git -C "$repo_dir" diff --quiet HEAD -- app model scripts
-git -C "$sdk/audio-sentinel-v11" diff --quiet HEAD -- app model scripts
+git -C "$repo_dir" diff --quiet HEAD -- app model scripts board
+git -C "$sdk/audio-sentinel-v11" diff --quiet HEAD -- app model scripts board
 model_sha=$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["model_sha256"])' "$repo_dir/model/cnn-v2/deployment.json")
 python3 - "$repo_dir" "$model_sha" <<'PY'
 import json,pathlib,sys
@@ -37,11 +37,15 @@ export PATH="$sdk/prebuilts/gcc/linux-x86_64/arm-none-eabi/bin:$sdk/prebuilts/bu
 } > "$out/toolchain-versions.txt"
 (cd "$repo_dir" && sh scripts/verify_submission.sh) > "$out/source-integrity.log" 2>&1
 sh "$repo_dir/scripts/apply_board_overlay.sh" "$sdk" > "$out/overlay.log" 2>&1
+git -C "$sdk/apps/graphics/lvgl/lvgl" rev-parse HEAD > "$out/lvgl-commit.txt"
+git -C "$sdk/apps/graphics/lvgl/lvgl" diff > "$out/lvgl-local.patch"
 (cd "$sdk" && ./build.sh vendor/allwinnertech/boards/r528/r528s3-gemini-s1/configs/nsh/ -j6) > "$out/build.log" 2>&1
 cp "$sdk/nuttx/.config" "$out/active.config"
 cp "$sdk/nuttx/nuttx.elf" "$out/debug/nuttx.elf"
 cp "$sdk/nuttx/vela.bin" "$out/debug/vela.bin"
 arm-none-eabi-nm "$out/debug/nuttx.elf" > "$out/symbols.txt"
+arm-none-eabi-size "$out/debug/nuttx.elf" > "$out/elf-size.txt"
+arm-none-eabi-readelf -l "$out/debug/nuttx.elf" > "$out/elf-segments.txt"
 python3 - "$sdk" "$model_sha" <<'PY'
 import hashlib,pathlib,sys
 sdk=pathlib.Path(sys.argv[1]);raw=(sdk/'nuttx/vela.bin').read_bytes()
@@ -52,6 +56,9 @@ assert hashlib.sha256(raw).digest()==hashlib.sha256(payload.read_bytes()).digest
 config=(sdk/'nuttx/.config').read_text()
 for flag in ['CONFIG_ARCH_BOARD_R528S3_GEMINI_S1=y','CONFIG_LCD_ILI9341=y','CONFIG_AE_AUDIODETECT=y','CONFIG_AE_AUDIODETECT_UI=y']:
     assert flag in config,flag
+for flag in ['CONFIG_RAM_SIZE=113143808','CONFIG_RAM_START=0x41400000','CONFIG_AE_AUDIODETECT_UI_AUTOSTART=y','CONFIG_LV_USE_NUTTX_LCD=y','CONFIG_LV_DRAW_BUF_ALIGN=64']:
+    assert flag in config,flag
+assert 'CONFIG_LCD_FRAMEBUFFER=y' not in config
 PY
 (cd "$sdk" && python3 .repo/repo/repo manifest -r -o "$out/manifest-resolved.xml") > "$out/manifest.log" 2>&1
 git -C "$sdk/vendor/allwinnertech" diff > "$out/bsp-local.patch"
@@ -81,7 +88,7 @@ name=f'AudioSentinel-CNN-v2-R528S3-GeminiS1-ILI9341-{model[:12]}.img'
 image=out/name;shutil.copyfile(candidates[0],image)
 digest=hashlib.sha256(image.read_bytes()).hexdigest()
 (out/'SHA256SUMS').write_text(digest+'  '+name+'\n')
-receipt={'status':'BUILD_AND_PACK_PASS','target':'R528S3 Gemini S1 / 128MB NAND / ILI9341 320x240','image':name,'image_sha256':digest,'image_bytes':image.stat().st_size,
+receipt={'status':'BUILD_AND_PACK_PASS','target':'R528S3 Gemini S1 / 128 MiB DDR / ILI9341 320x240','image':name,'image_sha256':digest,'image_bytes':image.stat().st_size,
          'model_sha256':model,'application_commit':subprocess.check_output(['git','-C',str(repo),'rev-parse','HEAD'],text=True).strip(),
          'exact_ap_payload_offset':offset,'ap_payload_sha256':hashlib.sha256(ap).hexdigest(),
          'flashed_by_this_script':False,'real_board_runtime_verified':False,'historical_image_byte_identity_claimed':False}

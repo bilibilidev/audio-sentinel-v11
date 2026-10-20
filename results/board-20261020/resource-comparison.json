@@ -1,0 +1,11 @@
+{
+  "learned_parameter_ratio_panns_to_cnn": 324.98857910648303,
+  "learned_network_macs_ratio_panns_to_cnn": 673.959682632971,
+  "host_5s_pipeline_latency_ratio_panns_to_cnn": 172.87342863041388,
+  "cnn_learned_weights_and_scales_bytes": 14933,
+  "panns_learned_fp32_weights_bytes": 19349820,
+  "storage_precision_differs": true,
+  "scope": "Host one-thread PyTorch benchmark; MAC ratio covers Conv/Linear learned network only; PANNs frontend and SVM counted separately. Not board speedup or power reduction.",
+  "power_measured": false,
+  "board_panns_executed": false
+}

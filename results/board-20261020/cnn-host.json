@@ -1,0 +1,213 @@
+{
+  "benchmark": "SINGLE_THREAD_HOST_CPU_NOT_BOARD_POWER",
+  "model": "cnn",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "machine": "AMD64",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "logical_cpus": 24,
+  "torch_version": "2.14.1+cpu",
+  "numpy_version": "2.3.5",
+  "torch_threads": 1,
+  "interop_threads": 1,
+  "mkldnn_enabled": true,
+  "input_recording_sha256": "d564446e9ac85f17db753e947bd935a3697b6d852e25358ba150cc9331d072fd",
+  "profile": {
+    "model_sha256": "24c161d8f23413be0778ffa332ccb4cc90bb06af648d6509553dfe68bc500560",
+    "learned_parameters": 14885,
+    "fixed_frontend_parameters": 0,
+    "int8_learned_parameter_bytes": 14885,
+    "quantization_scale_bytes": 48,
+    "npz_archive_bytes": 81015,
+    "torch_parameter_bytes": 59540
+  },
+  "process_memory_before_model": {
+    "rss_bytes": 206327808,
+    "peak_rss_bytes": 206327808,
+    "private_bytes": 219971584
+  },
+  "process_memory_loaded": {
+    "rss_bytes": 207495168,
+    "peak_rss_bytes": 207495168,
+    "private_bytes": 253685760
+  },
+  "process_memory_after_benchmark": {
+    "rss_bytes": 223342592,
+    "peak_rss_bytes": 232038400,
+    "private_bytes": 263950336
+  },
+  "process_memory_scope": "OS process working set/peak; includes Python, PyTorch, libraries, caches and model. Fresh process per model; not board RAM and not activation-only memory.",
+  "timing_scope": "Batch=1, one CPU thread, three warmups then repeated calls; inputs in RAM; full pipeline includes per-model PCM frontend/resampling and inference; excludes file IO, model load, classifier fitting and transfers.",
+  "power_watts_measured": false,
+  "energy_joules_measured": false,
+  "board_panns_executed": false,
+  "measurements": [
+    {
+      "audio_seconds": 3,
+      "pcm16_sha256": "5b90a138428563b3082de0dd1d75fc29b16c8b4db3eb7787a65cfe08905ffad8",
+      "model_input_shape": [
+        1,
+        26,
+        298
+      ],
+      "prepared_input_inference": {
+        "count": 10,
+        "mean": 0.0005265099985990674,
+        "median": 0.0005069499893579632,
+        "p95": 0.0006630600080825386,
+        "min": 0.0004755000118166208,
+        "max": 0.0007743000169284642,
+        "raw_seconds": [
+          0.0004759000148624182,
+          0.0005212000105530024,
+          0.0005108999903313816,
+          0.000478199974168092,
+          0.0004755000118166208,
+          0.0007743000169284642,
+          0.0005270999972708523,
+          0.00048809999134391546,
+          0.0005086999735794961,
+          0.0005052000051364303
+        ]
+      },
+      "pcm_preprocess_and_inference": {
+        "count": 10,
+        "mean": 0.0019383299979381264,
+        "median": 0.0019437999872025102,
+        "p95": 0.0021959450095891953,
+        "min": 0.0017096999799832702,
+        "max": 0.0022058000322431326,
+        "raw_seconds": [
+          0.0017649999936111271,
+          0.0022058000322431326,
+          0.001978499989490956,
+          0.001989999960642308,
+          0.001860800024587661,
+          0.0017096999799832702,
+          0.002045900037046522,
+          0.0019090999849140644,
+          0.0017345999949611723,
+          0.0021838999819010496
+        ]
+      },
+      "full_pipeline_rtf": 0.0006461099993127088,
+      "operation_profile": {
+        "learned_network_conv_linear_macs": 4398480,
+        "fixed_frontend_conv_macs": 0,
+        "largest_single_module_output_bytes": 28608,
+        "scope": "Conv/Linear multiply-accumulates only; excludes bias, normalization, nonlinearities, pooling, FFT/mel matrix operations outside Conv/Linear, and data movement. One MAC is one multiply-accumulate."
+      }
+    },
+    {
+      "audio_seconds": 5,
+      "pcm16_sha256": "de2918e6910b8082cb8b6fee6f4f82ca4299cbc87e698de2507df77c5ebfd6f1",
+      "model_input_shape": [
+        1,
+        26,
+        498
+      ],
+      "prepared_input_inference": {
+        "count": 10,
+        "mean": 0.0007201700005680323,
+        "median": 0.0006981999904382974,
+        "p95": 0.0008448350097751243,
+        "min": 0.0006422000005841255,
+        "max": 0.000903200008906424,
+        "raw_seconds": [
+          0.0006696000345982611,
+          0.0006757999653927982,
+          0.000667200016323477,
+          0.0006422000005841255,
+          0.000903200008906424,
+          0.0007735000108368695,
+          0.000749400001950562,
+          0.0007518999627791345,
+          0.0007206000154837966,
+          0.0006482999888248742
+        ]
+      },
+      "pcm_preprocess_and_inference": {
+        "count": 10,
+        "mean": 0.0034488100034650417,
+        "median": 0.003479000006336719,
+        "p95": 0.0036829000280704347,
+        "min": 0.003151299955789,
+        "max": 0.0037054000422358513,
+        "raw_seconds": [
+          0.0036091000074520707,
+          0.003263499995227903,
+          0.0034546999959275126,
+          0.0037054000422358513,
+          0.0031988000264391303,
+          0.003562400001101196,
+          0.003503300016745925,
+          0.0033841999829746783,
+          0.0036554000107571483,
+          0.003151299955789
+        ]
+      },
+      "full_pipeline_rtf": 0.0006897620006930084,
+      "operation_profile": {
+        "learned_network_conv_linear_macs": 7350480,
+        "fixed_frontend_conv_macs": 0,
+        "largest_single_module_output_bytes": 47808,
+        "scope": "Conv/Linear multiply-accumulates only; excludes bias, normalization, nonlinearities, pooling, FFT/mel matrix operations outside Conv/Linear, and data movement. One MAC is one multiply-accumulate."
+      }
+    },
+    {
+      "audio_seconds": 10,
+      "pcm16_sha256": "510648a01df4ac51c0183aac6cf8c1d367cc0d0039198b21a76e9d6d9fab1b45",
+      "model_input_shape": [
+        1,
+        26,
+        998
+      ],
+      "prepared_input_inference": {
+        "count": 10,
+        "mean": 0.0006763100100215524,
+        "median": 0.0006453500245697796,
+        "p95": 0.0008956000383477656,
+        "min": 0.0005633999826386571,
+        "max": 0.0010009000543504953,
+        "raw_seconds": [
+          0.0006711999885737896,
+          0.0005946999881416559,
+          0.0007669000187888741,
+          0.000590300012845546,
+          0.0005633999826386571,
+          0.0006218000198714435,
+          0.000611600000411272,
+          0.0010009000543504953,
+          0.0006689000292681158,
+          0.000673400005325675
+        ]
+      },
+      "pcm_preprocess_and_inference": {
+        "count": 10,
+        "mean": 0.008435649995226413,
+        "median": 0.008425649983109906,
+        "p95": 0.008912020007846877,
+        "min": 0.00800219998927787,
+        "max": 0.009029200009535998,
+        "raw_seconds": [
+          0.00844369997503236,
+          0.008768800005782396,
+          0.00805389997549355,
+          0.009029200009535998,
+          0.00858580000931397,
+          0.008407599991187453,
+          0.00800219998927787,
+          0.008269399986602366,
+          0.008265400014352053,
+          0.008530499995686114
+        ]
+      },
+      "full_pipeline_rtf": 0.0008435649995226413,
+      "operation_profile": {
+        "learned_network_conv_linear_macs": 14730480,
+        "fixed_frontend_conv_macs": 0,
+        "largest_single_module_output_bytes": 95808,
+        "scope": "Conv/Linear multiply-accumulates only; excludes bias, normalization, nonlinearities, pooling, FFT/mel matrix operations outside Conv/Linear, and data movement. One MAC is one multiply-accumulate."
+      }
+    }
+  ]
+}

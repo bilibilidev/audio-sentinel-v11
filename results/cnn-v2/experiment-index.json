@@ -1,6 +1,6 @@
 {
   "selected_candidate_round": "round4",
-  "selected_candidate_status": "Final Ubuntu C/App acceptance and R528 build/pack PASS; user will perform board flashing/runtime tests",
+  "selected_candidate_status": "Actual Ubuntu C/App and R528 physical-board WAV accepted; microphone stability, power and new blind-set evaluation pending",
   "experiments": [
     {
       "round": "round1",
@@ -652,5 +652,6 @@
     "real_board_runtime_verified": false,
     "historical_image_byte_identity_claimed": false,
     "vendor_compile_warnings_present": true
-  }
+  },
+  "physical_board_evidence": "../board-20261020/board-wav-results.json"
 }

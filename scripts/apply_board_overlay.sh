@@ -16,6 +16,20 @@ test -d "$board_dir/configs/nsh"
 test -f "$team_dir/board/r528s3-gemini-s1/configs/nsh/defconfig"
 test -f "$team_dir/board/r528s3-gemini-s1/src/etc/init.d/rcS.nsh"
 
+# Apply only to the board SDK's LVGL checkout. Refuse unknown source revisions
+# instead of silently constructing a different display driver.
+lvgl_dir=$workspace/apps/graphics/lvgl/lvgl
+lcd_patch=$team_dir/board/r528s3-gemini-s1/patches/lvgl-aligned-buffers.patch
+test -d "$lvgl_dir/.git" || test -f "$lvgl_dir/.git"
+if git -C "$lvgl_dir" apply --reverse --check "$lcd_patch" 2>/dev/null; then
+  echo "LVGL aligned LCD buffers already applied"
+elif git -C "$lvgl_dir" apply --check "$lcd_patch"; then
+  git -C "$lvgl_dir" apply "$lcd_patch"
+else
+  echo "LVGL LCD source differs from the validated version; inspect the patch." >&2
+  exit 1
+fi
+
 cp "$team_dir/board/r528s3-gemini-s1/configs/nsh/defconfig" \
   "$board_dir/configs/nsh/defconfig"
 cp "$team_dir/board/r528s3-gemini-s1/src/etc/init.d/rcS.nsh" \

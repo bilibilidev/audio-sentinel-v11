@@ -1119,9 +1119,10 @@
       }
     }
   },
-  "candidate_status": "Actual Ubuntu C/App and R528 build/pack accepted; real-board runtime and new blind-set evaluation pending",
+  "candidate_status": "Actual Ubuntu C/App and R528 physical-board WAV accepted; microphone stability, power and new blind-set evaluation pending",
   "external_gradient_training": false,
   "external_model_selection": true,
   "extra_pretraining": null,
-  "initial_application_main": "aeb1e516a298894a74c30d93619476aa90bbea98"
+  "initial_application_main": "aeb1e516a298894a74c30d93619476aa90bbea98",
+  "physical_board_evidence": "results/board-20261020/board-wav-results.json"
 }

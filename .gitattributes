@@ -16,3 +16,9 @@ app/audiodetect/cnn_*v2.* text eol=lf
 app/audiodetect/audio_classifier* text eol=lf
 model/cnn-v2/*.json text eol=lf
 results/cnn-v2/*.json text eol=lf
+board/r528s3-gemini-s1/configs/nsh/defconfig text eol=lf
+board/r528s3-gemini-s1/patches/* text eol=lf
+scripts/board_benchmark/* text eol=lf
+# Preserve recorded evidence bytes and SHA256SUMS across Windows/Linux clones.
+results/board-20261020/** -text -whitespace
+board/r528s3-gemini-s1/patches/*.patch -whitespace

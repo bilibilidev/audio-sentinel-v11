@@ -1,0 +1,8 @@
+{
+  "status": "NOT_MEASURED",
+  "reason": "User confirmed STOP and no power meter",
+  "power_watts": null,
+  "energy_joules_per_inference": null,
+  "panns_board_executed": false,
+  "claim": "Reduced parameters/storage/MACs and measured host latency support lightweight deployment; they do not prove measured power/energy savings."
+}

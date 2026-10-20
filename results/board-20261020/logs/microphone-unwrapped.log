@@ -1,0 +1,8 @@
+nsh> [Karecord -D default -r 16000 -f 16 -c 1 -d 3 /tmp/u.wav
+nsh> [Kecho AED_RC $?
+AED_RC 0
+nsh> [Kls -l /tmp/u.wav
+nsh: ls: stat failed: 2
+nsh> [Kecho AED_RC $?
+AED_RC 1
+nsh> [K

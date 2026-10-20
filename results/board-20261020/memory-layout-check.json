@@ -1,0 +1,30 @@
+{
+  "physical_ddr_bytes": 134217728,
+  "physical_end": "0x48000000",
+  "configured_ram_start": "0x41400000",
+  "configured_ram_end": "0x47fe7000",
+  "ramlog_start": "0x47fe7000",
+  "ramlog_bytes": 102400,
+  "bss_end": "0x41fbe688",
+  "heap_start": "0x41fc3688",
+  "heap_end": "0x47fe7000",
+  "heap_bytes": 100809080,
+  "load_segments": [
+    {
+      "offset": 4096,
+      "start": 1094713344,
+      "end": 1107027592,
+      "file_bytes": 5306580,
+      "memory_bytes": 12314248
+    },
+    {
+      "offset": 5312512,
+      "start": 1207857152,
+      "end": 1207857188,
+      "file_bytes": 36,
+      "memory_bytes": 36
+    }
+  ],
+  "status": "STATIC_BOUNDS_PASS_RUNTIME_NOT_VERIFIED",
+  "hardware_source": "https://rivotek.feishu.cn/wiki/PDzEwEZHviKy65kA0fZcug4Nnwh"
+}
