@@ -305,7 +305,7 @@ static void build_ui(void)
   label = make_label(header, "AUDIO SENTINEL",
                      &lv_font_montserrat_16, 0xffffff);
   lv_obj_set_pos(label, 10, 6);
-  label = make_label(header, "CNN v2",
+  label = make_label(header, aed_model_name(),
                      &lv_font_montserrat_10, 0x9fd7cc);
   lv_obj_align(label, LV_ALIGN_RIGHT_MID, -10, 0);
 

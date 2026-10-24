@@ -1,0 +1,1145 @@
+{
+  "fits": [
+    {
+      "kind": "mlp",
+      "model": "fold_1",
+      "finite_parameters": true,
+      "minimum_normalization_std": 0.0014788552653044462,
+      "maximum_normalization_std": 39.52476501464844,
+      "train": {
+        "overall": 0.9901960784313726,
+        "macro": 0.996629213483146,
+        "per_class": {
+          "background": 0.9831460674157303,
+          "cough": 1.0,
+          "glass_break": 1.0,
+          "baby_cry": 1.0,
+          "dog_bark": 1.0
+        },
+        "confusion_matrix": [
+          [
+            175,
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            32,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            32,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            32,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            32
+          ]
+        ]
+      },
+      "holdout": {
+        "overall": 0.8214285714285714,
+        "macro": 0.7096153846153846,
+        "per_class": {
+          "background": 0.9230769230769231,
+          "cough": 0.5,
+          "glass_break": 0.75,
+          "baby_cry": 0.75,
+          "dog_bark": 0.625
+        },
+        "confusion_matrix": [
+          [
+            48,
+            0,
+            0,
+            1,
+            3
+          ],
+          [
+            0,
+            4,
+            3,
+            0,
+            1
+          ],
+          [
+            2,
+            0,
+            6,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            6,
+            2
+          ],
+          [
+            1,
+            0,
+            2,
+            0,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "mlp",
+      "model": "fold_2",
+      "finite_parameters": true,
+      "minimum_normalization_std": 0.0018224791856482625,
+      "maximum_normalization_std": 41.64021301269531,
+      "train": {
+        "overall": 0.9836601307189542,
+        "macro": 0.9841292134831461,
+        "per_class": {
+          "background": 0.9831460674157303,
+          "cough": 1.0,
+          "glass_break": 1.0,
+          "baby_cry": 1.0,
+          "dog_bark": 0.9375
+        },
+        "confusion_matrix": [
+          [
+            175,
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            32,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            32,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            32,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            30
+          ]
+        ]
+      },
+      "holdout": {
+        "overall": 0.8095238095238095,
+        "macro": 0.7692307692307693,
+        "per_class": {
+          "background": 0.8461538461538461,
+          "cough": 0.5,
+          "glass_break": 0.625,
+          "baby_cry": 1.0,
+          "dog_bark": 0.875
+        },
+        "confusion_matrix": [
+          [
+            44,
+            4,
+            0,
+            2,
+            2
+          ],
+          [
+            4,
+            4,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            1,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            8,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "mlp",
+      "model": "fold_3",
+      "finite_parameters": true,
+      "minimum_normalization_std": 0.0012978152371942997,
+      "maximum_normalization_std": 38.781375885009766,
+      "train": {
+        "overall": 0.9937106918238994,
+        "macro": 0.9875,
+        "per_class": {
+          "background": 1.0,
+          "cough": 1.0,
+          "glass_break": 1.0,
+          "baby_cry": 1.0,
+          "dog_bark": 0.9375
+        },
+        "confusion_matrix": [
+          [
+            190,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            32,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            32,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            32,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0,
+            30
+          ]
+        ]
+      },
+      "holdout": {
+        "overall": 0.8333333333333334,
+        "macro": 0.76,
+        "per_class": {
+          "background": 0.925,
+          "cough": 0.5,
+          "glass_break": 0.875,
+          "baby_cry": 1.0,
+          "dog_bark": 0.5
+        },
+        "confusion_matrix": [
+          [
+            37,
+            0,
+            2,
+            0,
+            1
+          ],
+          [
+            3,
+            4,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            7,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            8,
+            0
+          ],
+          [
+            1,
+            3,
+            0,
+            0,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "mlp",
+      "model": "fold_4",
+      "finite_parameters": true,
+      "minimum_normalization_std": 0.0016394302947446704,
+      "maximum_normalization_std": 40.13731002807617,
+      "train": {
+        "overall": 0.9937106918238994,
+        "macro": 0.9875,
+        "per_class": {
+          "background": 1.0,
+          "cough": 1.0,
+          "glass_break": 1.0,
+          "baby_cry": 1.0,
+          "dog_bark": 0.9375
+        },
+        "confusion_matrix": [
+          [
+            190,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            32,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            32,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            32,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            30
+          ]
+        ]
+      },
+      "holdout": {
+        "overall": 0.8055555555555556,
+        "macro": 0.8099999999999999,
+        "per_class": {
+          "background": 0.8,
+          "cough": 0.75,
+          "glass_break": 0.625,
+          "baby_cry": 1.0,
+          "dog_bark": 0.875
+        },
+        "confusion_matrix": [
+          [
+            32,
+            3,
+            4,
+            1,
+            0
+          ],
+          [
+            1,
+            6,
+            0,
+            0,
+            1
+          ],
+          [
+            3,
+            0,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            8,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "mlp",
+      "model": "fold_5",
+      "finite_parameters": true,
+      "minimum_normalization_std": 0.0014342957874760032,
+      "maximum_normalization_std": 39.59223937988281,
+      "train": {
+        "overall": 0.9871794871794872,
+        "macro": 0.9853260869565217,
+        "per_class": {
+          "background": 0.9891304347826086,
+          "cough": 1.0,
+          "glass_break": 1.0,
+          "baby_cry": 1.0,
+          "dog_bark": 0.9375
+        },
+        "confusion_matrix": [
+          [
+            182,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            32,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            32,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            32,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            30
+          ]
+        ]
+      },
+      "holdout": {
+        "overall": 0.7948717948717948,
+        "macro": 0.8065217391304348,
+        "per_class": {
+          "background": 0.782608695652174,
+          "cough": 0.625,
+          "glass_break": 1.0,
+          "baby_cry": 0.875,
+          "dog_bark": 0.75
+        },
+        "confusion_matrix": [
+          [
+            36,
+            4,
+            3,
+            1,
+            2
+          ],
+          [
+            2,
+            5,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            8,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            7,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "mlp",
+      "model": "final_all_esc50",
+      "finite_parameters": true,
+      "minimum_normalization_std": 0.0016576839843764901,
+      "maximum_normalization_std": 40.01449966430664,
+      "train": {
+        "overall": 0.9871794871794872,
+        "macro": 0.9873913043478261,
+        "per_class": {
+          "background": 0.9869565217391304,
+          "cough": 1.0,
+          "glass_break": 1.0,
+          "baby_cry": 1.0,
+          "dog_bark": 0.95
+        },
+        "confusion_matrix": [
+          [
+            227,
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            40,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            40,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            40,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            38
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "cnn",
+      "model": "fold_1",
+      "finite_parameters": true,
+      "minimum_normalization_std": 6.633721351623535,
+      "maximum_normalization_std": 8.497533798217773,
+      "train": {
+        "overall": 0.8823529411764706,
+        "macro": 0.9031601123595505,
+        "per_class": {
+          "background": 0.8595505617977528,
+          "cough": 0.90625,
+          "glass_break": 0.9375,
+          "baby_cry": 1.0,
+          "dog_bark": 0.8125
+        },
+        "confusion_matrix": [
+          [
+            153,
+            12,
+            6,
+            7,
+            0
+          ],
+          [
+            0,
+            29,
+            1,
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            30,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            32,
+            0
+          ],
+          [
+            1,
+            4,
+            1,
+            0,
+            26
+          ]
+        ]
+      },
+      "holdout": {
+        "overall": 0.8571428571428571,
+        "macro": 0.826923076923077,
+        "per_class": {
+          "background": 0.8846153846153846,
+          "cough": 0.75,
+          "glass_break": 0.75,
+          "baby_cry": 1.0,
+          "dog_bark": 0.75
+        },
+        "confusion_matrix": [
+          [
+            46,
+            4,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            6,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            2,
+            6,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            8,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "cnn",
+      "model": "fold_2",
+      "finite_parameters": true,
+      "minimum_normalization_std": 6.941097259521484,
+      "maximum_normalization_std": 8.799455642700195,
+      "train": {
+        "overall": 0.8790849673202614,
+        "macro": 0.9174157303370787,
+        "per_class": {
+          "background": 0.8370786516853933,
+          "cough": 0.875,
+          "glass_break": 0.96875,
+          "baby_cry": 1.0,
+          "dog_bark": 0.90625
+        },
+        "confusion_matrix": [
+          [
+            149,
+            8,
+            10,
+            10,
+            1
+          ],
+          [
+            0,
+            28,
+            3,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            31,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            32,
+            0
+          ],
+          [
+            1,
+            2,
+            0,
+            0,
+            29
+          ]
+        ]
+      },
+      "holdout": {
+        "overall": 0.8333333333333334,
+        "macro": 0.7980769230769231,
+        "per_class": {
+          "background": 0.8653846153846154,
+          "cough": 0.5,
+          "glass_break": 0.875,
+          "baby_cry": 1.0,
+          "dog_bark": 0.75
+        },
+        "confusion_matrix": [
+          [
+            45,
+            1,
+            3,
+            3,
+            0
+          ],
+          [
+            1,
+            4,
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            7,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            8,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "cnn",
+      "model": "fold_3",
+      "finite_parameters": true,
+      "minimum_normalization_std": 6.585290431976318,
+      "maximum_normalization_std": 8.400643348693848,
+      "train": {
+        "overall": 0.889937106918239,
+        "macro": 0.9111842105263157,
+        "per_class": {
+          "background": 0.868421052631579,
+          "cough": 0.78125,
+          "glass_break": 0.96875,
+          "baby_cry": 1.0,
+          "dog_bark": 0.9375
+        },
+        "confusion_matrix": [
+          [
+            165,
+            8,
+            8,
+            8,
+            1
+          ],
+          [
+            1,
+            25,
+            5,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            31,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            32,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            30
+          ]
+        ]
+      },
+      "holdout": {
+        "overall": 0.8194444444444444,
+        "macro": 0.875,
+        "per_class": {
+          "background": 0.75,
+          "cough": 1.0,
+          "glass_break": 1.0,
+          "baby_cry": 1.0,
+          "dog_bark": 0.625
+        },
+        "confusion_matrix": [
+          [
+            30,
+            2,
+            2,
+            5,
+            1
+          ],
+          [
+            0,
+            8,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            8,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            8,
+            0
+          ],
+          [
+            1,
+            2,
+            0,
+            0,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "cnn",
+      "model": "fold_4",
+      "finite_parameters": true,
+      "minimum_normalization_std": 6.770397186279297,
+      "maximum_normalization_std": 8.645540237426758,
+      "train": {
+        "overall": 0.89937106918239,
+        "macro": 0.9299342105263158,
+        "per_class": {
+          "background": 0.868421052631579,
+          "cough": 0.90625,
+          "glass_break": 0.96875,
+          "baby_cry": 1.0,
+          "dog_bark": 0.90625
+        },
+        "confusion_matrix": [
+          [
+            165,
+            5,
+            10,
+            9,
+            1
+          ],
+          [
+            0,
+            29,
+            2,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            31,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            32,
+            0
+          ],
+          [
+            1,
+            2,
+            0,
+            0,
+            29
+          ]
+        ]
+      },
+      "holdout": {
+        "overall": 0.75,
+        "macro": 0.77,
+        "per_class": {
+          "background": 0.725,
+          "cough": 0.625,
+          "glass_break": 1.0,
+          "baby_cry": 0.625,
+          "dog_bark": 0.875
+        },
+        "confusion_matrix": [
+          [
+            29,
+            2,
+            3,
+            6,
+            0
+          ],
+          [
+            1,
+            5,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            8,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            5,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "cnn",
+      "model": "fold_5",
+      "finite_parameters": true,
+      "minimum_normalization_std": 6.650800704956055,
+      "maximum_normalization_std": 8.527689933776855,
+      "train": {
+        "overall": 0.8910256410256411,
+        "macro": 0.9114130434782609,
+        "per_class": {
+          "background": 0.8695652173913043,
+          "cough": 0.875,
+          "glass_break": 1.0,
+          "baby_cry": 1.0,
+          "dog_bark": 0.8125
+        },
+        "confusion_matrix": [
+          [
+            160,
+            3,
+            9,
+            9,
+            3
+          ],
+          [
+            0,
+            28,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            32,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            32,
+            0
+          ],
+          [
+            1,
+            5,
+            0,
+            0,
+            26
+          ]
+        ]
+      },
+      "holdout": {
+        "overall": 0.782051282051282,
+        "macro": 0.7815217391304348,
+        "per_class": {
+          "background": 0.782608695652174,
+          "cough": 0.75,
+          "glass_break": 1.0,
+          "baby_cry": 0.75,
+          "dog_bark": 0.625
+        },
+        "confusion_matrix": [
+          [
+            36,
+            4,
+            2,
+            3,
+            1
+          ],
+          [
+            0,
+            6,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            8,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            6,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            1,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "cnn",
+      "model": "final_all_esc50",
+      "finite_parameters": true,
+      "minimum_normalization_std": 6.717135906219482,
+      "maximum_normalization_std": 8.563661575317383,
+      "train": {
+        "overall": 0.8974358974358975,
+        "macro": 0.9156521739130434,
+        "per_class": {
+          "background": 0.8782608695652174,
+          "cough": 0.9,
+          "glass_break": 0.975,
+          "baby_cry": 1.0,
+          "dog_bark": 0.825
+        },
+        "confusion_matrix": [
+          [
+            202,
+            11,
+            7,
+            10,
+            0
+          ],
+          [
+            0,
+            36,
+            2,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            39,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            40,
+            0
+          ],
+          [
+            1,
+            6,
+            0,
+            0,
+            33
+          ]
+        ]
+      }
+    }
+  ],
+  "note": "Training accuracy is diagnostic only, not held-out performance; no model selection"
+}

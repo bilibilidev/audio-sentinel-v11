@@ -37,6 +37,11 @@ export PATH="$sdk/prebuilts/gcc/linux-x86_64/arm-none-eabi/bin:$sdk/prebuilts/bu
 } > "$out/toolchain-versions.txt"
 (cd "$repo_dir" && sh scripts/verify_submission.sh) > "$out/source-integrity.log" 2>&1
 sh "$repo_dir/scripts/apply_board_overlay.sh" "$sdk" > "$out/overlay.log" 2>&1
+
+# This entry remains the historical CNN image builder even though the App's
+# general default is now MLP. Never silently package the other backend.
+cnn_defconfig="$sdk/vendor/allwinnertech/boards/r528/r528s3-gemini-s1/configs/nsh/defconfig"
+printf '\nCONFIG_AE_AUDIODETECT_CNN=y\n' >> "$cnn_defconfig"
 git -C "$sdk/apps/graphics/lvgl/lvgl" rev-parse HEAD > "$out/lvgl-commit.txt"
 git -C "$sdk/apps/graphics/lvgl/lvgl" diff > "$out/lvgl-local.patch"
 (cd "$sdk" && ./build.sh vendor/allwinnertech/boards/r528/r528s3-gemini-s1/configs/nsh/ -j6) > "$out/build.log" 2>&1
@@ -54,7 +59,7 @@ assert b'Audio Sentinel CNN v2' in raw
 payload=sdk/'vendor/allwinnertech/lichee/board/r528s3/gemini-s1_nand/configs/nsh.fex'
 assert hashlib.sha256(raw).digest()==hashlib.sha256(payload.read_bytes()).digest()
 config=(sdk/'nuttx/.config').read_text()
-for flag in ['CONFIG_ARCH_BOARD_R528S3_GEMINI_S1=y','CONFIG_LCD_ILI9341=y','CONFIG_AE_AUDIODETECT=y','CONFIG_AE_AUDIODETECT_UI=y']:
+for flag in ['CONFIG_ARCH_BOARD_R528S3_GEMINI_S1=y','CONFIG_LCD_ILI9341=y','CONFIG_AE_AUDIODETECT=y','CONFIG_AE_AUDIODETECT_CNN=y','CONFIG_AE_AUDIODETECT_UI=y']:
     assert flag in config,flag
 for flag in ['CONFIG_RAM_SIZE=113143808','CONFIG_RAM_START=0x41400000','CONFIG_AE_AUDIODETECT_UI_AUTOSTART=y','CONFIG_LV_USE_NUTTX_LCD=y','CONFIG_LV_DRAW_BUF_ALIGN=64']:
     assert flag in config,flag

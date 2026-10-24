@@ -1,5 +1,8 @@
 # v11 评测口径与指标
 
+2026-10-24更新：默认已改为从零重训Tiny MLP，详见[主版本说明](mlp-primary.md)和[训练审计](../results/retraining-audit-20261024/README.md)。新MLP仅完成主机C验收，下文CNN板端记录属于历史固件。
+
+
 ## 1. 评测口径
 
 以下指标由 `training/train_edge_mfcc.py` 在 ESC-50 官方五折上重新训练与评测得到。

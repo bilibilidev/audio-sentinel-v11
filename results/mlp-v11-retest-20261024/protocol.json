@@ -1,0 +1,559 @@
+{
+  "labels": [
+    "background",
+    "cough",
+    "glass_break",
+    "baby_cry",
+    "dog_bark"
+  ],
+  "inputs": [
+    {
+      "id": "cough-01",
+      "reference_label": "cough",
+      "path": "inputs/cough-01.wav",
+      "sha256": "d564446e9ac85f17db753e947bd935a3697b6d852e25358ba150cc9331d072fd",
+      "original_sha256": "153bdd1c66fb50d324ffa36c7c29592fe56f937cd34c87be4d315cd11372266b",
+      "samples": 181555
+    },
+    {
+      "id": "cough-04",
+      "reference_label": "cough",
+      "path": "inputs/cough-04.wav",
+      "sha256": "8479c7d5cd906da6c9fdf58baa36364a74f8f03851ec559d46933e4d6bf81e93",
+      "original_sha256": "f74b1b193060b744fc7eebf8009350c6c96ef9928fed8aa54d3cba398393c7be",
+      "samples": 328107
+    },
+    {
+      "id": "cough-06",
+      "reference_label": "cough",
+      "path": "inputs/cough-06.wav",
+      "sha256": "7ddbe7c9faabacf9f8d602f7c108739aebac567b0aec358f1ca3bf26df4b6686",
+      "original_sha256": "f569e0e070249f0e0ca0dcf9b0ebb1aa23e1ee5f5cdc4b22a3d6cab1c6344d56",
+      "samples": 211609
+    },
+    {
+      "id": "cough-09",
+      "reference_label": "cough",
+      "path": "inputs/cough-09.wav",
+      "sha256": "6d996685c19d8a09334ea1a2b594aeb1a2b2558c2e52711931c2734259d79eb0",
+      "original_sha256": "62f3bdb4b0f4d2b11edb1d133334ff2fe65e83fe758f0f00ec057f8643deea89",
+      "samples": 30294
+    },
+    {
+      "id": "cough-10",
+      "reference_label": "cough",
+      "path": "inputs/cough-10.wav",
+      "sha256": "4b07088aeff011058fe447f8db105758e39841c0decbb0cc878e29a5b6b1ddd8",
+      "original_sha256": "48a7e3bb69faf188092ba42b52139aeacf3edf066fa5d03f572633d5e908b1e4",
+      "samples": 24892
+    },
+    {
+      "id": "cough-11",
+      "reference_label": "cough",
+      "path": "inputs/cough-11.wav",
+      "sha256": "64cb2a6710743eb90e83431184eaa34c70761a1b303df6fdccf30071fc7685a3",
+      "original_sha256": "df7d54864ec95dd2fc7ba42deb6e9f2929fde8eadae074c48ff3ee136363a423",
+      "samples": 15542
+    },
+    {
+      "id": "cough-12",
+      "reference_label": "cough",
+      "path": "inputs/cough-12.wav",
+      "sha256": "bd83031a3b385374c08a4d7c1a7577b69f28bb9cdef8c514ba13c0d3e9e440fd",
+      "original_sha256": "d88a44cb549b30908e743df8323eab7982b0da4e63a4ac37b840b53b08c5eafc",
+      "samples": 71814
+    },
+    {
+      "id": "cough-13",
+      "reference_label": "cough",
+      "path": "inputs/cough-13.wav",
+      "sha256": "0c2e7c5c728ebe60b928f4044bac861b4336eb5eeffa111c6f980829db76a0a1",
+      "original_sha256": "36dcfedad0eface68ab6518c564a96850f087912536567435b36f70dfe20356a",
+      "samples": 48295
+    },
+    {
+      "id": "cough-14",
+      "reference_label": "cough",
+      "path": "inputs/cough-14.wav",
+      "sha256": "8898fcbc0cc2d712a5d1197abbedbe33ec5d6f9a54b57fb7784f814b40cdfa59",
+      "original_sha256": "25a1a69315f3bc4b4b18cb4b565c52b8308728e6f9f8b523d4d9fa5e6977437c",
+      "samples": 208507
+    },
+    {
+      "id": "cough-15",
+      "reference_label": "cough",
+      "path": "inputs/cough-15.wav",
+      "sha256": "0c699385b4e4cf27cd63236bc0684ca3eab8a503135cdfb1d82abcb04f37fa94",
+      "original_sha256": "61b1e529189ddb350156e3c16093c18589e56607abae6dab31de0abfd9609324",
+      "samples": 80667
+    },
+    {
+      "id": "cough-17",
+      "reference_label": "cough",
+      "path": "inputs/cough-17.wav",
+      "sha256": "772b4da6043903796681fed39485e5a5964f0e0f9eabcd6bc27cd1f6d079d4f8",
+      "original_sha256": "77ed0727cece28b63af252af77d2892ec9af2a87944e4406e089e37b0642a4e5",
+      "samples": 266912
+    },
+    {
+      "id": "cough-19",
+      "reference_label": "cough",
+      "path": "inputs/cough-19.wav",
+      "sha256": "624828d77500f7755f28206410ced2e022c2f42d5e5d7162e96599e18496befb",
+      "original_sha256": "9fba3ffa4d0711241345627035ff6ba71db852352a24689c50a6f5f2d476ca57",
+      "samples": 233477
+    },
+    {
+      "id": "glass_break-06",
+      "reference_label": "glass_break",
+      "path": "inputs/glass_break-06.wav",
+      "sha256": "37443b200d54db84d2efc62fa39ad5882f3fa6c992e3ee19a093569c15b9164a",
+      "original_sha256": "ace9d482d77558dddc9b0e4db1afa27751db070c4f82b07b53260da13eb33d05",
+      "samples": 33019
+    },
+    {
+      "id": "glass_break-07",
+      "reference_label": "glass_break",
+      "path": "inputs/glass_break-07.wav",
+      "sha256": "fd64b3b8135c44d8afdc978430fcd47c101b53812d1bd5aa78d003ea61299454",
+      "original_sha256": "9ff3fa9d1bbcb8f90fe196e70c5baa68ebfb589ec6109476f0339e6c56a52ce0",
+      "samples": 279475
+    },
+    {
+      "id": "glass_break-08",
+      "reference_label": "glass_break",
+      "path": "inputs/glass_break-08.wav",
+      "sha256": "a07ab05238cd6864d03b56160204a6276da861847bb3b1bab46ba19bb55bdbd8",
+      "original_sha256": "54cd2343847fb58aa7a1cf7e6d87e16b460c2fd1ed323b7c853065c374698e31",
+      "samples": 41789
+    },
+    {
+      "id": "glass_break-09",
+      "reference_label": "glass_break",
+      "path": "inputs/glass_break-09.wav",
+      "sha256": "eb53143735c78b9e10be035867d3723aac68fa87d4a6e8e22c3a512b7b9eed3b",
+      "original_sha256": "b7eb14df85ed4be61e9b6ed2e74a82c18f1ec5e2381c6165140f26bee32a1ff6",
+      "samples": 178942
+    },
+    {
+      "id": "glass_break-11",
+      "reference_label": "glass_break",
+      "path": "inputs/glass_break-11.wav",
+      "sha256": "7fe11bf2b4b91c11c99bb3779ed4f525f8bcdd269affe23926375b8d2100fb1a",
+      "original_sha256": "5240d5ec48f9e81e8871668f8456ae6a3799ceffde34e1bc923af843c79fa72c",
+      "samples": 106043
+    },
+    {
+      "id": "glass_break-17",
+      "reference_label": "glass_break",
+      "path": "inputs/glass_break-17.wav",
+      "sha256": "5ae69af221e322851565adcf9e55a6a421ec23c462afc387224c9381f95b8b66",
+      "original_sha256": "42d32a3dc3e3d35acf270b5b5f3a6f9deb11d6763e8e31bd903072973d376bed",
+      "samples": 8916
+    },
+    {
+      "id": "glass_break-18",
+      "reference_label": "glass_break",
+      "path": "inputs/glass_break-18.wav",
+      "sha256": "d2f96c69d8e3b48abd82ac5d50ef51ddaf69f5a6a57c66d81c47b5f65da712df",
+      "original_sha256": "250c82c7db86b6cde9777b832d9861dd4f07c66673fa6aa86b8bd0803b7da59a",
+      "samples": 40000
+    },
+    {
+      "id": "glass_break-19",
+      "reference_label": "glass_break",
+      "path": "inputs/glass_break-19.wav",
+      "sha256": "4c132e47773dad0ae2ed93aa9a8faa160498f53f164c8f2fa82a0a4ebc4a12b1",
+      "original_sha256": "e06d4bb1b79d26791fe054481368e5f00da95a7de398d0e189a278f54f24f8b7",
+      "samples": 28313
+    },
+    {
+      "id": "glass_break-20",
+      "reference_label": "glass_break",
+      "path": "inputs/glass_break-20.wav",
+      "sha256": "960c92ea5fe347bf001177796c06a229b5e587548c5eb76a64de12c3f277315f",
+      "original_sha256": "f31da300b2a1aa7d87d677b92fe314187f249a914e6cefdb676f66d559ba045f",
+      "samples": 40267
+    },
+    {
+      "id": "dog_bark-01",
+      "reference_label": "dog_bark",
+      "path": "inputs/dog_bark-01.wav",
+      "sha256": "855db33fd1e681ca70d867499f72737628392fd9067b7920ed88e9c8350cf2a2",
+      "original_sha256": "c476f99f33d092458b50637dc6274a5c38600e769d9ba7bd0785747e608e5d88",
+      "samples": 336078
+    },
+    {
+      "id": "dog_bark-04",
+      "reference_label": "dog_bark",
+      "path": "inputs/dog_bark-04.wav",
+      "sha256": "f191cd31d798600b12b7cfa6b024a0acb8129199bec8065b94be8ae2707d7f1b",
+      "original_sha256": "e83b1a5e52db34752286466587b090204a77a9878b7623cd3233cce33bbd2288",
+      "samples": 275508
+    },
+    {
+      "id": "dog_bark-06",
+      "reference_label": "dog_bark",
+      "path": "inputs/dog_bark-06.wav",
+      "sha256": "e2bf23fc817efca62a9dca8cd1aa273ca1ac0945b327f83a66093f1e6bf7a75f",
+      "original_sha256": "65fad23d4e857b6a21fd9472107eec3b6324e0ff0c04603a36426d589266a1f8",
+      "samples": 311897
+    },
+    {
+      "id": "dog_bark-07",
+      "reference_label": "dog_bark",
+      "path": "inputs/dog_bark-07.wav",
+      "sha256": "cb0cde9c021a474e8fe7cbd543c99d19e88529936b102fd0852b099e7958fa76",
+      "original_sha256": "dfe5ee7bedd14b14348b700ec1f8706551fa70b5c2275c7246bb059db76b42e0",
+      "samples": 122880
+    },
+    {
+      "id": "dog_bark-08",
+      "reference_label": "dog_bark",
+      "path": "inputs/dog_bark-08.wav",
+      "sha256": "00d551660c1d95a42e89abd8ae125bd17733af0201994a0ed062edbade9be29a",
+      "original_sha256": "bcaa4595f5110b2f2ec68e8d0672f79ad251e7843e2debe8e8c7b1a7f018bdb8",
+      "samples": 250250
+    },
+    {
+      "id": "dog_bark-10",
+      "reference_label": "dog_bark",
+      "path": "inputs/dog_bark-10.wav",
+      "sha256": "868a68db296c102ba645e38f8e420e72b36071a451ad30ab9040ebd4d05c0149",
+      "original_sha256": "f3796ed1a8193c644b24835e06f710083945b901bb82a1f09f27ec3268303f30",
+      "samples": 103560
+    },
+    {
+      "id": "dog_bark-11",
+      "reference_label": "dog_bark",
+      "path": "inputs/dog_bark-11.wav",
+      "sha256": "7e61cec526ad11a35136eaba8b33b7cf53bb4fac810724a60ac46477deccc827",
+      "original_sha256": "75af9bdcd179354c5573f4b7f078d4ef892d3ffaf24c931fff965a1dbcfc5588",
+      "samples": 282584
+    },
+    {
+      "id": "dog_bark-12",
+      "reference_label": "dog_bark",
+      "path": "inputs/dog_bark-12.wav",
+      "sha256": "8becd0ab8b758d3e1b361bb75e53f403bd8b26a0482ae8ec8d1a0ed8615d9de0",
+      "original_sha256": "7bc6b4b93efa755b0fd6c05dd3f71d2098eaae46620a2cd3030e82de30c62f85",
+      "samples": 94257
+    },
+    {
+      "id": "dog_bark-13",
+      "reference_label": "dog_bark",
+      "path": "inputs/dog_bark-13.wav",
+      "sha256": "224515fd8cfe05f73f7b837e2428e8893fbfd74a38ec445f3ab4a8307a584707",
+      "original_sha256": "10dc899bccf0288b8556e280e3cd261d830805ff82fac0c1e6e9f4c922041b1f",
+      "samples": 154645
+    },
+    {
+      "id": "dog_bark-18",
+      "reference_label": "dog_bark",
+      "path": "inputs/dog_bark-18.wav",
+      "sha256": "ef37912f51a68c302086f58fe3ce57bec405991a02d0347a9724651aa0601b50",
+      "original_sha256": "0907879885a54d12e2f6c93a8516a8257f374c3d801db46e1653bc15e3aa04e4",
+      "samples": 172352
+    },
+    {
+      "id": "dog_bark-20",
+      "reference_label": "dog_bark",
+      "path": "inputs/dog_bark-20.wav",
+      "sha256": "78664aed43f3541cb47e97c66e064ed4b9e15cf652676aed1a4b2bce6a7f4a63",
+      "original_sha256": "4f93fe100b25c4cf602edaf9a688af0b6aadd6480853f2ce9fd491fe1ca33926",
+      "samples": 97108
+    },
+    {
+      "id": "background-01",
+      "reference_label": "background",
+      "path": "inputs/background-01.wav",
+      "sha256": "8ef0865c250a32673fcd3b3f271733cd6041cd8fbb18ac39f0f61b88b13bb1cf",
+      "original_sha256": "0550b7d9e3e72ca637bb6e3e83f5564f9af6d5a91a47f5558b8e98071655e382",
+      "samples": 148211
+    },
+    {
+      "id": "background-02",
+      "reference_label": "background",
+      "path": "inputs/background-02.wav",
+      "sha256": "42657c296039efda9c03ca83a3922780e908507432d1fedb2d89fb83c5983ffe",
+      "original_sha256": "b56c5615a253816c7a05f3d592f001986e32561a16f104edcc427b2e6dd5402b",
+      "samples": 65283
+    },
+    {
+      "id": "background-04",
+      "reference_label": "background",
+      "path": "inputs/background-04.wav",
+      "sha256": "aacf1ccf51aa4b21f1f9393fe59884fc8e7f4477582a4be3b7bd6244c0485724",
+      "original_sha256": "04304e204331cfea3dc418250ada35e4810ddddb30d7bbea9f7e60a0851d03ed",
+      "samples": 258048
+    },
+    {
+      "id": "background-05",
+      "reference_label": "background",
+      "path": "inputs/background-05.wav",
+      "sha256": "042a24a1d4ce4e4e4e28ccc643d972663fa041a2851589b2566e6f4da0eb67ec",
+      "original_sha256": "32373a41d4ac270aa65274b227d9eb73215172894b7e0239a9859948d890b73b",
+      "samples": 117714
+    },
+    {
+      "id": "background-06",
+      "reference_label": "background",
+      "path": "inputs/background-06.wav",
+      "sha256": "4537643c3ad6ef047a9bc88d9cfc2b7d8ee81c9670efc94e770281579598f2cc",
+      "original_sha256": "c25a48fc05a9d511671e5497833de6e4b070c157b1330dc3432d208b97dc3487",
+      "samples": 71773
+    },
+    {
+      "id": "background-08",
+      "reference_label": "background",
+      "path": "inputs/background-08.wav",
+      "sha256": "36c2d6f2fa700742b6bd8beacf771c92516eee39c4f520da8c73d1030631576e",
+      "original_sha256": "f232f1af7a6a70e31f31b9b0cbcae0c39bd7a05472c0da2630424b6759b1f243",
+      "samples": 28460
+    },
+    {
+      "id": "background-09",
+      "reference_label": "background",
+      "path": "inputs/background-09.wav",
+      "sha256": "c90f3629b37be6fd9ba84cb05671751dc39419ddf868e77f21bca451e87accc1",
+      "original_sha256": "2359589d03d33d7b5d63408cc5535d1e0864d3eabc5df3e127550d3c7a9f27b0",
+      "samples": 399621
+    },
+    {
+      "id": "background-13",
+      "reference_label": "background",
+      "path": "inputs/background-13.wav",
+      "sha256": "bca348c6575b9a91a1f67cd088be3e2bb6c6a954738c06ad3fecb8ee2a94cf54",
+      "original_sha256": "e5fab8f91fe0bf0b471c98bf06c92690ffdb2daad40849250b16efddd2f9b029",
+      "samples": 180667
+    },
+    {
+      "id": "background-14",
+      "reference_label": "background",
+      "path": "inputs/background-14.wav",
+      "sha256": "a3b069e9fde7a9c112859adffcc5c243c3aca3d700645b290db536d43cca291a",
+      "original_sha256": "ac464798c188e3d646870ba998c91b2685b89e12c4b926f712ccbfdfb64ed154",
+      "samples": 28854
+    },
+    {
+      "id": "background-17",
+      "reference_label": "background",
+      "path": "inputs/background-17.wav",
+      "sha256": "2da45140e6988c0dfeabf120493d5b95e8fb4419a882dbd372cc5359d66d13bb",
+      "original_sha256": "08ceb99d9cc78d0ffa82978ae3e8dd842ccef41e676480d31ba976b52da59a72",
+      "samples": 257045
+    },
+    {
+      "id": "background-18",
+      "reference_label": "background",
+      "path": "inputs/background-18.wav",
+      "sha256": "309719e8aa6ec6562a2c38116586661da6a83a3fdc18ebebbd924de3e7472c02",
+      "original_sha256": "89c9162010f90f7e0efb0b8b795b90baea232d52ce6f95c4a6fcd7ebb763eab7",
+      "samples": 74536
+    },
+    {
+      "id": "background-19",
+      "reference_label": "background",
+      "path": "inputs/background-19.wav",
+      "sha256": "f2a629ea94b0742ff88255f07c2fbb402bb73fd4f26cf12e5460d8419a97166d",
+      "original_sha256": "e9be999d3aa654cb174be1add8cda5147d7b0d3c8511cb5be8544d49ec2fc24d",
+      "samples": 65775
+    },
+    {
+      "id": "background-20",
+      "reference_label": "background",
+      "path": "inputs/background-20.wav",
+      "sha256": "6bace3061e1702787778f3a12d7c161861af634801458f9151c655d20d58f387",
+      "original_sha256": "c57e7d5a30fc7efeb3594fe2d6374c5b6e948c192ebb07e661b35b0ad2bc7442",
+      "samples": 53094
+    },
+    {
+      "id": "baby_cry-01",
+      "reference_label": "baby_cry",
+      "path": "inputs/baby_cry-01.wav",
+      "sha256": "f82427614624bbe37d69031b25b1ca77c9bae1eaa3bae7760292a6f9bef7c0f2",
+      "original_sha256": "7c5f9fde2eabd42405c4332c10a55fa1a96c59d58fb1abb25bda0820f6f5facf",
+      "samples": 111680
+    },
+    {
+      "id": "baby_cry-02",
+      "reference_label": "baby_cry",
+      "path": "inputs/baby_cry-02.wav",
+      "sha256": "08cfeac4d38a436ae93739a33ee8e8b79c57ce071a1a185b3afa1ff9fc5d05c7",
+      "original_sha256": "3f3df70b40aaa7332736c472ced6f86b06244bdc86934477bdd93c6cb1d80540",
+      "samples": 110720
+    },
+    {
+      "id": "baby_cry-03",
+      "reference_label": "baby_cry",
+      "path": "inputs/baby_cry-03.wav",
+      "sha256": "b1afa783cd52521b654b59c88a83a3892212355b6159ae541b081cceb8a3a6b7",
+      "original_sha256": "2409c5a7769bc4fff751b1353e4e547dab7489f6b3a6c0555b0d1900a88b1b02",
+      "samples": 111040
+    },
+    {
+      "id": "baby_cry-04",
+      "reference_label": "baby_cry",
+      "path": "inputs/baby_cry-04.wav",
+      "sha256": "7c51c34cd2d9ec9f346e39f20eea979daade01636d0076f4da07d9aac38c740f",
+      "original_sha256": "1b18c63f8bd2ad39bac7806131e55d624870f119ec7c95889fcc0ca02e093eef",
+      "samples": 112960
+    },
+    {
+      "id": "baby_cry-05",
+      "reference_label": "baby_cry",
+      "path": "inputs/baby_cry-05.wav",
+      "sha256": "132e41fe9712c65ff3d7c7270fb2c2dc5dd6c5b92e277f4f4070b55c1d3478f2",
+      "original_sha256": "c569526a61054899255bd9cb0aa2b5574011f050cadd5b7c5d140296a6176662",
+      "samples": 110720
+    },
+    {
+      "id": "baby_cry-06",
+      "reference_label": "baby_cry",
+      "path": "inputs/baby_cry-06.wav",
+      "sha256": "6c0465b8b17fb854b762a2770c79ceb8ed06cc9a73c00f3318a5717a56b9ab86",
+      "original_sha256": "effde347e57df1283f9cb2fe4b885bf92d566f64b12d5f0225498df91c820483",
+      "samples": 109440
+    },
+    {
+      "id": "baby_cry-07",
+      "reference_label": "baby_cry",
+      "path": "inputs/baby_cry-07.wav",
+      "sha256": "cce946171b0d3c597281e4edc028993a73252def70d112c668e7990b8f188dd0",
+      "original_sha256": "32f9d12c79cec22682fcf543243bcde83078bfeaecffd763e5fd586a361e70b0",
+      "samples": 112000
+    },
+    {
+      "id": "baby_cry-08",
+      "reference_label": "baby_cry",
+      "path": "inputs/baby_cry-08.wav",
+      "sha256": "e7d8c119b38da5c1429323dadb7b8e65706e7a53f99a699a43daede51a6c30be",
+      "original_sha256": "4ae5bcdee6c194b277c3ab1ec734657abc69325f87b91e03a60bf6abb90d6844",
+      "samples": 106560
+    },
+    {
+      "id": "baby_cry-09",
+      "reference_label": "baby_cry",
+      "path": "inputs/baby_cry-09.wav",
+      "sha256": "08b98c672d7a2e1ee57c859c7ceecd3e5e1401615d124915d92796b33aebba38",
+      "original_sha256": "5566caee337f6a6c1b448eee5ca43f8b1d978d4f9bf5f11bd1e987e5c82d3bd2",
+      "samples": 110080
+    },
+    {
+      "id": "baby_cry-10",
+      "reference_label": "baby_cry",
+      "path": "inputs/baby_cry-10.wav",
+      "sha256": "d5c037637144cb2254d4744e54db19f8a4f401639d82329ed8ce88ca92cd97e5",
+      "original_sha256": "e52cf82b43b5b5909ff5e8f3f21d418c96688344150c3cf3628334d32a79beb9",
+      "samples": 112000
+    },
+    {
+      "id": "baby_cry-11",
+      "reference_label": "baby_cry",
+      "path": "inputs/baby_cry-11.wav",
+      "sha256": "2b9c0e0650ff09bad48d838adfb19984ffc1215e238fbc692dca014add0a10e1",
+      "original_sha256": "3826fec9f6458e8ead6b9941cb39d57b15cd7983b5915c4cd71632cd8e918b39",
+      "samples": 112000
+    },
+    {
+      "id": "baby_cry-12",
+      "reference_label": "baby_cry",
+      "path": "inputs/baby_cry-12.wav",
+      "sha256": "c6decb94fb44db5ea40d801c4cedfd9ecd50571585550fd26f975483799c4410",
+      "original_sha256": "bf806a3260e48ccc747deff4e1e0b5da4f2f42e3fa832393a4e8a9bc30a630d9",
+      "samples": 112000
+    },
+    {
+      "id": "baby_cry-13",
+      "reference_label": "baby_cry",
+      "path": "inputs/baby_cry-13.wav",
+      "sha256": "dc7841b68f216b73261b39beaa6886a345da6a4de50d90696351c0dce15d0b43",
+      "original_sha256": "6934569dff1c2a8ed4ebef3a62ef4701c8dd61a1101591a40281b4db195f3e4e",
+      "samples": 108480
+    },
+    {
+      "id": "baby_cry-14",
+      "reference_label": "baby_cry",
+      "path": "inputs/baby_cry-14.wav",
+      "sha256": "94133f4c836c4c1aa66f1f091e1da3c39f61e3e6f66acbb9e1eb9fc04fbd5736",
+      "original_sha256": "bcc2eaf49c67bf13d735621878dbe931996bbfe6bf9d5f16913d752f8de7870d",
+      "samples": 112000
+    },
+    {
+      "id": "baby_cry-15",
+      "reference_label": "baby_cry",
+      "path": "inputs/baby_cry-15.wav",
+      "sha256": "398c8b548974ca57f0561342680764e7854f7fb22c95837a5da4b905fe2041fd",
+      "original_sha256": "bbf0174a00b824572015865af9b4123aa8ef2ebcd48e22a5f275ca56a34c27c7",
+      "samples": 112000
+    },
+    {
+      "id": "baby_cry-16",
+      "reference_label": "baby_cry",
+      "path": "inputs/baby_cry-16.wav",
+      "sha256": "489ef7a9566cf0dfc42ea40a74c1c1a2f65a41d4e01744a3c3d7897e31c017e1",
+      "original_sha256": "a21828608d3db65e398651f4963256327816fa7071003851bf251f5eb711db5c",
+      "samples": 111360
+    },
+    {
+      "id": "baby_cry-17",
+      "reference_label": "baby_cry",
+      "path": "inputs/baby_cry-17.wav",
+      "sha256": "111a4cea9048fea3077de0cbac093617b5444e59e1e417d35a2ee641b045f980",
+      "original_sha256": "b2f9c1cb8e077bfa964302f34855944bfc839fa46ff4259e2556b817d34897c0",
+      "samples": 110400
+    },
+    {
+      "id": "baby_cry-18",
+      "reference_label": "baby_cry",
+      "path": "inputs/baby_cry-18.wav",
+      "sha256": "14be65e41169ef7b0c2f193fcad22f802d75e951caa83419ac2099a2787b58ed",
+      "original_sha256": "92d5f00860a42edc1c881382d37302b17ad712cf851b1259d1538a64ed092bb2",
+      "samples": 112960
+    },
+    {
+      "id": "baby_cry-19",
+      "reference_label": "baby_cry",
+      "path": "inputs/baby_cry-19.wav",
+      "sha256": "8257c0094fb7f38482a2f84cb9c24e68b6fda062bf057c58811e9a51f6699612",
+      "original_sha256": "a0601af12f438695a349d56ee35b5d58a67f87d1404c56b5d0e8d66d74f9236d",
+      "samples": 104320
+    },
+    {
+      "id": "baby_cry-20",
+      "reference_label": "baby_cry",
+      "path": "inputs/baby_cry-20.wav",
+      "sha256": "9cd30ee18279a2e33d2ca670217d548e1d338068c97d1770c0c069b6145284e7",
+      "original_sha256": "23b34e86fce8d96b17c8c45042054f2b7d6ea07a404af4a377cbd2192cfd8908",
+      "samples": 110720
+    }
+  ],
+  "model_sha256": "c96333aaae66d324b8b8cec48ffb0ec981ac4e975d3cf9a7d4a2fdba4307c97e",
+  "sources": {
+    "app/audiodetect/audio_classifier.h": "9af4a2a45ddae4a7e280153ef97221787fea1a8b83adbda91c3aa1cd174d5484",
+    "app/audiodetect/audio_classifier_mlp.c": "6eb390d0b34d414e83a1cfe29af136d1391c685493bbef5017f24dad61d3bacf",
+    "app/audiodetect/model_infer.h": "b9a2e7c3f21390bfbdf81290275d843dc851aa08360288bd7abe7739a979b899",
+    "app/audiodetect/model_weights.h": "f009af66a59ad4471f51e632c30910ed6540776fa91de56deb7ba7ced05a7475",
+    "app/audiodetect/feature_extractor.c": "4dc535ab481036327b58aad9294d67312e9c05e4490227a57e4208a0bd65c883",
+    "app/audiodetect/feature_extractor.h": "61828ebf7c1fd4c3b158642ed4a8782bcbc5e84800fffed6e9f69411219a9b59",
+    "app/audiodetect/wav_reader.c": "236a01889fc1b12fef36e0dc89619932a92baad4b3bc01c21a6458ed6bfa4eda",
+    "app/audiodetect/wav_reader.h": "59ffd77fbb3bb95239203b4fecfeae585238cc249e54ebed7802978ac4f20e49",
+    "app/audiodetect/keyword_detect.c": "1a741cf56b134036c05fbb3ecd2c4a831732218a2b406caf268eace03acc894e",
+    "app/audiodetect/keyword_detect.h": "2b0fd8a25931ed42dece0a274696ca733b91149f487ae7d8d5e9b07e05e57bec",
+    "app/audiodetect/keyword_templates.h": "00d368ea5d4b75e2bad23c94ef7a5eb584d4750472805befe68e6ba9112f4f8e",
+    "simulator/model_infer_int8.c": "65775809e64f6dc8aea7bac1eba0e0a4e9a7d42bd88ab1dd8421f2fca017dfdb",
+    "simulator/model_infer_int8.h": "e01154a434b50dd4378cdf29ad514c2922a28793605702cdf6b1d0ab0c7f6962",
+    "simulator/generated/model_weights_int8.h": "74517288baa84e43133c13f4a5f170067505d0910f8bcc428911b7a522643a57",
+    "scripts/board_simulator_harness.c": "22084f862840a466189bee56e22076bf30047537e8ab7c530267d8f049b216fa",
+    "scripts/legacy_mlp_evaluation.c": "bc38839396579e1766b5b52f88df6dde486bbcab6312339458d058fc8f6b74eb",
+    "scripts/evaluate_legacy_mlp.py": "ca2ac0c20325914ca4acc4e112a8e100184bd078fa44f90748bc2bcc2b4c0f61",
+    "model/tiny_mlp_mfcc92_robust_simulator.npz": "c96333aaae66d324b8b8cec48ffb0ec981ac4e975d3cf9a7d4a2fdba4307c97e"
+  },
+  "external_role": "Previously reviewed development cohort; NOT a new blind test. No candidate/epoch/seed selected on these scores in this run.",
+  "modes": {
+    "legacy": "Unmodified original aed_classify_three_second_wav; reads FIRST THREE seconds only",
+    "full": "Evaluation adapter across whole WAV; original one-second features, quiet gate2e-5, event-max>=.8 else mean probabilities; zero-pad last partial second"
+  },
+  "trained": false,
+  "weights_changed": false
+}

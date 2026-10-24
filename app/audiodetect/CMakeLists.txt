@@ -1,14 +1,19 @@
 # CMakeLists.txt for audiodetect app (OpenVela / NuttX CMake build)
-# Shared causal CNN v2 (INT8 weight storage, float arithmetic).
+# Shared CLI/UI classifier: retrained MLP default, optional causal CNN v2.
 
 if(CONFIG_AE_AUDIODETECT)
   set(AUDIODETECT_SRCS
       audiodetect_main.c
       wav_reader.c
-      cnn_stream_v2.c
       audio_classifier.c
       alarm_report.c
       keyword_detect.c)
+
+  if(CONFIG_AE_AUDIODETECT_CNN)
+    list(APPEND AUDIODETECT_SRCS cnn_stream_v2.c)
+  else()
+    list(APPEND AUDIODETECT_SRCS feature_extractor.c mlp_model_infer.c)
+  endif()
 
   if(CONFIG_AE_AUDIODETECT_UI)
     list(APPEND AUDIODETECT_SRCS audiodetect_ui.c)

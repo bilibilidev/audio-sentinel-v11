@@ -19,12 +19,15 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <inttypes.h>
 
 /* Platform-specific socket headers */
 #ifdef _WIN32
     #include <winsock2.h>
     #include <ws2tcpip.h>
+    #ifdef _MSC_VER
     #pragma comment(lib, "ws2_32.lib")
+    #endif
     typedef int socklen_t_win;
     #define ALARM_CLOSE_SOCKET closesocket
     #define ALARM_SOCKET_ERR SOCKET_ERROR
@@ -39,7 +42,7 @@
 #endif
 
 /* ---- Static configuration (set by alarm_report_init) ---- */
-static char s_host[ALARM_MAX_HOST]       = "127.0.0.1";
+static char s_server_host[ALARM_MAX_HOST]       = "127.0.0.1";
 static int  s_http_port                  = 8080;
 static int  s_mqtt_port                  = 1883;
 static char s_device_id[64]              = "device_01";
@@ -64,12 +67,12 @@ const char *alarm_build_json(const char *event_label, float confidence,
         "\"event\":\"%s\","
         "\"confidence\":%.4f,"
         "\"severity\":\"%s\","
-        "\"timestamp\":%lld}",
+        "\"timestamp\":%" PRId64 "}",
         s_device_id,
         event_label ? event_label : "unknown",
         confidence,
         sev,
-        (long long)timestamp);
+        timestamp);
 
     if (n < 0 || (size_t)n >= sizeof(json_buf)) {
         /* Truncated — shouldn't happen with our buffer sizes */
@@ -83,8 +86,8 @@ int alarm_report_init(const char *host, int http_port, int mqtt_port,
 {
     if (!host || !device_id) return -1;
 
-    strncpy(s_host, host, sizeof(s_host) - 1);
-    s_host[sizeof(s_host) - 1] = '\0';
+    strncpy(s_server_host, host, sizeof(s_server_host) - 1);
+    s_server_host[sizeof(s_server_host) - 1] = '\0';
     s_http_port = http_port;
     s_mqtt_port = mqtt_port;
 
@@ -107,7 +110,7 @@ int alarm_report_init(const char *host, int http_port, int mqtt_port,
 
     s_initialized = 1;
     printf("[alarm] initialized: host=%s http=%d mqtt=%d device=%s topic=%s\n",
-           s_host, s_http_port, s_mqtt_port, s_device_id, s_mqtt_topic);
+           s_server_host, s_http_port, s_mqtt_port, s_device_id, s_mqtt_topic);
     return 0;
 }
 
@@ -123,7 +126,12 @@ static int connect_tcp(const char *host, int port)
     addr.sin_port = htons((uint16_t)port);
 
     /* Try parsing as IP first, then DNS lookup */
+    #ifdef _WIN32
+    addr.sin_addr.s_addr = inet_addr(host);
+    if (addr.sin_addr.s_addr == INADDR_NONE) {
+    #else
     if (inet_pton(AF_INET, host, &addr.sin_addr) <= 0) {
+    #endif
         struct hostent *he = gethostbyname(host);
         if (!he) return -1;
         memcpy(&addr.sin_addr, he->h_addr_list[0], he->h_length);
@@ -148,9 +156,9 @@ int alarm_send_http(const char *event_label, float confidence,
     const char *json = alarm_build_json(event_label, confidence,
                                         severity, timestamp);
 
-    int sock = connect_tcp(s_host, s_http_port);
+    int sock = connect_tcp(s_server_host, s_http_port);
     if (sock < 0) {
-        printf("[alarm] HTTP: failed to connect %s:%d\n", s_host, s_http_port);
+        printf("[alarm] HTTP: failed to connect %s:%d\n", s_server_host, s_http_port);
         return -1;
     }
 
@@ -160,11 +168,11 @@ int alarm_send_http(const char *event_label, float confidence,
         "POST /api/alarm HTTP/1.1\r\n"
         "Host: %s:%d\r\n"
         "Content-Type: application/json\r\n"
-        "Content-Length: %zu\r\n"
+        "Content-Length: %u\r\n"
         "Connection: close\r\n"
         "\r\n"
         "%s",
-        s_host, s_http_port, strlen(json), json);
+        s_server_host, s_http_port, (unsigned)strlen(json), json);
 
     if (req_len < 0 || (size_t)req_len >= sizeof(request)) {
         ALARM_CLOSE_SOCKET(sock);
@@ -192,7 +200,7 @@ int alarm_send_http(const char *event_label, float confidence,
 
     /* Check for HTTP 200 */
     if (strstr(response, "200") || strstr(response, "201")) {
-        printf("[alarm] HTTP POST OK → %s:%d/api/alarm\n", s_host, s_http_port);
+        printf("[alarm] HTTP POST OK → %s:%d/api/alarm\n", s_server_host, s_http_port);
         return 0;
     }
     printf("[alarm] HTTP response: %.80s\n", response);
@@ -222,9 +230,9 @@ int alarm_send_mqtt(const char *event_label, float confidence,
     const char *json = alarm_build_json(event_label, confidence,
                                         severity, timestamp);
 
-    int sock = connect_tcp(s_host, s_mqtt_port);
+    int sock = connect_tcp(s_server_host, s_mqtt_port);
     if (sock < 0) {
-        printf("[alarm] MQTT: failed to connect %s:%d\n", s_host, s_mqtt_port);
+        printf("[alarm] MQTT: failed to connect %s:%d\n", s_server_host, s_mqtt_port);
         return -1;
     }
 
@@ -329,6 +337,6 @@ int alarm_send_mqtt(const char *event_label, float confidence,
 
     ALARM_CLOSE_SOCKET(sock);
     printf("[alarm] MQTT PUBLISH OK → %s:%d topic=%s\n",
-           s_host, s_mqtt_port, s_mqtt_topic);
+           s_server_host, s_mqtt_port, s_mqtt_topic);
     return 0;
 }

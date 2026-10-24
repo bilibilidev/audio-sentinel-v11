@@ -1,5 +1,7 @@
 # Python 训练与评测源码
 
+2026-10-24默认模型由 `retrain_mlp_audit.py` 从零重训；CNN重复训练见 `cnn_v2/train_from_scratch.py --seed-base`。两者先冻结五折和全量模型，再由 `scripts/evaluate_retraining_audit.py` 评测外部65条。协议和取舍见 `results/retraining-audit-20261024`。
+
 本目录对应 v11 的当前训练管线，依赖 Python 3.10+ 和 NumPy。
 
 核心流程：

@@ -1,0 +1,27 @@
+{
+  "model_sha256": "3ce5915d69a76f57cb999f69c360e3788e596abaa1793ed2920eb89bf919b040",
+  "labels": [
+    "background",
+    "cough",
+    "glass_break",
+    "baby_cry",
+    "dog_bark"
+  ],
+  "architecture": [
+    92,
+    64,
+    5
+  ],
+  "parameters": 6277,
+  "training_recordings": 390,
+  "training": "From random initialization,120epochs; no teacher/fine-tuning",
+  "aggregation": "Mean of all one-second probability vectors; zero-pad last partial second. No quiet override or event-max.",
+  "quantization": "INT8 weight/bias storage, float feature extraction and neural arithmetic",
+  "header_sha256": {
+    "mlp_weights.h": "3e1adba83a55691dcb316531a802368248a25a747451e130b4139248fcbc3b4b",
+    "mlp_model_config.h": "f9596fb809a92e502e0625de04b258777573393c59d8e904892f10cb2b0ec130"
+  },
+  "runtime_acceptance": "Windows native C; full OpenVela simulator, updated board image and physical-board validation not performed",
+  "original_v11_model_preserved": "model/tiny_mlp_mfcc92_robust_simulator.npz",
+  "previous_default_preserved": "model/cnn-v2"
+}

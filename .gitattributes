@@ -22,3 +22,16 @@ scripts/board_benchmark/* text eol=lf
 # Preserve recorded evidence bytes and SHA256SUMS across Windows/Linux clones.
 results/board-20261020/** -text -whitespace
 board/r528s3-gemini-s1/patches/*.patch -whitespace
+# New model hashes and audit evidence must survive Windows/Linux checkout.
+app/audiodetect/mlp_* text eol=lf
+model/mlp-retrained-20261024/*.json text eol=lf
+model/cnn-v2-scratch/*.json text eol=lf
+results/retraining-audit-20261024/** text eol=lf
+results/mlp-v11-retest-20261024/** text eol=lf
+results/mlp-v11-fivefold-retest-20261024/** text eol=lf
+results/cnn-v2-scratch/** text eol=lf
+training/retrain_mlp_audit.py text eol=lf
+scripts/evaluate_legacy_mlp*.py text eol=lf
+scripts/evaluate_retraining_audit.py text eol=lf
+scripts/verify_primary_app.py text eol=lf
+scripts/legacy_mlp*.c text eol=lf

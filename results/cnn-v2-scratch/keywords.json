@@ -1,0 +1,124 @@
+{
+  "scope": "Synthetic generator fixtures; no real spoken-word accuracy claim",
+  "cases": [
+    {
+      "path": "keyword-inputs/kw-0-0.wav",
+      "expected": 0,
+      "synthetic": true,
+      "sha256": "cbe6ed3180c216b3619c527586e5a8a84966dd1d13b5456a02e531d7ac7a2527",
+      "api_prediction": 0,
+      "api_confidence": 0.968655705,
+      "api_correct": true,
+      "cli_stdout": "Keyword Detection Demo\nInput: runtime/keyword-inputs/kw-0-0.wav\nKeyword: 救命 (57.2%)\n"
+    },
+    {
+      "path": "keyword-inputs/kw-0-1.wav",
+      "expected": 0,
+      "synthetic": true,
+      "sha256": "1cfccc7a694a77fb3d9876c225fbea1316768acd7c499a6f53385f63545a0362",
+      "api_prediction": 0,
+      "api_confidence": 0.967243254,
+      "api_correct": true,
+      "cli_stdout": "Keyword Detection Demo\nInput: runtime/keyword-inputs/kw-0-1.wav\nKeyword: 救命 (57.1%)\n"
+    },
+    {
+      "path": "keyword-inputs/kw-0-2.wav",
+      "expected": 0,
+      "synthetic": true,
+      "sha256": "a99fb28130fa2311d1f7490f989b4d0facde0784ad8ea96d39cd0053203bb3c0",
+      "api_prediction": 0,
+      "api_confidence": 0.968116462,
+      "api_correct": true,
+      "cli_stdout": "Keyword Detection Demo\nInput: runtime/keyword-inputs/kw-0-2.wav\nKeyword: 救命 (57.1%)\n"
+    },
+    {
+      "path": "keyword-inputs/kw-1-0.wav",
+      "expected": 1,
+      "synthetic": true,
+      "sha256": "9d3a677f06b09dc277d17ce8abf894efa2ba6e21c6c14e20677d9e069c3d1310",
+      "api_prediction": 1,
+      "api_confidence": 0.969043314,
+      "api_correct": true,
+      "cli_stdout": "Keyword Detection Demo\nInput: runtime/keyword-inputs/kw-1-0.wav\nKeyword: 帮助 (34.9%)\n"
+    },
+    {
+      "path": "keyword-inputs/kw-1-1.wav",
+      "expected": 1,
+      "synthetic": true,
+      "sha256": "017d6a869954c778e201c548baf7deba14d79e255a28b0885bbe2607e8376d41",
+      "api_prediction": 1,
+      "api_confidence": 0.97135663,
+      "api_correct": true,
+      "cli_stdout": "Keyword Detection Demo\nInput: runtime/keyword-inputs/kw-1-1.wav\nKeyword: 帮助 (35.0%)\n"
+    },
+    {
+      "path": "keyword-inputs/kw-1-2.wav",
+      "expected": 1,
+      "synthetic": true,
+      "sha256": "2fd39066f07f703410abc82bb41180e0c6bab5af470ae243eaefe6191df1a942",
+      "api_prediction": 1,
+      "api_confidence": 0.970242143,
+      "api_correct": true,
+      "cli_stdout": "Keyword Detection Demo\nInput: runtime/keyword-inputs/kw-1-2.wav\nKeyword: 帮助 (35.1%)\n"
+    },
+    {
+      "path": "keyword-inputs/kw-2-0.wav",
+      "expected": 2,
+      "synthetic": true,
+      "sha256": "f716e67591b0eb26d68620084aec55cece4d3d468917c2cb53d6cf8a2e88e739",
+      "api_prediction": 2,
+      "api_confidence": 0.96874541,
+      "api_correct": true,
+      "cli_stdout": "Keyword Detection Demo\nInput: runtime/keyword-inputs/kw-2-0.wav\nKeyword: 报警 (36.6%)\n"
+    },
+    {
+      "path": "keyword-inputs/kw-2-1.wav",
+      "expected": 2,
+      "synthetic": true,
+      "sha256": "f634194de5dca7688ebbaa1021d5dab2f129c3a54b8c70c56778a624d877a56e",
+      "api_prediction": 2,
+      "api_confidence": 0.969002545,
+      "api_correct": true,
+      "cli_stdout": "Keyword Detection Demo\nInput: runtime/keyword-inputs/kw-2-1.wav\nKeyword: 报警 (36.5%)\n"
+    },
+    {
+      "path": "keyword-inputs/kw-2-2.wav",
+      "expected": 2,
+      "synthetic": true,
+      "sha256": "44f687ca9625e29b9a030efcd4c60685ca14ce27ae570eecfa8e139bb609d9be",
+      "api_prediction": 2,
+      "api_confidence": 0.967877209,
+      "api_correct": true,
+      "cli_stdout": "Keyword Detection Demo\nInput: runtime/keyword-inputs/kw-2-2.wav\nKeyword: 报警 (35.8%)\n"
+    },
+    {
+      "path": "keyword-inputs/silence.wav",
+      "expected": -1,
+      "synthetic": true,
+      "sha256": "643f8a8dc8bd9c19225afffad2becfec5426180b3749cb208abdf1a6c8354efc",
+      "api_prediction": -1,
+      "api_confidence": 0.0,
+      "api_correct": true,
+      "cli_stdout": "Keyword Detection Demo\nInput: runtime/keyword-inputs/silence.wav\nKeyword: none\n"
+    },
+    {
+      "path": "keyword-inputs/low-noise.wav",
+      "expected": -1,
+      "synthetic": true,
+      "sha256": "11e110f0bf075b7d170f41601d769211a2ed350455a641545cf92e5f61f32dfb",
+      "api_prediction": -1,
+      "api_confidence": 0.0,
+      "api_correct": true,
+      "cli_stdout": "Keyword Detection Demo\nInput: runtime/keyword-inputs/low-noise.wav\nKeyword: none\n"
+    }
+  ],
+  "api_matches": 11,
+  "total": 11,
+  "delayed_keyword": {
+    "leading_silence_seconds": 1,
+    "api": "KW -1 0 28480\n",
+    "cli": "Keyword Detection Demo\nInput: runtime/feature-results/delayed-keyword.wav\nKeyword: none\n"
+  },
+  "current_cli_limit_samples": 16000,
+  "ui_integration": false
+}

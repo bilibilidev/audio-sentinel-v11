@@ -1,0 +1,15 @@
+{
+  "first_joint_freeze_sha256": "b4d2cb51309661e1813f8d6cd2ae85c4571cafc8feb01e4da294f1081e579911",
+  "first_joint_freeze": {
+    "created": "2026-10-24T17:18:39.713769+08:00",
+    "external_opened": false,
+    "training_frozen_sha256": {
+      "mlp": "37e7fce32e93b1b8aa15abbb0b21d96a65da515f69855dd8290c5c99babd99f9",
+      "cnn": "2880e5fd9a7f9b858f2423d800ca91957f79a3cd5bd709703d99722f45e4840c"
+    },
+    "external_role": "Previously reviewed development65; no tuning on this run; not new blind data",
+    "decision": "Compare all recorded results; do not select a seed, epoch, threshold or aggregation on external scores"
+  },
+  "final_evaluation_sha256": "50267a52cf0a49723000c23a4c4746de6ec0e9d4b14cbd060b7649d07573ecb3",
+  "note": "Evaluation harness retries fixed numeric diagnostics, Windows path length and JSON serialization only. Same frozen model hashes; no retraining, seed/epoch selection or weight changes during evaluation."
+}

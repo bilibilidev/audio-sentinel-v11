@@ -1,0 +1,38 @@
+{
+  "status": "Isolated from-scratch candidate; existing deployed model and board firmware unchanged",
+  "deployment_npz": "model/cnn-v2-scratch/final_all_esc50.npz",
+  "final_model_sha256": "c44894665736b63ee801098231ddec1914ccfd01cbf8063deaeceb5447c32b31",
+  "models": {
+    "final_all_esc50.npz": "c44894665736b63ee801098231ddec1914ccfd01cbf8063deaeceb5447c32b31",
+    "fold_1.npz": "de2d51e84e4fc7b8acf98b42f7734e54722733493379adc7432b68cf411b279a",
+    "fold_2.npz": "23abe75e43986dcec67521483122d58efee83bd262f65a34502e196c7a50180d",
+    "fold_3.npz": "885f34a966e37bfbaa946232ed385bf5d2e2089a1ead7067f678b90b5e0127ce",
+    "fold_4.npz": "a12a02ff9b636f75a23fe5c0388a8c3223937af5caca3869a418885f68b97cf8",
+    "fold_5.npz": "b35c8d875b483ddc96e575eac9d802ce9061bd691478bff43cb6b5285f063f23"
+  },
+  "python_float_cv": {
+    "correct": 314,
+    "total": 390
+  },
+  "linux_c_cv": {
+    "correct": 312,
+    "total": 390
+  },
+  "external65": {
+    "correct": 52,
+    "total": 65,
+    "baby_correct": 17,
+    "baby_total": 20
+  },
+  "original_finetuned": {
+    "correct": 316,
+    "total": 390,
+    "external_correct": 52,
+    "external_total": 65,
+    "baby_correct": 13,
+    "baby_total": 20
+  },
+  "runtime": "Actual native Linux x86_64 C/App; not a newly booted full OpenVela simulator or a new physical-board run",
+  "protocol": "Fresh initialization for each fold and final fit; fixed80 epochs; training only ESC-50; external65 not selected on in this run, but used in prior project development; not new blind data",
+  "elapsed_note": "Native-host process times are not physical-board latency measurements"
+}

@@ -1,0 +1,10 @@
+{
+  "model_sha256": "c96333aaae66d324b8b8cec48ffb0ec981ac4e975d3cf9a7d4a2fdba4307c97e",
+  "regenerated_in_memory_only": true,
+  "written_headers": false,
+  "exact_matches": [
+    "app/audiodetect/model_weights.h",
+    "app/audiodetect/model_weights_int8.h",
+    "simulator/generated/model_weights_int8.h"
+  ]
+}

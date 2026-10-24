@@ -1,0 +1,4496 @@
+{
+  "legacy": [
+    {
+      "fold": 1,
+      "filename": "1-18074-B-6.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.998149753,
+      "probabilities": [
+        0.00151287729,
+        0.000327614165,
+        9.30085661e-11,
+        9.79887318e-06,
+        0.998149753
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "a14b35bdc42f6a8a3b1974d2fae2abac4d5dddb0c5c966b0bffaf0a657609b92"
+    },
+    {
+      "fold": 1,
+      "filename": "1-19118-A-24.wav",
+      "truth": 1,
+      "prediction": 0,
+      "confidence": 0.851897776,
+      "probabilities": [
+        0.851897776,
+        0.136119783,
+        1.77890934e-06,
+        0.0119784176,
+        2.23126722e-06
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "a8948c4f2cf2b4d68cdbf8abd1cd35ed8801b90552fd90d362819d8dcb3d1892"
+    },
+    {
+      "fold": 1,
+      "filename": "1-20133-A-39.wav",
+      "truth": 2,
+      "prediction": 0,
+      "confidence": 0.995553195,
+      "probabilities": [
+        0.995553195,
+        0.000147983388,
+        0.00429886254,
+        5.38141132e-09,
+        6.79471407e-16
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "87291d2caeac89fe7011254cf0f58a11c81433c650b4a9c9b62d9925cab9acff"
+    },
+    {
+      "fold": 1,
+      "filename": "1-211527-B-20.wav",
+      "truth": 3,
+      "prediction": 4,
+      "confidence": 0.942673266,
+      "probabilities": [
+        0.0413481966,
+        0.0136402156,
+        1.47432264e-13,
+        0.0023383745,
+        0.942673266
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "4f8188bdc0e8c4b0685cf3ba0d701e945cd21189960f5d933ad14e8d905e6fc8"
+    },
+    {
+      "fold": 1,
+      "filename": "1-22694-B-20.wav",
+      "truth": 3,
+      "prediction": 1,
+      "confidence": 0.993079126,
+      "probabilities": [
+        2.97127485e-07,
+        0.993079126,
+        2.31301692e-14,
+        0.0069205421,
+        4.8926573e-08
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "36cf83f997dc0c8f2858750ad2ed7299eecdbdfe359956bc34801a5126c4a969"
+    },
+    {
+      "fold": 1,
+      "filename": "1-22804-A-46.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.999994397,
+      "probabilities": [
+        5.59961109e-06,
+        6.02072767e-11,
+        8.57946077e-21,
+        0.999994397,
+        3.98412359e-10
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "76d7ea9193715ce25eedc062b6b02d5156be9a7fd2033b2fc34b6a786ef9dcc9"
+    },
+    {
+      "fold": 1,
+      "filename": "1-254507-A-43.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.990295291,
+      "probabilities": [
+        0.00970470347,
+        2.14624833e-08,
+        6.24824747e-10,
+        0.990295291,
+        9.09899586e-12
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "de29a55f921661a9ec17ba8dc91a4bf0c43bfd433774dcccaba183801775cec7"
+    },
+    {
+      "fold": 1,
+      "filename": "1-34495-A-14.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.988031268,
+      "probabilities": [
+        0.0119686965,
+        6.65519809e-17,
+        1.04818858e-16,
+        0.988031268,
+        2.99668984e-10
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "025aa656499da61e38ca38f42179930a99f9b61dd851fd38062d8808cfb387ed"
+    },
+    {
+      "fold": 1,
+      "filename": "1-34853-A-37.wav",
+      "truth": 0,
+      "prediction": 2,
+      "confidence": 0.999451339,
+      "probabilities": [
+        0.000548677926,
+        6.02830309e-26,
+        0.999451339,
+        5.18970715e-08,
+        7.25919966e-23
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "262fffd35152aa99ac146c53b095624c0adf399a2f9aa074e9e3b75e07617a55"
+    },
+    {
+      "fold": 1,
+      "filename": "1-36393-A-23.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.991721928,
+      "probabilities": [
+        0.00827777013,
+        0.991721928,
+        9.12950011e-12,
+        1.60928806e-07,
+        1.36474341e-07
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "905d889947a7017be8292d49d91cecc855fb83cb1397cbc66b88099baebc9f0d"
+    },
+    {
+      "fold": 1,
+      "filename": "1-42139-A-38.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.99003917,
+      "probabilities": [
+        0.00996078458,
+        0.99003917,
+        6.01251037e-13,
+        9.28509492e-10,
+        1.04531859e-08
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "ff5eac12330a28892c67284d3fcada9cdd38189f4b4fcbc528aed797dcf4212b"
+    },
+    {
+      "fold": 1,
+      "filename": "1-47274-A-21.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.999983311,
+      "probabilities": [
+        1.35708101e-12,
+        4.44759542e-11,
+        1.45921345e-23,
+        0.999983311,
+        1.67097078e-05
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "cc6e822f6dea6ba06c372dd36c3aab45ee13f6b9436789a3385396da72bbd6bc"
+    },
+    {
+      "fold": 1,
+      "filename": "1-53663-A-24.wav",
+      "truth": 1,
+      "prediction": 4,
+      "confidence": 0.99991703,
+      "probabilities": [
+        1.36858098e-05,
+        6.90552552e-05,
+        1.46497398e-14,
+        2.6087821e-07,
+        0.99991703
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "5b087f0a5802ef4184e0d2ba86057cb48596dab5d18d72cd335886d2a1473196"
+    },
+    {
+      "fold": 1,
+      "filename": "1-54918-B-14.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.96092838,
+      "probabilities": [
+        0.0390716344,
+        3.73275054e-18,
+        1.90820535e-25,
+        0.96092838,
+        4.23745725e-21
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "ae5fe4d307f91b399bfb5db3ef31be7ccd1b3b3b4b61a1be63a8eecdf4f41e14"
+    },
+    {
+      "fold": 1,
+      "filename": "1-56269-A-18.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.998808384,
+      "probabilities": [
+        0.000366320717,
+        0.998808384,
+        7.73381501e-08,
+        0.000825115014,
+        1.19468171e-10
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "b0a31827a9cada62f67ad456c4c5ae88ad4bce81e2c9f9a745ecbda702f5d3ed"
+    },
+    {
+      "fold": 1,
+      "filename": "1-56380-B-5.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.934550226,
+      "probabilities": [
+        0.0654488653,
+        7.04082424e-07,
+        1.40094199e-15,
+        0.934550226,
+        2.68206207e-07
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "c5d1edee2814ecdf99653d440c9f4ba70838ef80048db72c2e13a567c9cb309c"
+    },
+    {
+      "fold": 1,
+      "filename": "1-58792-A-24.wav",
+      "truth": 1,
+      "prediction": 0,
+      "confidence": 0.83014518,
+      "probabilities": [
+        0.83014518,
+        3.2686893e-13,
+        1.87533311e-13,
+        0.0258317664,
+        0.144022986
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "7e71a276eef6d7cf64acd4631cb9de1debed1182fdf72ee7a2a0898c48cee9a7"
+    },
+    {
+      "fold": 1,
+      "filename": "1-69422-A-3.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.996797383,
+      "probabilities": [
+        0.000374648196,
+        0.996797383,
+        4.93802996e-22,
+        1.35938422e-19,
+        0.0028280213
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "7e7b459bdf9fdc493401eda7ee9abd9f36a238897fd5cc74d2c9ef060f3caf4a"
+    },
+    {
+      "fold": 1,
+      "filename": "1-72229-B-6.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 1.0,
+      "probabilities": [
+        3.26618621e-10,
+        1.66408566e-18,
+        2.93915386e-29,
+        7.37900751e-28,
+        1.0
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "3e1f2a51c1e47e92dd0f6d4ab39101e69537f81ccb5aa7161113aa05f210fdbe"
+    },
+    {
+      "fold": 1,
+      "filename": "1-88807-A-39.wav",
+      "truth": 2,
+      "prediction": 1,
+      "confidence": 0.990416765,
+      "probabilities": [
+        0.00884527247,
+        0.990416765,
+        0.000252442813,
+        1.07285825e-06,
+        0.000484597083
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "0d5c6e7b0550bb5e22e5f4d5124f6bbb22e2bb733f4e69dbe8eae9c5c40ce445"
+    },
+    {
+      "fold": 2,
+      "filename": "2-103423-A-3.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.956168771,
+      "probabilities": [
+        0.042196691,
+        0.956168771,
+        2.12164105e-05,
+        0.00161333918,
+        2.45469166e-14
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "69d0dfaf2928f2d5426b52ec4166451c41f1ab23e4d14e04146ef54e4e220ccd"
+    },
+    {
+      "fold": 2,
+      "filename": "2-107351-B-20.wav",
+      "truth": 3,
+      "prediction": 2,
+      "confidence": 0.999994397,
+      "probabilities": [
+        4.06668278e-07,
+        1.259693e-14,
+        0.999994397,
+        5.27778457e-06,
+        3.84508343e-13
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "f32f30fdaccdf5569c2b2b001cad7d3ca573758b5d27ff56466dbb866279feab"
+    },
+    {
+      "fold": 2,
+      "filename": "2-117330-A-28.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.998450518,
+      "probabilities": [
+        0.0014146663,
+        4.32936744e-08,
+        5.25720001e-09,
+        0.000134804504,
+        0.998450518
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "26ca7cf2c364fadc748fd6162d9701644635f035eef1dc806b0c16aa6ccadbd4"
+    },
+    {
+      "fold": 2,
+      "filename": "2-119161-A-8.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.990423322,
+      "probabilities": [
+        0.002275537,
+        0.00716034696,
+        4.91702545e-09,
+        0.990423322,
+        0.000140881413
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "3d74321570e1e601a6235c85ae9a0f21613dd7fb9a2a535a1fcefed58f84e4ad"
+    },
+    {
+      "fold": 2,
+      "filename": "2-166644-C-2.wav",
+      "truth": 0,
+      "prediction": 2,
+      "confidence": 0.847703815,
+      "probabilities": [
+        0.101957113,
+        0.0501091741,
+        0.847703815,
+        2.81496271e-10,
+        0.000229900746
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "542320608d5ba9ee7b72e08ff881f3eb0bd3085c91180488f7ba5c70420a05a5"
+    },
+    {
+      "fold": 2,
+      "filename": "2-250710-A-39.wav",
+      "truth": 2,
+      "prediction": 1,
+      "confidence": 0.996375978,
+      "probabilities": [
+        0.000335511577,
+        0.996375978,
+        0.00328552374,
+        7.33542009e-08,
+        2.89983609e-06
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "2e0afd25a9cc525a07ee95554063d6a7af1489e780f054ff4928c2ddd8a1e396"
+    },
+    {
+      "fold": 2,
+      "filename": "2-39945-A-19.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.897707283,
+      "probabilities": [
+        0.102292664,
+        4.80018825e-09,
+        2.01183289e-11,
+        1.8006715e-09,
+        0.897707283
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "3c3a559263ae466971168529c376972d873ff8dac65b9e5c46725ee4214b410c"
+    },
+    {
+      "fold": 2,
+      "filename": "2-52085-B-4.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.957500815,
+      "probabilities": [
+        0.00114052463,
+        4.20456271e-15,
+        6.0331593e-05,
+        0.0412983522,
+        0.957500815
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "ff5496aaa9a217fd7e9460253033bfadcc464aa38c6c76f1a2cc27adc3ba8763"
+    },
+    {
+      "fold": 2,
+      "filename": "2-68595-B-15.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.999999881,
+      "probabilities": [
+        1.17491737e-07,
+        0.999999881,
+        2.83390712e-15,
+        1.32830058e-09,
+        4.85237059e-08
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "d9fcad635e32c96023156141c410c66cb8db6023ff421abf4fb768256cbc33ee"
+    },
+    {
+      "fold": 2,
+      "filename": "2-72547-D-14.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.999996543,
+      "probabilities": [
+        3.36385051e-06,
+        7.09379167e-10,
+        3.51064134e-15,
+        1.27963887e-07,
+        0.999996543
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "698e0b35500671c8e793bc8d2e1459a1215ea2939b05717a8a93e9e09904ef79"
+    },
+    {
+      "fold": 2,
+      "filename": "2-76868-A-6.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.999965787,
+      "probabilities": [
+        2.3915436e-07,
+        3.3449578e-05,
+        1.01125349e-11,
+        4.8241958e-07,
+        0.999965787
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "50e6aab09fc86b8a782b6273be7bb7fa269e001d85797cadf5eb003f8ec91879"
+    },
+    {
+      "fold": 2,
+      "filename": "2-83667-A-34.wav",
+      "truth": 0,
+      "prediction": 2,
+      "confidence": 0.827644646,
+      "probabilities": [
+        0.171469137,
+        0.000886244408,
+        0.827644646,
+        1.71531712e-11,
+        7.01052494e-10
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "f876e70fc2db38583946fe9aa992cfe2202ba45d65afb5d5ce36289a67d2e015"
+    },
+    {
+      "fold": 2,
+      "filename": "2-83934-B-5.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.984923363,
+      "probabilities": [
+        0.0150766708,
+        5.84781312e-12,
+        3.85754686e-15,
+        0.984923363,
+        6.74341694e-10
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "6b21abc1a721c53dc084bc6521b054fc6cc51ce77d3711ecdb747b41a06fe335"
+    },
+    {
+      "fold": 2,
+      "filename": "2-87794-A-24.wav",
+      "truth": 1,
+      "prediction": 4,
+      "confidence": 0.997970998,
+      "probabilities": [
+        0.00200780248,
+        2.12120285e-05,
+        1.37596916e-16,
+        1.66042298e-27,
+        0.997970998
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "c0d5ce5968160105c45ba816f7ae889222367805a0b00ae2097b01a84551a938"
+    },
+    {
+      "fold": 2,
+      "filename": "2-87795-A-24.wav",
+      "truth": 1,
+      "prediction": 4,
+      "confidence": 0.999990702,
+      "probabilities": [
+        9.2567434e-06,
+        6.42816017e-17,
+        1.95835587e-24,
+        5.35168113e-18,
+        0.999990702
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "35d67729143faeededba88d3fad39c6ca867ddfb2bbe0c55a4f28720f057a3e5"
+    },
+    {
+      "fold": 2,
+      "filename": "2-87799-A-24.wav",
+      "truth": 1,
+      "prediction": 4,
+      "confidence": 0.999860644,
+      "probabilities": [
+        0.000139306649,
+        5.53959396e-12,
+        4.95358043e-23,
+        1.1518711e-19,
+        0.999860644
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "625900b02bc39e192a91bd7acd20f6ddb129db0ba2b32733c98a0b2f2325dbee"
+    },
+    {
+      "fold": 2,
+      "filename": "2-89516-A-37.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.999490261,
+      "probabilities": [
+        0.00050969742,
+        0.999490261,
+        2.92472435e-10,
+        9.43295442e-10,
+        1.39207479e-10
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "a89309344764a21c448fa46c122aa1a0b1046cc4cba98eb1609f9de3bf3bae55"
+    },
+    {
+      "fold": 2,
+      "filename": "2-93030-A-21.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.984044135,
+      "probabilities": [
+        0.000374739029,
+        0.0155808963,
+        6.89514942e-16,
+        3.02382034e-07,
+        0.984044135
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "dc232f62f503b5467600a993e1d1d776dd45f47beed7102301eef66e21064404"
+    },
+    {
+      "fold": 2,
+      "filename": "2-95258-A-1.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.999833941,
+      "probabilities": [
+        0.000166054931,
+        2.68574145e-19,
+        2.34171135e-14,
+        0.999833941,
+        3.04835333e-14
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "c182a71dc4a7866c01f5ea5fa4688addc4f6abcb68fb7a85b52e76e49a4ce9ca"
+    },
+    {
+      "fold": 3,
+      "filename": "3-125418-A-24.wav",
+      "truth": 1,
+      "prediction": 3,
+      "confidence": 0.999991417,
+      "probabilities": [
+        1.68219174e-06,
+        6.95503832e-06,
+        4.94723566e-25,
+        0.999991417,
+        1.57364779e-12
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "f6c7754ae657be3fae6bc3472a6bf9b346e059272038ddd26ec9307479264ecf"
+    },
+    {
+      "fold": 3,
+      "filename": "3-131943-A-37.wav",
+      "truth": 0,
+      "prediction": 2,
+      "confidence": 1.0,
+      "probabilities": [
+        3.52170386e-16,
+        0.0,
+        1.0,
+        1.54142831e-44,
+        0.0
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "d0efacd6105b25ba9b0c7e44a8d5ad595ff110e70a94457ace49350ed1c222b1"
+    },
+    {
+      "fold": 3,
+      "filename": "3-136288-A-0.wav",
+      "truth": 4,
+      "prediction": 0,
+      "confidence": 0.99999398,
+      "probabilities": [
+        0.99999398,
+        9.67528835e-12,
+        1.26078083e-18,
+        7.68824737e-09,
+        6.05148989e-06
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "6d79e5c2581776e71e3bbe936dde5d3beec448d6d48d50c00b432c9dec1bda0e"
+    },
+    {
+      "fold": 3,
+      "filename": "3-142601-A-21.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.880690873,
+      "probabilities": [
+        0.00141523161,
+        0.880690873,
+        1.94157863e-08,
+        0.117850125,
+        4.37922899e-05
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "dad2f2ffadea00277678ccc40ce42307fb9d451c8d9400b6a262666d9f04001c"
+    },
+    {
+      "fold": 3,
+      "filename": "3-151212-A-24.wav",
+      "truth": 1,
+      "prediction": 0,
+      "confidence": 0.998029292,
+      "probabilities": [
+        0.998029292,
+        0.00184846018,
+        1.74590797e-13,
+        0.000113136812,
+        9.0737085e-06
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "b6d02eaf62d575ed3da5943964a24d9b38f60a7f063967f7be8ee63e4469a106"
+    },
+    {
+      "fold": 3,
+      "filename": "3-151213-A-24.wav",
+      "truth": 1,
+      "prediction": 0,
+      "confidence": 0.971048892,
+      "probabilities": [
+        0.971048892,
+        4.90616721e-08,
+        1.13027415e-12,
+        0.0289491341,
+        1.96789938e-06
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "e189ba5d9b4077cd539d29e299b410ea6ca2b4b025a58f2c002f2273dc264834"
+    },
+    {
+      "fold": 3,
+      "filename": "3-155578-A-14.wav",
+      "truth": 0,
+      "prediction": 2,
+      "confidence": 0.930463254,
+      "probabilities": [
+        0.0695367455,
+        4.73121986e-21,
+        0.930463254,
+        1.49444346e-09,
+        7.3205553e-16
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "b705122a0c16133c7f72b62191cfbf8a8475fa3c171f93fd016af3cd9300d78e"
+    },
+    {
+      "fold": 3,
+      "filename": "3-159445-B-45.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.999584615,
+      "probabilities": [
+        0.000337951962,
+        0.999584615,
+        2.03889818e-24,
+        3.08698392e-21,
+        7.74485889e-05
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "66307371fac12dc2b932b6bed492e39df0d44765f3de8725342492314f714e7f"
+    },
+    {
+      "fold": 3,
+      "filename": "3-170383-A-38.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.835313499,
+      "probabilities": [
+        0.0920144618,
+        0.0676285177,
+        3.8868915e-05,
+        0.835313499,
+        0.00500466581
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "3edc08e7274da4d7503274e515cff56dba03204bb6e6c932ac042a18a26dd351"
+    },
+    {
+      "fold": 3,
+      "filename": "3-188390-A-6.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.998193324,
+      "probabilities": [
+        0.00173921464,
+        2.30343448e-05,
+        1.95494522e-19,
+        4.44605394e-05,
+        0.998193324
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "f839bb80e7a5a37893993acb323959487433bcd6c49434ca9cdae56bca889dd2"
+    },
+    {
+      "fold": 3,
+      "filename": "3-216280-A-39.wav",
+      "truth": 2,
+      "prediction": 0,
+      "confidence": 0.898450553,
+      "probabilities": [
+        0.898450553,
+        0.00233177561,
+        0.0992176756,
+        1.64733983e-14,
+        4.65831373e-10
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "3391a498b405c80c5b4a3681bf34b96b831cb1717bdcef044ca3b6ea8bd26728"
+    },
+    {
+      "fold": 3,
+      "filename": "3-253084-D-2.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 1.0,
+      "probabilities": [
+        8.11354564e-14,
+        9.11544861e-26,
+        9.06278497e-14,
+        1.0,
+        3.64201808e-22
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "c3b34ff25573eb47fd9b9a150d6c63c4ed53b39a5a3c74d7c000c566bb3e7629"
+    },
+    {
+      "fold": 3,
+      "filename": "3-62878-A-42.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.999004424,
+      "probabilities": [
+        0.000995573238,
+        5.99778235e-36,
+        6.37583575e-31,
+        0.999004424,
+        4.00448666e-32
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "00910026abba8367f33e1ff8f5b8c30eaf3e19a376d912b05afb81e8a5987554"
+    },
+    {
+      "fold": 3,
+      "filename": "3-87936-A-46.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.915509164,
+      "probabilities": [
+        0.0844704881,
+        1.3451388e-06,
+        7.36264507e-22,
+        1.89781931e-05,
+        0.915509164
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "38b4387e67689080c1f5db396adacb589a9880aa3cf17f20a1d77e0d86698c76"
+    },
+    {
+      "fold": 3,
+      "filename": "3-95695-B-5.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.999789894,
+      "probabilities": [
+        0.000210170678,
+        2.15041929e-15,
+        9.78824834e-12,
+        0.999789894,
+        4.18061719e-09
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "157a9d70a29a8fc4c44f10faf72b605c69fbcff773688ed34ed547383dbfc877"
+    },
+    {
+      "fold": 4,
+      "filename": "4-108352-A-33.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.999810636,
+      "probabilities": [
+        9.61860042e-06,
+        0.999810636,
+        5.65323726e-23,
+        0.000179772222,
+        1.97961883e-23
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "5522df7a22a175ffbc96aa38bfff9f8354673d0f1e64d1ad2e1cb99766b672fd"
+    },
+    {
+      "fold": 4,
+      "filename": "4-111671-B-42.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.989065528,
+      "probabilities": [
+        0.0109345065,
+        8.74052289e-11,
+        3.48761025e-16,
+        9.97711289e-12,
+        0.989065528
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "8200556bd23bd8b8878c2b23b87f2b72cd8a05f36f7cde02e74b4d960b83dd16"
+    },
+    {
+      "fold": 4,
+      "filename": "4-133047-A-5.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.999942541,
+      "probabilities": [
+        5.74458536e-05,
+        1.43810101e-14,
+        1.2000795e-08,
+        0.999942541,
+        1.09355518e-10
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "35809545130010366d403b783217959e431155d9abf2f28b4e77cd42e8ef4616"
+    },
+    {
+      "fold": 4,
+      "filename": "4-135439-A-18.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.904855847,
+      "probabilities": [
+        0.093809858,
+        0.00133416732,
+        1.15425109e-07,
+        0.904855847,
+        1.68150704e-09
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "08dbb0e8b027cb5ce35547809508814000ba28b2de022429f53a18bdfa38005e"
+    },
+    {
+      "fold": 4,
+      "filename": "4-154443-A-24.wav",
+      "truth": 1,
+      "prediction": 0,
+      "confidence": 0.997208416,
+      "probabilities": [
+        0.997208416,
+        0.00270686415,
+        1.59788249e-17,
+        2.03647176e-15,
+        8.47292904e-05
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "131cbb1ddf6038f4dce37281828f56e960c89386f87bb8e3e530219169bf6305"
+    },
+    {
+      "fold": 4,
+      "filename": "4-155650-B-24.wav",
+      "truth": 1,
+      "prediction": 0,
+      "confidence": 0.717215359,
+      "probabilities": [
+        0.717215359,
+        0.000155081245,
+        4.29246519e-17,
+        0.154491544,
+        0.128138036
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "e7bf8927d02feade3571a9c263041708f2b2fa8e89933592ed2fd02a920a6839"
+    },
+    {
+      "fold": 4,
+      "filename": "4-156227-A-9.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.896955729,
+      "probabilities": [
+        0.103039712,
+        0.896955729,
+        1.31786101e-06,
+        2.38037819e-06,
+        1.01367243e-06
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "bae3a75b7898580cde93183f9aa6bd993ff16b653bbb46c8f05b5322d1965176"
+    },
+    {
+      "fold": 4,
+      "filename": "4-165823-B-41.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.999965549,
+      "probabilities": [
+        3.37533857e-05,
+        7.1518599e-08,
+        6.78443541e-07,
+        0.999965549,
+        4.06703019e-13
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "c0d816895e908599966037244085945d26b0b53cf8e7301b7afe1ac15964b77c"
+    },
+    {
+      "fold": 4,
+      "filename": "4-168155-A-15.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.996482134,
+      "probabilities": [
+        0.00351783098,
+        2.86287118e-08,
+        1.06394504e-19,
+        2.15440621e-09,
+        0.996482134
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "2f79e57cd78499f1edf81bec4f56dea3a199e4974c5af484b104b986a00009a3"
+    },
+    {
+      "fold": 4,
+      "filename": "4-168868-A-17.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.98821485,
+      "probabilities": [
+        0.0117834853,
+        3.6947525e-09,
+        3.05796122e-09,
+        1.67366579e-06,
+        0.98821485
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "faa09ababffc17935f599e338ebc6ce59c522cacab121d9308273cb4d515f106"
+    },
+    {
+      "fold": 4,
+      "filename": "4-176638-A-43.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.999999046,
+      "probabilities": [
+        7.21977017e-07,
+        1.80750916e-07,
+        7.80341056e-22,
+        1.86132066e-17,
+        0.999999046
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "3d39eb0fdaee1ddf5a8b57969f2c27f18592e8b9b9916cba9483107097dcd8d6"
+    },
+    {
+      "fold": 4,
+      "filename": "4-181599-A-26.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.996462405,
+      "probabilities": [
+        0.00353194517,
+        5.62866171e-06,
+        3.13474174e-24,
+        0.996462405,
+        5.92907223e-10
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "07b966dd64015bbfc04ff6bd6cd2a9476663faac4ecb8b1d9a7305001e4c39e0"
+    },
+    {
+      "fold": 4,
+      "filename": "4-182395-A-0.wav",
+      "truth": 4,
+      "prediction": 0,
+      "confidence": 0.994210064,
+      "probabilities": [
+        0.994210064,
+        0.00304360199,
+        3.47319587e-06,
+        1.42615499e-05,
+        0.00272860867
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "7d29d27f026dd4b72339061a5c38a43bce26b2763bcb736c1c83fb0d0b92d371"
+    },
+    {
+      "fold": 4,
+      "filename": "4-185575-B-20.wav",
+      "truth": 3,
+      "prediction": 1,
+      "confidence": 0.999940634,
+      "probabilities": [
+        2.27283363e-06,
+        0.999940634,
+        4.03665939e-16,
+        5.70817101e-05,
+        2.17516664e-11
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "c3daca4cdc08bccd7600e1226e7125350ac653d2071a4c7444ff438278349264"
+    },
+    {
+      "fold": 4,
+      "filename": "4-185619-A-21.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.999991894,
+      "probabilities": [
+        8.1160515e-06,
+        0.999991894,
+        6.71892805e-17,
+        1.33275959e-08,
+        1.40365508e-09
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "b9a61dcb231e9ec9ba60a2cc24248287e8458d3b5c23f57be17a102abe778c5a"
+    },
+    {
+      "fold": 4,
+      "filename": "4-195707-A-13.wav",
+      "truth": 0,
+      "prediction": 2,
+      "confidence": 1.0,
+      "probabilities": [
+        3.21906035e-09,
+        2.22728654e-17,
+        1.0,
+        1.17017204e-14,
+        7.23267496e-19
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "89672d364662d4aeb8903594ae1127ff17340442964eee961d96e6cd7d86a83e"
+    },
+    {
+      "fold": 4,
+      "filename": "4-204202-A-29.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.999999285,
+      "probabilities": [
+        7.18593412e-07,
+        0.999999285,
+        1.2965356e-16,
+        1.34909766e-11,
+        1.29834502e-19
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "3ef4048fe2e861576ab4b8e0529742568d202a33624b2175463082d1e2cdf54d"
+    },
+    {
+      "fold": 4,
+      "filename": "4-204777-C-39.wav",
+      "truth": 2,
+      "prediction": 1,
+      "confidence": 1.0,
+      "probabilities": [
+        1.18448125e-13,
+        1.0,
+        4.82167366e-13,
+        1.70805993e-38,
+        2.32348556e-20
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "c7f98f14148b8d8990b95fc3dbab87926a2676da32e6feb2ba39d92d6f696d86"
+    },
+    {
+      "fold": 4,
+      "filename": "4-212728-A-34.wav",
+      "truth": 0,
+      "prediction": 2,
+      "confidence": 0.953065515,
+      "probabilities": [
+        0.0170977749,
+        0.0298350453,
+        0.953065515,
+        1.74705906e-06,
+        3.04626949e-11
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "b7c78ab1d2a0de8fb4cfcace6b054bc2dc6d905ad9688a5235f1c37259cc0423"
+    },
+    {
+      "fold": 5,
+      "filename": "5-160614-G-48.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.979627848,
+      "probabilities": [
+        0.019261688,
+        0.00111047714,
+        6.00929653e-08,
+        1.1440658e-14,
+        0.979627848
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "99ae037813f77c67d0e7b167fd71ec4fa108a994be5ad1b603d0429670513d32"
+    },
+    {
+      "fold": 5,
+      "filename": "5-171653-A-41.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.996387005,
+      "probabilities": [
+        0.00361284451,
+        6.00047678e-10,
+        1.1412431e-09,
+        0.996387005,
+        5.98657053e-08
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "e7c92eeead7f225f6485ae794ff7acc4f22fbe367c762de23b432e0f211cad6f"
+    },
+    {
+      "fold": 5,
+      "filename": "5-173568-A-33.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 1.0,
+      "probabilities": [
+        2.35042208e-08,
+        5.65204106e-09,
+        4.35133618e-09,
+        1.0,
+        4.54837603e-23
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "b02a61d3eafb9fbe43e190ead950eeb985c7ab636714d2754856db557fe83234"
+    },
+    {
+      "fold": 5,
+      "filename": "5-177034-A-18.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.989017844,
+      "probabilities": [
+        0.00921328086,
+        0.000602788874,
+        0.0011648105,
+        0.989017844,
+        1.27036594e-06
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "98d671d0f722a6deed416f3835822fbc672d54986309a8589d38a4e9d16b289a"
+    },
+    {
+      "fold": 5,
+      "filename": "5-179863-A-43.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.998317003,
+      "probabilities": [
+        0.00163770409,
+        0.998317003,
+        3.72708455e-05,
+        8.12055987e-06,
+        2.66234639e-11
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "45c2581e7a5fe57715fc2c1ca5b9dba5e8e7af943f5d56a6472287fb7ccab1f6"
+    },
+    {
+      "fold": 5,
+      "filename": "5-184871-A-24.wav",
+      "truth": 1,
+      "prediction": 4,
+      "confidence": 0.989957154,
+      "probabilities": [
+        8.42160662e-05,
+        0.00995861087,
+        4.6961301e-13,
+        3.52241023e-12,
+        0.989957154
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "df9295811ac3910326500a9cebfb2aa9d76905f43bf50972fb20f0dbf749416e"
+    },
+    {
+      "fold": 5,
+      "filename": "5-195518-A-7.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.999316454,
+      "probabilities": [
+        0.00068360666,
+        5.32574818e-11,
+        5.10218427e-14,
+        0.999316454,
+        4.95254337e-13
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "f50f05cb77902e5431bce68ae62767ac35b997804c97cae18945e19d0933ead0"
+    },
+    {
+      "fold": 5,
+      "filename": "5-198411-E-20.wav",
+      "truth": 3,
+      "prediction": 0,
+      "confidence": 0.734915257,
+      "probabilities": [
+        0.734915257,
+        0.00157374272,
+        1.18371738e-17,
+        0.000106111176,
+        0.263404936
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "3fc40c29040398d46a1d3052b70c47340d44656e8547f856ba93af6640af059b"
+    },
+    {
+      "fold": 5,
+      "filename": "5-200334-A-1.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 1.0,
+      "probabilities": [
+        5.93032498e-11,
+        7.31831751e-09,
+        2.35289142e-21,
+        3.95568821e-11,
+        1.0
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "e26e513eecca99647aca50dd19cacee41be85032e8d8b8c812cc30f2f9b8cfa4"
+    },
+    {
+      "fold": 5,
+      "filename": "5-200339-A-1.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.999285161,
+      "probabilities": [
+        0.000700667442,
+        1.33196954e-05,
+        1.28417767e-07,
+        7.56792929e-07,
+        0.999285161
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "3ab6af3fa9f22c8465b9f30f26b6cccf5a670ea37103bbd629e7ad3a35238c81"
+    },
+    {
+      "fold": 5,
+      "filename": "5-204114-A-29.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.880047441,
+      "probabilities": [
+        0.00841418095,
+        0.000316496502,
+        0.103450708,
+        0.880047441,
+        0.00777123263
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "fd83b2e7c4b63d6aed8b7532c0b3d5bcd030378ba7a1d5208440c0fc58a44f1a"
+    },
+    {
+      "fold": 5,
+      "filename": "5-208030-A-0.wav",
+      "truth": 4,
+      "prediction": 1,
+      "confidence": 0.999787986,
+      "probabilities": [
+        4.57522034e-14,
+        0.999787986,
+        5.62514688e-11,
+        7.83791604e-15,
+        0.00021200013
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "b8bdb6baafb390f47f4af19eded0998559b6871b0541edebd9b9b1a2c40279b8"
+    },
+    {
+      "fold": 5,
+      "filename": "5-209719-A-24.wav",
+      "truth": 1,
+      "prediction": 0,
+      "confidence": 0.762215197,
+      "probabilities": [
+        0.762215197,
+        0.237779677,
+        5.00844681e-06,
+        5.13940357e-08,
+        6.44435413e-20
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "ae99940fadba8f85115bfa2b923eff841352604f231a3bf6d86971403112c8de"
+    },
+    {
+      "fold": 5,
+      "filename": "5-217158-A-0.wav",
+      "truth": 4,
+      "prediction": 0,
+      "confidence": 0.931225002,
+      "probabilities": [
+        0.931225002,
+        3.48994236e-11,
+        3.54361279e-19,
+        5.03030257e-08,
+        0.068775028
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "976da342d35129140e253689e09be46216f6535aed0bbbaf9e971d310884a524"
+    },
+    {
+      "fold": 5,
+      "filename": "5-220939-A-27.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.998394072,
+      "probabilities": [
+        0.000485380995,
+        0.00111977616,
+        7.47847309e-07,
+        0.998394072,
+        7.45392843e-13
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "a3d15f22605ab8fb7b4a762e359277b8269daa829977962d28e28ac520dd53a9"
+    },
+    {
+      "fold": 5,
+      "filename": "5-234335-A-23.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.993471622,
+      "probabilities": [
+        8.22801885e-05,
+        0.993471622,
+        1.39085969e-07,
+        0.0064458847,
+        1.06658206e-07
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "0b312bd1f81569e84a7a8fc5e443d73d9db5fdaad3f1bb79927a0e0fd63a6245"
+    },
+    {
+      "fold": 5,
+      "filename": "5-242932-A-26.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.999876499,
+      "probabilities": [
+        4.5918182e-06,
+        0.999876499,
+        1.78107598e-11,
+        3.32411728e-05,
+        8.55954349e-05
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "84d322481f1b06e5ae641e5a4fffb38c19f0c8a27ac3e1026bf79d532f21b05a"
+    },
+    {
+      "fold": 5,
+      "filename": "5-250026-A-30.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.812539876,
+      "probabilities": [
+        0.00324695255,
+        0.166937754,
+        0.0156736951,
+        0.00160170626,
+        0.812539876
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "a2ae741be5e670aefecab4967e36775fc4352598d290ef996ce9e115eabca0e0"
+    },
+    {
+      "fold": 5,
+      "filename": "5-251489-A-24.wav",
+      "truth": 1,
+      "prediction": 0,
+      "confidence": 0.968979537,
+      "probabilities": [
+        0.968979537,
+        0.0310204551,
+        4.33260929e-08,
+        5.58014301e-13,
+        2.36607907e-08
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "d4e7d7797956a4d390e89c9b12b9efd6ca16d98c0e02cad7c95e8ae0b2852908"
+    },
+    {
+      "fold": 5,
+      "filename": "5-9032-A-0.wav",
+      "truth": 4,
+      "prediction": 2,
+      "confidence": 0.99976939,
+      "probabilities": [
+        1.35785888e-06,
+        0.000229275451,
+        0.99976939,
+        4.60642163e-10,
+        3.47949958e-09
+      ],
+      "windows": 3,
+      "quiet_windows": -1,
+      "input_sha256": "cf87f80eb2fb44f8f00fb40d0e99ff2dfc17a51f3c7415c75ce828676cf30a88"
+    }
+  ],
+  "full": [
+    {
+      "fold": 1,
+      "filename": "1-18074-B-6.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.998149753,
+      "probabilities": [
+        0.00151287729,
+        0.000327614165,
+        9.30085661e-11,
+        9.79887318e-06,
+        0.998149753
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "a14b35bdc42f6a8a3b1974d2fae2abac4d5dddb0c5c966b0bffaf0a657609b92"
+    },
+    {
+      "fold": 1,
+      "filename": "1-187207-A-20.wav",
+      "truth": 3,
+      "prediction": 4,
+      "confidence": 1.0,
+      "probabilities": [
+        3.04975134e-09,
+        1.04855749e-10,
+        1.48550535e-24,
+        6.30254204e-09,
+        1.0
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "0b99062df98363cecfde268e5d035f7340041fb201a1bd00583d362428f4bed7"
+    },
+    {
+      "fold": 1,
+      "filename": "1-19118-A-24.wav",
+      "truth": 1,
+      "prediction": 0,
+      "confidence": 0.911138713,
+      "probabilities": [
+        0.911138713,
+        0.0816718712,
+        1.06734558e-06,
+        0.00718705077,
+        1.3387604e-06
+      ],
+      "windows": 5,
+      "quiet_windows": 4,
+      "input_sha256": "a8948c4f2cf2b4d68cdbf8abd1cd35ed8801b90552fd90d362819d8dcb3d1892"
+    },
+    {
+      "fold": 1,
+      "filename": "1-211527-B-20.wav",
+      "truth": 3,
+      "prediction": 4,
+      "confidence": 0.942673266,
+      "probabilities": [
+        0.0413481966,
+        0.0136402156,
+        1.47432264e-13,
+        0.0023383745,
+        0.942673266
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "4f8188bdc0e8c4b0685cf3ba0d701e945cd21189960f5d933ad14e8d905e6fc8"
+    },
+    {
+      "fold": 1,
+      "filename": "1-22694-B-20.wav",
+      "truth": 3,
+      "prediction": 1,
+      "confidence": 0.993079126,
+      "probabilities": [
+        2.97127485e-07,
+        0.993079126,
+        2.31301692e-14,
+        0.0069205421,
+        4.8926573e-08
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "36cf83f997dc0c8f2858750ad2ed7299eecdbdfe359956bc34801a5126c4a969"
+    },
+    {
+      "fold": 1,
+      "filename": "1-22804-A-46.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.999994397,
+      "probabilities": [
+        5.59961109e-06,
+        6.02072767e-11,
+        8.57946077e-21,
+        0.999994397,
+        3.98412359e-10
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "76d7ea9193715ce25eedc062b6b02d5156be9a7fd2033b2fc34b6a786ef9dcc9"
+    },
+    {
+      "fold": 1,
+      "filename": "1-254507-A-43.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.990295291,
+      "probabilities": [
+        0.00970470347,
+        2.14624833e-08,
+        6.24824747e-10,
+        0.990295291,
+        9.09899586e-12
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "de29a55f921661a9ec17ba8dc91a4bf0c43bfd433774dcccaba183801775cec7"
+    },
+    {
+      "fold": 1,
+      "filename": "1-34495-A-14.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 1.0,
+      "probabilities": [
+        1.84879924e-11,
+        4.61502481e-20,
+        3.9256037e-21,
+        1.0,
+        4.32661179e-26
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "025aa656499da61e38ca38f42179930a99f9b61dd851fd38062d8808cfb387ed"
+    },
+    {
+      "fold": 1,
+      "filename": "1-34853-A-37.wav",
+      "truth": 0,
+      "prediction": 2,
+      "confidence": 0.999774873,
+      "probabilities": [
+        0.000225111566,
+        9.70180589e-30,
+        0.999774873,
+        2.9304606e-10,
+        6.71411507e-24
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "262fffd35152aa99ac146c53b095624c0adf399a2f9aa074e9e3b75e07617a55"
+    },
+    {
+      "fold": 1,
+      "filename": "1-36393-A-23.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.991721928,
+      "probabilities": [
+        0.00827777013,
+        0.991721928,
+        9.12950011e-12,
+        1.60928806e-07,
+        1.36474341e-07
+      ],
+      "windows": 5,
+      "quiet_windows": 3,
+      "input_sha256": "905d889947a7017be8292d49d91cecc855fb83cb1397cbc66b88099baebc9f0d"
+    },
+    {
+      "fold": 1,
+      "filename": "1-42139-A-38.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.99003917,
+      "probabilities": [
+        0.00996078458,
+        0.99003917,
+        6.01251037e-13,
+        9.28509492e-10,
+        1.04531859e-08
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "ff5eac12330a28892c67284d3fcada9cdd38189f4b4fcbc528aed797dcf4212b"
+    },
+    {
+      "fold": 1,
+      "filename": "1-47274-A-21.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.999983311,
+      "probabilities": [
+        1.35708101e-12,
+        4.44759542e-11,
+        1.45921345e-23,
+        0.999983311,
+        1.67097078e-05
+      ],
+      "windows": 5,
+      "quiet_windows": 3,
+      "input_sha256": "cc6e822f6dea6ba06c372dd36c3aab45ee13f6b9436789a3385396da72bbd6bc"
+    },
+    {
+      "fold": 1,
+      "filename": "1-53663-A-24.wav",
+      "truth": 1,
+      "prediction": 4,
+      "confidence": 0.99991703,
+      "probabilities": [
+        1.36858098e-05,
+        6.90552552e-05,
+        1.46497398e-14,
+        2.6087821e-07,
+        0.99991703
+      ],
+      "windows": 5,
+      "quiet_windows": 1,
+      "input_sha256": "5b087f0a5802ef4184e0d2ba86057cb48596dab5d18d72cd335886d2a1473196"
+    },
+    {
+      "fold": 1,
+      "filename": "1-54918-B-14.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.96092838,
+      "probabilities": [
+        0.0390716344,
+        3.73275054e-18,
+        1.90820535e-25,
+        0.96092838,
+        4.23745725e-21
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "ae5fe4d307f91b399bfb5db3ef31be7ccd1b3b3b4b61a1be63a8eecdf4f41e14"
+    },
+    {
+      "fold": 1,
+      "filename": "1-56269-A-18.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.998808384,
+      "probabilities": [
+        0.000366320717,
+        0.998808384,
+        7.73381501e-08,
+        0.000825115014,
+        1.19468171e-10
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "b0a31827a9cada62f67ad456c4c5ae88ad4bce81e2c9f9a745ecbda702f5d3ed"
+    },
+    {
+      "fold": 1,
+      "filename": "1-56380-B-5.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.934550226,
+      "probabilities": [
+        0.0654488653,
+        7.04082424e-07,
+        1.40094199e-15,
+        0.934550226,
+        2.68206207e-07
+      ],
+      "windows": 5,
+      "quiet_windows": 1,
+      "input_sha256": "c5d1edee2814ecdf99653d440c9f4ba70838ef80048db72c2e13a567c9cb309c"
+    },
+    {
+      "fold": 1,
+      "filename": "1-58792-A-24.wav",
+      "truth": 1,
+      "prediction": 0,
+      "confidence": 0.701482892,
+      "probabilities": [
+        0.701482892,
+        0.128941745,
+        0.0676210225,
+        0.0155136483,
+        0.0864406973
+      ],
+      "windows": 5,
+      "quiet_windows": 1,
+      "input_sha256": "7e71a276eef6d7cf64acd4631cb9de1debed1182fdf72ee7a2a0898c48cee9a7"
+    },
+    {
+      "fold": 1,
+      "filename": "1-69422-A-3.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.996797383,
+      "probabilities": [
+        0.000374648196,
+        0.996797383,
+        4.93802996e-22,
+        1.35938422e-19,
+        0.0028280213
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "7e7b459bdf9fdc493401eda7ee9abd9f36a238897fd5cc74d2c9ef060f3caf4a"
+    },
+    {
+      "fold": 1,
+      "filename": "1-72229-B-6.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 1.0,
+      "probabilities": [
+        3.26618621e-10,
+        1.66408566e-18,
+        2.93915386e-29,
+        7.37900751e-28,
+        1.0
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "3e1f2a51c1e47e92dd0f6d4ab39101e69537f81ccb5aa7161113aa05f210fdbe"
+    },
+    {
+      "fold": 1,
+      "filename": "1-88807-A-39.wav",
+      "truth": 2,
+      "prediction": 1,
+      "confidence": 0.990416765,
+      "probabilities": [
+        0.00884527247,
+        0.990416765,
+        0.000252442813,
+        1.07285825e-06,
+        0.000484597083
+      ],
+      "windows": 5,
+      "quiet_windows": 3,
+      "input_sha256": "0d5c6e7b0550bb5e22e5f4d5124f6bbb22e2bb733f4e69dbe8eae9c5c40ce445"
+    },
+    {
+      "fold": 2,
+      "filename": "2-103423-A-3.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.956168771,
+      "probabilities": [
+        0.042196691,
+        0.956168771,
+        2.12164105e-05,
+        0.00161333918,
+        2.45469166e-14
+      ],
+      "windows": 5,
+      "quiet_windows": 3,
+      "input_sha256": "69d0dfaf2928f2d5426b52ec4166451c41f1ab23e4d14e04146ef54e4e220ccd"
+    },
+    {
+      "fold": 2,
+      "filename": "2-107351-B-20.wav",
+      "truth": 3,
+      "prediction": 2,
+      "confidence": 0.999994397,
+      "probabilities": [
+        4.06668278e-07,
+        1.259693e-14,
+        0.999994397,
+        5.27778457e-06,
+        3.84508343e-13
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "f32f30fdaccdf5569c2b2b001cad7d3ca573758b5d27ff56466dbb866279feab"
+    },
+    {
+      "fold": 2,
+      "filename": "2-117330-A-28.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.998450518,
+      "probabilities": [
+        0.0014146663,
+        4.32936744e-08,
+        5.25720001e-09,
+        0.000134804504,
+        0.998450518
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "26ca7cf2c364fadc748fd6162d9701644635f035eef1dc806b0c16aa6ccadbd4"
+    },
+    {
+      "fold": 2,
+      "filename": "2-119161-A-8.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.999971032,
+      "probabilities": [
+        2.88542524e-05,
+        8.63717691e-12,
+        6.17180962e-18,
+        0.999971032,
+        6.49407994e-08
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "3d74321570e1e601a6235c85ae9a0f21613dd7fb9a2a535a1fcefed58f84e4ad"
+    },
+    {
+      "fold": 2,
+      "filename": "2-141584-A-38.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.935169399,
+      "probabilities": [
+        0.0610601604,
+        0.935169399,
+        0.00376930577,
+        4.26618357e-07,
+        6.21078925e-07
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "702364884abace0c2f063010b712834e19b7fe1955538ba17455bd6f0fd8e758"
+    },
+    {
+      "fold": 2,
+      "filename": "2-166644-C-2.wav",
+      "truth": 0,
+      "prediction": 2,
+      "confidence": 0.847703815,
+      "probabilities": [
+        0.101957113,
+        0.0501091741,
+        0.847703815,
+        2.81496271e-10,
+        0.000229900746
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "542320608d5ba9ee7b72e08ff881f3eb0bd3085c91180488f7ba5c70420a05a5"
+    },
+    {
+      "fold": 2,
+      "filename": "2-250710-A-39.wav",
+      "truth": 2,
+      "prediction": 1,
+      "confidence": 0.996375978,
+      "probabilities": [
+        0.000335511577,
+        0.996375978,
+        0.00328552374,
+        7.33542009e-08,
+        2.89983609e-06
+      ],
+      "windows": 5,
+      "quiet_windows": 2,
+      "input_sha256": "2e0afd25a9cc525a07ee95554063d6a7af1489e780f054ff4928c2ddd8a1e396"
+    },
+    {
+      "fold": 2,
+      "filename": "2-39945-A-19.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.897707283,
+      "probabilities": [
+        0.102292664,
+        4.80018825e-09,
+        2.01183289e-11,
+        1.8006715e-09,
+        0.897707283
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "3c3a559263ae466971168529c376972d873ff8dac65b9e5c46725ee4214b410c"
+    },
+    {
+      "fold": 2,
+      "filename": "2-52085-B-4.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.957500815,
+      "probabilities": [
+        0.00114052463,
+        4.20456271e-15,
+        6.0331593e-05,
+        0.0412983522,
+        0.957500815
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "ff5496aaa9a217fd7e9460253033bfadcc464aa38c6c76f1a2cc27adc3ba8763"
+    },
+    {
+      "fold": 2,
+      "filename": "2-68595-B-15.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.999999881,
+      "probabilities": [
+        1.17491737e-07,
+        0.999999881,
+        2.83390712e-15,
+        1.32830058e-09,
+        4.85237059e-08
+      ],
+      "windows": 5,
+      "quiet_windows": 1,
+      "input_sha256": "d9fcad635e32c96023156141c410c66cb8db6023ff421abf4fb768256cbc33ee"
+    },
+    {
+      "fold": 2,
+      "filename": "2-72547-C-14.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.883936346,
+      "probabilities": [
+        0.0636846647,
+        8.776502e-06,
+        0.000386347499,
+        0.0519838482,
+        0.883936346
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "e950bae976adc69869e37e9b182340f3f96b189514a869fac1ece09c475aed28"
+    },
+    {
+      "fold": 2,
+      "filename": "2-72547-D-14.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.999996543,
+      "probabilities": [
+        3.36385051e-06,
+        7.09379167e-10,
+        3.51064134e-15,
+        1.27963887e-07,
+        0.999996543
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "698e0b35500671c8e793bc8d2e1459a1215ea2939b05717a8a93e9e09904ef79"
+    },
+    {
+      "fold": 2,
+      "filename": "2-76868-A-6.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.999965787,
+      "probabilities": [
+        2.3915436e-07,
+        3.3449578e-05,
+        1.01125349e-11,
+        4.8241958e-07,
+        0.999965787
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "50e6aab09fc86b8a782b6273be7bb7fa269e001d85797cadf5eb003f8ec91879"
+    },
+    {
+      "fold": 2,
+      "filename": "2-83667-A-34.wav",
+      "truth": 0,
+      "prediction": 2,
+      "confidence": 0.827644646,
+      "probabilities": [
+        0.171469137,
+        0.000886244408,
+        0.827644646,
+        1.71531712e-11,
+        7.01052494e-10
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "f876e70fc2db38583946fe9aa992cfe2202ba45d65afb5d5ce36289a67d2e015"
+    },
+    {
+      "fold": 2,
+      "filename": "2-83934-B-5.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.984923363,
+      "probabilities": [
+        0.0150766708,
+        5.84781312e-12,
+        3.85754686e-15,
+        0.984923363,
+        6.74341694e-10
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "6b21abc1a721c53dc084bc6521b054fc6cc51ce77d3711ecdb747b41a06fe335"
+    },
+    {
+      "fold": 2,
+      "filename": "2-87794-A-24.wav",
+      "truth": 1,
+      "prediction": 3,
+      "confidence": 0.999952674,
+      "probabilities": [
+        4.29280271e-06,
+        9.61934621e-09,
+        1.27237934e-12,
+        0.999952674,
+        4.30297005e-05
+      ],
+      "windows": 5,
+      "quiet_windows": 1,
+      "input_sha256": "c0d5ce5968160105c45ba816f7ae889222367805a0b00ae2097b01a84551a938"
+    },
+    {
+      "fold": 2,
+      "filename": "2-87795-A-24.wav",
+      "truth": 1,
+      "prediction": 4,
+      "confidence": 0.999990702,
+      "probabilities": [
+        9.2567434e-06,
+        6.42816017e-17,
+        1.95835587e-24,
+        5.35168113e-18,
+        0.999990702
+      ],
+      "windows": 5,
+      "quiet_windows": 2,
+      "input_sha256": "35d67729143faeededba88d3fad39c6ca867ddfb2bbe0c55a4f28720f057a3e5"
+    },
+    {
+      "fold": 2,
+      "filename": "2-87799-A-24.wav",
+      "truth": 1,
+      "prediction": 4,
+      "confidence": 0.999860644,
+      "probabilities": [
+        0.000139306649,
+        5.53959396e-12,
+        4.95358043e-23,
+        1.1518711e-19,
+        0.999860644
+      ],
+      "windows": 5,
+      "quiet_windows": 1,
+      "input_sha256": "625900b02bc39e192a91bd7acd20f6ddb129db0ba2b32733c98a0b2f2325dbee"
+    },
+    {
+      "fold": 2,
+      "filename": "2-89516-A-37.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.999490261,
+      "probabilities": [
+        0.00050969742,
+        0.999490261,
+        2.92472435e-10,
+        9.43295442e-10,
+        1.39207479e-10
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "a89309344764a21c448fa46c122aa1a0b1046cc4cba98eb1609f9de3bf3bae55"
+    },
+    {
+      "fold": 2,
+      "filename": "2-93030-A-21.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.984044135,
+      "probabilities": [
+        0.000374739029,
+        0.0155808963,
+        6.89514942e-16,
+        3.02382034e-07,
+        0.984044135
+      ],
+      "windows": 5,
+      "quiet_windows": 2,
+      "input_sha256": "dc232f62f503b5467600a993e1d1d776dd45f47beed7102301eef66e21064404"
+    },
+    {
+      "fold": 2,
+      "filename": "2-95258-A-1.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.999833941,
+      "probabilities": [
+        0.000166054931,
+        2.68574145e-19,
+        2.34171135e-14,
+        0.999833941,
+        3.04835333e-14
+      ],
+      "windows": 5,
+      "quiet_windows": 2,
+      "input_sha256": "c182a71dc4a7866c01f5ea5fa4688addc4f6abcb68fb7a85b52e76e49a4ce9ca"
+    },
+    {
+      "fold": 3,
+      "filename": "3-102583-A-49.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.985143602,
+      "probabilities": [
+        0.00564774545,
+        0.985143602,
+        5.76472488e-08,
+        2.22405906e-05,
+        0.00918646716
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "60c41927d99d8421d3c8c6f0865244856df64b6da4cd57d4f5489a12c6a9ab50"
+    },
+    {
+      "fold": 3,
+      "filename": "3-125418-A-24.wav",
+      "truth": 1,
+      "prediction": 3,
+      "confidence": 0.999991417,
+      "probabilities": [
+        1.68219174e-06,
+        6.95503832e-06,
+        4.94723566e-25,
+        0.999991417,
+        1.57364779e-12
+      ],
+      "windows": 5,
+      "quiet_windows": 2,
+      "input_sha256": "f6c7754ae657be3fae6bc3472a6bf9b346e059272038ddd26ec9307479264ecf"
+    },
+    {
+      "fold": 3,
+      "filename": "3-131943-A-37.wav",
+      "truth": 0,
+      "prediction": 2,
+      "confidence": 1.0,
+      "probabilities": [
+        3.52170386e-16,
+        0.0,
+        1.0,
+        1.54142831e-44,
+        0.0
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "d0efacd6105b25ba9b0c7e44a8d5ad595ff110e70a94457ace49350ed1c222b1"
+    },
+    {
+      "fold": 3,
+      "filename": "3-136288-A-0.wav",
+      "truth": 4,
+      "prediction": 0,
+      "confidence": 0.999996305,
+      "probabilities": [
+        0.999996305,
+        6.49476783e-12,
+        1.01456315e-15,
+        1.1002227e-07,
+        3.63089384e-06
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "6d79e5c2581776e71e3bbe936dde5d3beec448d6d48d50c00b432c9dec1bda0e"
+    },
+    {
+      "fold": 3,
+      "filename": "3-142601-A-21.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.880690873,
+      "probabilities": [
+        0.00141523161,
+        0.880690873,
+        1.94157863e-08,
+        0.117850125,
+        4.37922899e-05
+      ],
+      "windows": 5,
+      "quiet_windows": 3,
+      "input_sha256": "dad2f2ffadea00277678ccc40ce42307fb9d451c8d9400b6a262666d9f04001c"
+    },
+    {
+      "fold": 3,
+      "filename": "3-151212-A-24.wav",
+      "truth": 1,
+      "prediction": 0,
+      "confidence": 0.998817623,
+      "probabilities": [
+        0.998817623,
+        0.00110907608,
+        1.04754475e-13,
+        6.7882087e-05,
+        5.44422528e-06
+      ],
+      "windows": 5,
+      "quiet_windows": 4,
+      "input_sha256": "b6d02eaf62d575ed3da5943964a24d9b38f60a7f063967f7be8ee63e4469a106"
+    },
+    {
+      "fold": 3,
+      "filename": "3-151213-A-24.wav",
+      "truth": 1,
+      "prediction": 0,
+      "confidence": 0.982629418,
+      "probabilities": [
+        0.982629418,
+        2.94370039e-08,
+        6.78164447e-13,
+        0.0173694808,
+        1.18073956e-06
+      ],
+      "windows": 5,
+      "quiet_windows": 4,
+      "input_sha256": "e189ba5d9b4077cd539d29e299b410ea6ca2b4b025a58f2c002f2273dc264834"
+    },
+    {
+      "fold": 3,
+      "filename": "3-155578-A-14.wav",
+      "truth": 0,
+      "prediction": 2,
+      "confidence": 0.930463254,
+      "probabilities": [
+        0.0695367455,
+        4.73121986e-21,
+        0.930463254,
+        1.49444346e-09,
+        7.3205553e-16
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "b705122a0c16133c7f72b62191cfbf8a8475fa3c171f93fd016af3cd9300d78e"
+    },
+    {
+      "fold": 3,
+      "filename": "3-159445-B-45.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.999584615,
+      "probabilities": [
+        0.000337951962,
+        0.999584615,
+        2.03889818e-24,
+        3.08698392e-21,
+        7.74485889e-05
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "66307371fac12dc2b932b6bed492e39df0d44765f3de8725342492314f714e7f"
+    },
+    {
+      "fold": 3,
+      "filename": "3-170383-A-38.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.835313499,
+      "probabilities": [
+        0.0920144618,
+        0.0676285177,
+        3.8868915e-05,
+        0.835313499,
+        0.00500466581
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "3edc08e7274da4d7503274e515cff56dba03204bb6e6c932ac042a18a26dd351"
+    },
+    {
+      "fold": 3,
+      "filename": "3-188390-A-6.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.998193324,
+      "probabilities": [
+        0.00173921464,
+        2.30343448e-05,
+        1.95494522e-19,
+        4.44605394e-05,
+        0.998193324
+      ],
+      "windows": 5,
+      "quiet_windows": 3,
+      "input_sha256": "f839bb80e7a5a37893993acb323959487433bcd6c49434ca9cdae56bca889dd2"
+    },
+    {
+      "fold": 3,
+      "filename": "3-216280-A-39.wav",
+      "truth": 2,
+      "prediction": 0,
+      "confidence": 0.939070344,
+      "probabilities": [
+        0.939070344,
+        0.00139906537,
+        0.0595306046,
+        9.88403932e-15,
+        2.79498813e-10
+      ],
+      "windows": 5,
+      "quiet_windows": 4,
+      "input_sha256": "3391a498b405c80c5b4a3681bf34b96b831cb1717bdcef044ca3b6ea8bd26728"
+    },
+    {
+      "fold": 3,
+      "filename": "3-253084-D-2.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 1.0,
+      "probabilities": [
+        8.11354564e-14,
+        9.11544861e-26,
+        9.06278497e-14,
+        1.0,
+        3.64201808e-22
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "c3b34ff25573eb47fd9b9a150d6c63c4ed53b39a5a3c74d7c000c566bb3e7629"
+    },
+    {
+      "fold": 3,
+      "filename": "3-62878-A-42.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.999004424,
+      "probabilities": [
+        0.000995573238,
+        5.99778235e-36,
+        6.37583575e-31,
+        0.999004424,
+        4.00448666e-32
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "00910026abba8367f33e1ff8f5b8c30eaf3e19a376d912b05afb81e8a5987554"
+    },
+    {
+      "fold": 3,
+      "filename": "3-87936-A-46.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.915509164,
+      "probabilities": [
+        0.0844704881,
+        1.3451388e-06,
+        7.36264507e-22,
+        1.89781931e-05,
+        0.915509164
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "38b4387e67689080c1f5db396adacb589a9880aa3cf17f20a1d77e0d86698c76"
+    },
+    {
+      "fold": 3,
+      "filename": "3-95695-B-5.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.999789894,
+      "probabilities": [
+        0.000210170678,
+        2.15041929e-15,
+        9.78824834e-12,
+        0.999789894,
+        4.18061719e-09
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "157a9d70a29a8fc4c44f10faf72b605c69fbcff773688ed34ed547383dbfc877"
+    },
+    {
+      "fold": 4,
+      "filename": "4-108352-A-33.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.999810636,
+      "probabilities": [
+        9.61860042e-06,
+        0.999810636,
+        5.65323726e-23,
+        0.000179772222,
+        1.97961883e-23
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "5522df7a22a175ffbc96aa38bfff9f8354673d0f1e64d1ad2e1cb99766b672fd"
+    },
+    {
+      "fold": 4,
+      "filename": "4-111671-B-42.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.989065528,
+      "probabilities": [
+        0.0109345065,
+        8.74052289e-11,
+        3.48761025e-16,
+        9.97711289e-12,
+        0.989065528
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "8200556bd23bd8b8878c2b23b87f2b72cd8a05f36f7cde02e74b4d960b83dd16"
+    },
+    {
+      "fold": 4,
+      "filename": "4-121532-A-42.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.960555196,
+      "probabilities": [
+        0.0394055992,
+        6.73502484e-07,
+        2.56622342e-19,
+        0.960555196,
+        3.85781932e-05
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "0f089a8491d2fc56fb66fa132a4f4178d9838c0cf16364a262db250296561fbf"
+    },
+    {
+      "fold": 4,
+      "filename": "4-133047-A-5.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.999942541,
+      "probabilities": [
+        5.74458536e-05,
+        1.43810101e-14,
+        1.2000795e-08,
+        0.999942541,
+        1.09355518e-10
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "35809545130010366d403b783217959e431155d9abf2f28b4e77cd42e8ef4616"
+    },
+    {
+      "fold": 4,
+      "filename": "4-135439-A-18.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.904855847,
+      "probabilities": [
+        0.093809858,
+        0.00133416732,
+        1.15425109e-07,
+        0.904855847,
+        1.68150704e-09
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "08dbb0e8b027cb5ce35547809508814000ba28b2de022429f53a18bdfa38005e"
+    },
+    {
+      "fold": 4,
+      "filename": "4-154405-B-27.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.977217138,
+      "probabilities": [
+        0.0225601513,
+        1.46524819e-08,
+        4.90324836e-10,
+        0.000222714225,
+        0.977217138
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "baf9febe3f23cc377890bdb6aa17781c62e858157ba10b26d7978463284c9ea0"
+    },
+    {
+      "fold": 4,
+      "filename": "4-154443-A-24.wav",
+      "truth": 1,
+      "prediction": 0,
+      "confidence": 0.99832505,
+      "probabilities": [
+        0.99832505,
+        0.00162411854,
+        9.58729461e-18,
+        1.22188304e-15,
+        5.08375742e-05
+      ],
+      "windows": 5,
+      "quiet_windows": 4,
+      "input_sha256": "131cbb1ddf6038f4dce37281828f56e960c89386f87bb8e3e530219169bf6305"
+    },
+    {
+      "fold": 4,
+      "filename": "4-155650-B-24.wav",
+      "truth": 1,
+      "prediction": 0,
+      "confidence": 0.830329239,
+      "probabilities": [
+        0.830329239,
+        9.3048744e-05,
+        2.57547911e-17,
+        0.0926949233,
+        0.0768828243
+      ],
+      "windows": 5,
+      "quiet_windows": 4,
+      "input_sha256": "e7bf8927d02feade3571a9c263041708f2b2fa8e89933592ed2fd02a920a6839"
+    },
+    {
+      "fold": 4,
+      "filename": "4-156227-A-9.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.993221283,
+      "probabilities": [
+        0.00593451504,
+        0.993221283,
+        2.38646902e-09,
+        0.000844256079,
+        2.99159204e-08
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "bae3a75b7898580cde93183f9aa6bd993ff16b653bbb46c8f05b5322d1965176"
+    },
+    {
+      "fold": 4,
+      "filename": "4-165823-B-41.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.999965549,
+      "probabilities": [
+        3.37533857e-05,
+        7.1518599e-08,
+        6.78443541e-07,
+        0.999965549,
+        4.06703019e-13
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "c0d816895e908599966037244085945d26b0b53cf8e7301b7afe1ac15964b77c"
+    },
+    {
+      "fold": 4,
+      "filename": "4-168155-A-15.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 1.0,
+      "probabilities": [
+        3.71904973e-09,
+        1.04741655e-13,
+        6.52052095e-30,
+        1.09328883e-17,
+        1.0
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "2f79e57cd78499f1edf81bec4f56dea3a199e4974c5af484b104b986a00009a3"
+    },
+    {
+      "fold": 4,
+      "filename": "4-168868-A-17.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.98821485,
+      "probabilities": [
+        0.0117834853,
+        3.6947525e-09,
+        3.05796122e-09,
+        1.67366579e-06,
+        0.98821485
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "faa09ababffc17935f599e338ebc6ce59c522cacab121d9308273cb4d515f106"
+    },
+    {
+      "fold": 4,
+      "filename": "4-175845-A-43.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.908054054,
+      "probabilities": [
+        0.0895857364,
+        0.908054054,
+        0.00156897353,
+        1.34658003e-05,
+        0.000777771929
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "f852ac86f880b3639206c92f9766bb561f59f223fb7c18cfc36886b14a460ec7"
+    },
+    {
+      "fold": 4,
+      "filename": "4-176638-A-43.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.999999046,
+      "probabilities": [
+        7.21977017e-07,
+        1.80750916e-07,
+        7.80341056e-22,
+        1.86132066e-17,
+        0.999999046
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "3d39eb0fdaee1ddf5a8b57969f2c27f18592e8b9b9916cba9483107097dcd8d6"
+    },
+    {
+      "fold": 4,
+      "filename": "4-181599-A-26.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.999999404,
+      "probabilities": [
+        1.00426021e-07,
+        5.12131408e-07,
+        2.33558815e-27,
+        0.999999404,
+        4.94157781e-18
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "07b966dd64015bbfc04ff6bd6cd2a9476663faac4ecb8b1d9a7305001e4c39e0"
+    },
+    {
+      "fold": 4,
+      "filename": "4-182395-A-0.wav",
+      "truth": 4,
+      "prediction": 0,
+      "confidence": 0.996526062,
+      "probabilities": [
+        0.996526062,
+        0.00182616117,
+        2.08391748e-06,
+        8.55692997e-06,
+        0.0016371652
+      ],
+      "windows": 5,
+      "quiet_windows": 3,
+      "input_sha256": "7d29d27f026dd4b72339061a5c38a43bce26b2763bcb736c1c83fb0d0b92d371"
+    },
+    {
+      "fold": 4,
+      "filename": "4-185619-A-21.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.999991894,
+      "probabilities": [
+        8.1160515e-06,
+        0.999991894,
+        6.71892805e-17,
+        1.33275959e-08,
+        1.40365508e-09
+      ],
+      "windows": 5,
+      "quiet_windows": 3,
+      "input_sha256": "b9a61dcb231e9ec9ba60a2cc24248287e8458d3b5c23f57be17a102abe778c5a"
+    },
+    {
+      "fold": 4,
+      "filename": "4-195707-A-13.wav",
+      "truth": 0,
+      "prediction": 2,
+      "confidence": 1.0,
+      "probabilities": [
+        3.21906035e-09,
+        2.22728654e-17,
+        1.0,
+        1.17017204e-14,
+        7.23267496e-19
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "89672d364662d4aeb8903594ae1127ff17340442964eee961d96e6cd7d86a83e"
+    },
+    {
+      "fold": 4,
+      "filename": "4-204202-A-29.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.999999285,
+      "probabilities": [
+        7.18593412e-07,
+        0.999999285,
+        1.2965356e-16,
+        1.34909766e-11,
+        1.29834502e-19
+      ],
+      "windows": 5,
+      "quiet_windows": 2,
+      "input_sha256": "3ef4048fe2e861576ab4b8e0529742568d202a33624b2175463082d1e2cdf54d"
+    },
+    {
+      "fold": 4,
+      "filename": "4-204777-C-39.wav",
+      "truth": 2,
+      "prediction": 1,
+      "confidence": 1.0,
+      "probabilities": [
+        1.18448125e-13,
+        1.0,
+        4.82167366e-13,
+        1.70805993e-38,
+        2.32348556e-20
+      ],
+      "windows": 5,
+      "quiet_windows": 1,
+      "input_sha256": "c7f98f14148b8d8990b95fc3dbab87926a2676da32e6feb2ba39d92d6f696d86"
+    },
+    {
+      "fold": 4,
+      "filename": "4-210000-A-23.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.980949461,
+      "probabilities": [
+        0.0171195194,
+        9.75427031e-12,
+        7.02909915e-07,
+        0.00193026511,
+        0.980949461
+      ],
+      "windows": 5,
+      "quiet_windows": 2,
+      "input_sha256": "8ffe59365a1958ac2675c2208a533b025fb7fcc168eeb3b14820a502db9f3f48"
+    },
+    {
+      "fold": 4,
+      "filename": "4-212728-A-34.wav",
+      "truth": 0,
+      "prediction": 2,
+      "confidence": 0.953065515,
+      "probabilities": [
+        0.0170977749,
+        0.0298350453,
+        0.953065515,
+        1.74705906e-06,
+        3.04626949e-11
+      ],
+      "windows": 5,
+      "quiet_windows": 3,
+      "input_sha256": "b7c78ab1d2a0de8fb4cfcace6b054bc2dc6d905ad9688a5235f1c37259cc0423"
+    },
+    {
+      "fold": 5,
+      "filename": "5-160614-G-48.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.979627848,
+      "probabilities": [
+        0.019261688,
+        0.00111047714,
+        6.00929653e-08,
+        1.1440658e-14,
+        0.979627848
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "99ae037813f77c67d0e7b167fd71ec4fa108a994be5ad1b603d0429670513d32"
+    },
+    {
+      "fold": 5,
+      "filename": "5-171653-A-41.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.996387005,
+      "probabilities": [
+        0.00361284451,
+        6.00047678e-10,
+        1.1412431e-09,
+        0.996387005,
+        5.98657053e-08
+      ],
+      "windows": 5,
+      "quiet_windows": 1,
+      "input_sha256": "e7c92eeead7f225f6485ae794ff7acc4f22fbe367c762de23b432e0f211cad6f"
+    },
+    {
+      "fold": 5,
+      "filename": "5-173568-A-33.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 1.0,
+      "probabilities": [
+        2.35042208e-08,
+        5.65204106e-09,
+        4.35133618e-09,
+        1.0,
+        4.54837603e-23
+      ],
+      "windows": 5,
+      "quiet_windows": 4,
+      "input_sha256": "b02a61d3eafb9fbe43e190ead950eeb985c7ab636714d2754856db557fe83234"
+    },
+    {
+      "fold": 5,
+      "filename": "5-177034-A-18.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.989017844,
+      "probabilities": [
+        0.00921328086,
+        0.000602788874,
+        0.0011648105,
+        0.989017844,
+        1.27036594e-06
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "98d671d0f722a6deed416f3835822fbc672d54986309a8589d38a4e9d16b289a"
+    },
+    {
+      "fold": 5,
+      "filename": "5-179863-A-43.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.998317003,
+      "probabilities": [
+        0.00163770409,
+        0.998317003,
+        3.72708455e-05,
+        8.12055987e-06,
+        2.66234639e-11
+      ],
+      "windows": 5,
+      "quiet_windows": 3,
+      "input_sha256": "45c2581e7a5fe57715fc2c1ca5b9dba5e8e7af943f5d56a6472287fb7ccab1f6"
+    },
+    {
+      "fold": 5,
+      "filename": "5-194899-A-3.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.99999249,
+      "probabilities": [
+        5.41915483e-07,
+        7.00219834e-06,
+        8.4980174e-20,
+        0.99999249,
+        1.56683971e-11
+      ],
+      "windows": 5,
+      "quiet_windows": 1,
+      "input_sha256": "4910d7c20f929466438f4155b79b567fdb10845607bd1f43a5ec053a4f5cd14b"
+    },
+    {
+      "fold": 5,
+      "filename": "5-195518-A-7.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.999316454,
+      "probabilities": [
+        0.00068360666,
+        5.32574818e-11,
+        5.10218427e-14,
+        0.999316454,
+        4.95254337e-13
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "f50f05cb77902e5431bce68ae62767ac35b997804c97cae18945e19d0933ead0"
+    },
+    {
+      "fold": 5,
+      "filename": "5-198411-E-20.wav",
+      "truth": 3,
+      "prediction": 0,
+      "confidence": 0.643012881,
+      "probabilities": [
+        0.643012881,
+        0.0984069183,
+        7.1651948e-18,
+        0.100537255,
+        0.158042952
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "3fc40c29040398d46a1d3052b70c47340d44656e8547f856ba93af6640af059b"
+    },
+    {
+      "fold": 5,
+      "filename": "5-200334-A-1.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 1.0,
+      "probabilities": [
+        5.93032498e-11,
+        7.31831751e-09,
+        2.35289142e-21,
+        3.95568821e-11,
+        1.0
+      ],
+      "windows": 5,
+      "quiet_windows": 2,
+      "input_sha256": "e26e513eecca99647aca50dd19cacee41be85032e8d8b8c812cc30f2f9b8cfa4"
+    },
+    {
+      "fold": 5,
+      "filename": "5-200339-A-1.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.999285161,
+      "probabilities": [
+        0.000700667442,
+        1.33196954e-05,
+        1.28417767e-07,
+        7.56792929e-07,
+        0.999285161
+      ],
+      "windows": 5,
+      "quiet_windows": 2,
+      "input_sha256": "3ab6af3fa9f22c8465b9f30f26b6cccf5a670ea37103bbd629e7ad3a35238c81"
+    },
+    {
+      "fold": 5,
+      "filename": "5-204114-A-29.wav",
+      "truth": 0,
+      "prediction": 2,
+      "confidence": 0.992115796,
+      "probabilities": [
+        0.000154743801,
+        0.00772886025,
+        0.992115796,
+        2.46836777e-07,
+        4.0014703e-07
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "fd83b2e7c4b63d6aed8b7532c0b3d5bcd030378ba7a1d5208440c0fc58a44f1a"
+    },
+    {
+      "fold": 5,
+      "filename": "5-208030-A-0.wav",
+      "truth": 4,
+      "prediction": 1,
+      "confidence": 1.0,
+      "probabilities": [
+        2.03807815e-08,
+        1.0,
+        5.0978346e-09,
+        2.20157521e-15,
+        1.66599246e-09
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "b8bdb6baafb390f47f4af19eded0998559b6871b0541edebd9b9b1a2c40279b8"
+    },
+    {
+      "fold": 5,
+      "filename": "5-209719-A-24.wav",
+      "truth": 1,
+      "prediction": 0,
+      "confidence": 0.85732919,
+      "probabilities": [
+        0.85732919,
+        0.1426678,
+        3.00506827e-06,
+        3.08364214e-08,
+        3.86661248e-20
+      ],
+      "windows": 5,
+      "quiet_windows": 4,
+      "input_sha256": "ae99940fadba8f85115bfa2b923eff841352604f231a3bf6d86971403112c8de"
+    },
+    {
+      "fold": 5,
+      "filename": "5-212059-A-36.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.964285851,
+      "probabilities": [
+        0.0357141681,
+        3.90186348e-18,
+        7.04998149e-09,
+        0.964285851,
+        3.05613723e-14
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "024d9a3103dbb08698515aa2dbdd0f21f404f23ae3333752b7ede4f32506ce8f"
+    },
+    {
+      "fold": 5,
+      "filename": "5-217158-A-0.wav",
+      "truth": 4,
+      "prediction": 0,
+      "confidence": 0.806580365,
+      "probabilities": [
+        0.806580365,
+        0.00404434744,
+        2.41410971e-11,
+        2.13191124e-05,
+        0.189354002
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "976da342d35129140e253689e09be46216f6535aed0bbbaf9e971d310884a524"
+    },
+    {
+      "fold": 5,
+      "filename": "5-220939-A-27.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.998394072,
+      "probabilities": [
+        0.000485380995,
+        0.00111977616,
+        7.47847309e-07,
+        0.998394072,
+        7.45392843e-13
+      ],
+      "windows": 5,
+      "quiet_windows": 3,
+      "input_sha256": "a3d15f22605ab8fb7b4a762e359277b8269daa829977962d28e28ac520dd53a9"
+    },
+    {
+      "fold": 5,
+      "filename": "5-234335-A-23.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.993471622,
+      "probabilities": [
+        8.22801885e-05,
+        0.993471622,
+        1.39085969e-07,
+        0.0064458847,
+        1.06658206e-07
+      ],
+      "windows": 5,
+      "quiet_windows": 2,
+      "input_sha256": "0b312bd1f81569e84a7a8fc5e443d73d9db5fdaad3f1bb79927a0e0fd63a6245"
+    },
+    {
+      "fold": 5,
+      "filename": "5-235956-A-47.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.999208391,
+      "probabilities": [
+        0.000537610147,
+        0.999208391,
+        2.07119003e-13,
+        5.30731437e-19,
+        0.000254086364
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "2968e4bc601f8cf5cbec48e6ac849226af87e4f8efecd3c57583cea2559778ea"
+    },
+    {
+      "fold": 5,
+      "filename": "5-242932-A-26.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.999876499,
+      "probabilities": [
+        4.5918182e-06,
+        0.999876499,
+        1.78107598e-11,
+        3.32411728e-05,
+        8.55954349e-05
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "84d322481f1b06e5ae641e5a4fffb38c19f0c8a27ac3e1026bf79d532f21b05a"
+    },
+    {
+      "fold": 5,
+      "filename": "5-250026-A-30.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.97885716,
+      "probabilities": [
+        3.48630674e-05,
+        0.00214205217,
+        0.0189465545,
+        1.93308369e-05,
+        0.97885716
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "a2ae741be5e670aefecab4967e36775fc4352598d290ef996ce9e115eabca0e0"
+    },
+    {
+      "fold": 5,
+      "filename": "5-251489-A-24.wav",
+      "truth": 1,
+      "prediction": 0,
+      "confidence": 0.981387734,
+      "probabilities": [
+        0.981387734,
+        0.018612273,
+        2.59956554e-08,
+        3.3480857e-13,
+        1.41964751e-08
+      ],
+      "windows": 5,
+      "quiet_windows": 4,
+      "input_sha256": "d4e7d7797956a4d390e89c9b12b9efd6ca16d98c0e02cad7c95e8ae0b2852908"
+    },
+    {
+      "fold": 5,
+      "filename": "5-253094-A-49.wav",
+      "truth": 0,
+      "prediction": 2,
+      "confidence": 0.923061371,
+      "probabilities": [
+        0.0769243836,
+        7.20806747e-06,
+        0.923061371,
+        7.05787988e-06,
+        1.91868854e-10
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "95eec1b9cd7e615a339300d127a16f77465153afce86812981254008cd2fb45e"
+    },
+    {
+      "fold": 5,
+      "filename": "5-263775-A-26.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.994450808,
+      "probabilities": [
+        0.00379704149,
+        0.00175217213,
+        3.81997189e-08,
+        0.994450808,
+        2.3186189e-08
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "be12c2ebc67fd7b75cc8f7a90e5cdee0ef21c25f1a9d8baf63d6fd921505ca27"
+    },
+    {
+      "fold": 5,
+      "filename": "5-9032-A-0.wav",
+      "truth": 4,
+      "prediction": 2,
+      "confidence": 0.99976939,
+      "probabilities": [
+        1.35785888e-06,
+        0.000229275451,
+        0.99976939,
+        4.60642163e-10,
+        3.47949958e-09
+      ],
+      "windows": 5,
+      "quiet_windows": 2,
+      "input_sha256": "cf87f80eb2fb44f8f00fb40d0e99ff2dfc17a51f3c7415c75ce828676cf30a88"
+    }
+  ],
+  "mean": [
+    {
+      "fold": 1,
+      "filename": "1-100032-A-0.wav",
+      "truth": 4,
+      "prediction": 2,
+      "confidence": 0.359749556,
+      "probabilities": [
+        0.111813068,
+        0.248915955,
+        0.359749556,
+        0.00838699285,
+        0.271134436
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "11c816978491fc5cbe62b63279be41815c6b0a3a57e8b5b7834eb41d3c482b04"
+    },
+    {
+      "fold": 1,
+      "filename": "1-110389-A-0.wav",
+      "truth": 4,
+      "prediction": 2,
+      "confidence": 0.359749556,
+      "probabilities": [
+        0.111813053,
+        0.248915836,
+        0.359749556,
+        0.00838699285,
+        0.271134555
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "f477ffb6f28d93cefe14064ac0be5028899a5c7688615a0a2441df2fa828ad43"
+    },
+    {
+      "fold": 1,
+      "filename": "1-18074-B-6.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.794689894,
+      "probabilities": [
+        0.00511282776,
+        0.00119899621,
+        4.55507241e-08,
+        0.198998183,
+        0.794689894
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "a14b35bdc42f6a8a3b1974d2fae2abac4d5dddb0c5c966b0bffaf0a657609b92"
+    },
+    {
+      "fold": 1,
+      "filename": "1-187207-A-20.wav",
+      "truth": 3,
+      "prediction": 4,
+      "confidence": 0.599103749,
+      "probabilities": [
+        0.200843737,
+        1.11303041e-06,
+        2.30290284e-14,
+        0.200051397,
+        0.599103749
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "0b99062df98363cecfde268e5d035f7340041fb201a1bd00583d362428f4bed7"
+    },
+    {
+      "fold": 1,
+      "filename": "1-19118-A-24.wav",
+      "truth": 1,
+      "prediction": 2,
+      "confidence": 0.359750658,
+      "probabilities": [
+        0.222951725,
+        0.330587715,
+        0.359750658,
+        0.0155740436,
+        0.071135886
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "a8948c4f2cf2b4d68cdbf8abd1cd35ed8801b90552fd90d362819d8dcb3d1892"
+    },
+    {
+      "fold": 1,
+      "filename": "1-20133-A-39.wav",
+      "truth": 2,
+      "prediction": 0,
+      "confidence": 0.648153424,
+      "probabilities": [
+        0.648153424,
+        0.0630639568,
+        0.268783033,
+        0.00213818881,
+        0.0178613774
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "87291d2caeac89fe7011254cf0f58a11c81433c650b4a9c9b62d9925cab9acff"
+    },
+    {
+      "fold": 1,
+      "filename": "1-211527-B-20.wav",
+      "truth": 3,
+      "prediction": 0,
+      "confidence": 0.568530202,
+      "probabilities": [
+        0.568530202,
+        0.0045921104,
+        1.66690006e-09,
+        0.232740551,
+        0.194137201
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "4f8188bdc0e8c4b0685cf3ba0d701e945cd21189960f5d933ad14e8d905e6fc8"
+    },
+    {
+      "fold": 1,
+      "filename": "1-34495-A-14.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.593032598,
+      "probabilities": [
+        0.404144764,
+        0.00282262242,
+        3.8308956e-09,
+        0.593032598,
+        1.52111266e-08
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "025aa656499da61e38ca38f42179930a99f9b61dd851fd38062d8808cfb387ed"
+    },
+    {
+      "fold": 1,
+      "filename": "1-34853-A-37.wav",
+      "truth": 0,
+      "prediction": 2,
+      "confidence": 0.998143494,
+      "probabilities": [
+        0.00185615232,
+        1.21264515e-26,
+        0.998143494,
+        3.38728512e-07,
+        2.43873257e-23
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "262fffd35152aa99ac146c53b095624c0adf399a2f9aa074e9e3b75e07617a55"
+    },
+    {
+      "fold": 1,
+      "filename": "1-36393-A-23.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.385381371,
+      "probabilities": [
+        0.133195102,
+        0.385381371,
+        0.367252767,
+        0.0605728999,
+        0.05359786
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "905d889947a7017be8292d49d91cecc855fb83cb1397cbc66b88099baebc9f0d"
+    },
+    {
+      "fold": 1,
+      "filename": "1-42139-A-38.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.613813758,
+      "probabilities": [
+        0.386154503,
+        0.613813758,
+        4.32990171e-10,
+        6.7240594e-06,
+        2.50043267e-05
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "ff5eac12330a28892c67284d3fcada9cdd38189f4b4fcbc528aed797dcf4212b"
+    },
+    {
+      "fold": 1,
+      "filename": "1-58792-A-24.wav",
+      "truth": 1,
+      "prediction": 0,
+      "confidence": 0.529436111,
+      "probabilities": [
+        0.529436111,
+        0.191170722,
+        0.157558411,
+        0.0176103972,
+        0.104224339
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "7e71a276eef6d7cf64acd4631cb9de1debed1182fdf72ee7a2a0898c48cee9a7"
+    },
+    {
+      "fold": 1,
+      "filename": "1-72229-B-6.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.621179938,
+      "probabilities": [
+        0.225165755,
+        0.153609827,
+        2.95439295e-09,
+        4.44184298e-05,
+        0.621179938
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "3e1f2a51c1e47e92dd0f6d4ab39101e69537f81ccb5aa7161113aa05f210fdbe"
+    },
+    {
+      "fold": 1,
+      "filename": "1-84536-A-39.wav",
+      "truth": 2,
+      "prediction": 0,
+      "confidence": 0.451096773,
+      "probabilities": [
+        0.451096773,
+        0.124468945,
+        0.383840948,
+        0.00502557075,
+        0.035567686
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "e50f61a480a2c62895f37373c445ed799fcb29826dd79ebef01a9be9771cb69e"
+    },
+    {
+      "fold": 2,
+      "filename": "2-103423-A-3.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.38362962,
+      "probabilities": [
+        0.264797568,
+        0.38362962,
+        0.287053972,
+        0.00595774874,
+        0.058561109
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "69d0dfaf2928f2d5426b52ec4166451c41f1ab23e4d14e04146ef54e4e220ccd"
+    },
+    {
+      "fold": 2,
+      "filename": "2-106881-A-39.wav",
+      "truth": 2,
+      "prediction": 0,
+      "confidence": 0.618523896,
+      "probabilities": [
+        0.618523896,
+        0.0641342849,
+        0.295943081,
+        0.00187836029,
+        0.0195203722
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "127ec452a626f6c541459dc7960198e74474816216aab28f19f0cf304ccae5a0"
+    },
+    {
+      "fold": 2,
+      "filename": "2-118072-A-0.wav",
+      "truth": 4,
+      "prediction": 2,
+      "confidence": 0.283128917,
+      "probabilities": [
+        0.255472243,
+        0.176534697,
+        0.283128917,
+        0.00584555278,
+        0.279018611
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "824479c90ac7c027a4e65d2b16828c65e4284cb465f53b42758eee47c8893760"
+    },
+    {
+      "fold": 2,
+      "filename": "2-118964-A-0.wav",
+      "truth": 4,
+      "prediction": 0,
+      "confidence": 0.4174366,
+      "probabilities": [
+        0.4174366,
+        0.130296603,
+        0.192216843,
+        0.00379950483,
+        0.256250441
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "c229f0091ca7a4a7d980efba76460321419c55bd8af4dce91d6d8fddb36283d7"
+    },
+    {
+      "fold": 2,
+      "filename": "2-119161-A-8.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.435560703,
+      "probabilities": [
+        0.34865582,
+        0.00405217241,
+        0.211703137,
+        0.435560703,
+        2.81892771e-05
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "3d74321570e1e601a6235c85ae9a0f21613dd7fb9a2a535a1fcefed58f84e4ad"
+    },
+    {
+      "fold": 2,
+      "filename": "2-173559-A-39.wav",
+      "truth": 2,
+      "prediction": 0,
+      "confidence": 0.415632397,
+      "probabilities": [
+        0.415632397,
+        0.200025797,
+        0.381895751,
+        3.98108532e-05,
+        0.00240620272
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "203a6754230521cde25fa70bbf23f0f9c4ccd36e97a3144d048dd943b0545a36"
+    },
+    {
+      "fold": 2,
+      "filename": "2-250710-A-39.wav",
+      "truth": 2,
+      "prediction": 1,
+      "confidence": 0.658468544,
+      "probabilities": [
+        0.221840352,
+        0.658468544,
+        0.0975836143,
+        0.00241790409,
+        0.0196896307
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "2e0afd25a9cc525a07ee95554063d6a7af1489e780f054ff4928c2ddd8a1e396"
+    },
+    {
+      "fold": 2,
+      "filename": "2-50666-A-20.wav",
+      "truth": 3,
+      "prediction": 0,
+      "confidence": 0.550293744,
+      "probabilities": [
+        0.550293744,
+        0.0329292342,
+        1.51340664e-08,
+        0.309597403,
+        0.107179686
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "a05130c41fbb064aa7b2282e86e45db975e014a0a73d7d956be626818c278ef9"
+    },
+    {
+      "fold": 2,
+      "filename": "2-85292-A-24.wav",
+      "truth": 1,
+      "prediction": 0,
+      "confidence": 0.754386902,
+      "probabilities": [
+        0.754386902,
+        0.213573128,
+        0.00554724457,
+        0.000641203078,
+        0.0258515533
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "0028248f5643f5ffd2e88aa4c2781a53678d821e180bd5715f826945dfac5f04"
+    },
+    {
+      "fold": 2,
+      "filename": "2-87794-A-24.wav",
+      "truth": 1,
+      "prediction": 0,
+      "confidence": 0.419187367,
+      "probabilities": [
+        0.419187367,
+        0.0641362146,
+        0.0956832394,
+        0.201869577,
+        0.219123602
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "c0d5ce5968160105c45ba816f7ae889222367805a0b00ae2097b01a84551a938"
+    },
+    {
+      "fold": 2,
+      "filename": "2-87795-A-24.wav",
+      "truth": 1,
+      "prediction": 0,
+      "confidence": 0.776535153,
+      "probabilities": [
+        0.776535153,
+        0.0234663785,
+        9.39008454e-11,
+        2.38594623e-07,
+        0.199998245
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "35d67729143faeededba88d3fad39c6ca867ddfb2bbe0c55a4f28720f057a3e5"
+    },
+    {
+      "fold": 2,
+      "filename": "2-87799-A-24.wav",
+      "truth": 1,
+      "prediction": 4,
+      "confidence": 0.428928465,
+      "probabilities": [
+        0.199852079,
+        0.196284741,
+        9.39273264e-07,
+        0.174933717,
+        0.428928465
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "625900b02bc39e192a91bd7acd20f6ddb129db0ba2b32733c98a0b2f2325dbee"
+    },
+    {
+      "fold": 2,
+      "filename": "2-93030-A-21.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.387785554,
+      "probabilities": [
+        0.215576962,
+        0.387785554,
+        0.172869235,
+        0.00773952901,
+        0.21602872
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "dc232f62f503b5467600a993e1d1d776dd45f47beed7102301eef66e21064404"
+    },
+    {
+      "fold": 3,
+      "filename": "3-125418-A-24.wav",
+      "truth": 1,
+      "prediction": 3,
+      "confidence": 0.527267933,
+      "probabilities": [
+        0.0346016921,
+        0.163670972,
+        0.232078522,
+        0.527267933,
+        0.0423808545
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "f6c7754ae657be3fae6bc3472a6bf9b346e059272038ddd26ec9307479264ecf"
+    },
+    {
+      "fold": 3,
+      "filename": "3-131943-A-37.wav",
+      "truth": 0,
+      "prediction": 2,
+      "confidence": 1.0,
+      "probabilities": [
+        1.01482281e-10,
+        0.0,
+        1.0,
+        7.27429467e-36,
+        8.47785571e-43
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "d0efacd6105b25ba9b0c7e44a8d5ad595ff110e70a94457ace49350ed1c222b1"
+    },
+    {
+      "fold": 3,
+      "filename": "3-133977-A-29.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.403882653,
+      "probabilities": [
+        0.160460323,
+        0.403882653,
+        0.282074094,
+        0.0215802621,
+        0.132002637
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "781e7a98621de12238ba0ecc6b57274af345b36f7cd9b5655b221aaf925cc713"
+    },
+    {
+      "fold": 3,
+      "filename": "3-136288-A-0.wav",
+      "truth": 4,
+      "prediction": 0,
+      "confidence": 0.999996305,
+      "probabilities": [
+        0.999996305,
+        6.49476783e-12,
+        1.01456315e-15,
+        1.1002227e-07,
+        3.63089384e-06
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "6d79e5c2581776e71e3bbe936dde5d3beec448d6d48d50c00b432c9dec1bda0e"
+    },
+    {
+      "fold": 3,
+      "filename": "3-142601-A-21.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.301679641,
+      "probabilities": [
+        0.258772999,
+        0.301679641,
+        0.141392499,
+        0.0694413558,
+        0.228713542
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "dad2f2ffadea00277678ccc40ce42307fb9d451c8d9400b6a262666d9f04001c"
+    },
+    {
+      "fold": 3,
+      "filename": "3-151081-B-20.wav",
+      "truth": 3,
+      "prediction": 0,
+      "confidence": 0.586628437,
+      "probabilities": [
+        0.586628437,
+        0.000394218921,
+        6.21764217e-16,
+        0.412974268,
+        3.12952102e-06
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "e37f38875737ec22f1c71eb619363a93ce6039f8b98eca8aa2150497e6d1d265"
+    },
+    {
+      "fold": 3,
+      "filename": "3-151212-A-24.wav",
+      "truth": 1,
+      "prediction": 0,
+      "confidence": 0.452146202,
+      "probabilities": [
+        0.452146202,
+        0.198306873,
+        0.233584523,
+        0.0166376233,
+        0.0993247554
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "b6d02eaf62d575ed3da5943964a24d9b38f60a7f063967f7be8ee63e4469a106"
+    },
+    {
+      "fold": 3,
+      "filename": "3-151213-A-24.wav",
+      "truth": 1,
+      "prediction": 2,
+      "confidence": 0.310447901,
+      "probabilities": [
+        0.301444441,
+        0.242428213,
+        0.310447901,
+        0.0336002707,
+        0.112079218
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "e189ba5d9b4077cd539d29e299b410ea6ca2b4b025a58f2c002f2273dc264834"
+    },
+    {
+      "fold": 3,
+      "filename": "3-153444-A-32.wav",
+      "truth": 0,
+      "prediction": 2,
+      "confidence": 0.984038174,
+      "probabilities": [
+        0.0159076825,
+        5.38504864e-05,
+        0.984038174,
+        3.39456761e-07,
+        2.31719675e-08
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "49d0bfefb130887200ecf04ed087645e5a7b6fe194eb08602859efec4e0fad7b"
+    },
+    {
+      "fold": 3,
+      "filename": "3-188390-A-6.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.464812934,
+      "probabilities": [
+        0.0585193746,
+        0.124864578,
+        0.341002613,
+        0.0108004902,
+        0.464812934
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "f839bb80e7a5a37893993acb323959487433bcd6c49434ca9cdae56bca889dd2"
+    },
+    {
+      "fold": 4,
+      "filename": "4-133047-A-5.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.442643255,
+      "probabilities": [
+        0.36103034,
+        0.000492483727,
+        2.87807778e-09,
+        0.442643255,
+        0.195833907
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "35809545130010366d403b783217959e431155d9abf2f28b4e77cd42e8ef4616"
+    },
+    {
+      "fold": 4,
+      "filename": "4-152995-A-24.wav",
+      "truth": 1,
+      "prediction": 0,
+      "confidence": 0.434885442,
+      "probabilities": [
+        0.434885442,
+        0.344421953,
+        0.168212384,
+        0.00173784536,
+        0.0507423989
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "4fac0ae8f98d9f1fa052a24e8c3a76c3ae2fa14928be021b5963735dca22e86a"
+    },
+    {
+      "fold": 4,
+      "filename": "4-154443-A-24.wav",
+      "truth": 1,
+      "prediction": 2,
+      "confidence": 0.336424619,
+      "probabilities": [
+        0.271283805,
+        0.289441407,
+        0.336424619,
+        0.00131459045,
+        0.101535633
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "131cbb1ddf6038f4dce37281828f56e960c89386f87bb8e3e530219169bf6305"
+    },
+    {
+      "fold": 4,
+      "filename": "4-155650-A-24.wav",
+      "truth": 1,
+      "prediction": 4,
+      "confidence": 0.349870563,
+      "probabilities": [
+        0.329296827,
+        0.199720338,
+        1.79027359e-06,
+        0.121110499,
+        0.349870563
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "30961e7d150f096e1ffb186e409e6d86aa715d0814fd653d09b9a473af10bfc4"
+    },
+    {
+      "fold": 4,
+      "filename": "4-155650-B-24.wav",
+      "truth": 1,
+      "prediction": 0,
+      "confidence": 0.624633968,
+      "probabilities": [
+        0.624633968,
+        0.0937335044,
+        0.0863365307,
+        0.0930253565,
+        0.10227064
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "e7bf8927d02feade3571a9c263041708f2b2fa8e89933592ed2fd02a920a6839"
+    },
+    {
+      "fold": 4,
+      "filename": "4-156227-A-9.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.550551057,
+      "probabilities": [
+        0.449130625,
+        0.550551057,
+        2.6397372e-06,
+        0.000314631528,
+        1.10215319e-06
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "bae3a75b7898580cde93183f9aa6bd993ff16b653bbb46c8f05b5322d1965176"
+    },
+    {
+      "fold": 4,
+      "filename": "4-165823-B-41.wav",
+      "truth": 0,
+      "prediction": 3,
+      "confidence": 0.999901593,
+      "probabilities": [
+        3.92507354e-05,
+        5.74765836e-05,
+        1.64124617e-06,
+        0.999901593,
+        9.45327638e-09
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "c0d816895e908599966037244085945d26b0b53cf8e7301b7afe1ac15964b77c"
+    },
+    {
+      "fold": 4,
+      "filename": "4-168155-A-15.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.980478466,
+      "probabilities": [
+        0.0194078423,
+        0.000113661386,
+        4.78051716e-15,
+        3.19788174e-09,
+        0.980478466
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "2f79e57cd78499f1edf81bec4f56dea3a199e4974c5af484b104b986a00009a3"
+    },
+    {
+      "fold": 4,
+      "filename": "4-182395-A-0.wav",
+      "truth": 4,
+      "prediction": 0,
+      "confidence": 0.451245129,
+      "probabilities": [
+        0.451245129,
+        0.217689127,
+        0.252320558,
+        0.000994499773,
+        0.0777507648
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "7d29d27f026dd4b72339061a5c38a43bce26b2763bcb736c1c83fb0d0b92d371"
+    },
+    {
+      "fold": 4,
+      "filename": "4-185619-A-21.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.308863223,
+      "probabilities": [
+        0.100044467,
+        0.308863223,
+        0.26878041,
+        0.134591132,
+        0.187720731
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "b9a61dcb231e9ec9ba60a2cc24248287e8458d3b5c23f57be17a102abe778c5a"
+    },
+    {
+      "fold": 4,
+      "filename": "4-187384-A-34.wav",
+      "truth": 0,
+      "prediction": 2,
+      "confidence": 0.49017787,
+      "probabilities": [
+        0.116843127,
+        0.29017964,
+        0.49017787,
+        0.00131459115,
+        0.101484798
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "de187b8e41c508c2da0a96d681ce2a4c290509af62fa7e8b7c9b069b159aefc1"
+    },
+    {
+      "fold": 4,
+      "filename": "4-195707-A-13.wav",
+      "truth": 0,
+      "prediction": 2,
+      "confidence": 1.0,
+      "probabilities": [
+        4.18400381e-09,
+        2.20798361e-17,
+        1.0,
+        1.26910784e-13,
+        1.21600844e-18
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "89672d364662d4aeb8903594ae1127ff17340442964eee961d96e6cd7d86a83e"
+    },
+    {
+      "fold": 4,
+      "filename": "4-204202-A-29.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.483709991,
+      "probabilities": [
+        0.255981088,
+        0.483709991,
+        0.168212309,
+        0.00735105481,
+        0.0847456306
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "3ef4048fe2e861576ab4b8e0529742568d202a33624b2175463082d1e2cdf54d"
+    },
+    {
+      "fold": 4,
+      "filename": "4-204777-A-39.wav",
+      "truth": 2,
+      "prediction": 0,
+      "confidence": 0.533143878,
+      "probabilities": [
+        0.533143878,
+        2.57301537e-07,
+        0.464005291,
+        0.00203626836,
+        0.000814284547
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "c17cafe69d42c621b2c8b555e0663949ce47d367ccc892e0ef77a3debf1d23df"
+    },
+    {
+      "fold": 4,
+      "filename": "4-204777-C-39.wav",
+      "truth": 2,
+      "prediction": 0,
+      "confidence": 0.512488484,
+      "probabilities": [
+        0.512488484,
+        0.271954358,
+        0.0846286342,
+        0.0118664494,
+        0.119062141
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "c7f98f14148b8d8990b95fc3dbab87926a2676da32e6feb2ba39d92d6f696d86"
+    },
+    {
+      "fold": 4,
+      "filename": "4-212728-A-34.wav",
+      "truth": 0,
+      "prediction": 2,
+      "confidence": 0.463649929,
+      "probabilities": [
+        0.0947802514,
+        0.364469856,
+        0.463649929,
+        0.00098641112,
+        0.0761135966
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "b7c78ab1d2a0de8fb4cfcace6b054bc2dc6d905ad9688a5235f1c37259cc0423"
+    },
+    {
+      "fold": 5,
+      "filename": "5-103422-A-2.wav",
+      "truth": 0,
+      "prediction": 2,
+      "confidence": 0.322275579,
+      "probabilities": [
+        0.301840723,
+        0.281088293,
+        0.322275579,
+        0.0093045244,
+        0.0854908898
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "47ccb7b47f4f0d93ddb19d7601dc71e1801899cab279564c821268d6681cdbc0"
+    },
+    {
+      "fold": 5,
+      "filename": "5-173568-A-33.wav",
+      "truth": 0,
+      "prediction": 2,
+      "confidence": 0.440579593,
+      "probabilities": [
+        0.0773919821,
+        0.2108877,
+        0.440579593,
+        0.206990913,
+        0.0641498491
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "b02a61d3eafb9fbe43e190ead950eeb985c7ab636714d2754856db557fe83234"
+    },
+    {
+      "fold": 5,
+      "filename": "5-178997-A-24.wav",
+      "truth": 1,
+      "prediction": 0,
+      "confidence": 0.437199056,
+      "probabilities": [
+        0.437199056,
+        0.339879632,
+        0.0619524308,
+        0.16069527,
+        0.000273598242
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "02a44c05fc0d65bcc8c00feba8c032d5c3113ffc0d9ec3886f7fffb10695d993"
+    },
+    {
+      "fold": 5,
+      "filename": "5-198411-E-20.wav",
+      "truth": 3,
+      "prediction": 0,
+      "confidence": 0.643012881,
+      "probabilities": [
+        0.643012881,
+        0.0984069183,
+        7.1651948e-18,
+        0.100537255,
+        0.158042952
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "3fc40c29040398d46a1d3052b70c47340d44656e8547f856ba93af6640af059b"
+    },
+    {
+      "fold": 5,
+      "filename": "5-198411-F-20.wav",
+      "truth": 3,
+      "prediction": 0,
+      "confidence": 0.51019299,
+      "probabilities": [
+        0.51019299,
+        0.0742088705,
+        2.39001672e-08,
+        0.401045948,
+        0.0145521117
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "142eed787f08a62d08b06917db6c124d19ea7719d4e04c20fb77aa4c2681360f"
+    },
+    {
+      "fold": 5,
+      "filename": "5-204114-A-29.wav",
+      "truth": 0,
+      "prediction": 2,
+      "confidence": 0.403473198,
+      "probabilities": [
+        0.216777444,
+        0.174386695,
+        0.403473198,
+        0.197516099,
+        0.00784666557
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "fd83b2e7c4b63d6aed8b7532c0b3d5bcd030378ba7a1d5208440c0fc58a44f1a"
+    },
+    {
+      "fold": 5,
+      "filename": "5-204604-A-24.wav",
+      "truth": 1,
+      "prediction": 2,
+      "confidence": 0.4408831,
+      "probabilities": [
+        0.0772055984,
+        0.410814762,
+        0.4408831,
+        0.00697839353,
+        0.0641181618
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "e22f53686e7000997a51d458586e7b21c5e300270a371dab24cec8545d035f0e"
+    },
+    {
+      "fold": 5,
+      "filename": "5-207681-A-24.wav",
+      "truth": 1,
+      "prediction": 0,
+      "confidence": 0.798547029,
+      "probabilities": [
+        0.798547029,
+        0.19807902,
+        2.38603825e-05,
+        1.34525885e-06,
+        0.00334879081
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "0789943395cc8691e9489bd1d0cd806c7489777a1e7d82b3588d8b7d2da9fd2c"
+    },
+    {
+      "fold": 5,
+      "filename": "5-208030-A-0.wav",
+      "truth": 4,
+      "prediction": 1,
+      "confidence": 0.562555194,
+      "probabilities": [
+        5.58354657e-07,
+        0.562555194,
+        0.337310731,
+        9.93464982e-06,
+        0.100123607
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "b8bdb6baafb390f47f4af19eded0998559b6871b0541edebd9b9b1a2c40279b8"
+    },
+    {
+      "fold": 5,
+      "filename": "5-217158-A-0.wav",
+      "truth": 4,
+      "prediction": 0,
+      "confidence": 0.806580365,
+      "probabilities": [
+        0.806580365,
+        0.00404434744,
+        2.41410971e-11,
+        2.13191124e-05,
+        0.189354002
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "976da342d35129140e253689e09be46216f6535aed0bbbaf9e971d310884a524"
+    },
+    {
+      "fold": 5,
+      "filename": "5-242932-A-26.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.392846823,
+      "probabilities": [
+        0.203525826,
+        0.204381227,
+        2.86434401e-11,
+        0.199246094,
+        0.392846823
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "84d322481f1b06e5ae641e5a4fffb38c19f0c8a27ac3e1026bf79d532f21b05a"
+    },
+    {
+      "fold": 5,
+      "filename": "5-250026-A-30.wav",
+      "truth": 0,
+      "prediction": 4,
+      "confidence": 0.488610834,
+      "probabilities": [
+        0.331388414,
+        0.136068881,
+        0.0433829874,
+        0.000548807788,
+        0.488610834
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "a2ae741be5e670aefecab4967e36775fc4352598d290ef996ce9e115eabca0e0"
+    },
+    {
+      "fold": 5,
+      "filename": "5-251489-A-24.wav",
+      "truth": 1,
+      "prediction": 2,
+      "confidence": 0.322275579,
+      "probabilities": [
+        0.283230364,
+        0.299698621,
+        0.322275579,
+        0.0093045244,
+        0.0854909047
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "d4e7d7797956a4d390e89c9b12b9efd6ca16d98c0e02cad7c95e8ae0b2852908"
+    },
+    {
+      "fold": 5,
+      "filename": "5-254832-B-15.wav",
+      "truth": 0,
+      "prediction": 1,
+      "confidence": 0.635964215,
+      "probabilities": [
+        0.285385579,
+        0.635964215,
+        0.065130271,
+        0.0118440399,
+        0.00167588855
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "983e3abf451007a6a169ac4dc0cd441b63b2acff7cf49443e1f457d8a71b251b"
+    },
+    {
+      "fold": 5,
+      "filename": "5-9032-A-0.wav",
+      "truth": 4,
+      "prediction": 1,
+      "confidence": 0.440129519,
+      "probabilities": [
+        0.0403105915,
+        0.440129519,
+        0.366034448,
+        0.110703334,
+        0.0428221114
+      ],
+      "windows": 5,
+      "quiet_windows": 0,
+      "input_sha256": "cf87f80eb2fb44f8f00fb40d0e99ff2dfc17a51f3c7415c75ce828676cf30a88"
+    }
+  ]
+}
