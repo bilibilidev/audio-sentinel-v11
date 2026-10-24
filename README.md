@@ -8,6 +8,8 @@
 
 默认选用 MLP，优先外部录音/婴儿场景和较少参数（6,277）；它的五折宏召回78.04%仍低于同次CNN的81.26%，部分事件类别也较弱，不宣称全面胜出。主路径按全部一秒窗口概率平均，与训练评测一致，不做旧静音强制背景或事件最大值覆盖；CNN回退和流式CLI保留。
 
+这次默认后端选择也参考了外部65条成绩；固定训练方案、冻结权重后才评分，不等于部署选择与外部集合独立。该集合继续用于开发验证。
+
 默认构建：`sh scripts/build_audio_sentinel_app.sh`；运行：`out/audio-sentinel/audiodetect input.wav --debug`。CNN回退继续使用`sh scripts/build_cnn_v2_app.sh`。详情见[主版本与切换](docs/mlp-primary.md)、[重训/审计/逐条结果](results/retraining-audit-20261024/README.md)。
 
 新默认已通过Windows原生C的65条App及PCM/WAV、边界输入、关键词和本地网络检查；**新MLP尚未做完整OpenVela或开发板验收，未重打包/烧录镜像**。下方2026-10-20板端性能属于保留的旧CNN固件。
