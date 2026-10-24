@@ -1,0 +1,286 @@
+{
+  "status": "COMBINED_INNER_SELECTION_FROZEN",
+  "kind": "mlp",
+  "models": [
+    {
+      "model": "fold_1",
+      "stage": "mlp",
+      "model_path": "mlp/models/fold_1.npz",
+      "model_sha256": "ad6f4a797fc836e7ebdb29a40a4448eefd7267aebc4b128f8164fede29b7e775",
+      "config": {
+        "kind": "mlp",
+        "channels": 128,
+        "feature": "mfcc92",
+        "loss": "window",
+        "augmentation": "mild",
+        "dropout": 0.15,
+        "lr": 0.002,
+        "wd": 0.001,
+        "smoothing": 0.02,
+        "epochs": 240,
+        "ema": 0.0,
+        "transform": "none",
+        "name": "window128_mild"
+      },
+      "selected_epoch": 90,
+      "inner_utility": 0.8662637362637363,
+      "model_selection_used_outer_score": false
+    },
+    {
+      "model": "fold_2",
+      "stage": "mlp-expanded",
+      "model_path": "mlp-expanded/models/fold_2.npz",
+      "model_sha256": "6fb668d181ac8cda4f8d3f8b98da6425c46b2105e3a4c58ed036b59ad8f1aebc",
+      "config": {
+        "kind": "mlp",
+        "channels": 128,
+        "feature": "mfcc92",
+        "loss": "window",
+        "augmentation": "mild",
+        "dropout": 0.15,
+        "lr": 0.002,
+        "wd": 0.001,
+        "smoothing": 0.02,
+        "epochs": 240,
+        "ema": 0.0,
+        "transform": "asinh40",
+        "name": "expanded_window128_asinh"
+      },
+      "selected_epoch": 50,
+      "inner_utility": 0.9426666666666667,
+      "model_selection_used_outer_score": false
+    },
+    {
+      "model": "fold_3",
+      "stage": "mlp-expanded",
+      "model_path": "mlp-expanded/models/fold_3.npz",
+      "model_sha256": "9ff8392659d91ae32088f83211a32478ff850a5a870eb2df49466eb727bfedeb",
+      "config": {
+        "kind": "mlp",
+        "channels": 128,
+        "feature": "mfcc92",
+        "loss": "window",
+        "augmentation": "mild",
+        "dropout": 0.15,
+        "lr": 0.002,
+        "wd": 0.001,
+        "smoothing": 0.02,
+        "epochs": 240,
+        "ema": 0.0,
+        "transform": "asinh40",
+        "name": "expanded_window128_asinh"
+      },
+      "selected_epoch": 80,
+      "inner_utility": 0.9011666666666666,
+      "model_selection_used_outer_score": false
+    },
+    {
+      "model": "fold_4",
+      "stage": "mlp-expanded",
+      "model_path": "mlp-expanded/models/fold_4.npz",
+      "model_sha256": "28e9bba63e7e2706d69dee7b938745f0fa89a2713503e232d4814584c1b280be",
+      "config": {
+        "kind": "mlp",
+        "channels": 128,
+        "feature": "mfcc92",
+        "loss": "window",
+        "augmentation": "mild",
+        "dropout": 0.15,
+        "lr": 0.002,
+        "wd": 0.001,
+        "smoothing": 0.02,
+        "epochs": 240,
+        "ema": 0.0,
+        "transform": "asinh40",
+        "name": "expanded_window128_asinh"
+      },
+      "selected_epoch": 10,
+      "inner_utility": 0.8914464882943144,
+      "model_selection_used_outer_score": false
+    },
+    {
+      "model": "fold_5",
+      "stage": "mlp",
+      "model_path": "mlp/models/fold_5.npz",
+      "model_sha256": "8e7a79f26e7b04966721f67248bbc7d4cd09114b4d36b2c77a2e06c13b597067",
+      "config": {
+        "kind": "mlp",
+        "channels": 96,
+        "feature": "mfcc92",
+        "loss": "window",
+        "augmentation": "mild",
+        "dropout": 0.15,
+        "lr": 0.002,
+        "wd": 0.001,
+        "smoothing": 0.02,
+        "epochs": 240,
+        "ema": 0.0,
+        "transform": "asinh40",
+        "name": "window96_asinh"
+      },
+      "selected_epoch": 40,
+      "inner_utility": 0.8603021978021976,
+      "model_selection_used_outer_score": false
+    },
+    {
+      "model": "final_all_esc50",
+      "stage": "mlp",
+      "model_path": "mlp/models/final_all_esc50.npz",
+      "model_sha256": "2c74151ca171eff88af7efa26b8a4b3dfc37ea42c7e77b0c9b379bd61610f9e9",
+      "config": {
+        "kind": "mlp",
+        "channels": 96,
+        "feature": "mfcc92",
+        "loss": "window",
+        "augmentation": "mild",
+        "dropout": 0.15,
+        "lr": 0.002,
+        "wd": 0.001,
+        "smoothing": 0.02,
+        "epochs": 240,
+        "ema": 0.0,
+        "transform": "asinh40",
+        "name": "window96_asinh"
+      },
+      "selected_epoch": 60,
+      "mean_inner_utility": 0.8737646918299091,
+      "model_selection_used_outer_score": false
+    }
+  ],
+  "official_nested_cv": {
+    "float": {
+      "correct": 331,
+      "total": 390,
+      "accuracy": 0.8487179487179487,
+      "confusion_matrix": [
+        [
+          205,
+          6,
+          5,
+          7,
+          7
+        ],
+        [
+          12,
+          24,
+          2,
+          1,
+          1
+        ],
+        [
+          4,
+          0,
+          36,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          36,
+          0
+        ],
+        [
+          4,
+          3,
+          3,
+          0,
+          30
+        ]
+      ],
+      "macro_recall": 0.8082608695652175
+    },
+    "int8": {
+      "correct": 333,
+      "total": 390,
+      "accuracy": 0.8538461538461538,
+      "confusion_matrix": [
+        [
+          205,
+          6,
+          5,
+          7,
+          7
+        ],
+        [
+          12,
+          25,
+          1,
+          1,
+          1
+        ],
+        [
+          4,
+          0,
+          36,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          0,
+          36,
+          0
+        ],
+        [
+          3,
+          3,
+          3,
+          0,
+          31
+        ]
+      ],
+      "macro_recall": 0.8182608695652174
+    }
+  },
+  "selection": "For each outer fold, compare maximum INNER utility across base and expanded-background spaces; outer labels never choose model/epoch. Final uses highest mean INNER utility.",
+  "stage_final_ranking": [
+    {
+      "stage": "mlp",
+      "config": {
+        "kind": "mlp",
+        "channels": 96,
+        "feature": "mfcc92",
+        "loss": "window",
+        "augmentation": "mild",
+        "dropout": 0.15,
+        "lr": 0.002,
+        "wd": 0.001,
+        "smoothing": 0.02,
+        "epochs": 240,
+        "ema": 0.0,
+        "transform": "asinh40",
+        "name": "window96_asinh"
+      },
+      "mean_inner_utility": 0.8737646918299091,
+      "median_epoch": 60
+    },
+    {
+      "stage": "mlp-expanded",
+      "config": {
+        "kind": "mlp",
+        "channels": 128,
+        "feature": "mfcc92",
+        "loss": "window",
+        "augmentation": "mild",
+        "dropout": 0.15,
+        "lr": 0.002,
+        "wd": 0.001,
+        "smoothing": 0.02,
+        "epochs": 240,
+        "ema": 0.0,
+        "transform": "asinh40",
+        "name": "expanded_window128_asinh"
+      },
+      "mean_inner_utility": 0.8701878324573977,
+      "median_epoch": 50
+    }
+  ],
+  "threshold_correct_esc": 332,
+  "threshold_correct_external": 56,
+  "external_opened": false,
+  "old_default_unchanged": true,
+  "training_data_note": "Expanded stages use1992 ESC recordings after excluding8 cross-fold-source extra backgrounds; base stages390. All evaluate the same390 held-out recordings."
+}

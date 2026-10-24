@@ -4,7 +4,13 @@
 int mlp_model_predict(const float features[92],float probabilities[5])
 {
   float normalized[FEATURE_DIM],hidden[HIDDEN_DIM],logits[NUM_CLASSES];
-  for(int i=0;i<FEATURE_DIM;i++)normalized[i]=(features[i]-FEATURE_MEAN[i])/(FEATURE_STD[i]==0?1:FEATURE_STD[i]);
+  for(int i=0;i<FEATURE_DIM;i++){
+    float value=features[i];
+#if defined(MLP_TIME_TRANSFORM_ASINH40) && MLP_TIME_TRANSFORM_ASINH40
+    if(i<40)value=asinhf(value/TIME_ASINH_SCALE[i]);
+#endif
+    normalized[i]=(value-FEATURE_MEAN[i])/(FEATURE_STD[i]==0?1:FEATURE_STD[i]);
+  }
   for(int j=0;j<HIDDEN_DIM;j++){
     float v=(float)B1_INT8[j]*B1_SCALE;
     for(int i=0;i<FEATURE_DIM;i++)v+=normalized[i]*(float)W1_INT8[i][j]*W1_SCALE;

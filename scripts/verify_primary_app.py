@@ -5,11 +5,14 @@ p.add_argument('--inputs',type=pathlib.Path,required=True)
 p.add_argument('--audit',type=pathlib.Path,required=True)
 p.add_argument('--output',type=pathlib.Path,required=True)
 p.add_argument('--compiler',default='cc');p.add_argument('--cflag',action='append',default=[])
+p.add_argument('--model-dir',default='model/mlp-optimized-20261024')
 a=p.parse_args();out=a.output.resolve();out.mkdir(exist_ok=True,parents=True)
 assert not (out/'verification.json').exists()
 repo=pathlib.Path(__file__).resolve().parents[1];app=repo/'app/audiodetect'
 read=lambda p:json.loads(p.read_text(encoding='utf-8'))
-manifest=read(a.inputs/'manifest.json');reference=read(a.audit/'results.json')['models']['mlp'][-1]['external']['mean']['records']
+manifest=read(a.inputs/'manifest.json');evaluation=read(a.audit/'results.json')['models']['mlp']
+reference=evaluation['external_final']['records'] if isinstance(evaluation,dict) else evaluation[-1]['external']['mean']['records']
+deployment=read(repo/a.model_dir/'deployment.json')
 labels=manifest['labels'];commands=[];binary={};records={}
 def parse(text):
     pred=re.search(r'^Result: (\w+)$',text,re.M)[1]
@@ -34,7 +37,7 @@ for backend in ('mlp','cnn'):
         if backend=='mlp':
             r=next(r for r in reference if r['id']==s['id'])
             assert row['prediction']==r['prediction'] and max(abs(p-q) for p,q in zip(row['probabilities'],r['probabilities']))<.00001
-            assert read(repo/'model/mlp-retrained-20261024/deployment.json')['model_sha256'] in text
+            assert deployment['model_sha256'] in text
         else:assert read(repo/'model/cnn-v2/deployment.json')['model_sha256'] in text
     records[backend]=rows
 cases=[]
@@ -70,7 +73,7 @@ commands.append(cmd)
 with (out/'pcm-build.log').open('w') as log:subprocess.run(cmd,check=True,stdout=log,stderr=subprocess.STDOUT)
 cmd=[str(target),*[str((a.inputs/r['path']).resolve()) for r in manifest['inputs']],*[str(out/f'zero-{n}.wav') for n in (1,123,16000,16001,48000)]]
 commands.append(cmd);text=subprocess.check_output(cmd,text=True,timeout=120);assert 'parity PASS' in text
-result=dict(status='PASS',runtime=platform.platform(),default_backend='Tiny MLP',model_sha256=read(repo/'model/mlp-retrained-20261024/deployment.json')['model_sha256'],
+result=dict(status='PASS',runtime=platform.platform(),default_backend='Tiny MLP',model_sha256=deployment['model_sha256'],
       external_correct={name:sum(r['prediction']==r['truth'] for r in rows) for name,rows in records.items()},
       external_baby_correct={name:sum(r['truth']==3 and r['prediction']==3 for r in rows) for name,rows in records.items()},
       default_mlp_matches_frozen_evaluation=65,cnn_fallback_model_sha256=read(repo/'model/cnn-v2/deployment.json')['model_sha256'],

@@ -1,6 +1,6 @@
 # v11 评测口径与指标
 
-2026-10-24更新：默认已改为从零重训Tiny MLP，详见[主版本说明](mlp-primary.md)和[训练审计](../results/retraining-audit-20261024/README.md)。新MLP仅完成主机C验收，下文CNN板端记录属于历史固件。
+2026-10-24更新：正式版为优化Tiny MLP，实际C保留折333/390（85.38%）、外部57/65（87.69%），详见[主版本说明](mlp-primary.md)和[优化结果](../results/mlp-optimized-20261024/README.md)。五折是内层选型流程、各折配置不同；外部是已见开发集。新MLP仅完成Windows主机C验收，未重测Linux/完整OpenVela/板端。以下82.56%等为历史v11指标。
 
 
 ## 1. 评测口径

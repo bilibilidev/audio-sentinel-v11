@@ -1,6 +1,7 @@
 # 结果目录
 
-- `retraining-audit-20261024/`：当前默认MLP与同次CNN重训、ESC五折、外部65条、训练审计和实际Windows C App验收。新模型未做板端验收。
+- `mlp-optimized-20261024/`：当前正式Tiny MLP，内层选型流程五折333/390、外部57/65、婴儿17/20，实际Windows C App一致性、替代方案与停止CNN搜索记录。新模型未做板端验收。
+- `retraining-audit-20261024/`：上一版MLP与同次CNN重训、ESC五折、外部65条、训练审计和实际Windows C App验收。
 
 - `board-20261020/`：历史 CNN v2 真实 R528S3 板端 65 条 WAV、固定三秒延迟、内存/固件与主机 PANNs 资源对照。功耗未测，PANNs 未在板端部署，实际麦克风采集稳定性仍待解决。
 - `cnn-v2/`：各轮训练、标准 baseline、ablation、选型及历史 Ubuntu C/构建验收。保留失败候选，执行层级分别标注。

@@ -1,0 +1,46 @@
+{
+  "model_sha256": "2c74151ca171eff88af7efa26b8a4b3dfc37ea42c7e77b0c9b379bd61610f9e9",
+  "labels": [
+    "background",
+    "cough",
+    "glass_break",
+    "baby_cry",
+    "dog_bark"
+  ],
+  "architecture": [
+    92,
+    96,
+    5
+  ],
+  "parameters": 9413,
+  "training_recordings": 390,
+  "training": "Fresh random initialization, seed2026103400,60epochs. No pretraining, fine-tuning or teacher.",
+  "config": {
+    "kind": "mlp",
+    "channels": 96,
+    "feature": "mfcc92",
+    "loss": "window",
+    "augmentation": "mild",
+    "dropout": 0.15,
+    "lr": 0.002,
+    "wd": 0.001,
+    "smoothing": 0.02,
+    "epochs": 240,
+    "ema": 0.0,
+    "transform": "asinh40",
+    "name": "window96_asinh"
+  },
+  "feature_transform": "asinh(x/scale) on first40 time features; scale, mean and std fitted on clean training only",
+  "aggregation": "Mean of all one-second window probability vectors; zero-pad last partial second; no quiet override/event-max.",
+  "quantization": "INT8 weight/bias storage; floating-point DSP/asinh/neural arithmetic",
+  "header_directory": "app/audiodetect",
+  "header_sha256": {
+    "mlp_weights.h": "0bb4bcc9978f1899a25eb96a28e5893716e8d369778435711596884b0fa2bb6e",
+    "mlp_model_config.h": "51c2cab1951179643b2ed3358fdae78b5c66ff3bef5f426692b5093b29621cee"
+  },
+  "cv_scope": "333/390 is pooled outer-fold score of the INNER-selected procedure over base8+expanded3 candidates. Fold architectures/training budgets differ; NOT fixed92-96-5 five-fold accuracy.",
+  "external_role": "Previously heard/used development65, including20baby; not blind or microphone field accuracy. Used in deployment choice; no external gradient training.",
+  "runtime_acceptance": "Windows native C actual default App; Linux/fullOpenVela/board version not revalidated; firmware not rebuilt or flashed",
+  "previous_default_preserved": "model/mlp-retrained-20261024 (including archived exported headers)",
+  "cnn_preserved": "model/cnn-v2"
+}

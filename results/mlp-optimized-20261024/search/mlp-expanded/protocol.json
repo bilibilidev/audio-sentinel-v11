@@ -1,0 +1,80 @@
+{
+  "created": "2026-10-24T19:54:20.392790+08:00",
+  "kind": "mlp",
+  "candidates": [
+    {
+      "kind": "mlp",
+      "channels": 96,
+      "feature": "mfcc92",
+      "loss": "window",
+      "augmentation": "mild",
+      "dropout": 0.15,
+      "lr": 0.002,
+      "wd": 0.001,
+      "smoothing": 0.02,
+      "epochs": 240,
+      "ema": 0.0,
+      "transform": "asinh40",
+      "name": "expanded_window96_asinh"
+    },
+    {
+      "kind": "mlp",
+      "channels": 96,
+      "feature": "mfcc92",
+      "loss": "bag",
+      "augmentation": "mild",
+      "dropout": 0.1,
+      "lr": 0.002,
+      "wd": 0.0003,
+      "smoothing": 0.02,
+      "epochs": 240,
+      "ema": 0.0,
+      "transform": "asinh40",
+      "name": "expanded_mil96_asinh"
+    },
+    {
+      "kind": "mlp",
+      "channels": 128,
+      "feature": "mfcc92",
+      "loss": "window",
+      "augmentation": "mild",
+      "dropout": 0.15,
+      "lr": 0.002,
+      "wd": 0.001,
+      "smoothing": 0.02,
+      "epochs": 240,
+      "ema": 0.0,
+      "transform": "asinh40",
+      "name": "expanded_window128_asinh"
+    }
+  ],
+  "outer": "Same390 official held-out recordings; all training files in held-out official fold excluded, including extra backgrounds",
+  "inner": "Next official fold cyclically validates only original390 cohort; remaining3 full ESC folds train",
+  "selection": "0.6 accuracy +0.3 macro recall +0.1 baby recall on INNER validation only; epochs checked every10; ties choose earlier config/epoch",
+  "final": "Best mean INNER utility across5 inner splits; median selected epoch; fresh random fit on all390",
+  "early_stop": {
+    "minimum_epochs": 60,
+    "patience": 50
+  },
+  "normalization": "Clean inner/outer TRAINING only; asinh scale also training-only",
+  "external_opened": false,
+  "pretrained": false,
+  "finetuned": false,
+  "teacher": false,
+  "source_sha256": "a525a0e52684347387a080f1a7ac0634ecf758fad9e39f1e9a17a0a98530168b",
+  "source_data": {
+    "cnn_cache_sha256": "e48312c140eda3523a8369958de5292fd4a1cfe544463191869a7d51cf7e8032",
+    "mlp_clean_sha256": "d053dae1ad74ceed8b4be1c97bcc619fe63c79b63f44060147b5d715f4f29a9b",
+    "mlp_aug_sha256": "db40ed385f269f395230c71ff005ee813d9c17a28c7933787b2dab922bc80ec9"
+  },
+  "expanded_cache_sha256": "153da1d8b4660edd9487be73c66558b95a2d13cebbe98631fdcfc85f87265bfe",
+  "training_recordings": 1992,
+  "extra_background_recordings": 1602,
+  "evaluation_recordings": 390,
+  "sampling": "400 training bags per epoch with0.4 background and0.15 per event, sampling with replacement; class weights disabled to avoid double balancing",
+  "seed_base": 2026102400,
+  "torch_threads": 1,
+  "torch": "2.14.1+cpu",
+  "numpy": "2.3.5",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"
+}

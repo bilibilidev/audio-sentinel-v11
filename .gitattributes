@@ -35,3 +35,8 @@ scripts/evaluate_legacy_mlp*.py text eol=lf
 scripts/evaluate_retraining_audit.py text eol=lf
 scripts/verify_primary_app.py text eol=lf
 scripts/legacy_mlp*.c text eol=lf
+# Optimized model evidence and archived header hashes are byte-sensitive.
+model/mlp-optimized-20261024/*.json text eol=lf
+model/mlp-retrained-20261024/headers/* text eol=lf
+results/mlp-optimized-20261024/** text eol=lf
+training/optimization/** text eol=lf

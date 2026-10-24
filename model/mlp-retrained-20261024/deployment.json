@@ -23,5 +23,6 @@
   },
   "runtime_acceptance": "Windows native C; full OpenVela simulator, updated board image and physical-board validation not performed",
   "original_v11_model_preserved": "model/tiny_mlp_mfcc92_robust_simulator.npz",
-  "previous_default_preserved": "model/cnn-v2"
+  "previous_default_preserved": "model/cnn-v2",
+  "header_directory": "model/mlp-retrained-20261024/headers"
 }

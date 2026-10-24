@@ -1,0 +1,10 @@
+{
+  "formal_model": "Tiny MLP optimized single model",
+  "date": "2026-10-24",
+  "cnn_search_stopped_by_user": true,
+  "reason": "Single MLP passes both requested overall85% development metrics; alternative ensemble has53/65 outside, expandedCNN38/65. Preserve negative results.",
+  "warning": "Repeated development comparisons; results are not a new independent blind test or universal architecture comparison. Baby17/20 versus previous18/20.",
+  "board_firmware_unchanged": true,
+  "model_sha256": "2c74151ca171eff88af7efa26b8a4b3dfc37ea42c7e77b0c9b379bd61610f9e9",
+  "prior_remote_main": "5404e98027582b5905781c9a08194020bcfefe37"
+}

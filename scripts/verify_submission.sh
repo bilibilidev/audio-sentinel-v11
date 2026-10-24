@@ -31,6 +31,8 @@ model/cnn-v2/sha256.json
 model/cnn-v2/deployment.json
 model/mlp-retrained-20261024/final_all_esc50.npz
 model/mlp-retrained-20261024/deployment.json
+model/mlp-optimized-20261024/final_all_esc50.npz
+model/mlp-optimized-20261024/deployment.json
 app/audiodetect/mlp_model_config.h
 app/audiodetect/mlp_weights.h
 app/audiodetect/mlp_model_infer.c
@@ -101,9 +103,22 @@ for name,expected in hashes.items():assert digest(models/name)==expected,name
 assert deployment['model_sha256']==hashes['final_all_esc50.npz']
 assert deployment['training_recordings']==390
 assert deployment['architecture']==[92,64,5]
+directory=root/deployment.get('header_directory','app/audiodetect')
+for name,expected in deployment['header_sha256'].items():assert digest(directory/name)==expected,name
+assert deployment['model_sha256'] in (directory/'mlp_model_config.h').read_text()
+print('Archived previous MLP model/header hashes match:',deployment['model_sha256'])
+models=root/'model/mlp-optimized-20261024'
+deployment=json.loads((models/'deployment.json').read_text())
+hashes=json.loads((models/'sha256.json').read_text())
+assert set(hashes)=={*[f'fold_{i}.npz' for i in range(1,6)],'final_all_esc50.npz'}
+for name,expected in hashes.items():assert digest(models/name)==expected,name
+assert deployment['model_sha256']==hashes['final_all_esc50.npz']
+assert deployment['training_recordings']==390 and deployment['architecture']==[92,96,5]
+assert deployment['parameters']==9413
 for name,expected in deployment['header_sha256'].items():assert digest(root/'app/audiodetect'/name)==expected,name
 assert deployment['model_sha256'] in (root/'app/audiodetect/mlp_model_config.h').read_text()
-print('Default MLP model/header hashes match:',deployment['model_sha256'])
+assert '#define MLP_TIME_TRANSFORM_ASINH40 1' in (root/'app/audiodetect/mlp_weights.h').read_text()
+print('Default optimized MLP model/header hashes match:',deployment['model_sha256'])
 PY
 
 echo "Submission source tree is complete (integrity check; runtime acceptance is separate)."

@@ -1,0 +1,131 @@
+{
+  "config": {
+    "kind": "mlp",
+    "channels": 64,
+    "feature": "mfcc92",
+    "loss": "bag",
+    "augmentation": "none",
+    "dropout": 0.1,
+    "lr": 0.002,
+    "wd": 0.001,
+    "smoothing": 0.02,
+    "epochs": 240,
+    "ema": 0.0,
+    "transform": "none",
+    "name": "mil64_clean"
+  },
+  "fold": 1,
+  "inner_validation_fold": 2,
+  "source_overlap": 0,
+  "selected_epoch": 30,
+  "utility": 0.8247802197802198,
+  "validation_metrics": {
+    "correct": 69,
+    "total": 84,
+    "accuracy": 0.8214285714285714,
+    "balanced_accuracy_present_classes": 0.7730769230769231,
+    "per_class_recall": {
+      "background": 0.8653846153846154,
+      "cough": 0.625,
+      "glass_break": 0.625,
+      "baby_cry": 1.0,
+      "dog_bark": 0.75
+    },
+    "confusion_matrix": [
+      [
+        45,
+        3,
+        1,
+        1,
+        2
+      ],
+      [
+        2,
+        5,
+        0,
+        0,
+        1
+      ],
+      [
+        3,
+        0,
+        5,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        8,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        0,
+        6
+      ]
+    ]
+  },
+  "history": [
+    {
+      "epoch": 10,
+      "loss": 0.6262551546096802,
+      "utility": 0.7598626373626374,
+      "accuracy": 0.7738095238095238,
+      "macro": 0.6519230769230769
+    },
+    {
+      "epoch": 20,
+      "loss": 0.48705867281905163,
+      "utility": 0.7871978021978022,
+      "accuracy": 0.7857142857142857,
+      "macro": 0.7192307692307692
+    },
+    {
+      "epoch": 30,
+      "loss": 0.44081027121157257,
+      "utility": 0.8247802197802198,
+      "accuracy": 0.8214285714285714,
+      "macro": 0.7730769230769231
+    },
+    {
+      "epoch": 40,
+      "loss": 0.40425211352271,
+      "utility": 0.7954945054945055,
+      "accuracy": 0.7976190476190477,
+      "macro": 0.7230769230769231
+    },
+    {
+      "epoch": 50,
+      "loss": 0.3804873910036173,
+      "utility": 0.7954945054945055,
+      "accuracy": 0.7976190476190477,
+      "macro": 0.7230769230769231
+    },
+    {
+      "epoch": 60,
+      "loss": 0.36340164601265845,
+      "utility": 0.8203846153846154,
+      "accuracy": 0.8333333333333334,
+      "macro": 0.7346153846153847
+    },
+    {
+      "epoch": 70,
+      "loss": 0.3528607286311485,
+      "utility": 0.791098901098901,
+      "accuracy": 0.8095238095238095,
+      "macro": 0.6846153846153846
+    },
+    {
+      "epoch": 80,
+      "loss": 0.3373302360912701,
+      "utility": 0.791098901098901,
+      "accuracy": 0.8095238095238095,
+      "macro": 0.6846153846153846
+    }
+  ],
+  "executed_epochs": 80
+}
