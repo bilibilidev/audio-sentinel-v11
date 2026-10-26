@@ -1,5 +1,7 @@
 # Python 训练与评测源码
 
+2026-10-26实验入口见[`mlp_study`](mlp_study/README.md)：正式配方固定五折/10组控制变量消融、标准基线和实际Linux C验收；正式权重保持不变。
+
 正式Tiny MLP由 `optimization/search.py` / `expanded_search.py` 做内层选型，从随机权重训练，`consolidate.py` 合并内层选择，`export_mlp.py` 导出含asinh变换的C权重。用法和数据预算见 [optimization](optimization/README.md)，协议与结果见 `results/mlp-optimized-20261024`。
 
 上一版由 `retrain_mlp_audit.py` 从零重训；CNN重复训练见 `cnn_v2/train_from_scratch.py --seed-base`。历史审计见 `results/retraining-audit-20261024`。

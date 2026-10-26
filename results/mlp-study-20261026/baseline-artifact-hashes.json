@@ -1,0 +1,20 @@
+{
+  "MFCC_RF-final.joblib": "c56ef90b82a0c397b92749be24f817ba048fe1155fe1cb99e0e9f363667d27ed",
+  "MFCC_RF-fold-1.joblib": "8305a38dabaf05ec6a6bf245589e711b9a60ec8bbb95ff9fa9f9774c5ffb2546",
+  "MFCC_RF-fold-2.joblib": "8078e3b13a410dd81f6e2dddb6b89d8b210363a9eae0605a627bf3fe8775e7f0",
+  "MFCC_RF-fold-3.joblib": "9f2a257b984de53eda27ebc6943213fef0fac8d0257306c595c62e9879f7c581",
+  "MFCC_RF-fold-4.joblib": "63131a02d9c521864659a44eabb32e8d185248f501d1a9de0db650ba64ac6730",
+  "MFCC_RF-fold-5.joblib": "8ecb74ba341676773cd2ed63c22bb308b0b671a84b52a79faffdb2d93bd79394",
+  "MFCC_SVM-final.joblib": "0fee886dd5fe3036367f78f930aa4a6f405f0bffa388febde96446c1a637ab0c",
+  "MFCC_SVM-fold-1.joblib": "b24a1a257d65f10b0b76c587e3bce8f5ed9e3905ba2cd08b2de5ea034328b1e4",
+  "MFCC_SVM-fold-2.joblib": "8d3a14e291e89a95ebf98c8b8b36e192a3d787cf4c9529ce91c547a2ecf56734",
+  "MFCC_SVM-fold-3.joblib": "32b204fc57804cd7f1a3037bab95a03c5fdf7dee024e34948fcac66a612076e0",
+  "MFCC_SVM-fold-4.joblib": "c56d0ccb911565039f410721e51bff8778bd20405fb57802f70290a3e1a1ef57",
+  "MFCC_SVM-fold-5.joblib": "b20ebc232d12d0ae4839db22173cea8dc66e99a5aec350986c198765508559ac",
+  "PANNs_Cnn6_linearSVM-final.joblib": "7cd73430a7d9cef8a68f2789320c903e4f593a852474919ba684880e34dba521",
+  "PANNs_Cnn6_linearSVM-fold-1.joblib": "bdaa6660781756e4a251c41aac2f66bc02b2a6a4f6bc473a9dff6a049f58ed6b",
+  "PANNs_Cnn6_linearSVM-fold-2.joblib": "e4aa93f11947807f049d5acc40fbc017cc41cc359fb891a3e320e0d420360b0c",
+  "PANNs_Cnn6_linearSVM-fold-3.joblib": "66e66df787e16d05c6b3513359b15ddb52be14039c0c988178f7f0867068b769",
+  "PANNs_Cnn6_linearSVM-fold-4.joblib": "22fa48e4aaf13ecdc23c906cf6a76244ce42a5af25fe1bfee41a3021e3e1b29b",
+  "PANNs_Cnn6_linearSVM-fold-5.joblib": "e9b9d8d65f1e3cea237eae27b9e5facb566874c8ca21472f61db21d0f53cdaf0"
+}

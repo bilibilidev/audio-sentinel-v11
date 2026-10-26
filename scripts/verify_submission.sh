@@ -43,6 +43,11 @@ results/cnn-v2/baselines.json
 board/r528s3-gemini-s1/configs/nsh/defconfig
 board/r528s3-gemini-s1/src/etc/init.d/rcS.nsh
 results/python_cv/metrics.json
+results/mlp-study-20261026/summary.json
+results/mlp-study-20261026/linux/results.json
+model/mlp-study-20261026/sha256.json
+training/mlp_study/train_ablations.py
+training/mlp_study/linux_suite.py
 "
 
 for file in $required_files; do
@@ -119,6 +124,20 @@ for name,expected in deployment['header_sha256'].items():assert digest(root/'app
 assert deployment['model_sha256'] in (root/'app/audiodetect/mlp_model_config.h').read_text()
 assert '#define MLP_TIME_TRANSFORM_ASINH40 1' in (root/'app/audiodetect/mlp_weights.h').read_text()
 print('Default optimized MLP model/header hashes match:',deployment['model_sha256'])
+study=root/'model/mlp-study-20261026'
+hashes=json.loads((study/'sha256.json').read_text())
+assert len(hashes)==60
+for name,expected in hashes.items():assert digest(study/name)==expected,name
+evidence=root/'results/mlp-study-20261026'
+summary=json.loads((evidence/'summary.json').read_text())
+assert summary['fixed_recipe_cv']['correct']==337 and summary['fixed_recipe_cv']['total']==390
+assert summary['external_final']['correct']==57 and summary['external_final']['total']==65
+assert json.loads((evidence/'linux/results.json').read_text())['status']=='PASS'
+for variant in json.loads((evidence/'linux/ablations.json').read_text()):
+    rows=[r for m in variant['models'] if 'official' in m for r in m['official']['records']]
+    assert len(rows)==390 and len({r['id'] for r in rows})==390
+    assert sum(r['truth']==r['prediction'] for r in rows)==variant['official']['correct']
+print('Fixed-recipe MLP study hashes and Linux C evidence match:60models,337/390,57/65')
 PY
 
 echo "Submission source tree is complete (integrity check; runtime acceptance is separate)."

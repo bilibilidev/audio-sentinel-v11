@@ -1,0 +1,473 @@
+{
+  "status": "PASS",
+  "linux_frontend": "Fresh actual Linux C feature dump on390+65 inputs",
+  "reference": "NumPy2 on Windows CPU, same Linux-dumped features; NOT Python running in Linux",
+  "cases": [
+    {
+      "variant": "full",
+      "model": "fold_1",
+      "recordings": 149,
+      "max_probability_delta": 1.196323546892586e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "full",
+      "model": "fold_2",
+      "recordings": 149,
+      "max_probability_delta": 2.3885604860662824e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "full",
+      "model": "fold_3",
+      "recordings": 137,
+      "max_probability_delta": 1.7883547975827696e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "full",
+      "model": "fold_4",
+      "recordings": 137,
+      "max_probability_delta": 1.4931518554917034e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "full",
+      "model": "fold_5",
+      "recordings": 143,
+      "max_probability_delta": 1.1958618162388746e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "full",
+      "model": "final_all_esc50",
+      "recordings": 65,
+      "max_probability_delta": 1.7889242553970064e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "time_only",
+      "model": "fold_1",
+      "recordings": 149,
+      "max_probability_delta": 1.19554962152435e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "time_only",
+      "model": "fold_2",
+      "recordings": 149,
+      "max_probability_delta": 1.1970172120179257e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "time_only",
+      "model": "fold_3",
+      "recordings": 137,
+      "max_probability_delta": 1.1964016721766058e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "time_only",
+      "model": "fold_4",
+      "recordings": 137,
+      "max_probability_delta": 1.791526489380857e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "time_only",
+      "model": "fold_5",
+      "recordings": 143,
+      "max_probability_delta": 1.1965655521972707e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "time_only",
+      "model": "final_all_esc50",
+      "recordings": 65,
+      "max_probability_delta": 1.1945092770471177e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "mfcc_only",
+      "model": "fold_1",
+      "recordings": 149,
+      "max_probability_delta": 1.196835937022911e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "mfcc_only",
+      "model": "fold_2",
+      "recordings": 149,
+      "max_probability_delta": 1.7899703974588732e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "mfcc_only",
+      "model": "fold_3",
+      "recordings": 137,
+      "max_probability_delta": 1.792912902587318e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "mfcc_only",
+      "model": "fold_4",
+      "recordings": 137,
+      "max_probability_delta": 1.7886199954464388e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "mfcc_only",
+      "model": "fold_5",
+      "recordings": 143,
+      "max_probability_delta": 1.195907287643294e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "mfcc_only",
+      "model": "final_all_esc50",
+      "recordings": 65,
+      "max_probability_delta": 1.1966076662872638e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_delta",
+      "model": "fold_1",
+      "recordings": 149,
+      "max_probability_delta": 1.787589721802263e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_delta",
+      "model": "fold_2",
+      "recordings": 149,
+      "max_probability_delta": 1.1970043944931064e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_delta",
+      "model": "fold_3",
+      "recordings": 137,
+      "max_probability_delta": 1.78361602820587e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_delta",
+      "model": "fold_4",
+      "recordings": 137,
+      "max_probability_delta": 1.1945217892606053e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_delta",
+      "model": "fold_5",
+      "recordings": 143,
+      "max_probability_delta": 2.3857183839570695e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_delta",
+      "model": "final_all_esc50",
+      "recordings": 65,
+      "max_probability_delta": 1.7917275996204296e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_asinh",
+      "model": "fold_1",
+      "recordings": 149,
+      "max_probability_delta": 1.783960571488663e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_asinh",
+      "model": "fold_2",
+      "recordings": 149,
+      "max_probability_delta": 1.196693115712577e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_asinh",
+      "model": "fold_3",
+      "recordings": 137,
+      "max_probability_delta": 1.1969143676182625e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_asinh",
+      "model": "fold_4",
+      "recordings": 137,
+      "max_probability_delta": 1.490459137221123e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_asinh",
+      "model": "fold_5",
+      "recordings": 143,
+      "max_probability_delta": 1.7916473393775334e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_asinh",
+      "model": "final_all_esc50",
+      "recordings": 65,
+      "max_probability_delta": 1.4922143554141343e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_augmentation",
+      "model": "fold_1",
+      "recordings": 149,
+      "max_probability_delta": 1.4900518796601148e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_augmentation",
+      "model": "fold_2",
+      "recordings": 149,
+      "max_probability_delta": 1.1951739498083924e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_augmentation",
+      "model": "fold_3",
+      "recordings": 137,
+      "max_probability_delta": 1.4876736448288241e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_augmentation",
+      "model": "fold_4",
+      "recordings": 137,
+      "max_probability_delta": 1.7861663814677797e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_augmentation",
+      "model": "fold_5",
+      "recordings": 143,
+      "max_probability_delta": 1.7881594849278315e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_augmentation",
+      "model": "final_all_esc50",
+      "recordings": 65,
+      "max_probability_delta": 1.1927105714182318e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "hidden64",
+      "model": "fold_1",
+      "recordings": 149,
+      "max_probability_delta": 1.7894036863363993e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "hidden64",
+      "model": "fold_2",
+      "recordings": 149,
+      "max_probability_delta": 2.3815924077297268e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "hidden64",
+      "model": "fold_3",
+      "recordings": 137,
+      "max_probability_delta": 1.1959503176672825e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "hidden64",
+      "model": "fold_4",
+      "recordings": 137,
+      "max_probability_delta": 1.7859829715138886e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "hidden64",
+      "model": "fold_5",
+      "recordings": 143,
+      "max_probability_delta": 1.7874465940703743e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "hidden64",
+      "model": "final_all_esc50",
+      "recordings": 65,
+      "max_probability_delta": 1.1946920774885683e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "hidden128",
+      "model": "fold_1",
+      "recordings": 149,
+      "max_probability_delta": 1.786378783785736e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "hidden128",
+      "model": "fold_2",
+      "recordings": 149,
+      "max_probability_delta": 2.3882672117725434e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "hidden128",
+      "model": "fold_3",
+      "recordings": 137,
+      "max_probability_delta": 2.3804888915623934e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "hidden128",
+      "model": "fold_4",
+      "recordings": 137,
+      "max_probability_delta": 1.792541809431114e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "hidden128",
+      "model": "fold_5",
+      "recordings": 143,
+      "max_probability_delta": 1.1965472412889255e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "hidden128",
+      "model": "final_all_esc50",
+      "recordings": 65,
+      "max_probability_delta": 1.1941293331929614e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_dropout",
+      "model": "fold_1",
+      "recordings": 149,
+      "max_probability_delta": 2.3887017819301803e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_dropout",
+      "model": "fold_2",
+      "recordings": 149,
+      "max_probability_delta": 1.7890994263858317e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_dropout",
+      "model": "fold_3",
+      "recordings": 137,
+      "max_probability_delta": 1.792162170333178e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_dropout",
+      "model": "fold_4",
+      "recordings": 137,
+      "max_probability_delta": 1.1970632929347857e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_dropout",
+      "model": "fold_5",
+      "recordings": 143,
+      "max_probability_delta": 1.7883538816487743e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_dropout",
+      "model": "final_all_esc50",
+      "recordings": 65,
+      "max_probability_delta": 1.1968539426199243e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_class_weight",
+      "model": "fold_1",
+      "recordings": 149,
+      "max_probability_delta": 1.7886412045919897e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_class_weight",
+      "model": "fold_2",
+      "recordings": 149,
+      "max_probability_delta": 1.7834939580740894e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_class_weight",
+      "model": "fold_3",
+      "recordings": 137,
+      "max_probability_delta": 2.389019164716899e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_class_weight",
+      "model": "fold_4",
+      "recordings": 137,
+      "max_probability_delta": 1.1955789180895238e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_class_weight",
+      "model": "fold_5",
+      "recordings": 143,
+      "max_probability_delta": 1.1964508062067836e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "no_class_weight",
+      "model": "final_all_esc50",
+      "recordings": 65,
+      "max_probability_delta": 1.190572204157192e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "formal_selected",
+      "model": "fold_1",
+      "recordings": 149,
+      "max_probability_delta": 1.789634094251369e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "formal_selected",
+      "model": "fold_2",
+      "recordings": 149,
+      "max_probability_delta": 1.4883576965329937e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "formal_selected",
+      "model": "fold_3",
+      "recordings": 137,
+      "max_probability_delta": 1.1970001223549076e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "formal_selected",
+      "model": "fold_4",
+      "recordings": 137,
+      "max_probability_delta": 1.7889007564164672e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "formal_selected",
+      "model": "fold_5",
+      "recordings": 143,
+      "max_probability_delta": 1.1963134760595295e-07,
+      "prediction_mismatches": 0
+    },
+    {
+      "variant": "formal_selected",
+      "model": "final_all_esc50",
+      "recordings": 65,
+      "max_probability_delta": 1.7889242553970064e-07,
+      "prediction_mismatches": 0
+    }
+  ],
+  "max_probability_delta": 2.389019164716899e-07,
+  "total_model_recording_pairs": 8580,
+  "feature_dump_sha256": "80242f84d14c0d79ea688eabb70159a6b9db451942ee31acf143fd8cadae90b9",
+  "tolerance": 0.0001
+}

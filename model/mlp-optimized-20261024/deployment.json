@@ -40,7 +40,21 @@
   },
   "cv_scope": "333/390 is pooled outer-fold score of the INNER-selected procedure over base8+expanded3 candidates. Fold architectures/training budgets differ; NOT fixed92-96-5 five-fold accuracy.",
   "external_role": "Previously heard/used development65, including20baby; not blind or microphone field accuracy. Used in deployment choice; no external gradient training.",
-  "runtime_acceptance": "Windows native C actual default App; Linux/fullOpenVela/board version not revalidated; firmware not rebuilt or flashed",
+  "runtime_acceptance": "Windows native C2026-10-24 and actual Ubuntu22.04 x86_64 native C2026-10-26; fullOpenVela/board/microphone not revalidated; firmware not rebuilt/flashed",
   "previous_default_preserved": "model/mlp-retrained-20261024 (including archived exported headers)",
-  "cnn_preserved": "model/cnn-v2"
+  "cnn_preserved": "model/cnn-v2",
+  "latest_evaluation": {
+    "date": "2026-10-26",
+    "fixed_recipe_official_cv_correct": 337,
+    "total": 390,
+    "accuracy": 0.8641025641025641,
+    "macro_recall": 0.842391304347826,
+    "external_correct": 57,
+    "external_total": 65,
+    "baby_correct": 17,
+    "baby_total": 20,
+    "weights_unchanged": true,
+    "reference": "results/mlp-study-20261026",
+    "scope": "Fixed formal92-96-5 recipe,60epochs each held-out fit. Earlier333/390 belongs to historical INNER selection, not this fixed-recipe protocol. External65 remains already-seen development."
+  }
 }

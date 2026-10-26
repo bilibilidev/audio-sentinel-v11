@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "user_authorized": true,
+  "scope": "OnlyGNOME inactivity suspend policy for login screen and existing desktop user. No screen-lock/security/VM CPU/RAM/disk changes.",
+  "users": [
+    {
+      "user": "gdm",
+      "before": {
+        "sleep-inactive-ac-type": "'suspend'",
+        "sleep-inactive-ac-timeout": "1200",
+        "sleep-inactive-battery-type": "'suspend'",
+        "sleep-inactive-battery-timeout": "1200"
+      },
+      "after": {
+        "sleep-inactive-ac-type": "'nothing'",
+        "sleep-inactive-ac-timeout": "0",
+        "sleep-inactive-battery-type": "'nothing'",
+        "sleep-inactive-battery-timeout": "0"
+      },
+      "backup": "${LINUX_RUN}/power-backup/gdm-dconf.user"
+    },
+    {
+      "user": "sentinel",
+      "before": {
+        "sleep-inactive-ac-type": "'suspend'",
+        "sleep-inactive-ac-timeout": "1200",
+        "sleep-inactive-battery-type": "'suspend'",
+        "sleep-inactive-battery-timeout": "1200"
+      },
+      "after": {
+        "sleep-inactive-ac-type": "'nothing'",
+        "sleep-inactive-ac-timeout": "0",
+        "sleep-inactive-battery-type": "'nothing'",
+        "sleep-inactive-battery-timeout": "0"
+      },
+      "backup": "${LINUX_RUN}/power-backup/sentinel-dconf.user"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "rows": [
+    {
+      "label": "background",
+      "positives": 13,
+      "argmax_correct": 12,
+      "recall": 0.9230769230769231,
+      "negatives": 52,
+      "argmax_false_positive": 4,
+      "fpr": 0.07692307692307693,
+      "threshold_gt_080_true_positive": null,
+      "threshold_gt_080_false_positive": null
+    },
+    {
+      "label": "cough",
+      "positives": 12,
+      "argmax_correct": 10,
+      "recall": 0.8333333333333334,
+      "negatives": 53,
+      "argmax_false_positive": 2,
+      "fpr": 0.03773584905660377,
+      "threshold_gt_080_true_positive": 1,
+      "threshold_gt_080_false_positive": 0
+    },
+    {
+      "label": "glass_break",
+      "positives": 9,
+      "argmax_correct": 7,
+      "recall": 0.7777777777777778,
+      "negatives": 56,
+      "argmax_false_positive": 2,
+      "fpr": 0.03571428571428571,
+      "threshold_gt_080_true_positive": 1,
+      "threshold_gt_080_false_positive": 0
+    },
+    {
+      "label": "baby_cry",
+      "positives": 20,
+      "argmax_correct": 17,
+      "recall": 0.85,
+      "negatives": 45,
+      "argmax_false_positive": 0,
+      "fpr": 0.0,
+      "threshold_gt_080_true_positive": 4,
+      "threshold_gt_080_false_positive": 0
+    },
+    {
+      "label": "dog_bark",
+      "positives": 11,
+      "argmax_correct": 11,
+      "recall": 1.0,
+      "negatives": 54,
+      "argmax_false_positive": 0,
+      "fpr": 0.0,
+      "threshold_gt_080_true_positive": 1,
+      "threshold_gt_080_false_positive": 0
+    }
+  ],
+  "rule": "CLI nonbackground and confidence>0.80; background is not an event alarm. argmax and threshold scores are separate.",
+  "fpr_scope": "one-vs-rest recordings, not false alarms/hour or live microphone test"
+}

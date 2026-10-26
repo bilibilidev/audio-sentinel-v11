@@ -1,0 +1,7 @@
+{
+  "esc_records": 390,
+  "external_records": 65,
+  "fsd_freesound_source_id_overlap": [],
+  "exact_raw_sha256_overlap": [],
+  "note": "Checks knownFreesound IDs and raw file bytes; cannot rule out acoustic overlap in allpretraining data."
+}

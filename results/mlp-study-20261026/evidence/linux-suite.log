@@ -1,0 +1,12 @@
+LINUX formal C 333 57
+LINUX ablation full 337 57
+LINUX ablation time_only 286 43
+LINUX ablation mfcc_only 327 55
+LINUX ablation no_delta 322 56
+LINUX ablation no_asinh 328 57
+LINUX ablation no_augmentation 338 57
+LINUX ablation hidden64 328 60
+LINUX ablation hidden128 330 58
+LINUX ablation no_dropout 331 59
+LINUX ablation no_class_weight 332 53
+LINUX SUITE PASS

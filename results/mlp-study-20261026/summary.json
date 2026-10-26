@@ -1,0 +1,1726 @@
+{
+  "date": "2026-10-26",
+  "production_model_unchanged": true,
+  "labels": [
+    "background",
+    "cough",
+    "glass_break",
+    "baby_cry",
+    "dog_bark"
+  ],
+  "fixed_recipe_cv": {
+    "correct": 337,
+    "total": 390,
+    "accuracy": 0.8641025641025641,
+    "macro_recall": 0.842391304347826,
+    "per_class_recall": {
+      "background": 0.8869565217391304,
+      "cough": 0.7,
+      "glass_break": 0.95,
+      "baby_cry": 0.925,
+      "dog_bark": 0.75
+    }
+  },
+  "external_final": {
+    "correct": 57,
+    "total": 65,
+    "accuracy": 0.8769230769230769,
+    "macro_recall": 0.8768376068376068,
+    "per_class_recall": {
+      "background": 0.9230769230769231,
+      "cough": 0.8333333333333334,
+      "glass_break": 0.7777777777777778,
+      "baby_cry": 0.85,
+      "dog_bark": 1.0
+    }
+  },
+  "historical_inner_selected_cv": {
+    "correct": 333,
+    "total": 390,
+    "accuracy": 0.8538461538461538,
+    "macro_recall": 0.8182608695652174,
+    "per_class_recall": {
+      "background": 0.8913043478260869,
+      "cough": 0.625,
+      "glass_break": 0.9,
+      "baby_cry": 0.9,
+      "dog_bark": 0.775
+    }
+  },
+  "baselines": [
+    {
+      "name": "MFCC_SVM",
+      "held_out": {
+        "correct": 312,
+        "total": 390,
+        "accuracy": 0.8,
+        "balanced_accuracy_present_classes": 0.7628260869565218,
+        "per_class_recall": {
+          "background": 0.8391304347826087,
+          "cough": 0.6,
+          "glass_break": 0.775,
+          "baby_cry": 0.8,
+          "dog_bark": 0.8
+        },
+        "confusion_matrix": [
+          [
+            193,
+            18,
+            7,
+            6,
+            6
+          ],
+          [
+            14,
+            24,
+            0,
+            0,
+            2
+          ],
+          [
+            9,
+            0,
+            31,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0,
+            32,
+            2
+          ],
+          [
+            3,
+            4,
+            1,
+            0,
+            32
+          ]
+        ]
+      },
+      "external_final": {
+        "correct": 39,
+        "total": 65,
+        "accuracy": 0.6,
+        "balanced_accuracy_present_classes": 0.587948717948718,
+        "per_class_recall": {
+          "background": 0.9230769230769231,
+          "cough": 0.08333333333333333,
+          "glass_break": 0.3333333333333333,
+          "baby_cry": 0.6,
+          "dog_bark": 1.0
+        },
+        "confusion_matrix": [
+          [
+            12,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            8,
+            1,
+            1,
+            0,
+            2
+          ],
+          [
+            5,
+            1,
+            3,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            0,
+            12,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            11
+          ]
+        ],
+        "predictions": [
+          {
+            "id": "cough-01",
+            "reference_label": "cough",
+            "prediction": "background"
+          },
+          {
+            "id": "cough-04",
+            "reference_label": "cough",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "cough-06",
+            "reference_label": "cough",
+            "prediction": "background"
+          },
+          {
+            "id": "cough-09",
+            "reference_label": "cough",
+            "prediction": "background"
+          },
+          {
+            "id": "cough-10",
+            "reference_label": "cough",
+            "prediction": "background"
+          },
+          {
+            "id": "cough-11",
+            "reference_label": "cough",
+            "prediction": "background"
+          },
+          {
+            "id": "cough-12",
+            "reference_label": "cough",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "cough-13",
+            "reference_label": "cough",
+            "prediction": "background"
+          },
+          {
+            "id": "cough-14",
+            "reference_label": "cough",
+            "prediction": "glass_break"
+          },
+          {
+            "id": "cough-15",
+            "reference_label": "cough",
+            "prediction": "background"
+          },
+          {
+            "id": "cough-17",
+            "reference_label": "cough",
+            "prediction": "cough"
+          },
+          {
+            "id": "cough-19",
+            "reference_label": "cough",
+            "prediction": "background"
+          },
+          {
+            "id": "glass_break-06",
+            "reference_label": "glass_break",
+            "prediction": "glass_break"
+          },
+          {
+            "id": "glass_break-07",
+            "reference_label": "glass_break",
+            "prediction": "glass_break"
+          },
+          {
+            "id": "glass_break-08",
+            "reference_label": "glass_break",
+            "prediction": "background"
+          },
+          {
+            "id": "glass_break-09",
+            "reference_label": "glass_break",
+            "prediction": "cough"
+          },
+          {
+            "id": "glass_break-11",
+            "reference_label": "glass_break",
+            "prediction": "background"
+          },
+          {
+            "id": "glass_break-17",
+            "reference_label": "glass_break",
+            "prediction": "background"
+          },
+          {
+            "id": "glass_break-18",
+            "reference_label": "glass_break",
+            "prediction": "glass_break"
+          },
+          {
+            "id": "glass_break-19",
+            "reference_label": "glass_break",
+            "prediction": "background"
+          },
+          {
+            "id": "glass_break-20",
+            "reference_label": "glass_break",
+            "prediction": "background"
+          },
+          {
+            "id": "dog_bark-01",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-04",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-06",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-07",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-08",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-10",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-11",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-12",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-13",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-18",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-20",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "background-01",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-02",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-04",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-05",
+            "reference_label": "background",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "background-06",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-08",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-09",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-13",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-14",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-17",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-18",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-19",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-20",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "baby_cry-01",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-02",
+            "reference_label": "baby_cry",
+            "prediction": "background"
+          },
+          {
+            "id": "baby_cry-03",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-04",
+            "reference_label": "baby_cry",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "baby_cry-05",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-06",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-07",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-08",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-09",
+            "reference_label": "baby_cry",
+            "prediction": "background"
+          },
+          {
+            "id": "baby_cry-10",
+            "reference_label": "baby_cry",
+            "prediction": "background"
+          },
+          {
+            "id": "baby_cry-11",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-12",
+            "reference_label": "baby_cry",
+            "prediction": "background"
+          },
+          {
+            "id": "baby_cry-13",
+            "reference_label": "baby_cry",
+            "prediction": "background"
+          },
+          {
+            "id": "baby_cry-14",
+            "reference_label": "baby_cry",
+            "prediction": "background"
+          },
+          {
+            "id": "baby_cry-15",
+            "reference_label": "baby_cry",
+            "prediction": "background"
+          },
+          {
+            "id": "baby_cry-16",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-17",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-18",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-19",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-20",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          }
+        ]
+      },
+      "pretrained": false
+    },
+    {
+      "name": "MFCC_RF",
+      "held_out": {
+        "correct": 299,
+        "total": 390,
+        "accuracy": 0.7666666666666667,
+        "balanced_accuracy_present_classes": 0.7639130434782608,
+        "per_class_recall": {
+          "background": 0.7695652173913043,
+          "cough": 0.75,
+          "glass_break": 0.775,
+          "baby_cry": 0.9,
+          "dog_bark": 0.625
+        },
+        "confusion_matrix": [
+          [
+            177,
+            19,
+            10,
+            17,
+            7
+          ],
+          [
+            3,
+            30,
+            1,
+            1,
+            5
+          ],
+          [
+            7,
+            2,
+            31,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0,
+            36,
+            1
+          ],
+          [
+            5,
+            9,
+            0,
+            1,
+            25
+          ]
+        ]
+      },
+      "external_final": {
+        "correct": 38,
+        "total": 65,
+        "accuracy": 0.5846153846153846,
+        "balanced_accuracy_present_classes": 0.5708780108780108,
+        "per_class_recall": {
+          "background": 0.9230769230769231,
+          "cough": 0.25,
+          "glass_break": 0.2222222222222222,
+          "baby_cry": 0.55,
+          "dog_bark": 0.9090909090909091
+        },
+        "confusion_matrix": [
+          [
+            12,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            4,
+            3,
+            1,
+            1,
+            3
+          ],
+          [
+            5,
+            2,
+            2,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            11,
+            5
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            10
+          ]
+        ],
+        "predictions": [
+          {
+            "id": "cough-01",
+            "reference_label": "cough",
+            "prediction": "background"
+          },
+          {
+            "id": "cough-04",
+            "reference_label": "cough",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "cough-06",
+            "reference_label": "cough",
+            "prediction": "background"
+          },
+          {
+            "id": "cough-09",
+            "reference_label": "cough",
+            "prediction": "background"
+          },
+          {
+            "id": "cough-10",
+            "reference_label": "cough",
+            "prediction": "background"
+          },
+          {
+            "id": "cough-11",
+            "reference_label": "cough",
+            "prediction": "cough"
+          },
+          {
+            "id": "cough-12",
+            "reference_label": "cough",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "cough-13",
+            "reference_label": "cough",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "cough-14",
+            "reference_label": "cough",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "cough-15",
+            "reference_label": "cough",
+            "prediction": "cough"
+          },
+          {
+            "id": "cough-17",
+            "reference_label": "cough",
+            "prediction": "cough"
+          },
+          {
+            "id": "cough-19",
+            "reference_label": "cough",
+            "prediction": "glass_break"
+          },
+          {
+            "id": "glass_break-06",
+            "reference_label": "glass_break",
+            "prediction": "background"
+          },
+          {
+            "id": "glass_break-07",
+            "reference_label": "glass_break",
+            "prediction": "glass_break"
+          },
+          {
+            "id": "glass_break-08",
+            "reference_label": "glass_break",
+            "prediction": "background"
+          },
+          {
+            "id": "glass_break-09",
+            "reference_label": "glass_break",
+            "prediction": "cough"
+          },
+          {
+            "id": "glass_break-11",
+            "reference_label": "glass_break",
+            "prediction": "background"
+          },
+          {
+            "id": "glass_break-17",
+            "reference_label": "glass_break",
+            "prediction": "background"
+          },
+          {
+            "id": "glass_break-18",
+            "reference_label": "glass_break",
+            "prediction": "glass_break"
+          },
+          {
+            "id": "glass_break-19",
+            "reference_label": "glass_break",
+            "prediction": "cough"
+          },
+          {
+            "id": "glass_break-20",
+            "reference_label": "glass_break",
+            "prediction": "background"
+          },
+          {
+            "id": "dog_bark-01",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-04",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-06",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-07",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-08",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-10",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-11",
+            "reference_label": "dog_bark",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "dog_bark-12",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-13",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-18",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-20",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "background-01",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-02",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-04",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-05",
+            "reference_label": "background",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "background-06",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-08",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-09",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-13",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-14",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-17",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-18",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-19",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-20",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "baby_cry-01",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-02",
+            "reference_label": "baby_cry",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "baby_cry-03",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-04",
+            "reference_label": "baby_cry",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "baby_cry-05",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-06",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-07",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-08",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-09",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-10",
+            "reference_label": "baby_cry",
+            "prediction": "background"
+          },
+          {
+            "id": "baby_cry-11",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-12",
+            "reference_label": "baby_cry",
+            "prediction": "background"
+          },
+          {
+            "id": "baby_cry-13",
+            "reference_label": "baby_cry",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "baby_cry-14",
+            "reference_label": "baby_cry",
+            "prediction": "background"
+          },
+          {
+            "id": "baby_cry-15",
+            "reference_label": "baby_cry",
+            "prediction": "background"
+          },
+          {
+            "id": "baby_cry-16",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-17",
+            "reference_label": "baby_cry",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "baby_cry-18",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-19",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-20",
+            "reference_label": "baby_cry",
+            "prediction": "dog_bark"
+          }
+        ]
+      },
+      "pretrained": false
+    },
+    {
+      "name": "PANNs_Cnn6_linearSVM",
+      "held_out": {
+        "correct": 370,
+        "total": 390,
+        "accuracy": 0.9487179487179487,
+        "balanced_accuracy_present_classes": 0.9660869565217391,
+        "per_class_recall": {
+          "background": 0.9304347826086956,
+          "cough": 0.975,
+          "glass_break": 0.975,
+          "baby_cry": 0.975,
+          "dog_bark": 0.975
+        },
+        "confusion_matrix": [
+          [
+            214,
+            8,
+            2,
+            5,
+            1
+          ],
+          [
+            0,
+            39,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            39,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            39,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            39
+          ]
+        ]
+      },
+      "external_final": {
+        "correct": 63,
+        "total": 65,
+        "accuracy": 0.9692307692307692,
+        "balanced_accuracy_present_classes": 0.9733333333333333,
+        "per_class_recall": {
+          "background": 1.0,
+          "cough": 0.9166666666666666,
+          "glass_break": 1.0,
+          "baby_cry": 0.95,
+          "dog_bark": 1.0
+        },
+        "confusion_matrix": [
+          [
+            13,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            11,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            9,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            19,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            11
+          ]
+        ],
+        "predictions": [
+          {
+            "id": "cough-01",
+            "reference_label": "cough",
+            "prediction": "cough"
+          },
+          {
+            "id": "cough-04",
+            "reference_label": "cough",
+            "prediction": "cough"
+          },
+          {
+            "id": "cough-06",
+            "reference_label": "cough",
+            "prediction": "cough"
+          },
+          {
+            "id": "cough-09",
+            "reference_label": "cough",
+            "prediction": "cough"
+          },
+          {
+            "id": "cough-10",
+            "reference_label": "cough",
+            "prediction": "background"
+          },
+          {
+            "id": "cough-11",
+            "reference_label": "cough",
+            "prediction": "cough"
+          },
+          {
+            "id": "cough-12",
+            "reference_label": "cough",
+            "prediction": "cough"
+          },
+          {
+            "id": "cough-13",
+            "reference_label": "cough",
+            "prediction": "cough"
+          },
+          {
+            "id": "cough-14",
+            "reference_label": "cough",
+            "prediction": "cough"
+          },
+          {
+            "id": "cough-15",
+            "reference_label": "cough",
+            "prediction": "cough"
+          },
+          {
+            "id": "cough-17",
+            "reference_label": "cough",
+            "prediction": "cough"
+          },
+          {
+            "id": "cough-19",
+            "reference_label": "cough",
+            "prediction": "cough"
+          },
+          {
+            "id": "glass_break-06",
+            "reference_label": "glass_break",
+            "prediction": "glass_break"
+          },
+          {
+            "id": "glass_break-07",
+            "reference_label": "glass_break",
+            "prediction": "glass_break"
+          },
+          {
+            "id": "glass_break-08",
+            "reference_label": "glass_break",
+            "prediction": "glass_break"
+          },
+          {
+            "id": "glass_break-09",
+            "reference_label": "glass_break",
+            "prediction": "glass_break"
+          },
+          {
+            "id": "glass_break-11",
+            "reference_label": "glass_break",
+            "prediction": "glass_break"
+          },
+          {
+            "id": "glass_break-17",
+            "reference_label": "glass_break",
+            "prediction": "glass_break"
+          },
+          {
+            "id": "glass_break-18",
+            "reference_label": "glass_break",
+            "prediction": "glass_break"
+          },
+          {
+            "id": "glass_break-19",
+            "reference_label": "glass_break",
+            "prediction": "glass_break"
+          },
+          {
+            "id": "glass_break-20",
+            "reference_label": "glass_break",
+            "prediction": "glass_break"
+          },
+          {
+            "id": "dog_bark-01",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-04",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-06",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-07",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-08",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-10",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-11",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-12",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-13",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-18",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "dog_bark-20",
+            "reference_label": "dog_bark",
+            "prediction": "dog_bark"
+          },
+          {
+            "id": "background-01",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-02",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-04",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-05",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-06",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-08",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-09",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-13",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-14",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-17",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-18",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-19",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "background-20",
+            "reference_label": "background",
+            "prediction": "background"
+          },
+          {
+            "id": "baby_cry-01",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-02",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-03",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-04",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-05",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-06",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-07",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-08",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-09",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-10",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-11",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-12",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-13",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-14",
+            "reference_label": "baby_cry",
+            "prediction": "background"
+          },
+          {
+            "id": "baby_cry-15",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-16",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-17",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-18",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-19",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          },
+          {
+            "id": "baby_cry-20",
+            "reference_label": "baby_cry",
+            "prediction": "baby_cry"
+          }
+        ]
+      },
+      "pretrained": true
+    }
+  ],
+  "ablations": [
+    {
+      "variant": "full",
+      "parameters": 9413,
+      "feature_dim": 92,
+      "held_out": {
+        "correct": 337,
+        "total": 390,
+        "accuracy": 0.8641025641025641,
+        "macro_recall": 0.842391304347826,
+        "per_class_recall": {
+          "background": 0.8869565217391304,
+          "cough": 0.7,
+          "glass_break": 0.95,
+          "baby_cry": 0.925,
+          "dog_bark": 0.75
+        }
+      },
+      "external_final": {
+        "correct": 57,
+        "total": 65,
+        "accuracy": 0.8769230769230769,
+        "macro_recall": 0.8768376068376068,
+        "per_class_recall": {
+          "background": 0.9230769230769231,
+          "cough": 0.8333333333333334,
+          "glass_break": 0.7777777777777778,
+          "baby_cry": 0.85,
+          "dog_bark": 1.0
+        }
+      }
+    },
+    {
+      "variant": "time_only",
+      "parameters": 4421,
+      "feature_dim": 40,
+      "held_out": {
+        "correct": 286,
+        "total": 390,
+        "accuracy": 0.7333333333333333,
+        "macro_recall": 0.6658695652173913,
+        "per_class_recall": {
+          "background": 0.8043478260869565,
+          "cough": 0.35,
+          "glass_break": 0.725,
+          "baby_cry": 0.775,
+          "dog_bark": 0.675
+        }
+      },
+      "external_final": {
+        "correct": 43,
+        "total": 65,
+        "accuracy": 0.6615384615384615,
+        "macro_recall": 0.6908857808857809,
+        "per_class_recall": {
+          "background": 0.6923076923076923,
+          "cough": 0.6666666666666666,
+          "glass_break": 1.0,
+          "baby_cry": 0.55,
+          "dog_bark": 0.5454545454545454
+        }
+      }
+    },
+    {
+      "variant": "mfcc_only",
+      "parameters": 5573,
+      "feature_dim": 52,
+      "held_out": {
+        "correct": 327,
+        "total": 390,
+        "accuracy": 0.8384615384615385,
+        "macro_recall": 0.8171739130434783,
+        "per_class_recall": {
+          "background": 0.8608695652173913,
+          "cough": 0.625,
+          "glass_break": 0.925,
+          "baby_cry": 0.95,
+          "dog_bark": 0.725
+        }
+      },
+      "external_final": {
+        "correct": 55,
+        "total": 65,
+        "accuracy": 0.8461538461538461,
+        "macro_recall": 0.837948717948718,
+        "per_class_recall": {
+          "background": 0.9230769230769231,
+          "cough": 0.75,
+          "glass_break": 0.6666666666666666,
+          "baby_cry": 0.85,
+          "dog_bark": 1.0
+        }
+      }
+    },
+    {
+      "variant": "no_delta",
+      "parameters": 6917,
+      "feature_dim": 66,
+      "held_out": {
+        "correct": 322,
+        "total": 390,
+        "accuracy": 0.8256410256410256,
+        "macro_recall": 0.8210869565217391,
+        "per_class_recall": {
+          "background": 0.8304347826086956,
+          "cough": 0.625,
+          "glass_break": 0.95,
+          "baby_cry": 0.925,
+          "dog_bark": 0.775
+        }
+      },
+      "external_final": {
+        "correct": 56,
+        "total": 65,
+        "accuracy": 0.8615384615384616,
+        "macro_recall": 0.8558585858585859,
+        "per_class_recall": {
+          "background": 1.0,
+          "cough": 0.8333333333333334,
+          "glass_break": 0.7777777777777778,
+          "baby_cry": 0.85,
+          "dog_bark": 0.8181818181818182
+        }
+      }
+    },
+    {
+      "variant": "no_asinh",
+      "parameters": 9413,
+      "feature_dim": 92,
+      "held_out": {
+        "correct": 328,
+        "total": 390,
+        "accuracy": 0.841025641025641,
+        "macro_recall": 0.8180434782608695,
+        "per_class_recall": {
+          "background": 0.8652173913043478,
+          "cough": 0.65,
+          "glass_break": 0.925,
+          "baby_cry": 0.95,
+          "dog_bark": 0.7
+        }
+      },
+      "external_final": {
+        "correct": 57,
+        "total": 65,
+        "accuracy": 0.8769230769230769,
+        "macro_recall": 0.8780808080808081,
+        "per_class_recall": {
+          "background": 1.0,
+          "cough": 0.8333333333333334,
+          "glass_break": 0.8888888888888888,
+          "baby_cry": 0.85,
+          "dog_bark": 0.8181818181818182
+        }
+      }
+    },
+    {
+      "variant": "no_augmentation",
+      "parameters": 9413,
+      "feature_dim": 92,
+      "held_out": {
+        "correct": 338,
+        "total": 390,
+        "accuracy": 0.8666666666666667,
+        "macro_recall": 0.8350000000000001,
+        "per_class_recall": {
+          "background": 0.9,
+          "cough": 0.675,
+          "glass_break": 0.925,
+          "baby_cry": 0.875,
+          "dog_bark": 0.8
+        }
+      },
+      "external_final": {
+        "correct": 57,
+        "total": 65,
+        "accuracy": 0.8769230769230769,
+        "macro_recall": 0.8740404040404041,
+        "per_class_recall": {
+          "background": 1.0,
+          "cough": 0.8333333333333334,
+          "glass_break": 0.7777777777777778,
+          "baby_cry": 0.85,
+          "dog_bark": 0.9090909090909091
+        }
+      }
+    },
+    {
+      "variant": "hidden64",
+      "parameters": 6277,
+      "feature_dim": 92,
+      "held_out": {
+        "correct": 328,
+        "total": 390,
+        "accuracy": 0.841025641025641,
+        "macro_recall": 0.8386956521739131,
+        "per_class_recall": {
+          "background": 0.8434782608695652,
+          "cough": 0.675,
+          "glass_break": 0.95,
+          "baby_cry": 0.95,
+          "dog_bark": 0.775
+        }
+      },
+      "external_final": {
+        "correct": 60,
+        "total": 65,
+        "accuracy": 0.9230769230769231,
+        "macro_recall": 0.9284848484848485,
+        "per_class_recall": {
+          "background": 1.0,
+          "cough": 0.8333333333333334,
+          "glass_break": 1.0,
+          "baby_cry": 0.9,
+          "dog_bark": 0.9090909090909091
+        }
+      }
+    },
+    {
+      "variant": "hidden128",
+      "parameters": 12549,
+      "feature_dim": 92,
+      "held_out": {
+        "correct": 330,
+        "total": 390,
+        "accuracy": 0.8461538461538461,
+        "macro_recall": 0.8280434782608695,
+        "per_class_recall": {
+          "background": 0.8652173913043478,
+          "cough": 0.65,
+          "glass_break": 0.925,
+          "baby_cry": 0.95,
+          "dog_bark": 0.75
+        }
+      },
+      "external_final": {
+        "correct": 58,
+        "total": 65,
+        "accuracy": 0.8923076923076924,
+        "macro_recall": 0.8990598290598291,
+        "per_class_recall": {
+          "background": 0.9230769230769231,
+          "cough": 0.8333333333333334,
+          "glass_break": 0.8888888888888888,
+          "baby_cry": 0.85,
+          "dog_bark": 1.0
+        }
+      }
+    },
+    {
+      "variant": "no_dropout",
+      "parameters": 9413,
+      "feature_dim": 92,
+      "held_out": {
+        "correct": 331,
+        "total": 390,
+        "accuracy": 0.8487179487179487,
+        "macro_recall": 0.8289130434782609,
+        "per_class_recall": {
+          "background": 0.8695652173913043,
+          "cough": 0.675,
+          "glass_break": 0.925,
+          "baby_cry": 0.925,
+          "dog_bark": 0.75
+        }
+      },
+      "external_final": {
+        "correct": 59,
+        "total": 65,
+        "accuracy": 0.9076923076923077,
+        "macro_recall": 0.9144444444444444,
+        "per_class_recall": {
+          "background": 1.0,
+          "cough": 0.8333333333333334,
+          "glass_break": 0.8888888888888888,
+          "baby_cry": 0.85,
+          "dog_bark": 1.0
+        }
+      }
+    },
+    {
+      "variant": "no_class_weight",
+      "parameters": 9413,
+      "feature_dim": 92,
+      "held_out": {
+        "correct": 332,
+        "total": 390,
+        "accuracy": 0.8512820512820513,
+        "macro_recall": 0.7678260869565218,
+        "per_class_recall": {
+          "background": 0.9391304347826087,
+          "cough": 0.55,
+          "glass_break": 0.775,
+          "baby_cry": 0.875,
+          "dog_bark": 0.7
+        }
+      },
+      "external_final": {
+        "correct": 53,
+        "total": 65,
+        "accuracy": 0.8153846153846154,
+        "macro_recall": 0.7962626262626262,
+        "per_class_recall": {
+          "background": 1.0,
+          "cough": 0.6666666666666666,
+          "glass_break": 0.5555555555555556,
+          "baby_cry": 0.85,
+          "dog_bark": 0.9090909090909091
+        }
+      }
+    }
+  ],
+  "noise": [
+    {
+      "snr_db": 20,
+      "correct": 302,
+      "total": 390,
+      "accuracy": 0.7743589743589744,
+      "macro_recall": 0.7210869565217392,
+      "per_class_recall": {
+        "background": 0.8304347826086956,
+        "cough": 0.3,
+        "glass_break": 0.775,
+        "baby_cry": 1.0,
+        "dog_bark": 0.7
+      }
+    },
+    {
+      "snr_db": 10,
+      "correct": 282,
+      "total": 390,
+      "accuracy": 0.7230769230769231,
+      "macro_recall": 0.5839130434782609,
+      "per_class_recall": {
+        "background": 0.8695652173913043,
+        "cough": 0.175,
+        "glass_break": 0.275,
+        "baby_cry": 0.9,
+        "dog_bark": 0.7
+      }
+    },
+    {
+      "snr_db": 5,
+      "correct": 267,
+      "total": 390,
+      "accuracy": 0.6846153846153846,
+      "macro_recall": 0.4841304347826087,
+      "per_class_recall": {
+        "background": 0.8956521739130435,
+        "cough": 0.0,
+        "glass_break": 0.2,
+        "baby_cry": 0.725,
+        "dog_bark": 0.6
+      }
+    }
+  ],
+  "linux_acceptance": {
+    "status": "PASS",
+    "same_feature_parity_pairs": 8580,
+    "max_probability_delta": 2.389019164716899e-07,
+    "sanitized_recordings": 65,
+    "pcm_wav_parity_recordings": 70,
+    "chunk_checks": [
+      {
+        "samples_per_read": 1,
+        "recordings": 65,
+        "max_probability_delta": 0.0
+      },
+      {
+        "samples_per_read": 997,
+        "recordings": 65,
+        "max_probability_delta": 0.0
+      },
+      {
+        "samples_per_read": 4096,
+        "recordings": 65,
+        "max_probability_delta": 0.0
+      }
+    ]
+  },
+  "limitation": "External65 already-seen development recordings incl20baby; fixed recipe retrospective validation after model choice, not independent blind test. Baselines use390 supervisedESC, PANNs has extraAudioSet pretraining. No new board/fullOpenVela/microphone/power/stability acceptance."
+}
