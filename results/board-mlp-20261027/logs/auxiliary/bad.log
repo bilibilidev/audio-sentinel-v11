@@ -1,0 +1,19 @@
+audiodetect /tmp/m27/i/bad.wav --debug
+
+
+Audio Sentinel Tiny MLP (INT8 weights / float arithmetic)
+
+
+Model SHA256: 2c74151ca171eff88af7efa26b8a4b3dfc37ea42c7e77b0c9b379bd6Invalid WAV (requires PCM16 mono 16 kHz): /tmp/m27/i/bad.wav
+
+
+Fai1610f9e9
+
+
+Input: /tmp/m27/i/bad.wav
+
+
+led to classify WAV input: /tmp/m27/i/bad.wav
+
+
+nsh> [K

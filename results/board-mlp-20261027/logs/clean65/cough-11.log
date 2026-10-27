@@ -1,0 +1,55 @@
+time "audiodetect /tmp/m27/b/005.wav --debug"
+
+
+Audio Sentinel Tiny MLP (INT8 weights / float arithmetic)
+
+
+Model SHA256: 2c74151ca171eff88af7efa26b8a4b3dfc37ea42c7e77b0c9b379bd61610f9e9
+
+
+Input: /tmp/m27/b/005.wav
+
+
+Result: cough
+
+
+Confidence: 0.987
+
+
+Samples: 15542 Frames: 98
+
+
+
+
+
+Probabilities:
+
+
+  background: 0.006521889
+
+
+  cough: 0.986963689
+
+
+  glass_break: 0.000901647
+
+
+  baby_cry: 0.002324699
+
+
+  dog_bark: 0.003288134
+
+
+[ALERT] Local alarm triggered: cough (98.7%)
+
+
+[ALERT] Remote reporting disabled (use --report to enable)
+
+
+
+
+
+0.0230 sec
+
+
+nsh> [K

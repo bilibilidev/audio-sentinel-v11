@@ -1,0 +1,33 @@
+{
+  "status": "BUILD_PACK_STATIC_BOUNDS_PASS_NOT_RUNTIME_ACCEPTED",
+  "image": "AudioSentinel-TinyMLP-R528S3-128M-LCD-AUTO-20261027.img",
+  "image_sha256": "fad544406f90ad4fdacf0cb35f5593331746455ddda2252be6427a5ded82d713",
+  "image_bytes": 27177984,
+  "application_commit": "72f4dfde5224a4e590ff66f4ce1791f5193e7b8c",
+  "model_sha256": "2c74151ca171eff88af7efa26b8a4b3dfc37ea42c7e77b0c9b379bd61610f9e9",
+  "architecture": [
+    92,
+    96,
+    5
+  ],
+  "parameters": 9413,
+  "ap_payload_sha256": "b9f98ac56aba167ecc6b4d7bae5b902a205477deae526d07449fe7e4788f8954",
+  "ap_payload_bytes": 5273812,
+  "exact_ap_payload_offset": 1993728,
+  "target": "R528S3 Gemini S1, 128 MiB DDR, onboard ILI9341 320x240",
+  "ui_autostart": true,
+  "lcd_backend": "/dev/lcd0",
+  "inference_backend": "Tiny MLP, CNN disabled",
+  "model_or_threshold_changed": false,
+  "application_inference_source_changed": false,
+  "flashed": false,
+  "real_board_runtime_verified": false,
+  "historical_image_byte_identity_claimed": false,
+  "manifest": "manifest-resolved.xml",
+  "toolchain": "toolchain-versions.txt",
+  "previous_images_preserved": true,
+  "git_source": "72f4dfd main, isolated local build branch",
+  "exported_w1_bytes_verified_in_elf_and_ap": 8832,
+  "official_pack_wrapper_exit_code": 1,
+  "pack_exit_note": "Vendor do_finish ends with an absent optional post-dragon hook test, returning 1 after successful Dragon packing. Fresh IMAGEWTY, success log, exact AP bytes, model weights and RAM independently validated."
+}

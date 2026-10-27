@@ -43,3 +43,5 @@ training/optimization/** text eol=lf
 training/mlp_study/** text eol=lf
 results/mlp-study-20261026/** text eol=lf
 model/mlp-study-20261026/*.json text eol=lf
+results/board-mlp-20261027/** text eol=lf -whitespace
+scripts/board_benchmark_mlp/** text eol=lf

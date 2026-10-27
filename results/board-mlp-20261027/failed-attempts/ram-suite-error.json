@@ -1,0 +1,13 @@
+{
+  "error": "adb: error: connect failed: cannot connect to daemon at tcp:5037: cannot connect to 127.0.0.1:5037: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。 (10060)\r\n* daemon still not running\r\n",
+  "completed_stages": [
+    "nand_clean65",
+    "ram_input_roundtrip280",
+    "ram_clean65",
+    "ram_fixed3s_latency",
+    "ram_noise20",
+    "ram_noise10",
+    "ram_noise5",
+    "auxiliary"
+  ]
+}

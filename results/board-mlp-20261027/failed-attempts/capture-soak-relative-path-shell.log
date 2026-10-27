@@ -1,0 +1,103 @@
+nsh> [Kps
+
+  PID GROUP CPU(AFFINITY)   PRI POLICY   TYPE    NPX STATE    EVENT     SIGMASK          COMMAND
+
+    0     0 000(0x00000003)   0 FIFO     Kthread   - Running            0000000000000000 CPU0 IDLE
+
+    1     0 001(0x00000003)   0 FIFO     Kthread   - Assigned           0000000000000000 CPU1 IDLE
+
+    2     0 ---(0x00000003) 254 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 hpwork 0x418f6d40 0x418f6d8c
+
+    3     0 ---(0x00000003) 100 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 lpwork 0x418f6cc0 0x418f6d0c
+
+    5     0 ---(0x00000003) 100 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 ltr553_thread
+
+    6     0 ---(0x00000001) 120 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 nftld 1107495312
+
+    7     0 ---(0x00000001) 120 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 nand_rcd 1107499696
+
+    8     0 ---(0x00000001) 120 FIFO     Kthread   - Waiting  MQ empty  0000000000000000 nand_proxy 1107504552
+
+    9     0 ---(0x00000003) 106 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 realtek_txpool_thread
+
+   10     0 ---(0x00000003) 100 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 bt_recv
+
+   11     0 ---(0x00000003) 100 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 bt_fw
+
+   12     0 ---(0x00000003) 111 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 TIMERWORKER 0x420c68e0 0x420c692c
+
+   13    13 ---(0x00000003) 100 FIFO     Task      - Waiting  Semaphore 0000000000000000 nsh_main
+
+   20    20 ---(0x00000003) 100 FIFO     Task      - Waiting  Semaphore 0000000000000000 adbd
+
+   31    31 ---(0x00000003) 100 FIFO     Task      - Waiting  Signal    0000000000000000 NTP_daemon 0.pool.ntp.org;1.pool.ntp.org;2.pool.ntp.org
+
+   53     0 ---(0x00000003) 108 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 timer_thread 0x41fb65d4
+
+   54     0 ---(0x00000003) 110 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 WIFIWORKER 0x421692b8 0x42169304
+
+   55     0 ---(0x00000003) 106 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 realtek_sdio_thread 0x42089b08
+
+   56     0 ---(0x00000003) 107 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 xmit_thread 0x4215ed64
+
+   57     0 ---(0x00000003) 105 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 recv_task_thread 0x4215ed94
+
+   58     0 ---(0x00000003) 106 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 cmd_thread 0x4215ed4c
+
+   59    59 ---(0x00000003) 100 FIFO     Task      - Waiting  Signal    0000000000000000 bluetoothd
+
+   61    61 ---(0x00000003) 100 FIFO     Task      - Waiting  Signal    0000000000000000 audiodetect ui
+
+   62    61 ---(0x00000003) 100 FIFO     pthread   - Waiting  Signal    0000000000000000 audiodetect 0x414eba39 0
+
+  174   174 ---(0x00000003) 100 FIFO     Task      - Waiting  Semaphore 0000000000000000 sh
+
+ 2236  2236 001(0x00000003) 100 FIFO     Task      - Running            0000000000000000 sh
+
+nsh> [Kecho AED_RC $?
+
+AED_RC 0
+
+nsh> [Kcd /tmp/m27
+
+nsh> [Kecho AED_RC $?
+
+AED_RC 0
+
+nsh> [Kfree
+
+      total       used       free    maxused    maxfree  nused  nfree name
+
+  100841868   71898468   28943400   72008784   28848584   2624      9 Umem
+
+nsh> [Kecho AED_RC $?
+
+AED_RC 0
+
+nsh> [Ktime "arecord -D default -r 16000 -f 16 -c 1 -d 3 c0.wav"
+
+
+
+3.1350 sec
+
+nsh> [Kecho AED_RC $?
+
+AED_RC 0
+
+nsh> [Ktime "audiodetect c0.wav --debug"
+
+Audio Sentinel Tiny MLP (INT8 weights / float arithmetic)
+
+Model SHA256: 2c74151ca171eff88af7efa26b8a4b3dfc37ea42c7e77b0c9b379bd61610f9e9
+
+Input: c0.wav
+
+c0.wav: Error 2
+
+Failed to classify WAV input: c0.wav
+
+nsh> [Kecho AED_RC $?
+
+AED_RC 1
+
+nsh> [K

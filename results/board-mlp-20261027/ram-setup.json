@@ -1,0 +1,34 @@
+{
+  "status": "RUNNING_MODEL_AND_280_INPUTS_VERIFIED",
+  "model_sha256": "2c74151ca171eff88af7efa26b8a4b3dfc37ea42c7e77b0c9b379bd61610f9e9",
+  "input_roundtrip_hashes_pass": true,
+  "files": 280,
+  "image_sha256": "fad544406f90ad4fdacf0cb35f5593331746455ddda2252be6427a5ded82d713",
+  "image_hash_scope": "User-declared flashed image, not NAND readback",
+  "initial_inference": {
+    "id": "cough-01",
+    "truth": "cough",
+    "prediction": "cough",
+    "correct": true,
+    "probabilities": {
+      "background": 0.169414878,
+      "cough": 0.46434322,
+      "glass_break": 0.120361932,
+      "baby_cry": 0.173109591,
+      "dog_bark": 0.072770394
+    },
+    "confidence": 0.46434322,
+    "alerted": false,
+    "samples": 181555,
+    "frames": 1176,
+    "input_sha256": "d564446e9ac85f17db753e947bd935a3697b6d852e25358ba150cc9331d072fd",
+    "model_sha256": "2c74151ca171eff88af7efa26b8a4b3dfc37ea42c7e77b0c9b379bd61610f9e9",
+    "board_command_seconds": 0.273,
+    "audio_seconds": 11.3471875,
+    "linux_prediction": "cough",
+    "linux_prediction_match": true,
+    "max_probability_abs_delta_vs_linux": 1.3110000000038369e-06
+  },
+  "free": "free\r\r\n      total       used       free    maxused    maxfree  nused  nfree name\r\r\n  100841868   71801076   29040792   71904384   29027072   2617      4 Umem\r\r\nnsh> \u001b[K",
+  "df": "df\r\r\n  Block    Number\r\r\n  Size     Blocks       Used   Available Mounted on\r\r\n131072       1657        518        1139 /data\r\r\n    64        864        864           0 /etc\r\r\n     0          0          0           0 /proc\r\r\n  2048       4320       4320           0 /resource\r\r\n   512     136074     135818         256 /tmp\r\r\nnsh> \u001b[K"
+}

@@ -1,0 +1,458 @@
+{
+  "date": "2026-10-27",
+  "target": "Physical R528S3 Gemini S1 / onboard ILI9341 / OpenVela-NuttX",
+  "model_sha256": "2c74151ca171eff88af7efa26b8a4b3dfc37ea42c7e77b0c9b379bd61610f9e9",
+  "application_commit": "72f4dfde5224a4e590ff66f4ce1791f5193e7b8c",
+  "operator_declared_image_sha256": "fad544406f90ad4fdacf0cb35f5593331746455ddda2252be6427a5ded82d713",
+  "image_readback_performed": false,
+  "dataset_role": "Previously heard development-validation65, includes20baby, used for development/selection; not blind or microphone field accuracy",
+  "classification": {
+    "correct": 57,
+    "total": 65,
+    "accuracy": 0.8769230769230769,
+    "macro_recall": 0.8768376068376068,
+    "per_class": {
+      "background": {
+        "correct": 12,
+        "total": 13,
+        "recall": 0.9230769230769231,
+        "false_positives": 4,
+        "negatives": 52,
+        "one_vs_rest_fpr": 0.07692307692307693,
+        "correct_alarm_count": 0,
+        "alarm_false_positives": 0
+      },
+      "cough": {
+        "correct": 10,
+        "total": 12,
+        "recall": 0.8333333333333334,
+        "false_positives": 2,
+        "negatives": 53,
+        "one_vs_rest_fpr": 0.03773584905660377,
+        "correct_alarm_count": 1,
+        "alarm_false_positives": 0
+      },
+      "glass_break": {
+        "correct": 7,
+        "total": 9,
+        "recall": 0.7777777777777778,
+        "false_positives": 2,
+        "negatives": 56,
+        "one_vs_rest_fpr": 0.03571428571428571,
+        "correct_alarm_count": 1,
+        "alarm_false_positives": 0
+      },
+      "baby_cry": {
+        "correct": 17,
+        "total": 20,
+        "recall": 0.85,
+        "false_positives": 0,
+        "negatives": 45,
+        "one_vs_rest_fpr": 0.0,
+        "correct_alarm_count": 4,
+        "alarm_false_positives": 0
+      },
+      "dog_bark": {
+        "correct": 11,
+        "total": 11,
+        "recall": 1.0,
+        "false_positives": 0,
+        "negatives": 54,
+        "one_vs_rest_fpr": 0.0,
+        "correct_alarm_count": 1,
+        "alarm_false_positives": 0
+      }
+    },
+    "confusion_matrix": [
+      [
+        12,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        10,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        7,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0,
+        17,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        11
+      ]
+    ]
+  },
+  "linux_prediction_matches": 65,
+  "max_probability_abs_delta_vs_linux": 2.153199999999078e-05,
+  "nand_and_ram_prediction_matches": 65,
+  "timing": {
+    "nand_full65_mean_ms": 212.6923076923077,
+    "nand_full65_p95_ms": 491.59999999999985,
+    "ram_full65_mean_ms": 199.13846153846154,
+    "ram_fixed3s": {
+      "count": 30,
+      "mean": 0.08406666666666668,
+      "p50": 0.084,
+      "p95": 0.085,
+      "minimum": 0.083,
+      "maximum": 0.085,
+      "raw_values": [
+        0.084,
+        0.084,
+        0.084,
+        0.084,
+        0.084,
+        0.084,
+        0.084,
+        0.084,
+        0.085,
+        0.083,
+        0.085,
+        0.083,
+        0.085,
+        0.083,
+        0.083,
+        0.084,
+        0.085,
+        0.084,
+        0.084,
+        0.083,
+        0.084,
+        0.084,
+        0.084,
+        0.085,
+        0.084,
+        0.085,
+        0.084,
+        0.085,
+        0.084,
+        0.084
+      ]
+    },
+    "scope": "NSH time: whole WAV IO + feature DSP + asinh + MLP + aggregation + stdout, under normal scheduling, UI alive and capture stopped. Excludes recording/USB and is not event-onset-to-alert latency."
+  },
+  "noise": {
+    "20": {
+      "correct": 48,
+      "total": 65,
+      "accuracy": 0.7384615384615385,
+      "macro_recall": 0.7303496503496504,
+      "per_class": {
+        "background": {
+          "correct": 8,
+          "total": 13,
+          "recall": 0.6153846153846154,
+          "false_positives": 2,
+          "negatives": 52,
+          "one_vs_rest_fpr": 0.038461538461538464,
+          "correct_alarm_count": 0,
+          "alarm_false_positives": 0
+        },
+        "cough": {
+          "correct": 6,
+          "total": 12,
+          "recall": 0.5,
+          "false_positives": 2,
+          "negatives": 53,
+          "one_vs_rest_fpr": 0.03773584905660377,
+          "correct_alarm_count": 1,
+          "alarm_false_positives": 0
+        },
+        "glass_break": {
+          "correct": 9,
+          "total": 9,
+          "recall": 1.0,
+          "false_positives": 12,
+          "negatives": 56,
+          "one_vs_rest_fpr": 0.21428571428571427,
+          "correct_alarm_count": 3,
+          "alarm_false_positives": 1
+        },
+        "baby_cry": {
+          "correct": 18,
+          "total": 20,
+          "recall": 0.9,
+          "false_positives": 1,
+          "negatives": 45,
+          "one_vs_rest_fpr": 0.022222222222222223,
+          "correct_alarm_count": 7,
+          "alarm_false_positives": 0
+        },
+        "dog_bark": {
+          "correct": 7,
+          "total": 11,
+          "recall": 0.6363636363636364,
+          "false_positives": 0,
+          "negatives": 54,
+          "one_vs_rest_fpr": 0.0,
+          "correct_alarm_count": 0,
+          "alarm_false_positives": 0
+        }
+      }
+    },
+    "10": {
+      "correct": 45,
+      "total": 65,
+      "accuracy": 0.6923076923076923,
+      "macro_recall": 0.687016317016317,
+      "per_class": {
+        "background": {
+          "correct": 8,
+          "total": 13,
+          "recall": 0.6153846153846154,
+          "false_positives": 9,
+          "negatives": 52,
+          "one_vs_rest_fpr": 0.17307692307692307,
+          "correct_alarm_count": 0,
+          "alarm_false_positives": 0
+        },
+        "cough": {
+          "correct": 4,
+          "total": 12,
+          "recall": 0.3333333333333333,
+          "false_positives": 2,
+          "negatives": 53,
+          "one_vs_rest_fpr": 0.03773584905660377,
+          "correct_alarm_count": 1,
+          "alarm_false_positives": 0
+        },
+        "glass_break": {
+          "correct": 9,
+          "total": 9,
+          "recall": 1.0,
+          "false_positives": 7,
+          "negatives": 56,
+          "one_vs_rest_fpr": 0.125,
+          "correct_alarm_count": 2,
+          "alarm_false_positives": 1
+        },
+        "baby_cry": {
+          "correct": 17,
+          "total": 20,
+          "recall": 0.85,
+          "false_positives": 1,
+          "negatives": 45,
+          "one_vs_rest_fpr": 0.022222222222222223,
+          "correct_alarm_count": 4,
+          "alarm_false_positives": 0
+        },
+        "dog_bark": {
+          "correct": 7,
+          "total": 11,
+          "recall": 0.6363636363636364,
+          "false_positives": 1,
+          "negatives": 54,
+          "one_vs_rest_fpr": 0.018518518518518517,
+          "correct_alarm_count": 0,
+          "alarm_false_positives": 0
+        }
+      }
+    },
+    "5": {
+      "correct": 37,
+      "total": 65,
+      "accuracy": 0.5692307692307692,
+      "macro_recall": 0.5608469308469308,
+      "per_class": {
+        "background": {
+          "correct": 11,
+          "total": 13,
+          "recall": 0.8461538461538461,
+          "false_positives": 22,
+          "negatives": 52,
+          "one_vs_rest_fpr": 0.4230769230769231,
+          "correct_alarm_count": 0,
+          "alarm_false_positives": 0
+        },
+        "cough": {
+          "correct": 2,
+          "total": 12,
+          "recall": 0.16666666666666666,
+          "false_positives": 0,
+          "negatives": 53,
+          "one_vs_rest_fpr": 0.0,
+          "correct_alarm_count": 0,
+          "alarm_false_positives": 0
+        },
+        "glass_break": {
+          "correct": 7,
+          "total": 9,
+          "recall": 0.7777777777777778,
+          "false_positives": 5,
+          "negatives": 56,
+          "one_vs_rest_fpr": 0.08928571428571429,
+          "correct_alarm_count": 2,
+          "alarm_false_positives": 1
+        },
+        "baby_cry": {
+          "correct": 13,
+          "total": 20,
+          "recall": 0.65,
+          "false_positives": 1,
+          "negatives": 45,
+          "one_vs_rest_fpr": 0.022222222222222223,
+          "correct_alarm_count": 3,
+          "alarm_false_positives": 0
+        },
+        "dog_bark": {
+          "correct": 4,
+          "total": 11,
+          "recall": 0.36363636363636365,
+          "false_positives": 0,
+          "negatives": 54,
+          "one_vs_rest_fpr": 0.0,
+          "correct_alarm_count": 0,
+          "alarm_false_positives": 0
+        }
+      }
+    }
+  },
+  "keyword": {
+    "passed": 11,
+    "total": 11,
+    "synthetic_only": true,
+    "real_voice_accuracy_measured": false
+  },
+  "input_validation": {
+    "passed": 8,
+    "total": 8
+  },
+  "int8_alias": {
+    "passed": 5,
+    "total": 5
+  },
+  "microphone": {
+    "passed": true,
+    "captures": 5,
+    "capture_seconds": {
+      "count": 5,
+      "mean": 3.1346,
+      "p50": 3.135,
+      "p95": 3.135,
+      "minimum": 3.134,
+      "maximum": 3.135,
+      "raw_values": [
+        3.135,
+        3.135,
+        3.134,
+        3.134,
+        3.135
+      ]
+    },
+    "inference_seconds": {
+      "count": 5,
+      "mean": 0.0622,
+      "p50": 0.062,
+      "p95": 0.0628,
+      "minimum": 0.062,
+      "maximum": 0.063,
+      "raw_values": [
+        0.062,
+        0.062,
+        0.063,
+        0.062,
+        0.062
+      ]
+    },
+    "sum_of_separate_command_seconds": {
+      "count": 5,
+      "mean": 3.1967999999999996,
+      "p50": 3.1969999999999996,
+      "p95": 3.197,
+      "minimum": 3.1959999999999997,
+      "maximum": 3.197,
+      "raw_values": [
+        3.1969999999999996,
+        3.1969999999999996,
+        3.197,
+        3.1959999999999997,
+        3.1969999999999996
+      ]
+    },
+    "accuracy_measured": false,
+    "filesystem": "tmpfs RAM",
+    "scope": "Actual local microphone, 3s arecord and WAV classification measured as two sequential NSH time commands. Sum is not a single timed chain or event-onset alert latency. Host sequential wall includes ADB command/status exchange."
+  },
+  "network": {
+    "fixture": "cough-11",
+    "exit_code": 0,
+    "http_success": false,
+    "mqtt_success": false,
+    "configured_host": "127.0.0.1",
+    "reverse_supported": false,
+    "reverse_output": "error: closed\r\n",
+    "scope": "Actual board application invocation. localhost refers to the board; no HTTP/MQTT service provisioned in this firmware. Connection failure does not constitute delivered network alarm.",
+    "ui_network_integration": false
+  },
+  "short_soak": {
+    "iterations": 200,
+    "elapsed_wall_seconds": 69.125,
+    "all_passed": true,
+    "unique_predictions": [
+      "dog_bark"
+    ],
+    "scope": "Short repeated-WAV stress with UI idle; not 1h/24h continuous microphone stability"
+  },
+  "cold_boot": "Observed power_on(0), Oct27 build, audiodetect ui present before test; not an additional reboot cycle",
+  "display_touch": "User confirmed Tiny MLP UI normal and STOP -> IDLE; no automated pixel/touch accuracy measurement",
+  "nand_write_acceptance": false,
+  "system_acceptance_pass": false,
+  "power_watts": null,
+  "energy_joules": null,
+  "microphone_field_accuracy_measured": false,
+  "one_hour_stability_tested": false,
+  "full_system_simulator_tested": false,
+  "limitations": [
+    "SPI0 NAND timeout and YAFFS retries on initial bulk write; remaining input uploads/capture moved to tmpfs",
+    "0.80 CLI full-recording alarm recall differs from argmax classification",
+    "Network host127.0.0.1 has no services; actual HTTP/MQTT send failed; board clock not synchronized",
+    "Global heap includes temporary WAV buffers/files and OS/UI; no inference-exclusive peak RAM or power meter result",
+    "Only final deployment model in firmware; prior337/390 fixed-recipe five-fold remains host evaluation, not board CV",
+    "External65 previously used for development/selection; no new blind/acoustic test labels"
+  ],
+  "memory": {
+    "system_heap_total_bytes": 100841868,
+    "system_heap_used_after_scratch_release": 2130228,
+    "system_heap_free_after_scratch_release": 98711640,
+    "lifetime_maxused_including_tmpfs_inputs": 72581888,
+    "inference_exclusive_peak_measured": false,
+    "temporary_ram_inputs_released": true,
+    "short_soak_idle_heap_used_min": 72478444,
+    "short_soak_idle_heap_used_max": 72479036,
+    "ui_thread_stacks": {
+      "61": {
+        "StackSize": 65480,
+        "StackUsed": 5068
+      },
+      "62": {
+        "StackSize": 65512,
+        "StackUsed": 5176
+      }
+    },
+    "scope": "System allocator including OS/UI/ADB; lifetime high-water contains ~69MB temporary test WAVs. Does not represent model-only peak RAM. 10 idle samples over ~69s are insufficient for long-term leak acceptance."
+  },
+  "board_date_observation": "date\r\r\nThu, Jan 01 08:26:25 1970\r\r\nnsh> \u001b[K",
+  "error_recordings": 8,
+  "error_review": "errors.csv",
+  "raw_audio_public": false,
+  "local_audio_review_excluded": true
+}

@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+5200840	  73008	7007600	12281448	 bb6668	${HOME}/firmware-tiny-mlp-20261027/artifacts/debug/nuttx.elf

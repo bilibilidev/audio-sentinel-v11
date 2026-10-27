@@ -1,0 +1,1055 @@
+{
+  "iterations": 200,
+  "elapsed_wall_seconds": 69.125,
+  "all_passed": true,
+  "unique_predictions": [
+    "dog_bark"
+  ],
+  "memory_observations": [
+    {
+      "iteration": 1,
+      "text": "free\r\r\n      total       used       free    maxused    maxfree  nused  nfree name\r\r\n  100841868   72478444   28363424   72581672   28269224   2642     13 Umem\r\r\nnsh> \u001b[K"
+    },
+    {
+      "iteration": 21,
+      "text": "free\r\r\n      total       used       free    maxused    maxfree  nused  nfree name\r\r\n  100841868   72478444   28363424   72581880   28269224   2642     13 Umem\r\r\nnsh> \u001b[K"
+    },
+    {
+      "iteration": 41,
+      "text": "free\r\r\n      total       used       free    maxused    maxfree  nused  nfree name\r\r\n  100841868   72478444   28363424   72581888   28269224   2642     13 Umem\r\r\nnsh> \u001b[K"
+    },
+    {
+      "iteration": 61,
+      "text": "free\r\r\n      total       used       free    maxused    maxfree  nused  nfree name\r\r\n  100841868   72478444   28363424   72581888   28269224   2642     13 Umem\r\r\nnsh> \u001b[K"
+    },
+    {
+      "iteration": 81,
+      "text": "free\r\r\n      total       used       free    maxused    maxfree  nused  nfree name\r\r\n  100841868   72478444   28363424   72581888   28269224   2642     13 Umem\r\r\nnsh> \u001b[K"
+    },
+    {
+      "iteration": 101,
+      "text": "free\r\r\n      total       used       free    maxused    maxfree  nused  nfree name\r\r\n  100841868   72478660   28363208   72581888   28269224   2646     14 Umem\r\r\nnsh> "
+    },
+    {
+      "iteration": 121,
+      "text": "free\r\r\n      total       used       free    maxused    maxfree  nused  nfree name\r\r\n  100841868   72478444   28363424   72581888   28269224   2642     13 Umem\r\r\nnsh> \u001b[K"
+    },
+    {
+      "iteration": 141,
+      "text": "free\r\r\n      total       used       free    maxused    maxfree  nused  nfree name\r\r\n  100841868   72478444   28363424   72581888   28269224   2642     13 Umem\r\r\nnsh> \u001b[K"
+    },
+    {
+      "iteration": 161,
+      "text": "free\r\r\n      total       used       free    maxused    maxfree  nused  nfree name\r\r\n  100841868   72479036   28362832   72581888   28269224   2648     13 Umem\r\r\nnsh> \u001b[K"
+    },
+    {
+      "iteration": 181,
+      "text": "free\r\r\n      total       used       free    maxused    maxfree  nused  nfree name\r\r\n  100841868   72478444   28363424   72581888   28269224   2642     13 Umem\r\r\nnsh> \u001b[K"
+    }
+  ],
+  "rows": [
+    {
+      "iteration": 1,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 2,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 3,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 4,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 5,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 6,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 7,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 8,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 9,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 10,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 11,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 12,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 13,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 14,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 15,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 16,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 17,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 18,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 19,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 20,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 21,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 22,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 23,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 24,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 25,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 26,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 27,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 28,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 29,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 30,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 31,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 32,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 33,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 34,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 35,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 36,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 37,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 38,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 39,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 40,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 41,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 42,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 43,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 44,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 45,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 46,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 47,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 48,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 49,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 50,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 51,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 52,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 53,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 54,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 55,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 56,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 57,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 58,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 59,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 60,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 61,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 62,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 63,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 64,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 65,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 66,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 67,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 68,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 69,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 70,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 71,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 72,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 73,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 74,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 75,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 76,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 77,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 78,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 79,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 80,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 81,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 82,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 83,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 84,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 85,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 86,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 87,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 88,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 89,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 90,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 91,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 92,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 93,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 94,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 95,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 96,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 97,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 98,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 99,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 100,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 101,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 102,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 103,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 104,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 105,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 106,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 107,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 108,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 109,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 110,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 111,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 112,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 113,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 114,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 115,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 116,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 117,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 118,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 119,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 120,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 121,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 122,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 123,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 124,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 125,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 126,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 127,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 128,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 129,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 130,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 131,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 132,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 133,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 134,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 135,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 136,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 137,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 138,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 139,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 140,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 141,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 142,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 143,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 144,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 145,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 146,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 147,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 148,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 149,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 150,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 151,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 152,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 153,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 154,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 155,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 156,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 157,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 158,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 159,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 160,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 161,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 162,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 163,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 164,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 165,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 166,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 167,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 168,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 169,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 170,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 171,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 172,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 173,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 174,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 175,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 176,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 177,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 178,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 179,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 180,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 181,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 182,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 183,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 184,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 185,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 186,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 187,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 188,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 189,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 190,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 191,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 192,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 193,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 194,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 195,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 196,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 197,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 198,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 199,
+      "passed": true,
+      "prediction": "dog_bark"
+    },
+    {
+      "iteration": 200,
+      "passed": true,
+      "prediction": "dog_bark"
+    }
+  ],
+  "scope": "Short repeated-WAV stress with UI idle; not 1h/24h continuous microphone stability",
+  "identity": "uname -a\r\r\nNuttX  0.0.0 dd92bcf4257-dirty Oct 27 2026 15:28:57 arm nsh\r\r\nnsh> \u001b[K",
+  "uptime": "uptime\r\r\n08:23:42 up  0:23, load average: 0.00, 0.00, 0.00\r\r\nnsh> \u001b[K"
+}

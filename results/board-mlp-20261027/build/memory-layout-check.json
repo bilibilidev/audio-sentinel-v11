@@ -1,0 +1,28 @@
+{
+  "status": "STATIC_BOUNDS_PASS_RUNTIME_NOT_VERIFIED",
+  "physical_ddr_bytes": 134217728,
+  "configured_ram_start": "0x41400000",
+  "configured_ram_end": "0x47fe7000",
+  "physical_end": "0x48000000",
+  "ramlog_start": "0x47fe7000",
+  "ramlog_bytes": 102400,
+  "bss_end": "0x41fb6670",
+  "heap_start": "0x41fbb670",
+  "heap_bytes": 100841872,
+  "load_segments": [
+    {
+      "offset": 4096,
+      "start": 1094713344,
+      "end": 1106994800,
+      "file_bytes": 5273812,
+      "memory_bytes": 12281456
+    },
+    {
+      "offset": 5279744,
+      "start": 1207857152,
+      "end": 1207857188,
+      "file_bytes": 36,
+      "memory_bytes": 36
+    }
+  ]
+}

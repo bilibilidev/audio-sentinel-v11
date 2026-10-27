@@ -1,0 +1,9 @@
+id,source_title,truth,prediction,confidence,alerted,board_command_seconds,source_dataset,source_url
+cough-06,Coughing_sleeping.wav,cough,background,0.464966118,False,0.311,FSD50K,https://freesound.org/s/234858/
+cough-14,Coughing.wav,cough,glass_break,0.426897556,False,0.354,FSD50K,https://freesound.org/s/366229/
+glass_break-06,bulb_smash.mp3,glass_break,background,0.429492474,False,0.07,FSD50K,https://freesound.org/s/33629/
+glass_break-09,glass shattering.wav,glass_break,cough,0.310572386,False,0.323,FSD50K,https://freesound.org/s/366738/
+background-04,Part 1-water.mp3,background,glass_break,0.486307859,False,0.367,FSD50K,https://freesound.org/s/134854/
+baby_cry-10,E2C4BCE0-99FD-49EC-8AB1-5EA5DF7DD8C5-1430042952-1.0-m-04-hu.wav,baby_cry,background,0.401426136,False,0.144,Donate-a-Cry,https://github.com/gveres/donateacry-corpus/blob/6baf5aca0460964ad072653585837f968a87c2af/donateacry_corpus_cleaned_and_updated_data/hungry/E2C4BCE0-99FD-49EC-8AB1-5EA5DF7DD8C5-1430042952-1.0-m-04-hu.wav
+baby_cry-13,c6fd9d60-0fa7-44c0-b3ce-0192527d7b81-1430066825817-1.7-m-72-hu.wav,baby_cry,cough,0.464260906,False,0.157,Donate-a-Cry,https://github.com/gveres/donateacry-corpus/blob/6baf5aca0460964ad072653585837f968a87c2af/donateacry_corpus_cleaned_and_updated_data/hungry/c6fd9d60-0fa7-44c0-b3ce-0192527d7b81-1430066825817-1.7-m-72-hu.wav
+baby_cry-15,A123AD65-38D3-4A65-AB37-330034765840-1430093726-1.0-m-04-hu.wav,baby_cry,background,0.586765409,False,0.143,Donate-a-Cry,https://github.com/gveres/donateacry-corpus/blob/6baf5aca0460964ad072653585837f968a87c2af/donateacry_corpus_cleaned_and_updated_data/hungry/A123AD65-38D3-4A65-AB37-330034765840-1430093726-1.0-m-04-hu.wav

@@ -1,0 +1,181 @@
+{
+  "keywords": [
+    {
+      "board_file": "k/00.wav",
+      "expected": "救命",
+      "actual": "救命",
+      "passed": true,
+      "synthetic": true,
+      "exit_code": 0
+    },
+    {
+      "board_file": "k/01.wav",
+      "expected": "救命",
+      "actual": "救命",
+      "passed": true,
+      "synthetic": true,
+      "exit_code": 0
+    },
+    {
+      "board_file": "k/02.wav",
+      "expected": "救命",
+      "actual": "救命",
+      "passed": true,
+      "synthetic": true,
+      "exit_code": 0
+    },
+    {
+      "board_file": "k/03.wav",
+      "expected": "帮助",
+      "actual": "帮助",
+      "passed": true,
+      "synthetic": true,
+      "exit_code": 0
+    },
+    {
+      "board_file": "k/04.wav",
+      "expected": "帮助",
+      "actual": "帮助",
+      "passed": true,
+      "synthetic": true,
+      "exit_code": 0
+    },
+    {
+      "board_file": "k/05.wav",
+      "expected": "帮助",
+      "actual": "帮助",
+      "passed": true,
+      "synthetic": true,
+      "exit_code": 0
+    },
+    {
+      "board_file": "k/06.wav",
+      "expected": "报警",
+      "actual": "报警",
+      "passed": true,
+      "synthetic": true,
+      "exit_code": 0
+    },
+    {
+      "board_file": "k/07.wav",
+      "expected": "报警",
+      "actual": "报警",
+      "passed": true,
+      "synthetic": true,
+      "exit_code": 0
+    },
+    {
+      "board_file": "k/08.wav",
+      "expected": "报警",
+      "actual": "报警",
+      "passed": true,
+      "synthetic": true,
+      "exit_code": 0
+    },
+    {
+      "board_file": "k/09.wav",
+      "expected": "none",
+      "actual": "none",
+      "passed": true,
+      "synthetic": true,
+      "exit_code": 0
+    },
+    {
+      "board_file": "k/10.wav",
+      "expected": "none",
+      "actual": "none",
+      "passed": true,
+      "synthetic": true,
+      "exit_code": 0
+    }
+  ],
+  "keyword_real_voice_accuracy": false,
+  "input_validation": [
+    {
+      "file": "bad.wav",
+      "exit_code": 1,
+      "expected_reject": true,
+      "passed": true
+    },
+    {
+      "file": "empty.wav",
+      "exit_code": 1,
+      "expected_reject": true,
+      "passed": true
+    },
+    {
+      "file": "trunc.wav",
+      "exit_code": 1,
+      "expected_reject": true,
+      "passed": true
+    },
+    {
+      "file": "z1.wav",
+      "exit_code": 0,
+      "expected_reject": false,
+      "passed": true
+    },
+    {
+      "file": "z123.wav",
+      "exit_code": 0,
+      "expected_reject": false,
+      "passed": true
+    },
+    {
+      "file": "z16000.wav",
+      "exit_code": 0,
+      "expected_reject": false,
+      "passed": true
+    },
+    {
+      "file": "z16001.wav",
+      "exit_code": 0,
+      "expected_reject": false,
+      "passed": true
+    },
+    {
+      "file": "z48000.wav",
+      "exit_code": 0,
+      "expected_reject": false,
+      "passed": true
+    }
+  ],
+  "int8_alias": [
+    {
+      "id": "cough-01",
+      "prediction": "cough",
+      "passed": true
+    },
+    {
+      "id": "glass_break-06",
+      "prediction": "background",
+      "passed": true
+    },
+    {
+      "id": "dog_bark-18",
+      "prediction": "dog_bark",
+      "passed": true
+    },
+    {
+      "id": "baby_cry-01",
+      "prediction": "baby_cry",
+      "passed": true
+    },
+    {
+      "id": "baby_cry-20",
+      "prediction": "baby_cry",
+      "passed": true
+    }
+  ],
+  "network": {
+    "fixture": "cough-11",
+    "exit_code": 0,
+    "http_success": false,
+    "mqtt_success": false,
+    "configured_host": "127.0.0.1",
+    "reverse_supported": false,
+    "reverse_output": "error: closed\r\n",
+    "scope": "Actual board application invocation. localhost refers to the board; no HTTP/MQTT service provisioned in this firmware. Connection failure does not constitute delivered network alarm.",
+    "ui_network_integration": false
+  }
+}

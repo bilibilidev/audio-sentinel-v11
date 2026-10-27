@@ -1,0 +1,52 @@
+[
+  {
+    "command": "uname -a",
+    "exit_code": 0,
+    "output": "uname -a\r\r\nNuttX  0.0.0 dd92bcf4257-dirty Oct 27 2026 15:28:57 arm nsh\r\r\nnsh> \u001b[K"
+  },
+  {
+    "command": "uptime",
+    "exit_code": 0,
+    "output": "uptime\r\r\n08:03:13 up  0:03, load average: 0.00, 0.00, 0.00\r\r\nnsh> \u001b[K"
+  },
+  {
+    "command": "resetcause",
+    "exit_code": 0,
+    "output": "resetcause\r\r\npower_on(0)\r\r\nnsh> \u001b[K"
+  },
+  {
+    "command": "ps",
+    "exit_code": 0,
+    "output": "ps\r\r\n  PID GROUP CPU(AFFINITY)   PRI POLICY   TYPE    NPX STATE    EVENT     SIGMASK          COMMAND\r\r\n    0     0 000(0x00000003)   0 FIFO     Kthread   - Running            0000000000000000 CPU0 IDLE\r\r\n    1     0 001(0x00000003)   0 FIFO     Kthread   - Assigned           0000000000000000 CPU1 IDLE\r\r\n    2     0 ---(0x00000003) 254 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 hpwork 0x418f6d40 0x418f6d8c\r\r\n    3     0 ---(0x00000003) 100 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 lpwork 0x418f6cc0 0x418f6d0c\r\r\n    5     0 ---(0x00000003) 100 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 ltr553_thread\r\r\n    6     0 ---(0x00000001) 120 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 nftld 1107495312\r\r\n    7     0 ---(0x00000001) 120 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 nand_rcd 1107499696\r\r\n    8     0 ---(0x00000001) 120 FIFO     Kthread   - Waiting  MQ empty  0000000000000000 nand_proxy 1107504552\r\r\n    9     0 ---(0x00000003) 106 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 realtek_txpool_thread\r\r\n   10     0 ---(0x00000003) 100 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 bt_recv\r\r\n   11     0 ---(0x00000003) 100 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 bt_fw\r\r\n   12     0 ---(0x00000003) 111 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 TIMERWORKER 0x420c68e0 0x420c692c\r\r\n   13    13 ---(0x00000003) 100 FIFO     Task      - Waiting  Semaphore 0000000000000000 nsh_main\r\r\n   20    20 ---(0x00000003) 100 FIFO     Task      - Waiting  Semaphore 0000000000000000 adbd\r\r\n   31    31 ---(0x00000003) 100 FIFO     Task      - Waiting  Signal    0000000000000000 NTP_daemon 0.pool.ntp.org;1.pool.ntp.org;2.pool.ntp.org\r\r\n   53     0 ---(0x00000003) 108 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 timer_thread 0x41fb65d4\r\r\n   54     0 ---(0x00000003) 110 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 WIFIWORKER 0x421692b8 0x42169304\r\r\n   55     0 ---(0x00000003) 106 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 realtek_sdio_thread 0x42089b08\r\r\n   56     0 ---(0x00000003) 107 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 xmit_thread 0x4215ed64\r\r\n   57     0 ---(0x00000003) 105 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 recv_task_thread 0x4215ed94\r\r\n   58     0 ---(0x00000003) 106 FIFO     Kthread   - Waiting  Semaphore 0000000000000000 cmd_thread 0x4215ed4c\r\r\n   59    59 ---(0x00000003) 100 FIFO     Task      - Waiting  Signal    0000000000000000 bluetoothd\r\r\n   61    61 ---(0x00000003) 100 FIFO     Task      - Waiting  Signal    0000000000000000 audiodetect ui\r\r\n   62    61 ---(0x00000003) 100 FIFO     pthread   - Waiting  Signal    0000000000000000 audiodetect 0x414eba39 0\r\r\n  147   147 001(0x00000003) 100 FIFO     Task      - Running            0000000000000000 sh\r\r\nnsh> \u001b[K"
+  },
+  {
+    "command": "free",
+    "exit_code": 0,
+    "output": "free\r\r\n      total       used       free    maxused    maxfree  nused  nfree name\r\r\n  100841868    2004332   98837536    3744088   98693736   1668     11 Umem\r\r\nnsh> \u001b[K"
+  },
+  {
+    "command": "ls -l /dev/bootloader",
+    "exit_code": 0,
+    "output": "ls -l /dev/bootloader\r\r\n frw-rw-rw-    16777216 /dev/bootloader\r\r\nnsh> \u001b[K"
+  },
+  {
+    "command": "ls /data",
+    "exit_code": 0,
+    "output": "ls /data\r\r\n/data:\r\r\n .\r\r\n ..\r\r\n aed_live.wav\r\r\n misc/\r\r\n test.pcm\r\r\n demo\r\r\n clocktick.wav\r\r\n spk1.wav\r\r\n etc/\r\r\n on.wav\r\r\n DACDRC.conf\r\r\n s16le_48000_stereo.pcm\r\r\n logo1.bin\r\r\n sweep-x4b.wav\r\r\n startup.wav\r\r\n spk.wav\r\r\n 1kHz.wav\r\r\n lost+found/\r\r\nnsh> \u001b[K"
+  },
+  {
+    "command": "ls /dev",
+    "exit_code": 0,
+    "output": "ls /dev\r\r\n/dev:\r\r\n adb0/\r\r\n adc0\r\r\n audio/\r\r\n boot0-direct\r\r\n bootloader\r\r\n bootloader0\r\r\n console\r\r\n crypto\r\r\n gpio0\r\r\n gpio1\r\r\n gpio2\r\r\n gpio3\r\r\n i2c0\r\r\n i2c2\r\r\n input/\r\r\n input0\r\r\n lcd0\r\r\n leds0\r\r\n lirc0\r\r\n mbr\r\r\n nand0\r\r\n nand0p1\r\r\n nand0p2\r\r\n nand1\r\r\n nand1p1\r\r\n nand1p2\r\r\n nand1p3\r\r\n nand1p4\r\r\n nand1p5\r\r\n nand1p6\r\r\n nand1p7\r\r\n nand_debug/\r\r\n note/\r\r\n notectl\r\r\n null\r\r\n ptmx\r\r\n pts/\r\r\n pwm0\r\r\n ram0\r\r\n random\r\r\n res\r\r\n reserved_1\r\r\n sgp30\r\r\n spi1\r\r\n sst\r\r\n ttyHCI0\r\r\n ttyS1\r\r\n uart1\r\r\n uart2\r\r\n uboot-direct\r\r\n uorb/\r\r\n urandom\r\r\n usensor\r\r\n userleds\r\r\n usrdata\r\r\n watchdog0\r\r\n zero\r\r\nnsh> \u001b[K"
+  },
+  {
+    "command": "audiodetect",
+    "exit_code": 1,
+    "output": "audiodetect\r\r\nusage:\r\r\n  audiodetect input.wav [--debug] [--report] [--int8]  full-file inference (Tiny MLP)\r\r\n  --int8 is a compatibility alias: INT8 weight storage with float arithmetic.\r\r\n  audiodetect robust input.wav                      compare several SNR levels\r\r\n  audiodetect keyword input.wav                     detect emergency keywords\r\r\n  audiodetect ui                                    open the touch interface\r\r\nnsh> \u001b[K"
+  },
+  {
+    "command": "ifconfig",
+    "exit_code": 0,
+    "output": "ifconfig\r\r\nlo\tLink encap:Local Loopback at RUNNING mtu 1518\r\r\n\tinet addr:127.0.0.1 DRaddr:127.0.0.1 Mask:255.0.0.0\r\r\n\r\r\n\tRX: Received Fragment Errors   Bytes   \r\r\n\t    00000000 00000000 00000000 0               \r\r\n\t    IPv4     ARP      Dropped \r\r\n\t    00000000 00000000 00000000\r\r\n\tTX: Queued   Sent     Errors   Timeouts Bytes   \r\r\n\t    00000000 00000000 00000000 00000000 0                \r\r\n\tTotal Errors: 00000000\r\r\n\r\r\nwlan0\tLink encap:Ethernet HWaddr [DEVICE_MAC] at UP mtu 576\r\r\n\tinet addr:10.0.0.2 DRaddr:10.0.0.1 Mask:255.255.255.0\r\r\n\r\r\n\tRX: Received Fragment Errors   Bytes   \r\r\n\t    00000000 00000000 00000000 0               \r\r\n\t    IPv4     ARP      Dropped \r\r\n\t    00000000 00000000 00000000\r\r\n\tTX: Queued   Sent     Errors   Timeouts Bytes   \r\r\n\t    00000000 00000000 00000000 00000000 0                \r\r\n\tTotal Errors: 00000000\r\r\n\r\r\nwlan1\tLink encap:Ethernet HWaddr [DEVICE_MAC] at DOWN mtu 576\r\r\n\tinet addr:0.0.0.0 DRaddr:0.0.0.0 Mask:0.0.0.0\r\r\n\r\r\n\tRX: Received Fragment Errors   Bytes   \r\r\n\t    00000000 00000000 00000000 0               \r\r\n\t    IPv4     ARP      Dropped \r\r\n\t    00000000 00000000 00000000\r\r\n\tTX: Queued   Sent     Errors   Timeouts Bytes   \r\r\n\t    00000000 00000000 00000000 00000000 0                \r\r\n\tTotal Errors: 00000000\r\r\n\r\r\n             IPv4   TCP   UDP  ICMP\r\r\nReceived     0000  0000  0000  0000\r\r\nDropped      0000  0000  0000  0000\r\r\n  IPv4        VHL: 0000   Frg: 0000\r\r\n  Checksum   0000  0000  0000  0000\r\r\n  TCP         ACK: 0000   SYN: 0000\r\r\n              RST: 0000  0000\r\r\n              HDR: 0000\r\r\n  Type       0000  ----  ----  0000\r\r\nSent         0000  0000  0000  0000\r\r\n  Rexmit     ----  0000  ----  ----\r\r\nnsh> \u001b[K"
+  }
+]

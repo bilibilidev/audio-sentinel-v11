@@ -40,7 +40,7 @@
   },
   "cv_scope": "333/390 is pooled outer-fold score of the INNER-selected procedure over base8+expanded3 candidates. Fold architectures/training budgets differ; NOT fixed92-96-5 five-fold accuracy.",
   "external_role": "Previously heard/used development65, including20baby; not blind or microphone field accuracy. Used in deployment choice; no external gradient training.",
-  "runtime_acceptance": "Windows native C2026-10-24 and actual Ubuntu22.04 x86_64 native C2026-10-26; fullOpenVela/board/microphone not revalidated; firmware not rebuilt/flashed",
+  "runtime_acceptance": "Windows C2026-10-24, actual Ubuntu x86_64 C2026-10-26, physical R528S3 WAV and RAM-backed microphone smoke tests2026-10-27; NAND write/system acceptance failed; full goldfish not revalidated",
   "previous_default_preserved": "model/mlp-retrained-20261024 (including archived exported headers)",
   "cnn_preserved": "model/cnn-v2",
   "latest_evaluation": {
@@ -56,5 +56,19 @@
     "weights_unchanged": true,
     "reference": "results/mlp-study-20261026",
     "scope": "Fixed formal92-96-5 recipe,60epochs each held-out fit. Earlier333/390 belongs to historical INNER selection, not this fixed-recipe protocol. External65 remains already-seen development."
+  },
+  "latest_board_evaluation": {
+    "date": "2026-10-27",
+    "reference": "results/board-mlp-20261027",
+    "external_correct": 57,
+    "external_total": 65,
+    "baby_correct": 17,
+    "baby_total": 20,
+    "linux_prediction_matches": 65,
+    "image_sha256": "fad544406f90ad4fdacf0cb35f5593331746455ddda2252be6427a5ded82d713",
+    "image_source_commit": "72f4dfde5224a4e590ff66f4ce1791f5193e7b8c",
+    "weights_unchanged": true,
+    "system_acceptance_pass": false,
+    "scope": "Previously seen external development WAVs; RAM input latency and capture explicitly distinguished from NAND. No board fold-model CV, microphone field accuracy, energy or1h/24h acceptance."
   }
 }

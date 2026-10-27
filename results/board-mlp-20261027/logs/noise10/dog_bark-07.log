@@ -1,0 +1,49 @@
+time "audiodetect /tmp/m27/n10/024.wav --debug"
+
+
+Audio Sentinel Tiny MLP (INT8 weights / float arithmetic)
+
+
+Model SHA256: 2c74151ca171eff88af7efa26b8a4b3dfc37ea42c7e77b0c9b379bd61610f9e9
+
+
+Input: /tmp/m27/n10/024.wav
+
+
+Result: background
+
+
+Confidence: 0.301
+
+
+Samples: 122880 Frames: 784
+
+
+
+
+
+Probabilities:
+
+
+  background: 0.300693989
+
+
+  cough: 0.042368263
+
+
+  glass_break: 0.285232306
+
+
+  baby_cry: 0.155567437
+
+
+  dog_bark: 0.216137990
+
+
+
+
+
+0.1660 sec
+
+
+nsh> [K
