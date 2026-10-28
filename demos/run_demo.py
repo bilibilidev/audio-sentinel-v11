@@ -7,8 +7,8 @@ from model_demo import demo as model
 from alarm_demo import demo as alarm
 from keyword_demo import demo as keyword
 
-SECTIONS=[('classify','五类音频事件识别',classify),('robust','噪声鲁棒性：五折实验表',robust),
-          ('model','模型优化与轻量化：对比表',model),('alarm','远程告警接口：本机回环',alarm),
+SECTIONS=[('classify','五类音频事件识别',classify),('robust','噪声鲁棒性：现场加噪',robust),
+          ('model','模型轻量化：C规模与测速',model),('alarm','远程告警接口：本机回环',alarm),
           ('keyword','关键词识别',keyword)]
 
 def demo(ctx):
@@ -17,14 +17,19 @@ def demo(ctx):
         title('声哨 Audio Sentinel · 五个独立亮点演示')
         table(['编号','演示内容','独立启动命令'],[
             [i,name,'bash demos/'+key+'_demo.sh'] for i,(key,name,_) in enumerate(SECTIONS,1)])
-        print('每次只演示所选一项；表格读取已发布实验，功能演示执行Linux C。')
+        print('选择一项开始运行。')
         if ctx.args.auto or not sys.stdin.isatty():return
         choice=input('\n输入1-5选择，或直接 Enter 退出：').strip()
         if not choice:return
         if choice not in ['1','2','3','4','5']:raise RuntimeError('请输入1-5。')
         section=SECTIONS[int(choice)-1][0]
     if section=='all':
+        ctx.defer_records=True
         for _,_,fn in SECTIONS:fn(ctx)
+        for view in ctx.record_views:
+            from common import pause
+            pause(ctx,'按 Enter 查看下一组实验记录')
+            view()
     else:
         next(fn for key,_,fn in SECTIONS if key==section)(ctx)
 

@@ -1,5 +1,5 @@
 """Linux-only demo orchestration; inference uses the shared native C app."""
-import argparse,hashlib,json,os,pathlib,platform,re,shutil,subprocess,sys,time,unicodedata
+import argparse,datetime,hashlib,json,os,pathlib,platform,re,shutil,subprocess,sys,time,unicodedata
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 LABELS=['background','cough','glass_break','baby_cry','dog_bark']
 NAMES=dict(zip(LABELS,['日常背景','咳嗽','玻璃破碎','婴儿哭声','狗叫']))
@@ -33,15 +33,21 @@ def arguments(description):
     p.add_argument('--cc');p.add_argument('--binary',type=pathlib.Path)
     p.add_argument('--auto',action='store_true',help='Run without Enter pauses')
     p.add_argument('--play',action='store_true',help='Play WAVs on the Linux guest using an existing aplay')
-    p.add_argument('--probe',action='store_true',help='Also run the first-second single-WAV noise prototype')
+    p.add_argument('--repeats',type=int,default=20,help='Number of in-process timing runs for the model demo')
     p.add_argument('--build-only',action='store_true',help='Build and verify the current Linux C ELF, then exit')
     p.add_argument('--section',choices=['menu','all','classify','robust','model','alarm','keyword'],default='menu',help='Select a highlight; default shows the five-entry menu')
-    return p.parse_args()
+    args=p.parse_args()
+    if not 1<=args.repeats<=200:p.error('--repeats must be between 1 and 200')
+    return args
 class Context:
     def __init__(self,args):
         if sys.platform!='linux':
             raise RuntimeError('本演示要求 Linux。请用 VS Code Remote SSH 连接 Ubuntu，在远程终端运行 bash demos/run_demo.sh。')
         self.args=args;local=ROOT/'demos/local_paths.json';cfg=read(local) if local.exists() else {}
+        self.run_id=datetime.datetime.now().astimezone().strftime('%Y%m%d-%H%M%S')+'-'+str(os.getpid())
+        self.work_dir=ROOT/'out/linux-demo/live'/self.run_id
+        self.executions=[];self.saved_execution_count=0
+        self.defer_records=False;self.record_views=[]
         def path(value,key,env):
             raw=value or os.environ.get(env) or cfg.get(key)
             if not raw:return None
@@ -63,6 +69,40 @@ class Context:
         if not data.startswith(b'\x7fELF'):raise RuntimeError('需要 Linux ELF 程序，拒绝执行 Windows EXE 或其他文件。')
         if self.model['model_sha256'].encode() not in data:
             raise RuntimeError('C 程序没有当前正式模型标识；拒绝使用旧模型。')
+    def show_records(self,fn):
+        if self.defer_records:self.record_views.append(fn)
+        else:
+            pause(self,'按 Enter 查看实验记录')
+            fn()
+    def save_result(self,name,value):
+        self.work_dir.mkdir(parents=True,exist_ok=True)
+        value={'time':datetime.datetime.now().astimezone().isoformat(),'platform':'Linux '+platform.machine(),
+               'model_sha256':self.model['model_sha256'],**value,
+               'executions':self.executions[self.saved_execution_count:]}
+        self.saved_execution_count=len(self.executions)
+        target=self.work_dir/(name+'.json')
+        target.write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+        latest=self.work_dir.parent/('latest-'+name+'.json')
+        temporary=latest.with_suffix('.'+str(os.getpid())+'.tmp')
+        temporary.write_bytes(target.read_bytes());temporary.replace(latest)
+        print('[结果已保存] out/linux-demo/live/latest-'+name+'.json')
+    def classify(self,wav,report=False,echo=False):
+        text,elapsed=self.run([wav,'--debug']+(['--report'] if report else []),wav,echo=echo)
+        label=re.search(r'^Result: (\w+)$',text,re.M)
+        if not label:raise RuntimeError('C 程序没有返回分类结果。')
+        probabilities={k:float(re.search(r'^  '+k+r': ([0-9.eE+-]+)$',text,re.M)[1]) for k in LABELS}
+        return {'prediction':label[1],'confidence':probabilities[label[1]],'probabilities':probabilities,
+                'elapsed_ms':elapsed,'alerted':'[ALERT] Local alarm triggered:' in text,'raw':text}
+    def build_benchmark(self):
+        self.ensure_binary()
+        app=ROOT/'app/audiodetect';target=ROOT/'out/linux-demo/model-benchmark'
+        compiler=shutil.which(self.compiler) or self.compiler
+        sources=[ROOT/'demos/model_benchmark.c']+[app/n for n in ['audio_classifier.c','wav_reader.c','feature_extractor.c','mlp_model_infer.c','keyword_detect.c']]
+        cmd=[str(compiler),'-std=c11','-O2','-Wall','-Wextra','-I',str(app),*map(str,sources),'-lm','-o',str(target)]
+        result=subprocess.run(cmd,capture_output=True,timeout=120)
+        target.with_suffix('.build.log').write_bytes(result.stdout+result.stderr)
+        if result.returncode:raise RuntimeError('测速程序编译失败，详见 out/linux-demo/model-benchmark.build.log。')
+        return target
     def build(self,cc):
         compiler=shutil.which(cc) or (cc if pathlib.Path(cc).is_file() else None)
         if not compiler:raise RuntimeError('找不到现有 C 编译器。用 --cc 指定 GCC，或用 --binary 指定当前 Tiny MLP 程序。脚本不安装软件。')
@@ -103,30 +143,34 @@ class Context:
             print('[播放] 使用 Ubuntu 来宾音频设备；SSH 不会将音频转发到 Windows。')
             if subprocess.run([player,'-q',str(p)],timeout=90).returncode:
                 raise RuntimeError('Ubuntu 来宾音频播放失败。')
-    def run(self,args,wav=None,require_model=True):
+    def run(self,args,wav=None,require_model=True,echo=True):
         self.ensure_binary()
         start=time.perf_counter();r=subprocess.run([str(self.binary),*map(str,args)],capture_output=True,timeout=45)
         elapsed=(time.perf_counter()-start)*1000
         text=r.stdout.decode('utf-8',errors='replace');err=r.stderr.decode('utf-8',errors='replace')
         if r.returncode:raise RuntimeError((text+err).replace(str(ROOT),'${PROJECT}')[-1500:])
         if require_model and self.model['model_sha256'] not in text:raise RuntimeError('运行模型不匹配。')
+        self.executions.append({'command':['audiodetect',*[pathlib.Path(str(v)).name if pathlib.Path(str(v)).is_absolute() else str(v) for v in args]],
+                                'stdout':text,'stderr':err,'elapsed_ms':elapsed,'exit_code':r.returncode})
         # Hide machine-local input paths from the recording.
         text=text.replace('\r\r\n','\n').replace('\r\n','\n')
         if wav:
             text=re.sub(r'^Input:.*$',lambda _: 'Input: '+wav.name,text,flags=re.M)
             text=text.replace(str(wav),wav.name)
-        print(text.strip(),flush=True)
+        if echo:
+            display='\n'.join(line for line in text.splitlines() if not line.startswith('Model SHA256:'))
+            print(display.strip(),flush=True)
         return text,elapsed
 def entry(fn,description):
     for s in [sys.stdout,sys.stderr]:
         if hasattr(s,'reconfigure'):s.reconfigure(encoding='utf-8')
     try:
         ctx=Context(arguments(description))
-        print('[运行端] Linux '+platform.machine()+'；Python仅编排/制表，音频推理由原生C ELF执行。')
+        print('Linux '+platform.machine()+' | Audio Sentinel Tiny MLP')
         if ctx.args.build_only:
             ctx.ensure_binary()
             print('Linux C ELF: '+str(ctx.binary.relative_to(ROOT) if ctx.binary.is_relative_to(ROOT) else ctx.binary.name))
-            print('Model SHA256: '+ctx.model['model_sha256'])
+            print('Tiny MLP 92 -> 96 -> 5 | 9,413 parameters')
         else:fn(ctx)
     except KeyboardInterrupt:print('\n已退出演示。');return 130
     except (RuntimeError,AssertionError,OSError,subprocess.TimeoutExpired) as exc:

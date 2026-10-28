@@ -1,5 +1,7 @@
 # Tiny MLP 源码整理与 Linux C 复测
 
+本页源码快照对应提交`84f1db8`；随后更新的实时演示见[本次演示记录](../demo-live-20261028/README.md)。
+
 本次将仓库统一为正式Tiny MLP，旧CNN及旧MLP实现从当前目录移出，训练、基线、消融与导出集中到`training/mlp_study/`。模型参数保持一致，重新导出的两份C头文件与正式文件逐字节一致。
 
 ## Linux结果

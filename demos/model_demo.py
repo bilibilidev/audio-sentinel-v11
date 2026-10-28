@@ -1,55 +1,67 @@
-"""Highlight 3: source-backed footprint, ablation and timing comparisons."""
-from common import ROOT,read,title,table,pause,entry
+"""Compile and run a C measurement harness, then display prior experiments."""
+import json,math,statistics,subprocess
+from common import ROOT,read,NAMES,title,table,entry
+from audio_examples import read_pcm,write_pcm
+
+def percentile(values,p):
+    ordered=sorted(values);position=(len(ordered)-1)*p;low=math.floor(position);high=math.ceil(position)
+    return ordered[low]+(ordered[high]-ordered[low])*(position-low)
 
 def demo(ctx):
-    title('亮点 3/5 · 模型优化与轻量化：实验数据对比')
-    print('[已有实验数据] 正式 Tiny MLP 92 -> 96 -> 5，从随机初始化训练。')
-    study=read(ROOT/'results/mlp-study-20261026/summary.json')
-    resources=read(ROOT/'results/mlp-study-20261026/resources.json')
-    performance=read(ROOT/'results/mlp-study-20261026/linux/performance.json')
-    mlp=resources['mlp'];panns=resources['panns']
-    baseline=next(b for b in study['baselines'] if b['name']=='PANNs_Cnn6_linearSVM')
-    current=study['fixed_recipe_cv'];external=study['external_final']
-    print('\n表1：轻量网络与预训练基线（网络 MAC 以5秒输入核算）')
-    table(['指标','Tiny MLP','PANNs Cnn6 + SVM'],[
-        ['可学习网络参数',f'{mlp["parameters"]:,}',f'{panns["learned_network_parameters"]:,}'],
-        ['网络 Conv/Linear MAC',f'{mlp["network_MAC"]:,}',f'{panns["network_MAC_conv2d_linear"]:,}'],
-        ['额外预训练','无','AudioSet'],
-        ['ESC五折准确率',f'{current["correct"]}/{current["total"]} ({current["accuracy"]:.2%})',
-         f'{baseline["held_out"]["correct"]}/{baseline["held_out"]["total"]} ({baseline["held_out"]["accuracy"]:.2%})'],
-        ['外部开发集',f'{external["correct"]}/{external["total"]} ({external["accuracy"]:.2%})',
-         f'{baseline["external_final"]["correct"]}/{baseline["external_final"]["total"]} ({baseline["external_final"]["accuracy"]:.2%})'],
-    ],right=(1,2))
-    print(f'参数约为1/{panns["learned_network_parameters"]/mlp["parameters"]:,.0f}；'
-          f'网络 MAC 约为1/{panns["network_MAC_conv2d_linear"]/mlp["network_MAC"]:,.0f}。')
-    print('PANNs精度更高且有额外预训练；MLP取舍为端侧轻量化。')
-    print('MAC不含双方前端/非线性等；PANNs另有SVM系数，未做同板部署。')
-    pause(ctx)
-    print('\n表2：同一网络的权重/偏置存储核算（不是运行内存）')
-    int8=mlp['int8_weights_bias_bytes'];fp32=mlp['parameters']*4
-    table(['存储形式','权重/偏置字节','相对FP32'],[
-        ['FP32（每参数4B核算）',f'{fp32:,}','100.00%'],
-        ['INT8（导出C数组）',f'{int8:,}',f'{int8/fp32:.2%}'],
-    ],right=(1,2))
-    print(f'权重/偏置减少{1-int8/fp32:.2%}；另有归一化/asinh/量化scale {mlp["normalization_and_asinh_and_quantization_scale_bytes"]:,} B。')
-    print('前40维时域特征做asinh压缩，后52维为MFCC/Delta；DSP与神经计算仍为浮点。')
-    no_asinh=next(a for a in study['ablations'] if a['variant']=='no_asinh')
-    table(['同轮消融','ESC五折正确数','准确率'],[
-        ['无asinh',f'{no_asinh["held_out"]["correct"]}/{no_asinh["held_out"]["total"]}',f'{no_asinh["held_out"]["accuracy"]:.2%}'],
-        ['正式配方（含asinh）',f'{current["correct"]}/{current["total"]}',f'{current["accuracy"]:.2%}'],
-    ],right=(1,2))
-    print('消融采用同一组种子，展示本轮控制变量的实验观察。')
-    pause(ctx)
-    print('\n表3：实际 Ubuntu x86_64 / GCC 11.4 的三秒 WAV 历史测速')
-    table(['计时口径','均值(ms)','P95(ms)','次数'],[
-        ['分类函数（含读取/DSP/推理）',f'{performance["fixed3s_core"]["mean_ms"]:.3f}',
-         f'{performance["fixed3s_core"]["p95_ms"]:.3f}',performance['fixed3s_core']['n']],
-        ['CLI进程（另含启动/stdout）',f'{performance["fixed3s_cli_process"]["mean_ms"]:.3f}',
-         f'{performance["fixed3s_cli_process"]["p95_ms"]:.3f}',performance['fixed3s_cli_process']['n']],
-    ],right=(1,2,3))
-    print('预热3次后测30次；不含采集/UI/USB，不是真板或声音发生至告警时间。')
-    print('外部65条为已见开发集；功耗未实测，参数/MAC不等于实测能耗比。')
-    print('来源：results/mlp-study-20261026/{summary.json,resources.json,linux/performance.json}')
-    pause(ctx)
+    title('亮点 3/5 · 模型轻量化与处理速度')
+    print('编译C测速程序，读取实际模型数组大小，并处理三秒WAV。',flush=True)
+    binary=ctx.build_benchmark();_,source=ctx.example('background')
+    pcm=read_pcm(source)[:48000]
+    if len(pcm)<48000:pcm.extend([0]*(48000-len(pcm)))
+    wav=ctx.work_dir/'model-3s.wav';write_pcm(wav,pcm)
+    print(f'运行：model-benchmark model-3s.wav {ctx.args.repeats}',flush=True)
+    completed=subprocess.run([str(binary),str(wav),str(ctx.args.repeats)],capture_output=True,text=True,timeout=120)
+    if completed.returncode:raise RuntimeError('C测速程序退出：'+completed.stderr[-500:])
+    measured=json.loads(completed.stdout);times=measured['times_ms']
+    assert measured['samples']==48000 and len(times)==ctx.args.repeats
+    assert measured['parameters']==ctx.model['parameters']
+    measured['mean_ms']=statistics.mean(times);measured['p95_ms']=percentile(times,.95)
+    measured['cli_elf_bytes']=ctx.binary.stat().st_size
+    ctx.executions.append({'command':['model-benchmark','model-3s.wav',str(ctx.args.repeats)],'stdout':completed.stdout,'stderr':completed.stderr,'exit_code':completed.returncode})
+    print('本次分类：'+NAMES[measured['prediction']]+f"  置信度：{measured['confidence']:.1%}")
+    table(['本次C程序读取','结果'],[
+        ['网络结构',f"{measured['input_dim']} -> {measured['hidden_dim']} -> {measured['classes']}"],
+        ['参数数量',f"{measured['parameters']:,}"],['INT8权重/偏置',f"{measured['weight_bytes']:,} B"],
+        ['归一化及scale',f"{measured['scale_bytes']:,} B"],['Linux CLI ELF文件',f"{measured['cli_elf_bytes']:,} B"],
+        ['单次三秒网络MAC',f"{measured['network_macs']:,}"],
+        ['C进程当前RSS',f"{measured['rss_kib']:,} KiB"],
+        ['C进程峰值RSS(VmHWM)',f"{measured['peak_rss_kib']:,} KiB"],
+    ],right=(1,))
+    table(['本次三秒WAV处理','结果'],[
+        ['预热次数',measured['warmup']],['测量次数',len(times)],
+        ['均值',f"{measured['mean_ms']:.3f} ms"],['P95',f"{measured['p95_ms']:.3f} ms"],
+        ['最小 / 最大',f"{min(times):.3f} / {max(times):.3f} ms"],
+    ],right=(1,))
+    print('计时范围：文件读取、特征提取和MLP推理。')
+    ctx.save_result('model',measured)
+    def records():
+        title('实验记录 · 轻量化、消融与速度对比（2026-10-26）')
+        study=read(ROOT/'results/mlp-study-20261026/summary.json');resource=read(ROOT/'results/mlp-study-20261026/resources.json')
+        mlp=resource['mlp'];panns=resource['panns'];perf=read(ROOT/'results/mlp-study-20261026/linux/performance.json')
+        baseline=next(b for b in study['baselines'] if b['name']=='PANNs_Cnn6_linearSVM')
+        table(['指标','Tiny MLP','PANNs Cnn6 + SVM'],[
+            ['网络参数',f"{mlp['parameters']:,}",f"{panns['learned_network_parameters']:,}"],
+            ['5秒网络MAC',f"{mlp['network_MAC']:,}",f"{panns['network_MAC_conv2d_linear']:,}"],
+            ['ESC五折',f"{study['fixed_recipe_cv']['accuracy']:.2%}",f"{baseline['held_out']['accuracy']:.2%}"],
+            ['外部开发集',f"{study['external_final']['accuracy']:.2%}",f"{baseline['external_final']['accuracy']:.2%}"],
+            ['预训练','无','AudioSet'],
+        ],right=(1,2))
+        table(['权重/偏置存储','字节','相对FP32'],[
+            ['FP32核算',f"{mlp['parameters']*4:,}",'100%'],['INT8导出',f"{mlp['int8_weights_bias_bytes']:,}",'25%'],
+        ],right=(1,2))
+        no_asinh=next(a for a in study['ablations'] if a['variant']=='no_asinh')
+        table(['特征处理','ESC五折'],[['无asinh',f"{no_asinh['held_out']['correct']}/390"],['含asinh',f"{study['fixed_recipe_cv']['correct']}/390"]],right=(1,))
+        table(['三秒WAV记录','均值(ms)','P95(ms)'],[
+            ['分类函数',f"{perf['fixed3s_core']['mean_ms']:.3f}",f"{perf['fixed3s_core']['p95_ms']:.3f}"],
+            ['CLI进程',f"{perf['fixed3s_cli_process']['mean_ms']:.3f}",f"{perf['fixed3s_cli_process']['p95_ms']:.3f}"],
+        ],right=(1,2))
+        print('网络MAC按Conv/Linear核算；PANNs使用额外预训练。功耗另行测量。')
+        print('来源：results/mlp-study-20261026/')
+    ctx.show_records(records)
 
-if __name__=='__main__':raise SystemExit(entry(demo,'轻量化、asinh消融和Linux C耗时对比表'))
+if __name__=='__main__':raise SystemExit(entry(demo,'现场C数组规模与WAV处理测速'))

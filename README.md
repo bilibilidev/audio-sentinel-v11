@@ -35,8 +35,8 @@ out/audio-sentinel/audiodetect input.wav --debug
 
 ```bash
 bash demos/classify_demo.sh  # 五类识别
-bash demos/robust_demo.sh    # 噪声实验表
-bash demos/model_demo.sh     # 轻量化对比表
+bash demos/robust_demo.sh    # 现场加噪与分类
+bash demos/model_demo.sh     # C模型规模与测速
 bash demos/alarm_demo.sh     # HTTP/MQTT回环
 bash demos/keyword_demo.sh   # 关键词识别
 ```

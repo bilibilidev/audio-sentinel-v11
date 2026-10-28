@@ -1,56 +1,68 @@
-# Linux C 五项演示
+# Linux C 五项实时演示
 
-演示运行在Ubuntu中，音频推理调用与OpenVela App共用的C核心，编译产物为Linux ELF。Python负责菜单、表格排版和本机测试接收端。
-
-## VS Code 连接
-
-在Windows端安装好的Remote SSH中，按Ctrl+Shift+P选择 **Remote-SSH: Connect to Host...**，连接本机已配置的 `audio-sentinel-linux`。进入Linux远程窗口后，打开 `~/projects/audio-sentinel-v11-linux-demo`，左下角显示SSH主机名时再新建终端。首次连接由VS Code配置远程Server。[官方说明](https://code.visualstudio.com/docs/remote/ssh)
-
-不同工作机可使用自己的SSH主机别名及Linux源码目录。原始音频和密钥路径留在本地配置中。
-
-## 编译与独立入口
-
-在Ubuntu远程终端运行：
+在 VS Code 的 Ubuntu Remote SSH 项目终端运行。五个入口都先执行当前程序，末尾再显示相应的实验记录。
 
 ```bash
 cd ~/projects/audio-sentinel-v11-linux-demo
+bash demos/classify_demo.sh   # 五条录音逐条分类
+bash demos/robust_demo.sh     # 现场加噪并分类
+bash demos/model_demo.sh      # C数组规模、RSS和WAV测速
+bash demos/alarm_demo.sh      # HTTP/MQTT实际收发
+bash demos/keyword_demo.sh    # 合成关键词9正例、2负例
+```
+
+每条命令只运行一项，按Enter继续。`bash demos/run_demo.sh`打开菜单；`bash demos/run_demo.sh --section all --auto`连续运行五项，并把所有实验记录统一放在末尾。
+
+## 本次运行的内容
+
+|亮点|现场操作|
+|---|---|
+|五类识别|从本地录音库读取背景、咳嗽、玻璃、婴儿哭声和狗叫各一条，调用Linux C，打印实际分值和处理时间|
+|噪声鲁棒性|保留完整录音，按RMS现场生成20/10/5 dB高斯噪声WAV，运行20次C分类，显示五条示例的分类变化|
+|模型轻量化|编译`model_benchmark.c`，用C的sizeof读取参数和存储字节，处理三秒WAV并测量均值、P95及进程峰值RSS|
+|网络告警|启动127.0.0.1 HTTP和MQTT接收端，先运行背景，再运行咳嗽事件，展示实际收到的JSON|
+|关键词识别|调用C的MFCC+DTW，运行三组“救命、帮助、报警”合成语音及静音、低噪声负例，显示本次结果|
+
+示例采用本地已有的固定录音，音频推理调用`app/audiodetect/`共用C核心。Python负责输入准备、表格和接收端。模型、特征和告警门限保持当前正式配置。
+
+轻量化测速先预热3次，默认测20次：
+
+```bash
+bash demos/model_demo.sh --repeats 30
+```
+
+计时包含WAV读取、特征提取和MLP处理。ELF大小、权重数组和RSS分别显示；RSS取自Linux当前程序的`/proc/self/status`，峰值对应`VmHWM`。C程序按实际数组读取INT8存储规模，并按当前窗口数核算网络MAC，FP32存储核算及PANNs对照放在末尾的实验记录中。
+
+## 实验记录
+
+每段现场结果之后，单独列出`results/mlp-study-20261026/`中的已有五折、噪声、轻量化、消融或网络/关键词记录。录屏时先展示操作和当前结果，再按Enter翻到记录表。五条声音示例、合成关键词与390条五折数据分别标注。
+
+## 输入、编译和结果文件
+
+当前Ubuntu已配置录音目录。其他机器复制`local_paths.example.json`为`local_paths.json`，填写Linux音频和关键词目录。需要已有Python 3.9+与GCC，脚本使用Python标准库。
+
+首次运行自动编译Linux C。也可手动执行：
+
+```bash
 bash demos/build_demo.sh
 ```
 
-|亮点|命令|演示内容|
-|---|---|---|
-|1 五类识别|`bash demos/classify_demo.sh`|五个WAV示例的Linux C输出及已发布五折表|
-|2 噪声鲁棒性|`bash demos/robust_demo.sh`|干净、20/10/5 dB五折对比表|
-|3 模型轻量化|`bash demos/model_demo.sh`|PANNs对照、INT8存储、asinh消融和Linux耗时表|
-|4 网络告警|`bash demos/alarm_demo.sh`|背景负例和咳嗽事件的HTTP/MQTT实际收发|
-|5 关键词|`bash demos/keyword_demo.sh`|合成“救命、帮助、报警”和静音负例|
+产物位于`out/linux-demo/`，本次结果位于：
 
-每条命令只运行一项，按Enter分段继续。`bash demos/run_demo.sh`提供选择菜单；`bash demos/run_demo.sh --section all --auto`用于快速检查五项。
-
-编译使用 `scripts/build_audio_sentinel_app.sh`，产物为 `out/linux-demo/audiodetect`。同目录的`build.log`与`build.json`保存构建日志、工具链和哈希。正式模型、C头文件及输入WAV按SHA256校验。
-
-## 实验表与实时输出
-
-五类示例实际执行Linux C，并打印本次进程墙钟时间。噪声、轻量化和五折表读取`results/mlp-study-20261026/`的既有实验记录，不在录屏时重新训练或重跑五折。噪声可附加一条实时原型：
-
-```bash
-bash demos/robust_demo.sh --probe
+```text
+out/linux-demo/live/latest-classify.json
+out/linux-demo/live/latest-robust.json
+out/linux-demo/live/latest-model.json
+out/linux-demo/live/latest-alarm.json
+out/linux-demo/live/latest-keyword.json
 ```
 
-原型只取WAV首一秒，和完整五折表分别展示。轻量化表比较9,413参数的Tiny MLP与4,837,455参数的PANNs，权重/偏置INT8存储为9,413 B，相对FP32核算减少75%。PANNs使用额外预训练且精度更高，功耗需要独立仪器测量。
+每次运行另建带时间和进程号的子目录，保存原始C输出、实际分值、计时和加噪输入。上述目录及原始音频不上传Git。
 
-## 告警和关键词
+可选`--play`使用Ubuntu已有的aplay播放原始示例；声音由来宾音频设备输出。默认只运行终端。
 
-告警接收端只绑定Ubuntu内的127.0.0.1:8080/1883。Tiny MLP结果超过0.80门限后，C程序发送HTTP POST与MQTT PUBLISH，终端打印实际载荷并核对一致。退出时关闭自己的接收端，端口被占用时提示停止。MQTT测试端实现本演示的CONNECT和QoS 0 PUBLISH流程。
+## VS Code 连接
 
-关键词采用MFCC+DTW，本次演示三条合成正例和静音；完整合成回归共9正例、2负例。真人语音性能与真板联网分别通过独立测试评价。关键词与网络告警是两条功能路径。
+按Ctrl+Shift+P选择 **Remote-SSH: Connect to Host...**，连接本机配置的`audio-sentinel-linux`，打开`~/projects/audio-sentinel-v11-linux-demo`。左下角显示SSH主机名后新建终端。[官方连接说明](https://code.visualstudio.com/docs/remote/ssh)
 
-## 输入配置与录屏
-
-Ubuntu需要现有Python 3.9+与GCC。复制 `local_paths.example.json` 为忽略的 `local_paths.json`，填写Linux音频目录和编译器。当前工作机已复用现有录音，脚本仅用Python标准库。
-
-可选 `--play`调用来宾已有的aplay，声音通过Ubuntu音频设备输出；SSH本身不转发音频。默认只显示终端，不依赖音频设备。
-
-五段分别录制，再接真实开发板操作视频。终端建议90–120秒，配两分钟真板片段约3.5–4分钟。终端字号18–22，隐藏个人路径、关闭通知；MP4 H.264/AAC 30fps、约4Mbps，五分钟约155MB，导出后核对实际大小。
-
-当前演示属于Linux主机C；完整OpenVela模拟器和真实开发板分别呈现。外部65条是开发集，真板WAV时间统计另见结果目录。视频画面、字幕与旁白的身份信息在录制后统一检查。
+终端五段分别录制后，再接真实开发板操作视频。演示运行在Linux主机C环境，真板操作另行展示。建议使用18–22号终端字体，隐藏个人路径、关闭通知；导出后检查MP4时长及文件大小。

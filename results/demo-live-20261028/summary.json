@@ -1,0 +1,645 @@
+{
+  "date": "2026-10-28",
+  "source_base_commit": "84f1db80a2a90ca30d17d31e1876dea05fbf073d",
+  "runtime": "Ubuntu22.04 x86_64 native C, GCC11.4; Python standard-library orchestration",
+  "model_sha256": "2c74151ca171eff88af7efa26b8a4b3dfc37ea42c7e77b0c9b379bd61610f9e9",
+  "sample_role": "Five fixed demonstration recordings selected from the existing reviewed collection. These small-demo counts are separate from the published390-recording five-fold study and65-recording development-set evaluation.",
+  "classification": {
+    "correct": 5,
+    "total": 5,
+    "recordings": [
+      {
+        "id": "background-01",
+        "truth": "background",
+        "prediction": "background",
+        "confidence": 0.577698529,
+        "probabilities": {
+          "background": 0.577698529,
+          "cough": 0.026748184,
+          "glass_break": 0.373565853,
+          "baby_cry": 0.014899085,
+          "dog_bark": 0.007088392
+        },
+        "elapsed_ms": 9.888386999818977,
+        "alerted": false
+      },
+      {
+        "id": "cough-01",
+        "truth": "cough",
+        "prediction": "cough",
+        "confidence": 0.464344531,
+        "probabilities": {
+          "background": 0.169413999,
+          "cough": 0.464344531,
+          "glass_break": 0.120361842,
+          "baby_cry": 0.173109457,
+          "dog_bark": 0.072770126
+        },
+        "elapsed_ms": 11.620253000046432,
+        "alerted": false
+      },
+      {
+        "id": "glass_break-07",
+        "truth": "glass_break",
+        "prediction": "glass_break",
+        "confidence": 0.63061738,
+        "probabilities": {
+          "background": 0.185379401,
+          "cough": 0.145428315,
+          "glass_break": 0.63061738,
+          "baby_cry": 0.00570859,
+          "dog_bark": 0.032866258
+        },
+        "elapsed_ms": 16.69212999991032,
+        "alerted": false
+      },
+      {
+        "id": "baby_cry-01",
+        "truth": "baby_cry",
+        "prediction": "baby_cry",
+        "confidence": 0.626910508,
+        "probabilities": {
+          "background": 0.110159516,
+          "cough": 0.05117109,
+          "glass_break": 0.013261587,
+          "baby_cry": 0.626910508,
+          "dog_bark": 0.19849734
+        },
+        "elapsed_ms": 7.038694999891959,
+        "alerted": false
+      },
+      {
+        "id": "dog_bark-01",
+        "truth": "dog_bark",
+        "prediction": "dog_bark",
+        "confidence": 0.590496361,
+        "probabilities": {
+          "background": 0.223118246,
+          "cough": 0.06800139,
+          "glass_break": 0.026370401,
+          "baby_cry": 0.092013545,
+          "dog_bark": 0.590496361
+        },
+        "elapsed_ms": 20.435117000033642,
+        "alerted": false
+      }
+    ]
+  },
+  "noise": {
+    "full_recording": true,
+    "recordings_per_condition": 5,
+    "conditions": [
+      {
+        "snr_db": null,
+        "correct": 5,
+        "total": 5
+      },
+      {
+        "snr_db": 20,
+        "correct": 4,
+        "total": 5
+      },
+      {
+        "snr_db": 10,
+        "correct": 4,
+        "total": 5
+      },
+      {
+        "snr_db": 5,
+        "correct": 3,
+        "total": 5
+      }
+    ],
+    "cases": [
+      {
+        "id": "background-01",
+        "truth": "background",
+        "snr_db": null,
+        "achieved_snr_db": null,
+        "seed": null,
+        "input_sha256": "8ef0865c250a32673fcd3b3f271733cd6041cd8fbb18ac39f0f61b88b13bb1cf",
+        "prediction": "background",
+        "confidence": 0.577698529,
+        "probabilities": {
+          "background": 0.577698529,
+          "cough": 0.026748184,
+          "glass_break": 0.373565853,
+          "baby_cry": 0.014899085,
+          "dog_bark": 0.007088392
+        },
+        "elapsed_ms": 9.688368000070113,
+        "alerted": false
+      },
+      {
+        "id": "cough-01",
+        "truth": "cough",
+        "snr_db": null,
+        "achieved_snr_db": null,
+        "seed": null,
+        "input_sha256": "d564446e9ac85f17db753e947bd935a3697b6d852e25358ba150cc9331d072fd",
+        "prediction": "cough",
+        "confidence": 0.464344531,
+        "probabilities": {
+          "background": 0.169413999,
+          "cough": 0.464344531,
+          "glass_break": 0.120361842,
+          "baby_cry": 0.173109457,
+          "dog_bark": 0.072770126
+        },
+        "elapsed_ms": 11.378914999795597,
+        "alerted": false
+      },
+      {
+        "id": "glass_break-07",
+        "truth": "glass_break",
+        "snr_db": null,
+        "achieved_snr_db": null,
+        "seed": null,
+        "input_sha256": "fd64b3b8135c44d8afdc978430fcd47c101b53812d1bd5aa78d003ea61299454",
+        "prediction": "glass_break",
+        "confidence": 0.63061738,
+        "probabilities": {
+          "background": 0.185379401,
+          "cough": 0.145428315,
+          "glass_break": 0.63061738,
+          "baby_cry": 0.00570859,
+          "dog_bark": 0.032866258
+        },
+        "elapsed_ms": 16.735683999968387,
+        "alerted": false
+      },
+      {
+        "id": "baby_cry-01",
+        "truth": "baby_cry",
+        "snr_db": null,
+        "achieved_snr_db": null,
+        "seed": null,
+        "input_sha256": "f82427614624bbe37d69031b25b1ca77c9bae1eaa3bae7760292a6f9bef7c0f2",
+        "prediction": "baby_cry",
+        "confidence": 0.626910508,
+        "probabilities": {
+          "background": 0.110159516,
+          "cough": 0.05117109,
+          "glass_break": 0.013261587,
+          "baby_cry": 0.626910508,
+          "dog_bark": 0.19849734
+        },
+        "elapsed_ms": 7.086009999966336,
+        "alerted": false
+      },
+      {
+        "id": "dog_bark-01",
+        "truth": "dog_bark",
+        "snr_db": null,
+        "achieved_snr_db": null,
+        "seed": null,
+        "input_sha256": "855db33fd1e681ca70d867499f72737628392fd9067b7920ed88e9c8350cf2a2",
+        "prediction": "dog_bark",
+        "confidence": 0.590496361,
+        "probabilities": {
+          "background": 0.223118246,
+          "cough": 0.06800139,
+          "glass_break": 0.026370401,
+          "baby_cry": 0.092013545,
+          "dog_bark": 0.590496361
+        },
+        "elapsed_ms": 20.120919999953912,
+        "alerted": false
+      },
+      {
+        "id": "background-01",
+        "truth": "background",
+        "snr_db": 20,
+        "achieved_snr_db": 19.999815713883038,
+        "seed": 2026103000,
+        "input_sha256": "5fd986f453d40aa5af6ecebb4f4b3becd895ab24fc668a6f40d0ce7311854813",
+        "prediction": "glass_break",
+        "confidence": 0.579376936,
+        "probabilities": {
+          "background": 0.333534867,
+          "cough": 0.04595473,
+          "glass_break": 0.579376936,
+          "baby_cry": 0.030435208,
+          "dog_bark": 0.010698187
+        },
+        "elapsed_ms": 10.139572999833035,
+        "alerted": false
+      },
+      {
+        "id": "cough-01",
+        "truth": "cough",
+        "snr_db": 20,
+        "achieved_snr_db": 19.999870032027232,
+        "seed": 2026103001,
+        "input_sha256": "51fd47772209bfce8cbfaa64ddd88b0830bccc96035eccdd19e7aeb6c6c56785",
+        "prediction": "cough",
+        "confidence": 0.50076896,
+        "probabilities": {
+          "background": 0.105224125,
+          "cough": 0.50076896,
+          "glass_break": 0.246041253,
+          "baby_cry": 0.073918857,
+          "dog_bark": 0.074046843
+        },
+        "elapsed_ms": 11.767233999989912,
+        "alerted": false
+      },
+      {
+        "id": "glass_break-07",
+        "truth": "glass_break",
+        "snr_db": 20,
+        "achieved_snr_db": 19.99995321381503,
+        "seed": 2026103002,
+        "input_sha256": "2e61fad2c3867db74b7d8b2fd9783dec248fdfe9c56d8682a78421f77da73132",
+        "prediction": "glass_break",
+        "confidence": 0.740045667,
+        "probabilities": {
+          "background": 0.182713404,
+          "cough": 0.062093299,
+          "glass_break": 0.740045667,
+          "baby_cry": 0.005988751,
+          "dog_bark": 0.00915885
+        },
+        "elapsed_ms": 17.240741000023263,
+        "alerted": false
+      },
+      {
+        "id": "baby_cry-01",
+        "truth": "baby_cry",
+        "snr_db": 20,
+        "achieved_snr_db": 20.001521896484427,
+        "seed": 2026103003,
+        "input_sha256": "fc06855713e2f3cd54b0b49dc22fa939b127ce562b7831e3ba5019d3f69cf51a",
+        "prediction": "baby_cry",
+        "confidence": 0.756427765,
+        "probabilities": {
+          "background": 0.036402967,
+          "cough": 0.009217361,
+          "glass_break": 0.003368897,
+          "baby_cry": 0.756427765,
+          "dog_bark": 0.194583058
+        },
+        "elapsed_ms": 7.321117000174127,
+        "alerted": false
+      },
+      {
+        "id": "dog_bark-01",
+        "truth": "dog_bark",
+        "snr_db": 20,
+        "achieved_snr_db": 20.00000531084237,
+        "seed": 2026103004,
+        "input_sha256": "3b8d172b244d11cb2d4ada5d51ccd51a5d914f328696b50856c5601f3ed7d90b",
+        "prediction": "dog_bark",
+        "confidence": 0.415532559,
+        "probabilities": {
+          "background": 0.178573161,
+          "cough": 0.194051206,
+          "glass_break": 0.182861581,
+          "baby_cry": 0.028981553,
+          "dog_bark": 0.415532559
+        },
+        "elapsed_ms": 20.230102000141414,
+        "alerted": false
+      },
+      {
+        "id": "background-01",
+        "truth": "background",
+        "snr_db": 10,
+        "achieved_snr_db": 10.000053916624791,
+        "seed": 2026102900,
+        "input_sha256": "c3416d150d5a2c09cc6653ff60ccbaf21375e292cb6fe06a0b48d87a157fd5aa",
+        "prediction": "glass_break",
+        "confidence": 0.488576084,
+        "probabilities": {
+          "background": 0.408707947,
+          "cough": 0.049226664,
+          "glass_break": 0.488576084,
+          "baby_cry": 0.041037928,
+          "dog_bark": 0.012451404
+        },
+        "elapsed_ms": 10.151852000035433,
+        "alerted": false
+      },
+      {
+        "id": "cough-01",
+        "truth": "cough",
+        "snr_db": 10,
+        "achieved_snr_db": 9.999981089493662,
+        "seed": 2026102901,
+        "input_sha256": "8d81875e0a1475e7ed4949a8881d7cb8414c6933817c94c136a33b72288c12ce",
+        "prediction": "cough",
+        "confidence": 0.471854538,
+        "probabilities": {
+          "background": 0.118664227,
+          "cough": 0.471854538,
+          "glass_break": 0.291280419,
+          "baby_cry": 0.040274717,
+          "dog_bark": 0.077926077
+        },
+        "elapsed_ms": 12.715311000192742,
+        "alerted": false
+      },
+      {
+        "id": "glass_break-07",
+        "truth": "glass_break",
+        "snr_db": 10,
+        "achieved_snr_db": 9.99998881567412,
+        "seed": 2026102902,
+        "input_sha256": "591461a86e006e916c9de4d2de60cc842c5a867264faf17c24f8c92a73b387c6",
+        "prediction": "glass_break",
+        "confidence": 0.505988002,
+        "probabilities": {
+          "background": 0.438472778,
+          "cough": 0.027210414,
+          "glass_break": 0.505988002,
+          "baby_cry": 0.012444994,
+          "dog_bark": 0.015883781
+        },
+        "elapsed_ms": 16.819617999999537,
+        "alerted": false
+      },
+      {
+        "id": "baby_cry-01",
+        "truth": "baby_cry",
+        "snr_db": 10,
+        "achieved_snr_db": 10.006755804518816,
+        "seed": 2026102903,
+        "input_sha256": "25363dff1f04d47ca10e48db1b4bb951c365bf6282e99c2824ba2daeddd49bc6",
+        "prediction": "baby_cry",
+        "confidence": 0.758336365,
+        "probabilities": {
+          "background": 0.090886176,
+          "cough": 0.018637856,
+          "glass_break": 0.004284595,
+          "baby_cry": 0.758336365,
+          "dog_bark": 0.127855092
+        },
+        "elapsed_ms": 7.444912999972075,
+        "alerted": false
+      },
+      {
+        "id": "dog_bark-01",
+        "truth": "dog_bark",
+        "snr_db": 10,
+        "achieved_snr_db": 9.999992881035155,
+        "seed": 2026102904,
+        "input_sha256": "c2f53df835076ab44df35c2a82b380f3a9094dbddb629e3b001a2015a54f6c97",
+        "prediction": "dog_bark",
+        "confidence": 0.37748298,
+        "probabilities": {
+          "background": 0.31073159,
+          "cough": 0.150416553,
+          "glass_break": 0.094502516,
+          "baby_cry": 0.066866286,
+          "dog_bark": 0.37748298
+        },
+        "elapsed_ms": 20.750829999997222,
+        "alerted": false
+      },
+      {
+        "id": "background-01",
+        "truth": "background",
+        "snr_db": 5,
+        "achieved_snr_db": 5.000005631389445,
+        "seed": 2026102850,
+        "input_sha256": "44af9ff883e19edc2217f212dc72c89b98e3c04b878a5a94d378aafa3d48e1db",
+        "prediction": "background",
+        "confidence": 0.483242899,
+        "probabilities": {
+          "background": 0.483242899,
+          "cough": 0.053347342,
+          "glass_break": 0.413537115,
+          "baby_cry": 0.034162719,
+          "dog_bark": 0.015709925
+        },
+        "elapsed_ms": 9.742895000044882,
+        "alerted": false
+      },
+      {
+        "id": "cough-01",
+        "truth": "cough",
+        "snr_db": 5,
+        "achieved_snr_db": 4.9999812687871055,
+        "seed": 2026102851,
+        "input_sha256": "8b8632ef2df5302ee8641c1988213e3755fa41a47e8f4a7f5e20b81617392daf",
+        "prediction": "cough",
+        "confidence": 0.363979846,
+        "probabilities": {
+          "background": 0.195650056,
+          "cough": 0.363979846,
+          "glass_break": 0.328369439,
+          "baby_cry": 0.036624592,
+          "dog_bark": 0.075375989
+        },
+        "elapsed_ms": 11.884894999866447,
+        "alerted": false
+      },
+      {
+        "id": "glass_break-07",
+        "truth": "glass_break",
+        "snr_db": 5,
+        "achieved_snr_db": 5.00000520237577,
+        "seed": 2026102852,
+        "input_sha256": "056c5c5f92c7c124ecf581e0bb6f45521c58f5092219ae0201a3c6eade4fd364",
+        "prediction": "background",
+        "confidence": 0.540905356,
+        "probabilities": {
+          "background": 0.540905356,
+          "cough": 0.013844895,
+          "glass_break": 0.410631567,
+          "baby_cry": 0.018864738,
+          "dog_bark": 0.015753346
+        },
+        "elapsed_ms": 16.99329999996735,
+        "alerted": false
+      },
+      {
+        "id": "baby_cry-01",
+        "truth": "baby_cry",
+        "snr_db": 5,
+        "achieved_snr_db": 5.012347628437332,
+        "seed": 2026102853,
+        "input_sha256": "78479e06a9a2c013fe215f2c0fb3e2f633d6b9201e76d527488c1959e62a9d9d",
+        "prediction": "baby_cry",
+        "confidence": 0.61962831,
+        "probabilities": {
+          "background": 0.239348769,
+          "cough": 0.014103315,
+          "glass_break": 0.01014326,
+          "baby_cry": 0.61962831,
+          "dog_bark": 0.116776399
+        },
+        "elapsed_ms": 7.476210000049832,
+        "alerted": false
+      },
+      {
+        "id": "dog_bark-01",
+        "truth": "dog_bark",
+        "snr_db": 5,
+        "achieved_snr_db": 5.000000311352297,
+        "seed": 2026102854,
+        "input_sha256": "821594d56628906271c5379b2a0737f609c06114213a8ad3af603ccfc5994420",
+        "prediction": "background",
+        "confidence": 0.392038375,
+        "probabilities": {
+          "background": 0.392038375,
+          "cough": 0.10746441,
+          "glass_break": 0.071343817,
+          "baby_cry": 0.117021844,
+          "dog_bark": 0.312131554
+        },
+        "elapsed_ms": 20.837026999970476,
+        "alerted": false
+      }
+    ]
+  },
+  "model_measurement": {
+    "input_dim": 92,
+    "hidden_dim": 96,
+    "classes": 5,
+    "parameters": 9413,
+    "weight_bytes": 9413,
+    "scale_bytes": 912,
+    "float32_weight_bytes": 37652,
+    "prediction": "background",
+    "confidence": 0.895344675,
+    "samples": 48000,
+    "windows": 3,
+    "network_macs": 27936,
+    "rss_kib": 1320,
+    "peak_rss_kib": 1320,
+    "warmup": 3,
+    "times_ms": [
+      2.64649,
+      2.606775,
+      2.590622,
+      2.623182,
+      2.625875,
+      2.607102,
+      2.60241,
+      2.602118,
+      2.806161,
+      2.794169,
+      2.781352,
+      2.802877,
+      2.80657,
+      2.740727,
+      2.738945,
+      2.71443,
+      2.725773,
+      2.742168,
+      2.721019,
+      2.72051
+    ],
+    "mean_ms": 2.69996375,
+    "p95_ms": 2.80618145,
+    "cli_elf_bytes": 107584
+  },
+  "memory_measurement": "Current native C executable VmRSS/VmHWM from /proc/self/status; getrusage pre-exec high-water mark is not used for the table.",
+  "keyword": {
+    "positive_correct": 9,
+    "positive_total": 9,
+    "negative_correct": 2,
+    "negative_total": 2,
+    "cases": [
+      {
+        "id": "kw-0-0.wav",
+        "expected": "救命",
+        "prediction": "救命",
+        "match_score_percent": 57.2,
+        "elapsed_ms": 2.1950220000235277,
+        "synthetic": true
+      },
+      {
+        "id": "kw-0-1.wav",
+        "expected": "救命",
+        "prediction": "救命",
+        "match_score_percent": 57.1,
+        "elapsed_ms": 2.2323299999698065,
+        "synthetic": true
+      },
+      {
+        "id": "kw-0-2.wav",
+        "expected": "救命",
+        "prediction": "救命",
+        "match_score_percent": 57.1,
+        "elapsed_ms": 2.2505239999190962,
+        "synthetic": true
+      },
+      {
+        "id": "kw-1-0.wav",
+        "expected": "帮助",
+        "prediction": "帮助",
+        "match_score_percent": 34.9,
+        "elapsed_ms": 2.5860690000172326,
+        "synthetic": true
+      },
+      {
+        "id": "kw-1-1.wav",
+        "expected": "帮助",
+        "prediction": "帮助",
+        "match_score_percent": 35.0,
+        "elapsed_ms": 2.1687980001843243,
+        "synthetic": true
+      },
+      {
+        "id": "kw-1-2.wav",
+        "expected": "帮助",
+        "prediction": "帮助",
+        "match_score_percent": 35.1,
+        "elapsed_ms": 2.3179729998901166,
+        "synthetic": true
+      },
+      {
+        "id": "kw-2-0.wav",
+        "expected": "报警",
+        "prediction": "报警",
+        "match_score_percent": 36.6,
+        "elapsed_ms": 2.0609130001503217,
+        "synthetic": true
+      },
+      {
+        "id": "kw-2-1.wav",
+        "expected": "报警",
+        "prediction": "报警",
+        "match_score_percent": 36.5,
+        "elapsed_ms": 2.172503000110737,
+        "synthetic": true
+      },
+      {
+        "id": "kw-2-2.wav",
+        "expected": "报警",
+        "prediction": "报警",
+        "match_score_percent": 35.8,
+        "elapsed_ms": 2.114431000109107,
+        "synthetic": true
+      },
+      {
+        "id": "silence.wav",
+        "expected": "none",
+        "prediction": "none",
+        "elapsed_ms": 0.9613339998395531,
+        "synthetic": true
+      },
+      {
+        "id": "low-noise.wav",
+        "expected": "none",
+        "prediction": "none",
+        "elapsed_ms": 1.105902000062997,
+        "synthetic": true
+      }
+    ]
+  },
+  "network": {
+    "background_reports": 0,
+    "event": "cough",
+    "http_mqtt_payload_equal": true,
+    "mqtt_topic": "audiodetect/openvela_aed_01/alarm",
+    "loopback": true
+  },
+  "standalone_demos": "PASS",
+  "all_demos": "PASS",
+  "record_tables_at_end": "PASS",
+  "training_performed": false,
+  "source_hashes_sha256": "fdae1d40fee55c291f548e650f4ec10358778c7b2b5b0f13f7d7532e12b34bc6"
+}

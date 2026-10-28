@@ -1,10 +1,9 @@
 import http.server as http_server
 import json,socket,threading
-from common import title,pause,entry
+from common import ROOT,read,title,table,entry
 def demo(ctx):
     title('亮点 4/5 · 远程告警接口：本机 HTTP / MQTT 实际收发')
-    print('测试服务仅监听127.0.0.1:8080/1883；不是开发板联网，不向外部服务器发送。')
-    print('只验证本机成功路径；现有HTTP响应/MQTT严格校验及TLS等限制没有因此修复。')
+    print('启动本机 HTTP 接收端和 MQTT QoS 0 接收端，运行声音事件上报。')
     row,wav=ctx.example('cough',alarm=True);captured={};errors=[]
     class Handler(http_server.BaseHTTPRequestHandler):
         def do_POST(self):
@@ -48,13 +47,13 @@ def demo(ctx):
         threading.Thread(target=http.serve_forever,daemon=True).start()
         print('[接收端] HTTP POST /api/alarm 与 MQTT 测试服务已启动。')
         negative,background=ctx.example('background')
-        print('\n[负例] '+negative['id']+'；背景不应触发事件上报。')
-        text,_=ctx.run([background,'--report'],background)
+        print('\n背景输入：'+negative['id'])
+        text,_=ctx.run([background,'--report'],background,echo=False)
         if '[ALARM]' in text or '[ALERT] Local alarm triggered:' in text or captured:
             raise RuntimeError('背景负例意外触发告警。')
-        print('[通过] 背景未上报。')
-        print('[发送端] '+row['id']+'；按当前0.80门限执行 audiodetect --report。\n')
-        text,_=ctx.run([wav,'--report'],wav);worker.join(16)
+        print('背景识别完成，上报事件：0。')
+        print('\n运行：audiodetect '+wav.name+' --report')
+        text,_=ctx.run([wav,'--report'],wav,echo=False);worker.join(16)
         if errors:raise RuntimeError('; '.join(errors))
         if 'HTTP report: SUCCESS' not in text or 'MQTT report: SUCCESS' not in text:raise RuntimeError('发送端未报告两个协议均成功。')
         if captured.get('http')!=captured.get('mqtt') or not captured.get('http'):raise RuntimeError('两个接收端载荷不一致。')
@@ -62,8 +61,8 @@ def demo(ctx):
         if captured.get('mqtt_topic')!=expected:raise RuntimeError('MQTT topic不匹配。')
         print('\n[HTTP实际收到] POST '+captured['http_path']);print(json.dumps(payload,ensure_ascii=False,indent=2))
         print('\n[MQTT实际收到] topic='+captured['mqtt_topic']);print(json.dumps(captured['mqtt'],ensure_ascii=False,indent=2))
-        print('\n[通过] 模型触发 -> JSON构造 -> HTTP与MQTT本机接收 -> 载荷一致。')
-        print('[边界] 这不是完整broker、生产部署或已修复的真板网络告警。')
+        print('\n咳嗽事件已送达 HTTP 和 MQTT 接收端。')
+        ctx.save_result('alarm',{'input':row['id'],'background_reports':0,'http':payload,'mqtt':captured['mqtt'],'mqtt_topic':captured['mqtt_topic'],'loopback':True})
     except OSError as exc:raise RuntimeError('测试端口8080/1883不可用；请检查已有服务，脚本不会结束其他程序。 '+str(exc)) from exc
     finally:
         if http:
@@ -71,5 +70,11 @@ def demo(ctx):
             if worker is not None:http.shutdown()
             http.server_close()
         if mqtt:mqtt.close()
-    pause(ctx)
+    def records():
+        title('实验记录 · Linux 网络回环（2026-10-26）')
+        reference=read(ROOT/'results/mlp-study-20261026/linux/auxiliary.json')
+        state='成功' if reference['status']=='PASS' else reference['status']
+        table(['接口','目标','结果'],[['HTTP POST','127.0.0.1:8080/api/alarm',state],['MQTT PUBLISH',reference['mqtt_topic'],state]])
+        print('来源：results/mlp-study-20261026/linux/auxiliary.json')
+    ctx.show_records(records)
 if __name__=='__main__':raise SystemExit(entry(demo,'HTTP/MQTT本机回环告警独立演示'))

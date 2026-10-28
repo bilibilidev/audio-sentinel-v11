@@ -4,6 +4,7 @@
 
 |目录|内容|
 |---|---|
+|[demo-live-20261028](demo-live-20261028/README.md)|现场加噪、C模型测速、网络和关键词演示|
 |[release-20261028](release-20261028/README.md)|当前源码整理后的60模型C复测、数值一致性及五项演示|
 |[mlp-study-20261026](mlp-study-20261026/README.md)|固定配方五折、基线、十组消融、噪声、Linux C与资源核算|
 |[board-mlp-20261027](board-mlp-20261027/README.md)|R528S3完整WAV、时延、采集、短时循环及NAND故障记录|
