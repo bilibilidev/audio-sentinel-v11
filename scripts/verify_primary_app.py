@@ -1,8 +1,8 @@
-"""Verify integrated default MLP and explicit CNN fallback on frozen WAV inputs."""
+"""Verify the formal Tiny MLP on frozen WAV inputs and PCM boundaries."""
 import argparse,hashlib,json,pathlib,platform,re,shutil,subprocess,wave
 p=argparse.ArgumentParser(description=__doc__)
 p.add_argument('--inputs',type=pathlib.Path,required=True)
-p.add_argument('--audit',type=pathlib.Path,required=True)
+p.add_argument('--reference',type=pathlib.Path,default=pathlib.Path(__file__).resolve().parents[1]/'results/mlp-study-20261026/linux/app-verification.json')
 p.add_argument('--output',type=pathlib.Path,required=True)
 p.add_argument('--compiler',default='cc');p.add_argument('--cflag',action='append',default=[])
 p.add_argument('--model-dir',default='model/mlp-optimized-20261024')
@@ -10,20 +10,19 @@ a=p.parse_args();out=a.output.resolve();out.mkdir(exist_ok=True,parents=True)
 assert not (out/'verification.json').exists()
 repo=pathlib.Path(__file__).resolve().parents[1];app=repo/'app/audiodetect'
 read=lambda p:json.loads(p.read_text(encoding='utf-8'))
-manifest=read(a.inputs/'manifest.json');evaluation=read(a.audit/'results.json')['models']['mlp']
-reference=evaluation['external_final']['records'] if isinstance(evaluation,dict) else evaluation[-1]['external']['mean']['records']
+manifest=read(a.inputs/'manifest.json');reference=read(a.reference)['records']['mlp']
+
 deployment=read(repo/a.model_dir/'deployment.json')
 labels=manifest['labels'];commands=[];binary={};records={}
 def parse(text):
     pred=re.search(r'^Result: (\w+)$',text,re.M)[1]
     probs=[float(re.search(r'^  '+label+r': ([0-9.eE+-]+)$',text,re.M)[1]) for label in labels]
     return dict(prediction=labels.index(pred),probabilities=probs)
-for backend in ('mlp','cnn'):
+for backend in ('mlp',):
     target=out/(backend+('.exe' if platform.system()=='Windows' else ''))
     source=['audiodetect_main.c','audio_classifier.c','wav_reader.c','keyword_detect.c','alarm_report.c']
-    source+=['cnn_stream_v2.c'] if backend=='cnn' else ['feature_extractor.c','mlp_model_infer.c']
+    source+=['feature_extractor.c','mlp_model_infer.c']
     cmd=[a.compiler,*a.cflag,'-std=c11','-O2','-Wall','-Wextra','-pedantic']
-    if backend=='cnn':cmd+=['-DAED_USE_CNN']
     if platform.system()=='Windows':cmd+=['-D__USE_MINGW_ANSI_STDIO=1']
     cmd += [*[str(app/n) for n in source],'-lm']
     if platform.system()=='Windows':cmd+=['-lws2_32']
@@ -38,7 +37,6 @@ for backend in ('mlp','cnn'):
             r=next(r for r in reference if r['id']==s['id'])
             assert row['prediction']==r['prediction'] and max(abs(p-q) for p,q in zip(row['probabilities'],r['probabilities']))<.00001
             assert deployment['model_sha256'] in text
-        else:assert read(repo/'model/cnn-v2/deployment.json')['model_sha256'] in text
     records[backend]=rows
 cases=[]
 for n in (1,123,16000,16001,48000):
@@ -76,7 +74,7 @@ commands.append(cmd);text=subprocess.check_output(cmd,text=True,timeout=120);ass
 result=dict(status='PASS',runtime=platform.platform(),default_backend='Tiny MLP',model_sha256=deployment['model_sha256'],
       external_correct={name:sum(r['prediction']==r['truth'] for r in rows) for name,rows in records.items()},
       external_baby_correct={name:sum(r['truth']==3 and r['prediction']==3 for r in rows) for name,rows in records.items()},
-      default_mlp_matches_frozen_evaluation=65,cnn_fallback_model_sha256=read(repo/'model/cnn-v2/deployment.json')['model_sha256'],
+      default_mlp_matches_frozen_evaluation=65,
       pcm_wav_parity_recordings=70,digital_silence_cases=cases,invalid_wav_rejected=True,empty_pcm_rejected=True,
       binaries={name:hashlib.sha256(p.read_bytes()).hexdigest() for name,p in binary.items()},
       physical_board_tested=False,full_openvela_tested=False,records=records)

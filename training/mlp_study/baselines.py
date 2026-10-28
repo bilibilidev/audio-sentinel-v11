@@ -9,10 +9,10 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC,LinearSVC
 from sklearn.ensemble import RandomForestClassifier
 REPO=pathlib.Path(__file__).resolve().parents[2]
-sys.path[:0]=[str(REPO/'training'),str(REPO/'training/cnn')]
+sys.path.insert(0,str(REPO/'training'))
 from extract_features_mfcc import extract_features_mfcc_from_pcm
 from audio_utils import read_wav_mono
-from causal_cnn import LABELS,metrics
+from numerics import LABELS,metrics
 p=argparse.ArgumentParser(description=__doc__)
 for n in ('inputs','panns','output'):p.add_argument('--'+n,type=pathlib.Path,required=True)
 a=p.parse_args();ROOT=a.output.resolve();OUT=ROOT;OUT.mkdir(parents=True,exist_ok=True)
@@ -21,7 +21,7 @@ def read(p):return json.loads(p.read_text(encoding='utf-8'))
 def save(p,v):p.write_text(json.dumps(v,ensure_ascii=False,indent=2,allow_nan=False)+'\n',encoding='utf-8',newline='\n')
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 inputs=a.inputs.resolve();esc=read(inputs/'esc-manifest.json')['inputs'];external=read(inputs/'manifest.json')['inputs']
-lookup={v['filename']:v for v in esc};selection=read(REPO/'training/cnn/esc50-selection.json')['records']
+lookup={v['filename']:v for v in esc};selection=read(REPO/'training/mlp_study/esc50-selection.json')['records']
 ordered=[lookup[r['filename']] for r in selection]+external
 paths=[inputs/r['path'] for r in ordered]
 for path,row in zip(paths,ordered):assert sha(path)==row['sha256']

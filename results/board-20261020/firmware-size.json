@@ -1,9 +1,0 @@
-{
-  "text_bytes": 5234080,
-  "data_bytes": 72536,
-  "bss_bytes": 7007624,
-  "elf_sections_total_bytes": 12314240,
-  "ap_bytes": 5306580,
-  "image_bytes": 27210752,
-  "scope": "Whole firmware, not CNN model-only memory"
-}

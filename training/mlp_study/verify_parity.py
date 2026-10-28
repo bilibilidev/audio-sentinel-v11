@@ -4,21 +4,20 @@ for k in ('OPENBLAS_NUM_THREADS','OMP_NUM_THREADS','MKL_NUM_THREADS'):os.environ
 import argparse,hashlib,json,pathlib,sys
 import numpy as np
 REPO=pathlib.Path(__file__).resolve().parents[2];sys.path.insert(0,str(REPO/'training'))
-from train_edge_mfcc import quantize_dequantize
-from sweep_edge_models import forward
+from numerics import quantize_dequantize,forward
 p=argparse.ArgumentParser(description=__doc__)
-for n in ('linux','inputs','study','formal','output'):p.add_argument('--'+n,type=pathlib.Path,required=True)
+for n in ('linux','inputs','study','output'):p.add_argument('--'+n,type=pathlib.Path,required=True)
 a=p.parse_args();read=lambda p:json.loads(p.read_text(encoding='utf-8'))
 rows=read(a.inputs/'esc-manifest.json')['inputs']+read(a.inputs/'manifest.json')['inputs'];dump={i:[] for i in range(len(rows))}
 for line in (a.linux/'features.log').read_text().splitlines():
     if not line or line.startswith('STDERR:'):continue
     values=line.split();idx=int(values[0]);assert int(values[1])==len(dump[idx]);dump[idx].append([float(x) for x in values[2:]])
 features={r['id']:np.asarray(dump[i],dtype=np.float32) for i,r in enumerate(rows)}
-study=read(a.linux/'ablations.json');formal=read(a.linux/'formal-selected.json');reports=[]
-cohorts=[(v['variant'],v['models'],a.study/v['variant']) for v in study]+[('formal_selected',formal['models'],a.formal)]
+study=read(a.linux/'ablations.json');reports=[]
+cohorts=[(v['variant'],v['models'],a.study/v['variant']) for v in study]
 for name,models,base in cohorts:
     for m in models:
-        path=base/m['model']/'model.npz' if name!='formal_selected' else base/(m['model']+'.npz')
+        path=base/m['model']/'model.npz'
         with np.load(path,allow_pickle=False) as z:
             c=json.loads(str(z['CONFIG']));indices=z['FEATURE_INDICES'] if 'FEATURE_INDICES' in z.files else np.arange(92)
             weights=quantize_dequantize([dict(W=z['W1'].copy(),B=z['B1'].copy()),dict(W=z['W2'].copy(),B=z['B2'].copy())]);mean=z['FEATURE_MEAN'].copy();std=z['FEATURE_STD'].copy();scale=z['TIME_ASINH_SCALE'].copy()

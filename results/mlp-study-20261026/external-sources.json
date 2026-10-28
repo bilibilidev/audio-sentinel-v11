@@ -1,0 +1,456 @@
+{
+  "scope": "45 FSD50K source attributions;20 Donate-a-Cry baby recordings are separately represented by hashes in the board input manifest. No raw audio distributed.",
+  "fsd50k": [
+    {
+      "id": "cough-01",
+      "reference_label": "cough",
+      "source_dataset": "FSD50K",
+      "source_id": "110582",
+      "source_title": "cough.wav",
+      "source_url": "https://freesound.org/s/110582/",
+      "license": "http://creativecommons.org/licenses/sampling+/1.0/",
+      "sha256": "153bdd1c66fb50d324ffa36c7c29592fe56f937cd34c87be4d315cd11372266b"
+    },
+    {
+      "id": "cough-04",
+      "reference_label": "cough",
+      "source_dataset": "FSD50K",
+      "source_id": "169217",
+      "source_title": "04. Coughing.wav",
+      "source_url": "https://freesound.org/s/169217/",
+      "license": "http://creativecommons.org/licenses/by-nc/3.0/",
+      "sha256": "f74b1b193060b744fc7eebf8009350c6c96ef9928fed8aa54d3cba398393c7be"
+    },
+    {
+      "id": "cough-06",
+      "reference_label": "cough",
+      "source_dataset": "FSD50K",
+      "source_id": "234858",
+      "source_title": "Coughing_sleeping.wav",
+      "source_url": "https://freesound.org/s/234858/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "f569e0e070249f0e0ca0dcf9b0ebb1aa23e1ee5f5cdc4b22a3d6cab1c6344d56"
+    },
+    {
+      "id": "cough-09",
+      "reference_label": "cough",
+      "source_dataset": "FSD50K",
+      "source_id": "258256",
+      "source_title": "cough.wav",
+      "source_url": "https://freesound.org/s/258256/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "62f3bdb4b0f4d2b11edb1d133334ff2fe65e83fe758f0f00ec057f8643deea89"
+    },
+    {
+      "id": "cough-10",
+      "reference_label": "cough",
+      "source_dataset": "FSD50K",
+      "source_id": "26296",
+      "source_title": "Cough_male_01.wav",
+      "source_url": "https://freesound.org/s/26296/",
+      "license": "http://creativecommons.org/licenses/sampling+/1.0/",
+      "sha256": "48a7e3bb69faf188092ba42b52139aeacf3edf066fa5d03f572633d5e908b1e4"
+    },
+    {
+      "id": "cough-11",
+      "reference_label": "cough",
+      "source_dataset": "FSD50K",
+      "source_id": "325656",
+      "source_title": "Harsh Cough ",
+      "source_url": "https://freesound.org/s/325656/",
+      "license": "http://creativecommons.org/licenses/by-nc/3.0/",
+      "sha256": "df7d54864ec95dd2fc7ba42deb6e9f2929fde8eadae074c48ff3ee136363a423"
+    },
+    {
+      "id": "cough-12",
+      "reference_label": "cough",
+      "source_dataset": "FSD50K",
+      "source_id": "342587",
+      "source_title": "Coughing SFX.wav",
+      "source_url": "https://freesound.org/s/342587/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "d88a44cb549b30908e743df8323eab7982b0da4e63a4ac37b840b53b08c5eafc"
+    },
+    {
+      "id": "cough-13",
+      "reference_label": "cough",
+      "source_dataset": "FSD50K",
+      "source_id": "348134",
+      "source_title": "Cough.wav",
+      "source_url": "https://freesound.org/s/348134/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "36dcfedad0eface68ab6518c564a96850f087912536567435b36f70dfe20356a"
+    },
+    {
+      "id": "cough-14",
+      "reference_label": "cough",
+      "source_dataset": "FSD50K",
+      "source_id": "366229",
+      "source_title": "Coughing.wav",
+      "source_url": "https://freesound.org/s/366229/",
+      "license": "http://creativecommons.org/licenses/by-nc/3.0/",
+      "sha256": "25a1a69315f3bc4b4b18cb4b565c52b8308728e6f9f8b523d4d9fa5e6977437c"
+    },
+    {
+      "id": "cough-15",
+      "reference_label": "cough",
+      "source_dataset": "FSD50K",
+      "source_id": "383781",
+      "source_title": "Man Coughing Sick Cough",
+      "source_url": "https://freesound.org/s/383781/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "61b1e529189ddb350156e3c16093c18589e56607abae6dab31de0abfd9609324"
+    },
+    {
+      "id": "cough-17",
+      "reference_label": "cough",
+      "source_dataset": "FSD50K",
+      "source_id": "408888",
+      "source_title": "Coughing.wav",
+      "source_url": "https://freesound.org/s/408888/",
+      "license": "http://creativecommons.org/licenses/by-nc/3.0/",
+      "sha256": "77ed0727cece28b63af252af77d2892ec9af2a87944e4406e089e37b0642a4e5"
+    },
+    {
+      "id": "cough-19",
+      "reference_label": "cough",
+      "source_dataset": "FSD50K",
+      "source_id": "425777",
+      "source_title": "Girl Cough.wav",
+      "source_url": "https://freesound.org/s/425777/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "9fba3ffa4d0711241345627035ff6ba71db852352a24689c50a6f5f2d476ca57"
+    },
+    {
+      "id": "glass_break-06",
+      "reference_label": "glass_break",
+      "source_dataset": "FSD50K",
+      "source_id": "33629",
+      "source_title": "bulb_smash.mp3",
+      "source_url": "https://freesound.org/s/33629/",
+      "license": "http://creativecommons.org/licenses/by/3.0/",
+      "sha256": "ace9d482d77558dddc9b0e4db1afa27751db070c4f82b07b53260da13eb33d05"
+    },
+    {
+      "id": "glass_break-07",
+      "reference_label": "glass_break",
+      "source_dataset": "FSD50K",
+      "source_id": "343756",
+      "source_title": "Glass_Smash.wav",
+      "source_url": "https://freesound.org/s/343756/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "9ff3fa9d1bbcb8f90fe196e70c5baa68ebfb589ec6109476f0339e6c56a52ce0"
+    },
+    {
+      "id": "glass_break-08",
+      "reference_label": "glass_break",
+      "source_dataset": "FSD50K",
+      "source_id": "366595",
+      "source_title": "Glass Breaking.wav",
+      "source_url": "https://freesound.org/s/366595/",
+      "license": "http://creativecommons.org/licenses/by-nc/3.0/",
+      "sha256": "54cd2343847fb58aa7a1cf7e6d87e16b460c2fd1ed323b7c853065c374698e31"
+    },
+    {
+      "id": "glass_break-09",
+      "reference_label": "glass_break",
+      "source_dataset": "FSD50K",
+      "source_id": "366738",
+      "source_title": "glass shattering.wav",
+      "source_url": "https://freesound.org/s/366738/",
+      "license": "http://creativecommons.org/licenses/by-nc/3.0/",
+      "sha256": "b7eb14df85ed4be61e9b6ed2e74a82c18f1ec5e2381c6165140f26bee32a1ff6"
+    },
+    {
+      "id": "glass_break-11",
+      "reference_label": "glass_break",
+      "source_dataset": "FSD50K",
+      "source_id": "376462",
+      "source_title": "breaking_glass.wav",
+      "source_url": "https://freesound.org/s/376462/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "5240d5ec48f9e81e8871668f8456ae6a3799ceffde34e1bc923af843c79fa72c"
+    },
+    {
+      "id": "glass_break-17",
+      "reference_label": "glass_break",
+      "source_dataset": "FSD50K",
+      "source_id": "407431",
+      "source_title": "bottle break.wav",
+      "source_url": "https://freesound.org/s/407431/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "42d32a3dc3e3d35acf270b5b5f3a6f9deb11d6763e8e31bd903072973d376bed"
+    },
+    {
+      "id": "glass_break-18",
+      "reference_label": "glass_break",
+      "source_dataset": "FSD50K",
+      "source_id": "407589",
+      "source_title": "Breaking Glass.wav",
+      "source_url": "https://freesound.org/s/407589/",
+      "license": "http://creativecommons.org/licenses/by-nc/3.0/",
+      "sha256": "250c82c7db86b6cde9777b832d9861dd4f07c66673fa6aa86b8bd0803b7da59a"
+    },
+    {
+      "id": "glass_break-19",
+      "reference_label": "glass_break",
+      "source_dataset": "FSD50K",
+      "source_id": "981",
+      "source_title": "RBH Glass_Break 05.wav",
+      "source_url": "https://freesound.org/s/981/",
+      "license": "http://creativecommons.org/licenses/by/3.0/",
+      "sha256": "e06d4bb1b79d26791fe054481368e5f00da95a7de398d0e189a278f54f24f8b7"
+    },
+    {
+      "id": "glass_break-20",
+      "reference_label": "glass_break",
+      "source_dataset": "FSD50K",
+      "source_id": "98378",
+      "source_title": "beer bottle break.wav",
+      "source_url": "https://freesound.org/s/98378/",
+      "license": "http://creativecommons.org/licenses/by/3.0/",
+      "sha256": "f31da300b2a1aa7d87d677b92fe314187f249a914e6cefdb676f66d559ba045f"
+    },
+    {
+      "id": "dog_bark-01",
+      "reference_label": "dog_bark",
+      "source_dataset": "FSD50K",
+      "source_id": "102547",
+      "source_title": "dog barking 3 (Rottweiler).aif",
+      "source_url": "https://freesound.org/s/102547/",
+      "license": "http://creativecommons.org/licenses/by/3.0/",
+      "sha256": "c476f99f33d092458b50637dc6274a5c38600e769d9ba7bd0785747e608e5d88"
+    },
+    {
+      "id": "dog_bark-04",
+      "reference_label": "dog_bark",
+      "source_dataset": "FSD50K",
+      "source_id": "166489",
+      "source_title": "Some dogs barking close to a road in Anatolia (Turkey)",
+      "source_url": "https://freesound.org/s/166489/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "e83b1a5e52db34752286466587b090204a77a9878b7623cd3233cce33bbd2288"
+    },
+    {
+      "id": "dog_bark-06",
+      "reference_label": "dog_bark",
+      "source_dataset": "FSD50K",
+      "source_id": "178497",
+      "source_title": "ParsonRusselBarking.wav",
+      "source_url": "https://freesound.org/s/178497/",
+      "license": "http://creativecommons.org/licenses/by/3.0/",
+      "sha256": "65fad23d4e857b6a21fd9472107eec3b6324e0ff0c04603a36426d589266a1f8"
+    },
+    {
+      "id": "dog_bark-07",
+      "reference_label": "dog_bark",
+      "source_dataset": "FSD50K",
+      "source_id": "207962",
+      "source_title": "Eros Bordant.wav",
+      "source_url": "https://freesound.org/s/207962/",
+      "license": "http://creativecommons.org/licenses/by/3.0/",
+      "sha256": "dfe5ee7bedd14b14348b700ec1f8706551fa70b5c2275c7246bb059db76b42e0"
+    },
+    {
+      "id": "dog_bark-08",
+      "reference_label": "dog_bark",
+      "source_dataset": "FSD50K",
+      "source_id": "219532",
+      "source_title": "JBarnett_Hard_Effect.wav",
+      "source_url": "https://freesound.org/s/219532/",
+      "license": "http://creativecommons.org/licenses/by-nc/3.0/",
+      "sha256": "bcaa4595f5110b2f2ec68e8d0672f79ad251e7843e2debe8e8c7b1a7f018bdb8"
+    },
+    {
+      "id": "dog_bark-10",
+      "reference_label": "dog_bark",
+      "source_dataset": "FSD50K",
+      "source_id": "327666",
+      "source_title": "Dog Bark.wav",
+      "source_url": "https://freesound.org/s/327666/",
+      "license": "http://creativecommons.org/licenses/by-nc/3.0/",
+      "sha256": "f3796ed1a8193c644b24835e06f710083945b901bb82a1f09f27ec3268303f30"
+    },
+    {
+      "id": "dog_bark-11",
+      "reference_label": "dog_bark",
+      "source_dataset": "FSD50K",
+      "source_id": "338322",
+      "source_title": "German Shepherd Dog (Interior).wav",
+      "source_url": "https://freesound.org/s/338322/",
+      "license": "http://creativecommons.org/licenses/by/3.0/",
+      "sha256": "75af9bdcd179354c5573f4b7f078d4ef892d3ffaf24c931fff965a1dbcfc5588"
+    },
+    {
+      "id": "dog_bark-12",
+      "reference_label": "dog_bark",
+      "source_dataset": "FSD50K",
+      "source_id": "361544",
+      "source_title": "Small Dog Barking",
+      "source_url": "https://freesound.org/s/361544/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "7bc6b4b93efa755b0fd6c05dd3f71d2098eaae46620a2cd3030e82de30c62f85"
+    },
+    {
+      "id": "dog_bark-13",
+      "reference_label": "dog_bark",
+      "source_dataset": "FSD50K",
+      "source_id": "396220",
+      "source_title": "Dog_Barking",
+      "source_url": "https://freesound.org/s/396220/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "10dc899bccf0288b8556e280e3cd261d830805ff82fac0c1e6e9f4c922041b1f"
+    },
+    {
+      "id": "dog_bark-18",
+      "reference_label": "dog_bark",
+      "source_dataset": "FSD50K",
+      "source_id": "424593",
+      "source_title": "Dog Barking.m4a",
+      "source_url": "https://freesound.org/s/424593/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "0907879885a54d12e2f6c93a8516a8257f374c3d801db46e1653bc15e3aa04e4"
+    },
+    {
+      "id": "dog_bark-20",
+      "reference_label": "dog_bark",
+      "source_dataset": "FSD50K",
+      "source_id": "58382",
+      "source_title": "barking.wav",
+      "source_url": "https://freesound.org/s/58382/",
+      "license": "http://creativecommons.org/licenses/by/3.0/",
+      "sha256": "4f93fe100b25c4cf602edaf9a688af0b6aadd6480853f2ce9fd491fe1ca33926"
+    },
+    {
+      "id": "background-01",
+      "reference_label": "background",
+      "source_dataset": "FSD50K",
+      "source_id": "101246",
+      "source_title": "metal glass makes long 'PING!' sound.aif",
+      "source_url": "https://freesound.org/s/101246/",
+      "license": "http://creativecommons.org/licenses/by/3.0/",
+      "sha256": "0550b7d9e3e72ca637bb6e3e83f5564f9af6d5a91a47f5558b8e98071655e382"
+    },
+    {
+      "id": "background-02",
+      "reference_label": "background",
+      "source_dataset": "FSD50K",
+      "source_id": "105385",
+      "source_title": "Hitting Pan Top Small",
+      "source_url": "https://freesound.org/s/105385/",
+      "license": "http://creativecommons.org/licenses/by/3.0/",
+      "sha256": "b56c5615a253816c7a05f3d592f001986e32561a16f104edcc427b2e6dd5402b"
+    },
+    {
+      "id": "background-04",
+      "reference_label": "background",
+      "source_dataset": "FSD50K",
+      "source_id": "134854",
+      "source_title": "Part 1-water.mp3",
+      "source_url": "https://freesound.org/s/134854/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "04304e204331cfea3dc418250ada35e4810ddddb30d7bbea9f7e60a0851d03ed"
+    },
+    {
+      "id": "background-05",
+      "reference_label": "background",
+      "source_dataset": "FSD50K",
+      "source_id": "146432",
+      "source_title": "Attention Class.wav",
+      "source_url": "https://freesound.org/s/146432/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "32373a41d4ac270aa65274b227d9eb73215172894b7e0239a9859948d890b73b"
+    },
+    {
+      "id": "background-06",
+      "reference_label": "background",
+      "source_dataset": "FSD50K",
+      "source_id": "245935",
+      "source_title": "Wind spinning.wav",
+      "source_url": "https://freesound.org/s/245935/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "c25a48fc05a9d511671e5497833de6e4b070c157b1330dc3432d208b97dc3487"
+    },
+    {
+      "id": "background-08",
+      "reference_label": "background",
+      "source_dataset": "FSD50K",
+      "source_id": "271667",
+      "source_title": "Leaky faucet;distant.wav",
+      "source_url": "https://freesound.org/s/271667/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "f232f1af7a6a70e31f31b9b0cbcae0c39bd7a05472c0da2630424b6759b1f243"
+    },
+    {
+      "id": "background-09",
+      "reference_label": "background",
+      "source_dataset": "FSD50K",
+      "source_id": "27221",
+      "source_title": "Rain.wav",
+      "source_url": "https://freesound.org/s/27221/",
+      "license": "http://creativecommons.org/licenses/by/3.0/",
+      "sha256": "2359589d03d33d7b5d63408cc5535d1e0864d3eabc5df3e127550d3c7a9f27b0"
+    },
+    {
+      "id": "background-13",
+      "reference_label": "background",
+      "source_dataset": "FSD50K",
+      "source_id": "383761",
+      "source_title": "Knocking Knock on a Door",
+      "source_url": "https://freesound.org/s/383761/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "e5fab8f91fe0bf0b471c98bf06c92690ffdb2daad40849250b16efddd2f9b029"
+    },
+    {
+      "id": "background-14",
+      "reference_label": "background",
+      "source_dataset": "FSD50K",
+      "source_id": "406594",
+      "source_title": "Door Close 2_Harsh_Near_Mono",
+      "source_url": "https://freesound.org/s/406594/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "ac464798c188e3d646870ba998c91b2685b89e12c4b926f712ccbfdfb64ed154"
+    },
+    {
+      "id": "background-17",
+      "reference_label": "background",
+      "source_dataset": "FSD50K",
+      "source_id": "59627",
+      "source_title": "japaneseslidingdoors.mp3",
+      "source_url": "https://freesound.org/s/59627/",
+      "license": "http://creativecommons.org/licenses/by/3.0/",
+      "sha256": "08ceb99d9cc78d0ffa82978ae3e8dd842ccef41e676480d31ba976b52da59a72"
+    },
+    {
+      "id": "background-18",
+      "reference_label": "background",
+      "source_dataset": "FSD50K",
+      "source_id": "62458",
+      "source_title": "keyboard.wav",
+      "source_url": "https://freesound.org/s/62458/",
+      "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "89c9162010f90f7e0efb0b8b795b90baea232d52ce6f95c4a6fcd7ebb763eab7"
+    },
+    {
+      "id": "background-19",
+      "reference_label": "background",
+      "source_dataset": "FSD50K",
+      "source_id": "76732",
+      "source_title": "0211_165742 microwave doors.WAV",
+      "source_url": "https://freesound.org/s/76732/",
+      "license": "http://creativecommons.org/licenses/by-nc/3.0/",
+      "sha256": "e9be999d3aa654cb174be1add8cda5147d7b0d3c8511cb5be8544d49ec2fc24d"
+    },
+    {
+      "id": "background-20",
+      "reference_label": "background",
+      "source_dataset": "FSD50K",
+      "source_id": "7968",
+      "source_title": "computer_keyboard_hacking.aif",
+      "source_url": "https://freesound.org/s/7968/",
+      "license": "http://creativecommons.org/licenses/by/3.0/",
+      "sha256": "c57e7d5a30fc7efeb3594fe2d6374c5b6e948c192ebb07e661b35b0ad2bc7442"
+    }
+  ],
+  "baby_source": "Donate-a-Cry; no verified per-file license record is included in this repository."
+}

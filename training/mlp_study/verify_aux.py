@@ -1,5 +1,5 @@
 import argparse,http.server,json,pathlib,re,socket,subprocess,threading,platform,hashlib
-p=argparse.ArgumentParser();p.add_argument('--binary',type=pathlib.Path,required=True);p.add_argument('--inputs',type=pathlib.Path,required=True);p.add_argument('--reference',type=pathlib.Path,required=True);p.add_argument('--output',type=pathlib.Path,required=True);a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--binary',type=pathlib.Path,required=True);p.add_argument('--inputs',type=pathlib.Path,required=True);p.add_argument('--reference',type=pathlib.Path,default=pathlib.Path(__file__).resolve().parents[2]/'results/mlp-study-20261026/linux/app-verification.json');p.add_argument('--output',type=pathlib.Path,required=True);a=p.parse_args()
 binary=a.binary.resolve();captured={}
 class Handler(http.server.BaseHTTPRequestHandler):
     def do_POST(self):
@@ -21,7 +21,7 @@ def packet(c):
         factor*=128
     raise ValueError('length')
 http=http.server.HTTPServer(('127.0.0.1',8080),Handler)
-mqtt=socket.socket();mqtt.bind(('127.0.0.1',1883));mqtt.listen(1);mqtt.settimeout(15)
+mqtt=socket.socket();mqtt.setsockopt(socket.SOL_SOCKET,socket.SO_REUSEADDR,1);mqtt.bind(('127.0.0.1',1883));mqtt.listen(1);mqtt.settimeout(15)
 def mqtt_worker():
     try:
         with mqtt.accept()[0] as c:
@@ -32,7 +32,7 @@ def mqtt_worker():
     finally:mqtt.close()
 th=threading.Thread(target=http.serve_forever,daemon=True);tm=threading.Thread(target=mqtt_worker,daemon=True);th.start();tm.start()
 evaluation=json.loads((a.reference).read_text(encoding='utf-8'))
-row=next(r for r in evaluation['models']['mlp']['external_final']['records'] if r['prediction']!=0 and max(r['probabilities'])>.80)
+row=next(r for r in evaluation['records']['mlp'] if r['prediction']!=0 and max(r['probabilities'])>.80)
 inputs=a.inputs.resolve()
 manifest=json.loads((inputs/'manifest.json').read_text(encoding='utf-8'))
 source=next(r for r in manifest['inputs'] if r['id']==row['id'])

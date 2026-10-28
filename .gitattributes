@@ -1,47 +1,12 @@
-.gitattributes text eol=lf
+* text=auto eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.c text eol=lf
+*.h text eol=lf
 *.sh text eol=lf
-.gitignore text eol=lf
-scripts/build_cnn_c_simulator.sh text eol=lf
-simulator/cnn/* text eol=lf
-training/cnn/* text eol=lf
-model/cnn-v1/*.md text eol=lf
-model/cnn-v1/*.json text eol=lf
-results/cnn-v1/*.json text eol=lf
-docs/cnn-v1.md text eol=lf
+*.json text eol=lf
 *.npz -text
-training/cnn_v2/* text eol=lf
-scripts/build_cnn_v2_*.sh text eol=lf
-simulator/cnn_v2/* text eol=lf
-app/audiodetect/cnn_*v2.* text eol=lf
-app/audiodetect/audio_classifier* text eol=lf
-model/cnn-v2/*.json text eol=lf
-results/cnn-v2/*.json text eol=lf
-board/r528s3-gemini-s1/configs/nsh/defconfig text eol=lf
-board/r528s3-gemini-s1/patches/* text eol=lf
-scripts/board_benchmark/* text eol=lf
-# Preserve recorded evidence bytes and SHA256SUMS across Windows/Linux clones.
-results/board-20261020/** -text -whitespace
+.gitattributes text eol=lf
+.gitignore text eol=lf
 board/r528s3-gemini-s1/patches/*.patch -whitespace
-# New model hashes and audit evidence must survive Windows/Linux checkout.
-app/audiodetect/mlp_* text eol=lf
-model/mlp-retrained-20261024/*.json text eol=lf
-model/cnn-v2-scratch/*.json text eol=lf
-results/retraining-audit-20261024/** text eol=lf
-results/mlp-v11-retest-20261024/** text eol=lf
-results/mlp-v11-fivefold-retest-20261024/** text eol=lf
-results/cnn-v2-scratch/** text eol=lf
-training/retrain_mlp_audit.py text eol=lf
-scripts/evaluate_legacy_mlp*.py text eol=lf
-scripts/evaluate_retraining_audit.py text eol=lf
-scripts/verify_primary_app.py text eol=lf
-scripts/legacy_mlp*.c text eol=lf
-# Optimized model evidence and archived header hashes are byte-sensitive.
-model/mlp-optimized-20261024/*.json text eol=lf
-model/mlp-retrained-20261024/headers/* text eol=lf
-results/mlp-optimized-20261024/** text eol=lf
-training/optimization/** text eol=lf
-training/mlp_study/** text eol=lf
-results/mlp-study-20261026/** text eol=lf
-model/mlp-study-20261026/*.json text eol=lf
 results/board-mlp-20261027/** text eol=lf -whitespace
-scripts/board_benchmark_mlp/** text eol=lf

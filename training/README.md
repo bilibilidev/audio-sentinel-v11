@@ -1,20 +1,7 @@
-# Python 训练与评测源码
+# 训练与模型导出
 
-2026-10-26实验入口见[`mlp_study`](mlp_study/README.md)：正式配方固定五折/10组控制变量消融、标准基线和实际Linux C验收；正式权重保持不变。
+正式模型使用92维特征、96单元隐藏层和5类输出，从随机初始化训练60轮。训练数据为ESC-50五类390条录音，官方折同时决定窗口、增强来源和标准化统计的分组。CPU训练及基线环境的实际版本记录在实验协议中。
 
-正式Tiny MLP由 `optimization/search.py` / `expanded_search.py` 做内层选型，从随机权重训练，`consolidate.py` 合并内层选择，`export_mlp.py` 导出含asinh变换的C权重。用法和数据预算见 [optimization](optimization/README.md)，协议与结果见 `results/mlp-optimized-20261024`。
+`audio_utils.py`、`extract_features.py`、`extract_features_mfcc.py`与`keyword_detect.py`提供音频读写、时域/MFCC特征和合成关键词工具。正式训练、特征缓存、INT8导出、基线、消融与Linux验证统一位于`mlp_study/`。
 
-上一版由 `retrain_mlp_audit.py` 从零重训；CNN重复训练见 `cnn_v2/train_from_scratch.py --seed-base`。历史审计见 `results/retraining-audit-20261024`。
-
-本目录对应 v11 的当前训练管线，依赖 Python 3.10+ 和 NumPy。
-
-核心流程：
-
-1. `import_esc50.py`：选择cough、glass_break、baby_cry、dog_bark，并抽取其余类别作为background。
-2. `prepare_data.py`：转换为16 kHz单声道一秒窗口，同时保留源录音路径。
-3. `extract_features_mfcc.py`：生成92维特征缓存。
-4. `build_robust_augmented_cache.py`：生成鲁棒性增强缓存。
-5. `train_edge_mfcc.py`：按官方折、按源录音分组完成五折训练和噪声评测。
-6. `export_to_c.py`、`quantize_int8.py`：导出Float和INT8 C权重。
-
-数据集和特征缓存不提交；完整命令见仓库根目录README。
+[复现流程](mlp_study/README.md)给出数据准备、训练、导出和C验证命令。正式NPZ和C权重已随仓库提供，运行演示无需重新训练。关键词生成器输出合成模板，真人关键词识别性能需要独立录音评估。

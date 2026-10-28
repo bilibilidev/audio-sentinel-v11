@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-28",
+  "source_base_commit": "814e3cabdd0544f0c9937ff34b2f786e2f9638c6",
+  "purpose": "Regression after consolidating the repository on the formal Tiny MLP backend",
+  "model_sha256": "2c74151ca171eff88af7efa26b8a4b3dfc37ea42c7e77b0c9b379bd61610f9e9",
+  "new_training_performed": false,
+  "formal_export_headers": "PASS (byte-identical)",
+  "retained_classifier_body": "PASS (source body identical)",
+  "training_helpers": "PASS (bit-identical arrays against pre-cleanup implementation)",
+  "linux_suite": "PASS",
+  "fixed_recipe_cv": {
+    "correct": 337,
+    "total": 390
+  },
+  "external": {
+    "correct": 57,
+    "total": 65,
+    "baby_correct": 17,
+    "baby_total": 20
+  },
+  "controlled_variants": 10,
+  "pcm_wav_parity_recordings": 70,
+  "sanitizer_external_recordings": 65,
+  "input_chunk_checks": [
+    {
+      "samples_per_read": 1,
+      "recordings": 65,
+      "max_probability_delta": 0.0
+    },
+    {
+      "samples_per_read": 997,
+      "recordings": 65,
+      "max_probability_delta": 0.0
+    },
+    {
+      "samples_per_read": 4096,
+      "recordings": 65,
+      "max_probability_delta": 0.0
+    }
+  ],
+  "same_feature_parity": {
+    "pairs": 7800,
+    "max_probability_delta": 2.389019164716899e-07,
+    "status": "PASS"
+  },
+  "synthetic_keyword_positive_cases": 9,
+  "synthetic_keyword_negative_cases": 2,
+  "http_mqtt_loopback": "PASS",
+  "five_linux_demos": "PASS",
+  "board_result_file_verification": "PASS",
+  "new_physical_board_measurement": false,
+  "new_firmware_build": false,
+  "source_manifest_sha256": "cf7a39cd29d0056cab4f18cb50bef217e1ee605d9a783e4ba305f260aaab9c02",
+  "scope": "Native Ubuntu x86_64 C validation; no new full OpenVela simulator, physical-board, power or field-audio measurement. Published baseline/ablation and board data retain their original experiment dates."
+}

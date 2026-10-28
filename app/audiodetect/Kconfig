@@ -1,5 +1,5 @@
 config AE_AUDIODETECT
-	tristate "Audio event detection (Tiny MLP / CNN + alarm + keyword)"
+	tristate "Audio event detection (Tiny MLP + alarm + keyword)"
 	default n
 	---help---
 		Enable the lightweight offline audio event detection demo.
@@ -9,12 +9,6 @@ config AE_AUDIODETECT
 		alarm reporting, multi-SNR robustness checks and keyword recognition.
 
 if AE_AUDIODETECT
-
-config AE_AUDIODETECT_CNN
-	bool "Use causal CNN v2 instead of the default retrained Tiny MLP"
-	default n
-	---help---
-		Keep the historical CNN v2 backend as an explicit alternative.
 
 config AE_AUDIODETECT_PROGNAME
 	string "Program name"

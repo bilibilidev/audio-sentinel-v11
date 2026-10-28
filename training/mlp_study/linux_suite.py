@@ -1,7 +1,7 @@
 """Actual Linux C acceptance; Python standard library only, no package installation."""
 import argparse,csv,hashlib,io,json,os,pathlib,platform,re,shutil,statistics,subprocess,time,wave
 p=argparse.ArgumentParser(description=__doc__)
-for n in ('repo','inputs','reference','exports','study','output'):p.add_argument('--'+n,type=pathlib.Path,required=True)
+for n in ('repo','inputs','study','output'):p.add_argument('--'+n,type=pathlib.Path,required=True)
 a=p.parse_args();R=a.repo.resolve();I=a.inputs.resolve();O=a.output.resolve();O.mkdir(parents=True,exist_ok=True)
 assert platform.system()=='Linux';assert not (O/'results.json').exists()
 read=lambda p:json.loads(p.read_text(encoding='utf-8'));sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
@@ -31,24 +31,12 @@ save(O/'environment.json',environment)
 run(['sh',R/'scripts/verify_submission.sh'],O/'integrity.log',cwd=R)
 run(['sh',R/'scripts/build_audio_sentinel_app.sh'],O/'default-build.log',cwd=R,env={**os.environ,'OUT_DIR':str(O/'default')})
 default=O/'default/audiodetect'
-run(['python3',R/'scripts/verify_primary_app.py','--inputs',I,'--audit',a.reference,'--output',O/'app','--compiler','gcc'],O/'app-check.log')
+run(['python3',R/'scripts/verify_primary_app.py','--inputs',I,'--output',O/'app','--compiler','gcc'],O/'app-check.log')
 app=read(O/'app/verification.json');assert app['external_correct']['mlp']==57
-# Fresh Linux compilation of all five formerly INNER-selected folds and final.
-selected=read(a.reference/'results.json')['models']['mlp']['models'];formal=[];outer=[];appdir=R/'app/audiodetect'
-for item in selected:
-    name=item['model'];src=a.exports/('mlp-'+name);d=O/'selected'/name;d.mkdir(parents=True)
-    for f in ('weights.h','harness.c'):shutil.copyfile(src/f,d/f)
-    binary=d/'infer';build(['gcc','-std=c11','-O2','-Wall','-Wextra','-I',d,'-I',appdir,d/'harness.c',*[appdir/n for n in ('feature_extractor.c','wav_reader.c','keyword_detect.c')],'-lm','-o',binary],d/'build.log')
-    result=dict(model=name,binary_sha256=sha(binary))
-    if name.startswith('fold_'):
-        result['official']=tsv(binary,[r for r in esc if r['fold']==int(name[-1])],d/'official.tsv');outer+=result['official']['records']
-    result['external']=tsv(binary,ext,d/'external.tsv');formal.append(result)
-formal_result=dict(official=score(outer),external_final=formal[-1]['external'],models=formal)
-save(O/'formal-selected.json',formal_result)
-print('LINUX formal C',formal_result['official']['correct'],formal_result['external_final']['correct'],flush=True)
+appdir=R/'app/audiodetect'
 # Standard-library feature dump provides the real Linux frontend for host-side
 # NumPy/Torch neural parity checks; host Python is not mislabeled as Linux.
-dump=O/'feature_dump';build(['gcc','-std=c11','-O2','-I',appdir,R/'scripts/legacy_mlp_features.c',*[appdir/n for n in ('feature_extractor.c','wav_reader.c','keyword_detect.c')],'-lm','-o',dump],O/'feature-build.log')
+dump=O/'feature_dump';build(['gcc','-std=c11','-O2','-I',appdir,R/'scripts/dump_features.c',*[appdir/n for n in ('feature_extractor.c','wav_reader.c','keyword_detect.c')],'-lm','-o',dump],O/'feature-build.log')
 run([dump,*[r['path'] for r in esc+ext]],O/'features.log',cwd=I)
 # All controlled ablations are independently compiled and evaluated in Linux C.
 study=read(a.study/'frozen.json');study_results=[]
@@ -121,5 +109,5 @@ performance=dict(fixed3s_core=distribution(core),fixed3s_cli_process=distributio
     fixed_input_sha256=sha(fixed),peak_cli_rss_kib=int((O/'rss-kib.txt').read_text()),binary_bytes=default.stat().st_size,size=run(['size','-A',default]),
     power_measured=False,microphone_tested=False,full_openvela_tested=False,board_tested=False,co_load='Host load not instrumented; virtualized wall timings subject to host scheduling. Training/baseline jobs ran on host, separately from native Linux C.')
 save(O/'performance.json',performance)
-save(O/'results.json',dict(status='PASS',runtime='Actual Ubuntu22.04 x86_64 native C, not fullOpenVela or board',formal=dict(official_correct=formal_result['official']['correct'],external_correct=formal_result['external_final']['correct']),ablations=len(study_results),sanitized_external_recordings=65,negative_wav_cases=negative,chunk_checks=chunks,performance=performance,production_model_unchanged=True))
+save(O/'results.json',dict(status='PASS',runtime='Actual Ubuntu22.04 x86_64 native C, not fullOpenVela or board',formal=dict(official_correct=next(v for v in study_results if v['variant']=='full')['official']['correct'],external_correct=next(v for v in study_results if v['variant']=='full')['external_final']['correct']),ablations=len(study_results),sanitized_external_recordings=65,negative_wav_cases=negative,chunk_checks=chunks,performance=performance,production_model_unchanged=True))
 save(O/'commands.json',commands);print('LINUX SUITE PASS',flush=True)

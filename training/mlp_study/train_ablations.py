@@ -7,12 +7,12 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 REPO=pathlib.Path(__file__).resolve().parents[2]
-sys.path[:0]=[str(REPO/'training'),str(REPO/'training/optimization')]
-from search import normalize_fit,transform,probabilities,qmodel
-from train_edge_mfcc import save_model
-from export_to_c import int8_header,c_float_array
+sys.path.insert(0,str(REPO/'training'))
+from torch_utils import normalize_fit,transform,probabilities,qmodel
+from numerics import save_model
+from c_arrays import int8_header,c_float_array
 LABELS=['background','cough','glass_break','baby_cry','dog_bark']
-p=argparse.ArgumentParser(description=__doc__);p.add_argument('--audit',type=pathlib.Path,required=True);p.add_argument('--output',type=pathlib.Path,required=True)
+p=argparse.ArgumentParser(description=__doc__);p.add_argument('--features-root',dest='audit',type=pathlib.Path,required=True);p.add_argument('--output',type=pathlib.Path,required=True)
 a=p.parse_args();out=a.output.resolve();out.mkdir(parents=True,exist_ok=True)
 assert not (out/'frozen.json').exists()
 read=lambda p:json.loads(p.read_text(encoding='utf-8'));sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
@@ -26,7 +26,7 @@ files=np.array([r['filename'] for r in rows]);sources=np.array([r['src_file'] fo
 with np.load(audit/'clean-features.npz',allow_pickle=False) as z:clean=z['X'].reshape(390,5,92).copy();assert np.array_equal(z['Y'].reshape(390,5)[:,0],y)
 with np.load(audit/'augmented-features.npz',allow_pickle=False) as z:aug=z['X_AUG'].reshape(4,390,5,92).copy()
 views=np.concatenate([clean[None],aug]);torch.set_num_threads(1);torch.set_num_interop_threads(1);torch.use_deterministic_algorithms(True)
-protected={n:sha(REPO/n) for n in ['model/mlp-optimized-20261024/final_all_esc50.npz','app/audiodetect/mlp_weights.h','app/audiodetect/cnn_weights_v2.h']}
+protected={n:sha(REPO/n) for n in ['model/mlp-optimized-20261024/final_all_esc50.npz','app/audiodetect/mlp_weights.h']}
 protocol=dict(date='2026-10-26',source_sha256=sha(pathlib.Path(__file__)),configs=configs,epochs=60,scheduler_horizon=240,
     policy='Fixed formal-recipe60epochs for EVERY variant/fold, no epoch/config selection, same initialization seed and data order. One changed factor per variant.',
     train='390 existing ESC records only, official folds/src_file grouping; all5 seconds and augmentation sources restricted to training folds.',

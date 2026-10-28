@@ -38,11 +38,8 @@
     "mlp_weights.h": "0bb4bcc9978f1899a25eb96a28e5893716e8d369778435711596884b0fa2bb6e",
     "mlp_model_config.h": "51c2cab1951179643b2ed3358fdae78b5c66ff3bef5f426692b5093b29621cee"
   },
-  "cv_scope": "333/390 is pooled outer-fold score of the INNER-selected procedure over base8+expanded3 candidates. Fold architectures/training budgets differ; NOT fixed92-96-5 five-fold accuracy.",
   "external_role": "Previously heard/used development65, including20baby; not blind or microphone field accuracy. Used in deployment choice; no external gradient training.",
   "runtime_acceptance": "Windows C2026-10-24, actual Ubuntu x86_64 C2026-10-26, physical R528S3 WAV and RAM-backed microphone smoke tests2026-10-27; NAND write/system acceptance failed; full goldfish not revalidated",
-  "previous_default_preserved": "model/mlp-retrained-20261024 (including archived exported headers)",
-  "cnn_preserved": "model/cnn-v2",
   "latest_evaluation": {
     "date": "2026-10-26",
     "fixed_recipe_official_cv_correct": 337,
@@ -70,5 +67,6 @@
     "weights_unchanged": true,
     "system_acceptance_pass": false,
     "scope": "Previously seen external development WAVs; RAM input latency and capture explicitly distinguished from NAND. No board fold-model CV, microphone field accuracy, energy or1h/24h acceptance."
-  }
+  },
+  "cv_scope": "Fixed92-96-5 recipe, five official held-out folds,337/390; external65 is a previously used development set."
 }

@@ -49,3 +49,6 @@ docs/submission/
 !results/board-mlp-20261027/build/
 !results/board-mlp-20261027/build/**
 
+# Machine-local demo inputs/configuration are never published.
+demos/local_paths.json
+

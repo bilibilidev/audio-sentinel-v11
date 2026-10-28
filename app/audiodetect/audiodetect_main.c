@@ -1,7 +1,7 @@
 /* audiodetect_main.c — A/B/C/E/F 全功能主程序（Linux C 与 OpenVela 通用）
  *   A 类别扩展：5 类检测（默认）
  *   B 鲁棒性  ：robust <wav>，clean/20/10/5 dB 噪声下检测对比
- *   C 模型优化：默认重训 Tiny MLP，可选 CNN v2；INT8 权重、浮点运算
+ *   C 模型优化：Tiny MLP 92→96→5；INT8 权重、浮点运算
  *   E 告警上报：--report 通过 HTTP/MQTT 上报
  *   F 关键词  ：keyword <wav>，MFCC+DTW 识别 救命/帮助/报警
  */

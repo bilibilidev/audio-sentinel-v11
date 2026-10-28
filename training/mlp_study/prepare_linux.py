@@ -2,11 +2,10 @@
 import argparse,hashlib,json,pathlib,shutil,sys,wave
 import numpy as np
 R=pathlib.Path(__file__).resolve().parents[2];sys.path.insert(0,str(R/'training'))
-from export_to_c import int8_header,c_float_array
+from c_arrays import int8_header,c_float_array
 p=argparse.ArgumentParser(description=__doc__)
 for n in ('inputs','study','output'):p.add_argument('--'+n,type=pathlib.Path,required=True)
-p.add_argument('--formal-models',type=pathlib.Path,default=R/'model/mlp-optimized-20261024')
-p.add_argument('--reference',type=pathlib.Path,default=R/'results/mlp-optimized-20261024/c-evaluation.json');a=p.parse_args()
+a=p.parse_args()
 out=a.output.resolve();out.mkdir(parents=True,exist_ok=False);read=lambda p:json.loads(p.read_text(encoding='utf-8'));sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 def write(p,v):p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(v,indent=2)+'\n',encoding='utf-8',newline='\n')
 for n in ('manifest.json','esc-manifest.json','keyword-manifest.json'):
@@ -16,14 +15,6 @@ shutil.copytree(a.study,out/'study');frozen=read(out/'study/frozen.json');assert
 harness=R/'training/mlp_study/study_harness.c'
 for item in frozen['models']:
     d=out/'study'/item['variant']/item['model'];assert sha(d/'model.npz')==item['model_sha256'];assert sha(d/'weights.h')==item['header_sha256'];shutil.copyfile(harness,d/'harness.c')
-(out/'reference').mkdir();shutil.copyfile(a.reference,out/'reference/results.json')
-for item in read(a.reference)['models']['mlp']['models']:
-    model=a.formal_models/(item['model']+'.npz');assert sha(model)==item['model_sha256'];d=out/'exports'/('mlp-'+item['model']);d.mkdir(parents=True)
-    with np.load(model,allow_pickle=False) as z:
-        c=json.loads(str(z['CONFIG']));h=int8_header(z,z['LABEL_NAMES'].tolist(),'STUDY_WEIGHTS_H',True)
-        extra='#define STUDY_ASINH '+str(int(c['transform']=='asinh40'))+'\n'+c_float_array('TIME_ASINH_SCALE',z['TIME_ASINH_SCALE'],'[40]')
-        extra+='static const int FEATURE_INDICES[] = {'+','.join(map(str,range(92)))+'};\n'
-    (d/'weights.h').write_text(h.replace('#include <stdint.h>','#include <stdint.h>\n'+extra),encoding='utf-8',newline='\n');shutil.copyfile(harness,d/'harness.c')
 manifest={};esc=read(a.inputs/'esc-manifest.json')['inputs']
 for snr in (20,10,5):
     rows=[];d=out/'inputs/noise'/str(snr);d.mkdir(parents=True)
@@ -37,5 +28,5 @@ for snr in (20,10,5):
         rows.append({**row,'id':f'snr{snr}-'+row['id'],'path':f'noise/{snr}/'+path.name,'sha256':sha(path),'clean_sha256':row['sha256'],'target_snr_db':snr,'achieved_snr_db':float(10*np.log10(np.mean(pcm**2)/np.mean(actual**2))),'post_quantization_clipped_samples':int(np.sum((result==32767)|(result==-32768)))})
     manifest[str(snr)]=rows
 write(out/'inputs/noise-manifest.json',manifest)
-write(out/'preparation.json',dict(source_sha256=sha(pathlib.Path(__file__)),harness_sha256=sha(harness),reference_sha256=sha(a.reference),external_audio_training=False))
+write(out/'preparation.json',dict(source_sha256=sha(pathlib.Path(__file__)),harness_sha256=sha(harness),external_audio_training=False))
 print('Linux input directory prepared:',out)

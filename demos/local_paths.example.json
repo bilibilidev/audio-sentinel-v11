@@ -1,0 +1,5 @@
+{
+  "audio_dir": "/local/reviewed65/inputs",
+  "keyword_dir": "/local/keyword-fixtures/keyword-inputs",
+  "cc": "gcc"
+}

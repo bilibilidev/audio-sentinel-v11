@@ -1,50 +1,44 @@
-# Tiny MLP 固定配方实验与 Linux C 验收
+# Tiny MLP 训练与实验复现
 
-本轮为正式92→96→5模型重做10组控制变量消融、标准SVM/RF/PANNs基线、三档噪声和实际Ubuntu C验收。不继续CNN搜索，不改正式权重或0.80门限。结果见[`results/mlp-study-20261026`](../../results/mlp-study-20261026/README.md)。
+本目录提供当前正式配方及十组控制变量实验。正式模型为92→96→5，使用asinh40变换、dropout 0.15、AdamW学习率0.002、weight decay 0.001及label smoothing 0.02，固定训练60轮，余弦调度周期240轮。初始化、批次次序和增强种子在协议中记录。
 
-训练使用已有Windows CPU Python3.12.14、PyTorch2.14.1+cpu、NumPy2.3.5及已获准安装的scikit-learn/SciPy/librosa等；各版本在协议里记录。Linux仅需要现有Python3标准库、GCC、数学库及已有ASan/UBSan，无需在来宾安装PyTorch/NumPy。
+## 特征与训练
 
-## 输入和协议
+在已有CPU PyTorch、NumPy环境中准备ESC-50数据。`esc50-selection.json`固定390条录音、来源、折号和原始哈希。下列目录为本地路径占位符：
 
-- `AUDIT/mlp-training/`包含原390条的干净/同训练折增强特征及输入审计；由`training/retrain_mlp_audit.py`生成，缓存哈希锁定，不加载旧权重初始化。
-- `INPUTS`包含`manifest.json`、`esc-manifest.json`、`keyword-manifest.json`及`inputs/`、`esc-inputs/`、`keyword-inputs/`，所有方法使用同一套已校验PCM16文件。原始数据不发布。
-- `PANNs`为此前已下载的官方Cnn6、对应`models.py`/`pytorch_utils.py`和`provenance.json`，不重复下载；已冻结AudioSet权重只提特征。
-- 全部变体固定60epochs，调度周期240，与正式训练一致；相同种子和顺序，按官方折/源ID保留，尺度和归一化只拟合训练折。每个变体训练五折与一个独立全量模型。全量full逐项核验与正式模型参数一致。
-- 特征子集为40/52/66维真实网络输入；代码仍计算完整92维C前端再映射，不声称前端省时。
-- 外部65条是已见开发集，含20条婴儿，不用于梯度或基线超参数拟合，不是未见盲测。固定配方成绩与2026-10-24的内层选型成绩分开。
+```bash
+python training/mlp_study/prepare_features.py --esc50 ESC50 --output RUN/cache/mlp-training
+python training/mlp_study/train_ablations.py --features-root RUN/cache --output RUN/study
+```
 
-## 训练和基线（已有CPU环境）
+特征缓存包含每条录音的五个一秒窗口和四份同折背景增强视图。训练折拟合归一化及asinh尺度；每个变体训练五个保留折模型和一个全量模型，共60个NPZ。每折和全量模型均从随机初始化开始。全量full参数与正式模型逐项核对。
 
-```sh
-python training/mlp_study/train_ablations.py --audit AUDIT --output RUN/ablations
+## 导出与基线
+
+```bash
+python training/mlp_study/export_model.py model/mlp-optimized-20261024/final_all_esc50.npz RUN/export
 python training/mlp_study/baselines.py --inputs INPUTS --panns PANNs --output RUN/baselines
 python training/mlp_study/resources.py --panns PANNs --output RUN/resources.json
 ```
 
-`train_ablations.py`导出每个模型NPZ、C头文件和收据。结果目录保存全部60个NPZ；SVM/RF/PANNs另保存18个本地估计器及哈希，不在仓库分发pickle或官方checkpoint。所有候选和网格在评分前固定；没有用外部成绩再次替换正式模型。
+导出保留训练拟合的归一化及asinh尺度。MFCC+SVM、MFCC+RF使用训练折内部选参；PANNs Cnn6采用已有AudioSet预训练冻结特征和线性SVM。原始录音、预训练checkpoint和本地joblib模型按其来源条款单独管理。
 
-## 实际 Linux C
+## Ubuntu C 验证
 
-```sh
-# 在有NumPy的准备端生成冻结模型/头文件/受控噪声输入目录。
-python training/mlp_study/prepare_linux.py --inputs INPUTS --study RUN/ablations --output STAGED
+准备端使用NumPy生成模型头文件和固定种子的受控噪声输入，然后将源码及STAGED目录复制到Ubuntu：
 
-# 将本仓库及STAGED中的inputs、study、reference、exports复制到Ubuntu独立RUN目录。
-# 下列命令在Ubuntu执行，路径按本机位置替换；不覆盖旧SDK。
-python3 REPO/training/mlp_study/linux_suite.py --repo REPO --inputs RUN/inputs --reference RUN/reference --exports RUN/exports --study RUN/study --output RUN/linux-results
-python3 REPO/training/mlp_study/verify_aux.py --binary RUN/linux-results/default/audiodetect --inputs RUN/inputs --reference RUN/reference/results.json --output RUN/linux-results/auxiliary.json
+```bash
+python training/mlp_study/prepare_linux.py --inputs INPUTS --study RUN/study --output STAGED
+python3 REPO/training/mlp_study/linux_suite.py --repo REPO --inputs STAGED/inputs --study STAGED/study --output RUN/linux
+python3 REPO/training/mlp_study/verify_aux.py --binary RUN/linux/default/audiodetect --inputs STAGED/inputs --output RUN/linux/auxiliary.json
 ```
 
-Linux套件执行默认构建、自检、正式旧选型六模型复测、新固定配方/全部消融、20/10/5dB保留折噪声、PCM/WAV、读取块、非法输入、ASan/UBSan及计时/RSS/ELF统计。关键词只用合成回归夹具，HTTP/MQTT只连接127.0.0.1。
+Linux套件使用标准库与GCC，构建正式App和60个实验模型，执行五折、外部WAV、噪声、PCM/WAV、读取分块、异常输入、ASan/UBSan和计时。原始训练数据不需要在公开Git中分发。
 
-将Linux结果复制回已有NumPy环境后，重新进行同特征网络数值核对：
+将Linux输出带回NumPy环境后进行同特征网络核对：
 
-```sh
-python training/mlp_study/verify_parity.py --linux RUN/linux-results --inputs INPUTS --study RUN/ablations --formal model/mlp-optimized-20261024 --output RUN/parity.json
+```bash
+python training/mlp_study/verify_parity.py --linux RUN/linux --inputs STAGED/inputs --study STAGED/study --output RUN/parity.json
 ```
 
-`prepare_linux.py`中的高斯噪声生成方法/种子与实际实验一致。首次执行时修正过C特征索引数组声明顺序，未改任何NPZ；执行源码、头文件修正及哈希均保留在结果证据中。浮点训练跨平台/库版本不保证文件逐字节一致，应检查参数和数值一致性。
-
-## 验收边界
-
-本轮C运行在Ubuntu22.04 x86_64；训练/传统基线在Windows CPU，不能混称Linux Python训练。热缓存WAV函数耗时、CLI进程墙钟和声音至告警时延分开；RSS不是板端RAM，ELF不是固件。未测试完整OpenVela/goldfish、真实板、麦克风、功率或1h/24h稳定性。MLP仍按一秒窗口/三秒UI文件运行，不是CNN的100ms连续流。
+训练由CPU Python完成，系统实现验证由Ubuntu C完成。外部65条为已见开发集；模拟器、开发板、现场录音和功耗分别进行测量。实验结果见[结果表](../../results/mlp-study-20261026/README.md)。

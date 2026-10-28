@@ -1,17 +1,16 @@
-# R528S3 Gemini S1 板级配置
+# R528S3 Gemini S1 板级集成
 
-当前 `r528s3-gemini-s1/configs/nsh/defconfig` 为 2026-10-20 真板验证的 128 MiB DDR + 板载 ILI9341 320×240 小屏配置。RAM 从 `0x41400000` 到 `0x47fe7000`，避开顶部 100 KiB RAMLOG；关闭 framebuffer/externinit 以进入物理 LCD 注册分支，使用 `/dev/lcd0`。`AE_AUDIODETECT_UI_AUTOSTART` 启用，rcS 启动 `audiodetect ui`。
+当前板级配置面向R528S3 Gemini S1、128 MiB DDR和板载2.8寸ILI9341小屏。配置包含音频采集、触摸、LVGL、Tiny MLP应用和开机自启。`configs/nsh/defconfig`与`src/etc/init.d/rcS.nsh`为应用增量，LVGL显示缓冲补丁位于`patches/`。
 
-`patches/lvgl-aligned-buffers.patch` 是此构建必需的 LVGL 对齐及释放适配，随 overlay 幂等检查应用。原 `reference/openvela_active.config` 与 `reference/nuttx_savedefconfig` 保留为历史 v11 冻结参考，不会随新版配置覆盖；不再与当前 defconfig 字节相同。
+## 构建
 
-在隔离且来源明确的完整 OpenVela SDK 中：
+在独立OpenVela SDK副本中准备应用Git检出及`apps/audiodetect`链接，应用版本与主仓库一致。在SDK根目录创建隔离标记后运行：
 
-```sh
-sh audio-sentinel-v11/scripts/apply_board_overlay.sh /absolute/path/to/sdk
-# 正式镜像构建与归档使用：
-bash audio-sentinel-v11/scripts/build_r528s3_cnn_image.sh /absolute/path/to/sdk /absolute/path/to/fresh-output
+```bash
+touch SDK/.audio-sentinel-isolated
+bash scripts/build_r528s3_image.sh SDK OUTPUT
 ```
 
-构建入口检查隔离标记、应用提交和模型验收记录，不安装依赖、不烧录。不要套用此配置到 goldfish 或 7 寸 MIPI 屏。具体应用路径须与 manifest 映射一致。
+SDK、OUTPUT为本地路径。构建器检查应用版本、模型及配置，执行板级overlay、交叉编译和官方打包，输出镜像、AP固件哈希、工具链版本与实际`repo manifest -r`。现成的32位dragon运行库是打包前提。
 
-最新实际 manifest、工具链、补丁、镜像哈希和板级边界见 [真板结果](../results/board-20261020/README.md)。用户分区擦除烧录后当前小屏/自启正常、WAV 推理通过；保留数据升级、软件重启和实际采集稳定性不能视为已解决。旧镜像与备份保留，不宣称重建镜像与历史镜像字节一致。
+脚本只构建与打包，烧录由使用者单独执行。R528的显示和内存配置用于真板；完整goldfish模拟器选择其自身配置。当前已测镜像的版本和NAND运行问题见[真板结果](../results/board-mlp-20261027/README.md)。
