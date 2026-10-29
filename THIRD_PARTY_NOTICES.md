@@ -5,8 +5,8 @@ Audio Sentinel的应用源码在根目录LICENSE规定的范围内发布。下�
 |资源|项目用途|来源与许可说明|
 |---|---|---|
 |ESC-50，Karol J. Piczak|390条五类子集训练与五折评测|[项目](https://github.com/karolpiczak/ESC-50)，数据集整体CC BY-NC 3.0，逐片段署名随上游记录|
-|FSD50K|外部45条开发录音|[官方项目](https://github.com/eduardofv/FSD50K)，逐音频来源及许可记录于`results/mlp-study-20261026/external-sources.json`|
-|Donate-a-Cry|外部20条婴儿录音|数据来源与哈希保留在实验输入清单；仓库未附可验证的逐条许可记录，原始录音不在本仓库分发|
+|FSD50K|外部65条开发集的音频来源之一|[官方项目](https://github.com/eduardofv/FSD50K)，逐音频来源及许可记录于`results/mlp-study-20261026/external-sources.json`|
+|Donate-a-Cry|外部65条开发集的音频来源之一|数据来源与哈希保留在实验输入清单；仓库未附可验证的逐条许可记录，原始录音不在本仓库分发|
 |PANNs Cnn6|AudioSet预训练冻结特征基线|[官方实现](https://github.com/qiuqiangkong/audioset_tagging_cnn)、[官方权重](https://zenodo.org/records/3987831)，版本及哈希见`results/mlp-study-20261026/panns-provenance.json`，原始checkpoint和上游代码另行获取|
 |OpenVela / NuttX、NuttX Apps|设备系统与应用框架|[OpenVela](https://github.com/open-vela)，依各项目原许可和通知使用，实际依赖见板测resolved manifest|
 |LVGL|小屏图形界面|MIT；板级补丁附许可原文`board/r528s3-gemini-s1/patches/LVGL-LICENSE.txt`|
