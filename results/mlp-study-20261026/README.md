@@ -54,4 +54,10 @@ Linux完成65条默认App、PCM/WAV、读取分块、非法输入及ASan/UBSan�
 
 ## 数据文件
 
-`summary.json`和`ablation-table.csv`提供汇总，`linux/`提供逐模型C结果、环境和计时，`training-protocol.json`记录训练流程，`baselines.json`与`panns-provenance.json`记录对照实验。`external-sources.json`保存FSD50K来源和逐条许可信息。原始运行日志保存测量时的版本与哈希，当前训练与导出入口统一在`training/mlp_study/`。
+`summary.json`和`ablation-table.csv`提供汇总，`linux/`提供逐模型C结果、环境和计时，`training-protocol.json`记录训练流程，`baselines.json`与`panns-provenance.json`记录对照实验。`external-sources.json`保存FSD50K来源和逐条许可信息。`training-frozen.json`保留各模型的配置与训练记录，`provenance.json`保留实验版本与运行环境，当前训练与导出入口统一在`training/mlp_study/`。
+
+## 当前源码复测
+
+`linux/regression-20261028.json`记录源码整理后的实际Ubuntu C复测：十组变体、60个模型，正式五折337/390、外部65条分类57/65；PCM/WAV核对70条、ASan/UBSan核对65条。同一C前端特征上的NumPy核对共7,800组，预测一致，最大概率差约2.39e-7。读取分块1、997、4096样本结果一致，合成关键词及HTTP/MQTT本地回环通过。
+
+该复测没有重新训练或测量开发板，原始实验各自保留日期。对应源码哈希见`linux/regression-source-hashes-20261028.json`；报告中的2.482 ms主机计时仍来自`linux/performance.json`。`published-sha256.json`列出本目录当前保留文件的校验值。

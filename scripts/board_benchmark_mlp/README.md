@@ -6,4 +6,4 @@
 python3 scripts/board_benchmark_mlp/verify_results.py
 ```
 
-命令在仓库根目录执行，无需开发板。对应的实际板测程序保存在`results/board-mlp-20261027/source-evidence/`，测量结果见[实验说明](../../results/board-mlp-20261027/README.md)。
+命令在仓库根目录执行，无需开发板。测试结果保留逐条分类、原始计时、采集、网络与系统状态，测量结果见[实验说明](../../results/board-mlp-20261027/README.md)。

@@ -1,3 +1,0 @@
-Oct 26 10:16:08 audio-sentinel-v11 NetworkManager[1005]: <info>  [1792980968.7800] manager: NetworkManager state is now ASLEEP
-Oct 26 10:16:08 audio-sentinel-v11 ModemManager[1057]: <info>  [sleep-monitor-systemd] system is about to suspend
-Oct 26 10:16:08 audio-sentinel-v11 systemd-sleep[4062]: Entering sleep state 'suspend'...

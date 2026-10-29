@@ -42,10 +42,6 @@ docs/submission/
 *.mp3
 .vm_access/
 .ssh/
-!results/board-20261020/logs/
-!results/board-20261020/logs/*
-!results/board-mlp-20261027/logs/
-!results/board-mlp-20261027/logs/**
 !results/board-mlp-20261027/build/
 !results/board-mlp-20261027/build/**
 

@@ -1,4 +1,0 @@
-{
-  "error": "[  0%] /data/m27/n5/000.wav: 18%\r\n[  0%] /data/m27/n5/000.wav: 36%\r\n[  1%] /data/m27/n5/000.wav: 54%\r\n[  1%] /data/m27/n5/000.wav: 72%\r\n[  1%] /data/m27/n5/000.wav: 90%\r\n[  2%] /data/m27/n5/000.wav: 100%\r\n[  2%] /data/m27/n5/001.wav: 9%\r\n[  2%] /data/m27/n5/001.wav: 19%\r\n[  3%] /data/m27/n5/001.wav: 29%\r\n[  3%] /data/m27/n5/001.wav: 39%\r\n[  4%] /data/m27/n5/001.wav: 49%\r\n[  4%] /data/m27/n5/001.wav: 59%\r\n[  4%] /data/m27/n5/001.wav: 69%\r\n[  5%] /data/m27/n5/001.wav: 79%\r\n[  5%] /data/m27/n5/001.wav: 89%\r\n[  5%] /data/m27/n5/001.wav: 99%\r\n[  5%] /data/m27/n5/001.wav: 100%\r\nadb: error: failed to copy 'board-validation-20261027\\inputs\\n5\\001.wav' to '/data/m27/n5/001.wav': couldn't read from device\r\n",
-  "completed_stages": []
-}

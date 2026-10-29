@@ -25,6 +25,6 @@
 
 ## 结果文件
 
-`clean65.json`、`predictions.csv`记录逐条分类，`input-manifest.json`记录输入哈希，`latency.json`、`capture.json`和`soak.json`分别记录时延、采集及短时循环。`failed-attempts/`与`logs/`保存故障过程，`source-evidence/`保存本轮板测程序，`manifest-resolved.xml`及`build/`记录该镜像依赖与构建。
+`clean65.json`、`predictions.csv`记录逐条分类，`input-manifest.json`记录输入哈希，`latency.json`、`capture.json`和`soak.json`分别记录时延、采集及短时循环。`auxiliary.json`记录关键词、输入边界与网络测试，`final-inspection.json`和`summary.json`保留最终内存及系统问题。`manifest-resolved.xml`、`toolchain-versions.txt`和`build/`记录报告所用镜像的依赖、工具链、配置、内存布局、构建与打包。
 
 `python3 scripts/board_benchmark_mlp/verify_results.py`在仓库根目录核对结果计算及文件哈希，无需连接开发板。该结果对应上述已测试镜像；当前源码整理后新增构建应单独记录新产物版本。
